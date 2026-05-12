@@ -103,7 +103,7 @@
                 </div>
                 <div class="col-12 mt-3 text-center">
                     <span class="btn_wrap"  data-aos="fade-up" data-aos-delay="600">
-                        <button type="submit" class="theme_btn pop_btn">
+                        <button type="submit" class="theme_btn popup_submit_btn">
                             <span class="btnTextWrap">
                                 <span>Submit</span>
                                 <span>Submit</span>
@@ -132,7 +132,7 @@
     document.addEventListener("DOMContentLoaded", function () {
         const popup = document.querySelector(".popupform-main-new-popup");
         const overlay = document.querySelector(".overlay-bg-new-popup");
-        const openButtons = document.querySelectorAll(".pop_btn");
+        const openButtons = document.querySelectorAll(".pop_btn:not(.popup_submit_btn)");
         const closeButton = document.querySelector(".close-btn");
         openButtons.forEach(function (btn) {
             btn.addEventListener("click", function () {
