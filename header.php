@@ -63,7 +63,9 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Manrope:wght@200..800&display=swap">
     </noscript>
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/favicon.webp">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png">
 
     <!-- Critical CSS Files -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="all">

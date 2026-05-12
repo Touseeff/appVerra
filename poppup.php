@@ -28,7 +28,7 @@
     <div class="pop-form-new-popp ta-center-new-pop position-relative col-lg-5 col-md-7">
         <!-- <img src="assets/images/pop-form-bg.webp" loading="lazy" class="popup_bg" alt="" loading="lazy" /> -->
         <a href="javascript:;" class="close-btn ta-center"><span>+</span></a>
-        <form action="mail.php" method="POST" class="position-relative">
+        <form action="/mail" method="POST" class="position-relative">
             <div class="titleWrap text-center">
                 <img src="assets/images/popup-img3.webp" loading="lazy" class="popup_logo" alt="" loading="lazy" width="60" height="34" />
             </div>

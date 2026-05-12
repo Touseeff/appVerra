@@ -96,7 +96,7 @@
 
 			<div class="col-lg-7">
 
-				<form action="mail.php" method="POST" class="sesrvice_form">
+				<form action="/mail" method="POST" class="sesrvice_form">
 
 					<h3 class="heading70px dark">Services</h3>
 
