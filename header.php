@@ -138,7 +138,9 @@
       "sameAs": [
         "https://appverra.co/",
         "https://www.facebook.com/AppVerra.Official",
-        "https://www.linkedin.com/company/appverra"
+        "https://www.linkedin.com/company/appverra",
+        "https://www.instagram.com/appverraco/",
+        "https://x.com/appverra1"
       ]
     }
     </script>

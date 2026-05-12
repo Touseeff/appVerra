@@ -43,7 +43,7 @@
                     </a>
                     <!-- <a href="https://www.facebook.com/" class="social_icon fb_icon"><i class="fa-brands fa-facebook-f"></i></a> -->
 
-					<a href="https://www.instagram.com/" class="social_icon">
+					<a href="https://www.instagram.com/appverraco/" target="_blank" rel="noopener" class="social_icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none">
                           <path clip-rule="evenodd" d="M12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" fill="url(#instagram__a)" fill-rule="evenodd" />
                           <path d="M18.406 7.034a1.44 1.44 0 1 0 0-2.88 1.44 1.44 0 0 0 0 2.88Z" fill="url(#instagram__b)" />
@@ -74,7 +74,7 @@
 
 					<a href="https://www.linkedin.com/company/appverra" target="_blank" rel="noopener" class="social_icon linked_icon"><i class="fa-brands fa-linkedin-in"></i></a>
 
-					<!-- <a href="https://x.com/" class="social_icon x_twitter_icon"><i class="fa-brands fa-x-twitter"></i></a> -->
+					<a href="https://x.com/appverra1" target="_blank" rel="noopener" class="social_icon x_twitter_icon"><i class="fa-brands fa-x-twitter"></i></a>
 
 				</div>
 
