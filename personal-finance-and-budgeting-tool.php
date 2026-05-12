@@ -1,5 +1,5 @@
 ﻿<?php $meta_title = "Personal Finance And Budgeting Tool | AppVerra"; ?>
-<?php $meta_discription = "lorem ipsum"; ?>
+<?php $meta_discription = "See how AppVerra built a powerful personal finance and budgeting tool that helps users track spending, set savings goals, and take full control of their financial future."; ?>
 <?php $page_class = "case_study-page"; ?>
 <?php include("header.php"); ?>
 <section class="terms_privacy_banner mainBanner">
