@@ -136,7 +136,9 @@
       "priceRange": "$$",
       "openingHours": "Mo-Fr 09:00-18:00",
       "sameAs": [
-        "https://appverra.co/"
+        "https://appverra.co/",
+        "https://www.facebook.com/AppVerra.Official",
+        "https://www.linkedin.com/company/appverra"
       ]
     }
     </script>

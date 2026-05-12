@@ -36,7 +36,7 @@
 
 				<div class="d-flex gap-2">
 
-					<a href="https://www.facebook.com/" class="social_icon">
+					<a href="https://www.facebook.com/AppVerra.Official" target="_blank" rel="noopener" class="social_icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none">
                           <path d="m17.543 13.398.661-4.31h-4.136V6.29c0-1.18.578-2.329 2.43-2.329h1.88V.291S16.673 0 15.042 0c-3.407 0-5.633 2.064-5.633 5.802v3.285H5.622v4.311h3.786v10.42a15.015 15.015 0 0 0 4.66 0v-10.42h3.475Z" fill="#1877F2" />
                         </svg>               
@@ -72,7 +72,7 @@
                     </a>
                     <!-- <a href="https://www.instagram.com/" class="social_icon insta_icon"><i class="fa-brands fa-instagram"></i></a> -->
 
-					<!-- <a href="https://www.linkedin.com/" class="social_icon linked_icon"><i class="fa-brands fa-linkedin-in"></i></a> -->
+					<a href="https://www.linkedin.com/company/appverra" target="_blank" rel="noopener" class="social_icon linked_icon"><i class="fa-brands fa-linkedin-in"></i></a>
 
 					<!-- <a href="https://x.com/" class="social_icon x_twitter_icon"><i class="fa-brands fa-x-twitter"></i></a> -->
 
