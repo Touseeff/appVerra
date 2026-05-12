@@ -1,0 +1,721 @@
+@media(max-width:1600px){
+
+    img.cube_img {top: 200px;left: -123px;width: 130px;}
+
+    img.pipe_img {width: 100px; }
+
+    .pizza_img {width: 150px; }
+
+    .heading70px {font-size: 60px; line-height: 60px;}
+
+    .heading20px {font-size: 18px; }
+
+    .heading40px {font-size: 35px; }
+
+    section.elivate_business .eyb_img {width: 520px;right: -50px;}
+
+    img.fad_banner_img {right: 80px; width: 680px; }
+
+
+
+
+
+    img.innerBanner_img { top: -30px; }
+
+    section.innerBanner {min-height: 950px; padding-top: 140px; }
+
+
+
+    .slider_wrapper {border-radius: 40px 0px 0px 40px; }
+
+    section.app_sec:nth-child(even) .app_bg {padding-right: 160px; } 
+
+    section.who_we_are img.app_bg {padding-left: 160px; }
+
+    section.app_sec .app_bg {padding-left: 160px; }
+
+    section.serviceBanner {min-height: 780px; padding-top: 140px; } 
+
+    .service_banner {width: 750px; }
+
+    section.video__sec {height: 860px; }
+
+    section.rnd_banner .rnd_img {width: 675px; }
+
+    .mam_banner_img {width: 750px; }
+
+    .ecommerce_img {width: 670px; }
+
+
+
+}
+
+
+
+@media(max-width: 1500px){
+
+    img.innerBanner_img {width: 55%; top: 20px; }
+
+    img.born_img {width: 560px; }
+
+}
+
+
+
+@media(max-width:1440px){
+
+    section.book_an_appointment .baa_img2 {right: 8%; width: 39%; }
+
+    section.hero_banner img.ring_img {top: 220px;width: 91%;left: 0;}
+
+    section.hero_banner .phone_in_hand {right: 0px; top: 65px; width: 88%; }
+
+    section.who_we_are {border-radius: 100px 100px 0px 0px; }
+
+    section.hero_banner {min-height: 900px;/* padding-top: 100px; */}
+
+    .heading50px {font-size: 40px; line-height: 40px; }
+
+    span.heading187px {font-size: 170px !important; }
+
+
+
+    img.innerBanner_img {top: 50px; }
+
+
+
+    section.serviceBanner {min-height: 800px; padding-top: 150px; }
+
+    section.video__sec {height: 750px; }
+
+    section.unity__3d .left_container {padding-left: 0%; }
+
+    .heading65px {font-size: 55px; line-height: 55px; }
+
+    .unity_3d_clm {height: 630px; }
+
+    .developing_clm1 {padding: 50px 100px 50px 10%; }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+@media(max-width:1366px){
+
+    .heading70px {font-size: 50px; line-height: 50px; }
+
+    .heading18px {font-size: 15px; }
+
+    .heading65px {font-size: 50px; line-height: 50px; }
+
+    .heading40px {font-size: 25px; }
+
+    .heading30px {font-size: 20px; }
+
+    span.heading187px {font-size: 160px !important; }
+
+    section.hero_banner .phone_in_hand {top: 25px; width: 100%; }
+
+    section.hero_banner img.ring_img {top: 180px; width: 100%; left: -50px; }
+
+    section.hero_banner p {font-size: 17px;}
+
+    .title {font-size: 15px; }
+
+    section.hero_banner {min-height: 900px;/* padding-top: 145px; */}
+
+    section.technology .technology_clm {padding: 20px; }
+
+    section.technolog .technology_icon {width: 50px; height: 50px; margin-bottom: 20px !important; }
+
+    img.achievements_img {width: 70px; height: 70px; object-fit: contain; }
+
+
+
+    img.achievements_img {width: 70px; height: 70px; object-fit: contain; } 
+
+    label svg {width: 17px; } 
+
+    .sesrvice_form .input {font-size: 14px; } 
+
+    .sesrvice_form ::placeholder, .input::placeholder {font-size: 14px; }
+
+    label {font-size: 15px; }
+
+    .checkmark .technology_icon {width: 20px; height: 20px; }
+
+    .checkmark {font-size: 13px; } 
+
+
+
+    .slider_wrapper {border-radius: 32px 0px 0px 32px; width: 50%;}
+
+    section.serviceBanner {min-height: 750px; }
+
+    .service_banner {width: 717px; }
+
+    section.video__sec {height: 735px; }
+
+    img.fad_banner_img {right: 40px; width: 650px; }
+
+    .developing_clm1 {padding: 50px 100px 50px 20%; }
+    .phone_icon {color: var(--secondColor); height: 25px; width: 25px; }
+
+
+
+
+}
+
+
+
+
+
+@media(max-width: 1280px) {
+
+    img.innerBanner_img {top: 82px; }
+
+    section.app_sec:nth-child(even) .app_bg {padding-right: 100px; }
+
+    section.who_we_are img.app_bg {padding-left: 100px; }
+
+    section.app_sec .app_bg {padding-left: 110px; }
+
+    .banner_inner_clm {height: 120px; }
+
+    img.born_img {width: 500px; }
+
+    section.what_make_us .wmur_img {width: 790px; }
+
+    section.elivate_business .eyb_img {width: 470px; right: -50px; }
+
+    .mam_banner_img {width: 670px; }
+
+    .developing_clm1 {padding: 50px 100px 50px 12%; }
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1199px) {
+
+    section.hero_banner {/* padding-top: 100px; */min-height: 770px;} 
+
+    .heading70px {font-size: 40px; line-height: 40px; } 
+
+    section.hero_banner p {font-size: 15px; padding-right: 30px; }
+
+    h3 {font-size: 20px; font-weight: 700; text-transform: capitalize; }
+
+    section.who_we_are {padding: 50px 0px; }
+
+    section.faq, section.tac_sec, section.pkg_inlude, section.integration_section, section.mobile_screens, section.complete_mobile, section.reach_the_market, section.our_flutter_app, section.all_inclusive, section.bornd_section, section.elivate_business, section.industries, section.top_notch, section.rnds_section, section.hqrn_section, section.benefits, section.what_make_us, section.what_we_do,section.technology, section.our_wrok, section.our_services, section.awards, section.book_an_appointment, section.testimonials, section.contact_us,section.expert, section#counter {padding: 50px 0; }
+
+    section.why_hire{ padding-top: 50px; }
+
+    .heading65px {font-size: 40px; line-height: 40px; }
+
+    .heading50px {font-size: 30px; line-height: 30px; }
+
+    .animated_underline {width: 50px; height: 10px; }
+
+    .phones_img {width: 70%; top: 70px; }
+
+    span.heading187px {font-size: 120px !important; }
+
+    img.baa_img1 {width: 42%; }
+
+    section.technology .technology_icon {width: 50px; height: 50px; margin-bottom: 10px !important; }
+
+    .pizza_img {width: 100px; bottom: 70px; }
+
+    img.pipe_img {width: 70px; }
+
+    .service_clm {width: 300px ;}
+
+
+
+    img.innerBanner_img {width: 54%; top: 5px; }
+
+    .pageTitle {font-size: 400px; }
+
+    section.expert ul#pills-tab li button {font-size: 13px; padding: 6px 8px 4px;}
+
+    section.cta {padding-top: 50px; }
+
+
+
+    body.services-page .pin-spacer {height: 600vh !important; }
+
+    .section_pinned .heading70px {font-size: 35px; line-height: 35px; transform: translate(0px, 0px); }
+
+    img.phone_img {margin-left: -43%; }
+
+    header ul {column-gap: 20px; }
+
+    section.serviceBanner {min-height: 690px; padding-top: 130px; }
+
+    .service_banner {width: 577px; bottom: 60px; }
+
+    section.video__sec {height: 645px; }
+
+    .unity_3d_clm {height: 540px; }
+
+    img.wmu_phone_img {transform: scale(1.7); }
+
+    section.rnd_banner .rnd_img {width: 575px; }
+
+    img.born_img {width: 490px; }
+
+    img.fad_banner_img {right: 0px; width: 570px; bottom: 20px !important; }
+
+    section.our_flutter_app .wmu_phone_img {transform: scale(1.2); }
+
+    section.complete_mobile .accordion-button {font-size: 20px; }
+
+    section.complete_mobile .accordion-item {padding: 10px 0; }
+
+    section.complete_mobile .heading20px {font-size: 14px; }
+
+    section.complete_mobile .accordion-button::after {top: 13px;}
+
+    .mam_banner_img {width: 600px; }
+
+    .mam_banner_img {width: 540px; right: -20px !important; }
+
+    .ecommerce_img {width: 560px; }
+
+    .module-item {font-size: 14px; padding: 5px 20px; }
+
+
+
+    
+
+}
+
+
+
+@media(max-width: 1024px){
+
+    img.innerBanner_img {top: 95px; }
+
+    /*.app_img {width: 60%; }*/
+
+    /*section.app_sec:nth-child(even) .app_bg {padding-right: 50px; } */
+
+    .app_logo {width: 180px; }
+
+    section.realState img.app_logo {width: 80px !important; }
+
+    body.services-page .pin-spacer {height: 597vh !important; }
+
+    img.born_img {width: 400px; }
+
+
+
+    
+
+
+
+}
+
+
+
+@media screen and (max-width: 991px) {
+
+    section.rnd_banner .animated_svg2 {width: 260px !important; }
+
+    .phones_img {width: 70%; top: 0px; }
+
+    .service_clm {width: 100%; margin: 0 !important; }
+
+    .heading100px {font-size: 70px; line-height: 70px; }
+
+    .heading20px {font-size: 15px; }
+
+    .copyright p, .copyright a {font-size: 14px; }
+
+    .service_clm img {margin-bottom: 25px; }
+
+    span.heading187px {font-size: 100px !important; }
+
+    .happy_customers {margin-bottom: 10px !important; } 
+
+    section.hero_banner .revealUp {margin-bottom: 0 !important; }
+
+    section.innerBanner {padding-top: 140px; }
+
+    body.our_work-page section.who_we_are .animated_svg2 {width: 400px; }
+
+    section.who_we_are img.app_bg {padding-left: 400px; }
+
+    .app_img {width: 100%; position: unset !important; }
+
+    section.app_sec:nth-child(even) .app_bg {padding-right: 400px; }
+
+    section.app_sec:nth-child(even) .app_img {right: 250px; left: unset; }
+
+    body.our_work-page .left_container, body.our_work-page .right_container {padding: 50px 5%; }
+
+    .sff_row_wrapper {margin-bottom: 40px; } 
+
+    .sff_row_wrapper:last-child {margin-bottom: 0; }
+
+    img.phone_img {margin: auto; display: table;}
+
+    img.wmu_phone_img {transform: scale(1); }
+
+    section.video__sec {height: 515px; }
+
+    section.unity__3d {display: inline-block; width: 100%; overflow: hidden; }
+
+    section.CodeFlow {padding-top: 50px; }
+
+    .moveLeft {left: 0px; }
+
+    .moveRight {right: 0px; }
+
+    section.what_make_us {overflow: hidden; }
+
+    section.why_hire img.why_hire_img {float: left; }
+
+    .industries_slider {transform: translate(0px, 0px); }
+
+    section.industries .left_container {padding: 0 15%; }
+
+    section.who_we_are {text-align: center; }
+
+    section.who_we_are .counterWrap {justify-content: center; }
+
+    section.reach_the_market .rtm_clm {padding: 50px !important; text-align: left !important; }
+
+    section.reach_the_market .rtm_clm1:before {right: -50%; }
+
+    section.reach_the_market .rtm_clm2:before {left: -50%; }
+
+    section.addmirable {padding: 150px 0; } 
+
+    section.addmirable .addmirable_clm {transform: scale(1); } 
+
+    section.addmirable .section_heading {transform: translate(0px, 0px); }
+
+    section.addmirable svg {width: 300px; }
+
+    .mam_clm {position: unset; transform: unset !important; } 
+
+    section.mam_section {height: auto; }
+
+    .developing_clm2 img {margin: auto; display: table; width: 70%; }
+
+    .developing_clm2 {display: inline-block !important; text-align: center !important; padding: 40px 0 0 0; width: 100%; }
+
+    .tabs_wrapper {padding: 20px 20px 20px 20px; margin-bottom: 30px; }
+
+    .tabs_wrapper::before {display: none; }
+
+    section.pkg_inlude .tabs_img {position: unset; }
+
+    section.pkg_inlude .heading24px {font-size: 16px; }
+
+    .integration_clm:before{display: none;}
+    feagure {height: 340px; }
+    section.who_we_are .btn_set {justify-content: center; }
+    section.book_an_appointment {text-align: center; }
+    section.book_an_appointment .btn_set {justify-content: center; }
+    section.what_we_do .owl-nav {position: unset; justify-content: center; margin-top: 10px; }
+    section.hero_banner {background-image: unset !important; background-color: #000; }
+
+
+
+    
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+    section.who_we_are {background-image: linear-gradient(45deg, #c6baff, #ffffff); }
+
+    body {
+
+        font-size: 14px;
+
+    }
+
+    h1 {
+
+        font-size: 30px;
+
+    }
+
+
+
+    h2 {
+
+        font-size: 28px;
+
+    }
+
+
+
+    h3 {
+
+        font-size: 22px;
+
+    }
+
+
+
+    h4 {
+
+        font-size: 18px;
+
+    }
+
+
+
+    h5 {
+
+        font-size: 14px;
+
+    }
+
+
+
+    h6 {
+
+        font-size: 14px;
+
+    }
+
+    p{
+
+        font-size: 14px;
+
+    }
+
+    br{
+
+        display: none;
+
+    }
+
+    img.logo {
+
+        max-width: 113px !important;
+
+    }
+
+    .copyright {
+
+        text-align: center;
+
+    }
+
+    .footer ul.f_links {
+
+        column-count: 1;
+
+    }
+
+
+
+    
+
+    ul#pills-tab li button {
+
+        width: 100%;
+
+        padding: 10px 0;
+
+        font-size: 15px;
+
+    }
+
+    ul#pills-tab li {
+
+        width: 100%;
+
+        margin: 5px 4px;
+
+    }
+
+    
+
+   
+
+    
+
+    .footer {
+
+        padding: 40px 0 20px;
+
+    }
+
+    .copyright .btn_set {
+
+        justify-content: center;
+
+    }
+
+    .btn_set a {
+
+        font-size: 14px !important;
+
+    }
+
+    .btn_set a:last-child{
+
+        margin-bottom: 0;
+
+    }
+
+    .btn_set {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    
+
+    .inner_page_banner {
+
+        padding: 50px 0 40px;
+
+    }
+
+    header nav {
+
+        padding: 15px 20px;
+
+    }
+
+    section.who_we_are {border-radius: 50px 50px 0px 0px; }
+
+    span.heading187px {font-size: 70px !important; }
+
+    ul#pills-tab {border-radius: 20px; }
+
+    section.expert ul#pills-tab li button {font-size: 15px; padding: 10px 8px 10px; }
+
+    .revealUp span {transform: translate(0px, 0%) !important; }
+
+    body.our_work-page section.who_we_are {text-align: center; }
+
+    section.app_sec {text-align: center; }
+
+    section.app_sec:nth-child(even) .row {flex-direction: column-reverse; }
+
+    .app_img {width: 50%; margin: auto; }
+
+    section.who_we_are .left_container {padding-top: 0; }
+
+    section.video__sec {height: auto !important; }
+
+    .game_dev_video {width: 100%; border-radius: 0 !important}
+
+    .top_-100px {top: 0px; }
+
+    .bottom_-100px {bottom: 0px;}
+
+    .section_heading {margin-top: 20px; }
+
+    section.addmirable {padding: 50px 0; }
+    .theme_btn .btnTextWrap {height: 23px !important; }
+    section.aboutBanner {min-height: 780px;}
+    section.innerBanner {padding-top: 100px;}
+    section.technology {text-align: center; }
+    section.technology .technology_clm {text-align: left; }
+    section.our_services {text-align: center; }
+    .service_clm {text-align: left; }
+    section.hero_banner {padding: 0 50px; }
+    .wwa_vdo { margin-bottom: 20px; }
+
+
+
+}
+
+
+
+@media screen and (max-width: 575px) {
+
+    section.hero_banner {padding-top: 100px; min-height: 720px; }
+
+    span.heading187px {font-size: 56px !important; line-height: 44px !important; }
+
+    section.serviceBanner {min-height: 700px; }
+
+   
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+
+
+    .responsive_menu ul.navigation {width: 100%; }
+
+    .responsive_menu ul li a {font-size: 25px; }
+
+    .phones_img {width: 70%; top: 0px; }
+
+    span.heading187px {font-size: 36px !important; line-height: 34px !important; }
+
+    .heading70px {font-size: 26px; line-height: 26px; }
+
+    .heading65px {font-size: 30px; line-height: 30px; }
+
+    .heading50px {font-size: 26px; line-height: 26px; }
+
+    .awards_clm {padding: 20px; }
+
+    img.pizza_img {display: none; }
+
+
+
+    .happy_customers {width: 190px; }
+
+    img.users_img {width: 56px !important; }
+
+    .happy_customers .users_txt {font-size: 15px; }
+
+    section.reach_the_market .rtm_clm {padding: 20px !important; }
+
+    .developing_clm1 {padding: 30px; }
+    .title {font-size: 12px; }
+    section.hero_banner p {font-size: 14px; padding-right: 0px; }
+    img.pipe_img {right: 0; width: 50px; }
+    .awards_clm img {height: 80px; }
+    img.achievements_img {width: 50px;height: 50px;object-fit: contain;}
+    section.hero_banner {padding: 0 20px; }
+    header .btn_set .theme_btn {display: none; }
+
+
+
+}
+
+
+
+
+
+
+
+
+

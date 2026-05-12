@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /testing.php
+Disallow: /mail.php
+Disallow: /thankyou.php
+
+Sitemap: https://appverra.co/sitemap.xml
