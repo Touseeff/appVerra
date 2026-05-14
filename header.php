@@ -247,7 +247,7 @@
 
                             <a href="<?php echo $siteurl; ?>">
 
-                            <img src="assets/images/logo.webp" alt="Logo" loading="lazy" class="logo img-fluid" width="180" height="42">
+                            <img src="assets/images/logo-sm.webp" srcset="assets/images/logo-sm.webp 360w, assets/images/logo.webp 600w" sizes="(max-width:576px) 113px, 180px" alt="Logo" loading="lazy" class="logo img-fluid" width="180" height="42">
 
                             </a>
 
@@ -424,7 +424,7 @@
 
                             <a href="<?php echo $siteurl; ?>">
 
-                            <img src="assets/images/logo.webp" alt="Logo" loading="lazy" class="logo img-fluid" width="180" height="42">
+                            <img src="assets/images/logo-sm.webp" srcset="assets/images/logo-sm.webp 360w, assets/images/logo.webp 600w" sizes="(max-width:576px) 113px, 180px" alt="Logo" loading="lazy" class="logo img-fluid" width="180" height="42">
 
                             </a>
 

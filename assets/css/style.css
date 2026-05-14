@@ -373,7 +373,7 @@ label {color: #000;font-size: 20px;font-weight: 500;}
 .heading187px{font-size: 187px !important;line-height: 127px !important;text-align: center;display: flex;justify-content: center;-webkit-background-clip: text;-webkit-text-fill-color: transparent;background-image: linear-gradient(var(--secondColor), black);font-weight: 900 !important;}
 footer span.revealUp {display: inline-block; width: 100%; text-align: center; }
 
-section.our_services {background-color: #000;background-image: url(../../assets/images/our-services-bg.webp);background-repeat: no-repeat;background-size: cover;padding: 100px 0;}
+section.our_services {background-color: #000;background-image: url(../../assets/images/our-services-bg-opt.webp);background-repeat: no-repeat;background-size: cover;padding: 100px 0;}
 .service_clm {width: 400px;background-color: #1E1E1E;border-radius: 20px;padding: 15px;margin-bottom: 60px;display: inline-block;box-shadow: 0px 0px 20px 0px #000;}
 .ser_vdo {width: 100%; border-radius: 15px; }
 .slick-slide {height: auto !important; }
