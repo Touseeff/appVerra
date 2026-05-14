@@ -1,14 +1,28 @@
-﻿<?php $meta_title = "Flutter App Development Company | Build Fast, Stunning Cross-Platform Apps Today"; ?>
+<?php $meta_title = "Flutter App Development Company | Build Fast, Stunning Cross-Platform Apps Today"; ?>
 
 <?php $meta_discription = "Launch high-performance apps with Flutter! AppVerra delivers beautiful, scalable iOS & Android apps from a single codebase—faster time-to-market, seamless UI, expert developers, and full support. Start now!"; ?>
 
 <?php $page_class = "flutterAppDevelopment-page"; ?>
 
+<?php $og_image = "https://appverra.co/assets/images/fad_banner_img.png"; ?>
+
+<?php $schema_extra = '{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Flutter App Development",
+  "serviceType": "Mobile App Development",
+  "provider": {"@type": "Organization", "name": "AppVerra", "url": "https://appverra.co/"},
+  "url": "https://appverra.co/flutter-app-development",
+  "description": "AppVerra delivers beautiful, scalable iOS & Android apps from a single Flutter codebase with faster time-to-market and seamless UI.",
+  "image": "https://appverra.co/assets/images/fad_banner_img.png",
+  "areaServed": "US"
+}'; ?>
+
 <?php include("header.php"); ?>
 
 <section class="hero_banner mainBanner innerBanner fad_banner serviceBanner">
 
-	<img src="assets/images/fad_banner_img.webp" loading="lazy" class="fad_banner_img d-none d-lg-block position-absolute bottom-0" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
+	<img src="assets/images/fad_banner_img.webp" loading="eager" class="fad_banner_img d-none d-lg-block position-absolute bottom-0" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
 
 	<div class="container">		
 
@@ -148,7 +162,7 @@
 
 				<!-- <img src="assets/images/tqo-img.webp" loading="lazy" class="tqo_img img-fluid d-none d-lg-block" width="" height="" alt="" data-aos="fade-up" data-aos-delay="300"/> -->
 				<span class="tqo_vod_wrap">
-					<video autoplay="" muted="" loop="" class="tqo_img">
+					<video autoplay muted loop playsinline preload="none" class="tqo_img">
 					    <source src="assets/videos/tqo-vdo.mp4" type="video/mp4">
 					</video>
 				</span>

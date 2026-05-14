@@ -4,6 +4,8 @@
 
 <?php $page_class = "services-page"; ?>
 
+<?php $og_image = "https://appverra.co/assets/images/banner-bg1.webp"; ?>
+
 <?php include("header.php"); ?>
 
 <style>
@@ -560,7 +562,7 @@
 
 						<span class="btn_wrap">
 
-							<a href="ecommerce.php" class="theme_btn black_btn">
+							<a href="ecommerce" class="theme_btn black_btn">
 
 				                <span class="btnTextWrap">
 

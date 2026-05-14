@@ -1,14 +1,28 @@
-﻿<?php $meta_title = "Launch Your E-commerce Store in Just 7 Days"; ?>
+<?php $meta_title = "Launch Your E-commerce Store in Just 7 Days"; ?>
 
 <?php $meta_discription = "Why wait months? Go live in just 7 days with AppVerra! Get high-performing e-commerce mobile apps & websites with full integration."; ?>
 
 <?php $page_class = "ecommerceDevelopment-page testimonial_light"; ?>
 
+<?php $og_image = "https://appverra.co/assets/images/ecommer-banner-img.png"; ?>
+
+<?php $schema_extra = '{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Ecommerce Development",
+  "serviceType": "Ecommerce Development",
+  "provider": {"@type": "Organization", "name": "AppVerra", "url": "https://appverra.co/"},
+  "url": "https://appverra.co/ecommerce",
+  "description": "Custom ecommerce platforms that are fast, secure, and built to convert — from Shopify to full-scale custom builds.",
+  "image": "https://appverra.co/assets/images/ecommer-banner-img.png",
+  "areaServed": "US"
+}'; ?>
+
 <?php include("header.php"); ?>
 
 <section class="hero_banner mainBanner innerBanner ecommerce_banner serviceBanner">
 
-	<img src="assets/images/ecommer-banner-img.webp" loading="lazy" class="ecommerce_img d-none d-lg-block position-absolute" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
+	<img src="assets/images/ecommer-banner-img.webp" loading="eager" class="ecommerce_img d-none d-lg-block position-absolute" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
 
 	<div class="container">		
 

@@ -18,13 +18,13 @@
 
 							<li><a href="<?php echo $siteurl; ?>">HOME</a></li>
 
-							<li><a href="about-us.php">ABOUT US</a></li>
+							<li><a href="about-us">ABOUT US</a></li>
 
-							<li><a href="our-services.php">OUR SERVICES</a></li>
+							<li><a href="our-services">OUR SERVICES</a></li>
 
-							<li><a href="our-work.php">WORK</a></li>
+							<li><a href="our-work">WORK</a></li>
 
-							<li><a href="contact-us.php">CONTACT US</a></li>
+							<li><a href="contact-us">CONTACT US</a></li>
 
 						</ul>
 
@@ -40,17 +40,17 @@
 
 						<ul >
 
-			                <li><a href="unity-game-development.php">UNITY GAME DEVELOPMENT</a></li>
+			                <li><a href="unity-game-development">UNITY GAME DEVELOPMENT</a></li>
 
-			                <li><a href="react-native-developer.php">REACT NATIVE DEVELOPMENT</a></li>
+			                <li><a href="react-native-developer">REACT NATIVE DEVELOPMENT</a></li>
 
-			                <li><a href="flutter-app-development.php">FLUTTER APP DEVELOPMENT</a></li>
+			                <li><a href="flutter-app-development">FLUTTER APP DEVELOPMENT</a></li>
 
-			                <li><a href="full-stack-development.php">FULL STACK DEVELOPMENT</a></li>
+			                <li><a href="full-stack-development">FULL STACK DEVELOPMENT</a></li>
 
-			                <li><a href="mobile-app-marketing.php">MOBILE APP MARKETING</a></li>
+			                <li><a href="mobile-app-marketing">MOBILE APP MARKETING</a></li>
 
-			                <li><a href="ecommerce.php">ANY ECOMMERCE </a></li>
+			                <li><a href="ecommerce">ANY ECOMMERCE </a></li>
 
 						</ul>
 
@@ -164,9 +164,9 @@
 
 					<div class="btn_set">
 
-						<a href="<?php echo $siteurl; ?>terms-and-condition.php">Terms of Services</a>
+						<a href="<?php echo $siteurl; ?>terms-and-condition">Terms of Services</a>
 
-						<a href="<?php echo $siteurl; ?>privacy-policy.php">Privacy Policy</a>
+						<a href="<?php echo $siteurl; ?>privacy-policy">Privacy Policy</a>
 
 					</div>
 
@@ -186,27 +186,17 @@
 
 <?php include("poppup.php"); ?>
 
-<!-- JavaScript -->
-
-<script src="assets/js/jquery.js"></script>
-
-<script src="assets/js/bootstrap.min.js"></script>
-
-<script src="assets/js/owl.carousel.min.js"></script>
-
-<script src="assets/js/slick.min.js"></script>
-
-<script src="assets/js/gsap.min.js"></script>
-
-<script src="assets/js/feather.min.js"></script>
-
-<script src="assets/js/ScrollTrigger.min.js"></script>
-
-<script src="assets/js/aos.js"></script>
-
-<script src="assets/js/scrollsmoother.min.js"></script>
-
-<script src="assets/js/custom.js"></script>
+<!-- JavaScript — defer keeps execution order, releases main thread faster -->
+<script src="/assets/js/jquery.js" defer></script>
+<script src="/assets/js/bootstrap.min.js" defer></script>
+<script src="/assets/js/owl.carousel.min.js" defer></script>
+<script src="/assets/js/slick.min.js" defer></script>
+<script src="/assets/js/gsap.min.js" defer></script>
+<script src="/assets/js/feather.min.js" defer></script>
+<script src="/assets/js/ScrollTrigger.min.js" defer></script>
+<script src="/assets/js/aos.js" defer></script>
+<script src="/assets/js/scrollsmoother.min.js" defer></script>
+<script src="/assets/js/custom.js" defer></script>
 
 
 

@@ -1,8 +1,10 @@
-﻿<?php $meta_title = "AppVerra | Our Work – Mobile App & Web Development Projects"; ?>
+<?php $meta_title = "AppVerra | Our Work – Mobile App & Web Development Projects"; ?>
 
 <?php $meta_discription = "Discover AppVerra’s portfolio of mobile apps, websites, and digital solutions. See how we help startups and enterprises turn ideas into powerful products."; ?>
 
 <?php $page_class = "our_work-page"; ?>
+
+<?php $og_image = "https://appverra.co/assets/images/banner-bg1.webp"; ?>
 
 <?php include("header.php"); ?>
 
@@ -222,7 +224,7 @@
 
 				<span class="btn_wrap"  data-aos="fade-up" data-aos-delay="600">
 
-						<a href="cage-case-study.php" class="theme_btn black_btn">
+						<a href="cage-case-study" class="theme_btn black_btn">
 
 		                    <span class="btnTextWrap">
 
@@ -287,7 +289,7 @@
 
 				<span class="btn_wrap"  data-aos="fade-up" data-aos-delay="600">
 
-					<a href="reactosphere-case-study.php" class="theme_btn black_btn">
+					<a href="reactosphere-case-study" class="theme_btn black_btn">
 
 	                    <span class="btnTextWrap">
 
@@ -337,7 +339,7 @@
 
 				<span class="btn_wrap"  data-aos="fade-up" data-aos-delay="600">
 
-					<a href="toriino-case-study.php" class="theme_btn black_btn">
+					<a href="toriino-case-study" class="theme_btn black_btn">
 
 	                    <span class="btnTextWrap">
 
@@ -401,7 +403,7 @@
 
 				<span class="btn_wrap"  data-aos="fade-up" data-aos-delay="600">
 
-					<a href="yuno-case-study.php" class="theme_btn black_btn">
+					<a href="yuno-case-study" class="theme_btn black_btn">
 
 	                    <span class="btnTextWrap">
 

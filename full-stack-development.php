@@ -1,14 +1,28 @@
-﻿<?php $meta_title = "Top Full Stack Development Company | Scalable Web & Mobile Solutions"; ?>
+<?php $meta_title = "Top Full Stack Development Company | Scalable Web & Mobile Solutions"; ?>
 
 <?php $meta_discription = "Partner with AppVerra for expert full stack development services. We build secure, scalable web and mobile apps with seamless front-end and back-end integration tailored to your business needs."; ?>
 
 <?php $page_class = "fullStackDevelopment-page testimonial_light"; ?>
 
+<?php $og_image = "https://appverra.co/assets/images/fsd_banner_img.png"; ?>
+
+<?php $schema_extra = '{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Full Stack Development",
+  "serviceType": "Web & Mobile App Development",
+  "provider": {"@type": "Organization", "name": "AppVerra", "url": "https://appverra.co/"},
+  "url": "https://appverra.co/full-stack-development",
+  "description": "Expert full stack development services — secure, scalable web and mobile apps with seamless front-end and back-end integration.",
+  "image": "https://appverra.co/assets/images/fsd_banner_img.png",
+  "areaServed": "US"
+}'; ?>
+
 <?php include("header.php"); ?>
 
 <section class="hero_banner mainBanner innerBanner fsd_banner serviceBanner">
 
-	<img src="assets/images/fsd_banner_img.webp" loading="lazy" class="fsd_banner_img d-none d-lg-block position-absolute bottom-0" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
+	<img src="assets/images/fsd_banner_img.webp" loading="eager" class="fsd_banner_img d-none d-lg-block position-absolute bottom-0" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
 
 	<div class="container">		
 

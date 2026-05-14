@@ -18,15 +18,20 @@
 
     $category = str_replace("/","",$_SERVER['REQUEST_URI']);
 
-    $base_url = "<?php echo $siteurl; ?>";
+    $base_url = $siteurl;
 
     $document_root = $_SERVER['DOCUMENT_ROOT']."/";
 
     $ip = $_SERVER['REMOTE_ADDR'];
 
-    $locationData = file_get_contents("http://ip-api.com/json/{$ip}");
-
-    $location = json_decode($locationData, true);
+    if(session_status() === PHP_SESSION_NONE) session_start();
+    $cache_key = 'loc_' . md5($ip);
+    if(!isset($_SESSION[$cache_key])) {
+        $ctx = stream_context_create(['http' => ['timeout' => 1, 'ignore_errors' => true]]);
+        $raw = @file_get_contents("http://ip-api.com/json/{$ip}", false, $ctx);
+        $_SESSION[$cache_key] = $raw ?: '{}';
+    }
+    $location = json_decode($_SESSION[$cache_key], true) ?? [];
 
     $isp = $location['isp'] ?? '';
 
@@ -50,37 +55,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="google-site-verification" content="eU5DoRpCn817G_9sXwTBQk9uB-d4IAtUEAm6BUulBiQ" />
 
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
 
-    <!-- Preload critical fonts -->
-    <link rel="preload" as="style" type="font/woff2" crossorigin href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Manrope:wght@200..800&display=swap">
+    <!-- Preload LCP hero background images -->
+    <link rel="preload" as="image" href="/assets/images/banner-bg1.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="/assets/images/banner-bg2.webp">
 
-    <!-- Load stylesheet without blocking render -->
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="shortcut icon" href="/assets/images/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+
+    <!-- Critical CSS — render-blocking (above the fold) -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/reponsive.css">
+
+    <!-- Non-critical CSS — loaded async, no render blocking -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Manrope:wght@200..800&display=swap" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/assets/fonts/fonts.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/assets/css/slick.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/assets/css/slick-theme.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/assets/css/aos.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="print" onload="this.media='all'">
 
-    <!-- Fallback noscript for users with JS disabled -->
+    <!-- Noscript fallback for all async CSS -->
     <noscript>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Manrope:wght@200..800&display=swap">
+      <link rel="stylesheet" href="/assets/fonts/fonts.css">
+      <link rel="stylesheet" href="/assets/css/slick.css">
+      <link rel="stylesheet" href="/assets/css/slick-theme.css">
+      <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+      <link rel="stylesheet" href="/assets/css/aos.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     </noscript>
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-    <link rel="shortcut icon" href="assets/images/favicon-32x32.png">
 
-    <!-- Critical CSS Files -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="all">
-    <link rel="stylesheet" href="assets/css/style.css" media="all">
-    <link rel="stylesheet" href="assets/css/reponsive.css" media="all">
-
-    <!-- Preload Non-Critical CSS Files -->
-    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"  >
-    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"  >
-    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css"  >
-    <link rel="stylesheet" type="text/css" href="assets/fonts/fonts.css"  >
-    <link rel="stylesheet" type="text/css" href="assets/css/aos.css"  >
-
-    <!-- Load FontAwesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="all">
+    <!-- Per-page critical CSS (e.g. homepage hero overrides) -->
+    <?php if(!empty($extra_head_css)): ?><style><?= $extra_head_css ?></style><?php endif; ?>
 
     <!-- Title & Core Meta -->
     <title><?= $meta_title ?></title>
@@ -90,12 +106,13 @@
     <meta name="author" content="AppVerra">
     <link rel="canonical" href="<?= $fullpageurl ?>">
 
+    <?php if(empty($og_image)) $og_image = "https://appverra.co/assets/images/banner-bg1.webp"; ?>
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="<?= $fullpageurl ?>">
     <meta property="og:title" content="<?= $meta_title ?>">
     <meta property="og:description" content="<?= $meta_discription ?>">
-    <meta property="og:image" content="https://appverra.co/assets/images/banner-bg1.webp">
+    <meta property="og:image" content="<?= $og_image ?>">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="AppVerra">
@@ -106,7 +123,7 @@
     <meta name="twitter:url" content="<?= $fullpageurl ?>">
     <meta name="twitter:title" content="<?= $meta_title ?>">
     <meta name="twitter:description" content="<?= $meta_discription ?>">
-    <meta name="twitter:image" content="https://appverra.co/assets/images/banner-bg1.webp">
+    <meta name="twitter:image" content="<?= $og_image ?>">
 
     <!-- Schema: LocalBusiness -->
     <script type="application/ld+json">
@@ -160,6 +177,12 @@
     }
     </script>
 
+    <?php if(!empty($schema_extra)): ?>
+    <script type="application/ld+json">
+    <?= $schema_extra ?>
+    </script>
+    <?php endif; ?>
+
 </head>
 
 
@@ -174,13 +197,13 @@
 
             <li><a href="<?php echo $siteurl; ?>" class="mainAnchor" targetFrom="seo">Home</a></li>
 
-            <li><a href="about-us.php" class="mainAnchor" targetFrom="smm">About</a></li>
+            <li><a href="about-us" class="mainAnchor" targetFrom="smm">About</a></li>
 
             <li><a href="javascript:;" class="hasDrop mainAnchor" targetFrom="servicesMenu">Services <i class="arrow_right"></i></a></li>
 
-            <li><a href="our-work.php" class="mainAnchor" >Work</a></li>
+            <li><a href="our-work" class="mainAnchor" >Work</a></li>
 
-            <li><a href="contact-us.php" class="mainAnchor">Contact Us</a></li>
+            <li><a href="contact-us" class="mainAnchor">Contact Us</a></li>
 
             <!-- PAID MARKETING SUBMENU -->
 
@@ -188,17 +211,17 @@
 
                 <div class="cls_menu"><i class="arrow_right"></i> Back</div>
 
-                <li><a href="unity-game-development.php">Unity Game Development</a></li>
+                <li><a href="unity-game-development">Unity Game Development</a></li>
 
-                <li><a href="react-native-developer.php">React Native Development</a></li>
+                <li><a href="react-native-developer">React Native Development</a></li>
 
-                <li><a href="flutter-app-development.php">Flutter App Development</a></li>
+                <li><a href="flutter-app-development">Flutter App Development</a></li>
 
-                <li><a href="full-stack-development.php">Full Stack Development</a></li>
+                <li><a href="full-stack-development">Full Stack Development</a></li>
 
-                <li><a href="mobile-app-marketing.php">Mobile App Marketing</a></li>
+                <li><a href="mobile-app-marketing">Mobile App Marketing</a></li>
 
-                <li><a href="ecommerce.php">Ecommerce </a></li>
+                <li><a href="ecommerce">Ecommerce </a></li>
 
             </ul>
 

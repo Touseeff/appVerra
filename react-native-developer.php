@@ -1,14 +1,28 @@
-﻿<?php $meta_title = "React Native App Development | Fast, Scalable & Native-Like"; ?>
+<?php $meta_title = "React Native App Development | Fast, Scalable & Native-Like"; ?>
 
 <?php $meta_discription = "Supercharge your mobile strategy with high-performance, cross-platform React Native apps. Fast development, native UX, and full-stack scalability from AppVerra."; ?>
 
 <?php $page_class = "reactNativeDevelopment-page testimonial_light"; ?>
 
+<?php $og_image = "https://appverra.co/assets/images/rnd-img.png"; ?>
+
+<?php $schema_extra = '{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "React Native App Development",
+  "serviceType": "Mobile App Development",
+  "provider": {"@type": "Organization", "name": "AppVerra", "url": "https://appverra.co/"},
+  "url": "https://appverra.co/react-native-developer",
+  "description": "High-performance, cross-platform React Native apps with fast development, native UX, and full-stack scalability from AppVerra.",
+  "image": "https://appverra.co/assets/images/rnd-img.png",
+  "areaServed": "US"
+}'; ?>
+
 <?php include("header.php"); ?>
 
 <section class="hero_banner mainBanner innerBanner rnd_banner serviceBanner">
 
-	<img src="assets/images/rnd-img.webp" loading="lazy" class="rnd_img d-none d-lg-block position-absolute bottom-0 end-0" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
+	<img src="assets/images/rnd-img.webp" loading="eager" class="rnd_img d-none d-lg-block position-absolute bottom-0 end-0" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
 
 	<div class="container">		
 
@@ -239,7 +253,7 @@
 			<div class="col-lg-6 mb-4 mb-lg-0"  data-aos="fade-up" data-aos-delay="100">
 
 				<!-- <img src="assets/images/accelerate-img.webp" loading="lazy" class="accelerate_img radius_scroll img-fluid" width="" height=""/> -->
-				<video autoplay="" muted="" loop="" class="accelerate_img radius_scroll w-100">
+				<video autoplay muted loop playsinline preload="none" class="accelerate_img radius_scroll w-100">
 				    <source src="assets/videos/accelerate-vdo.mp4" type="video/mp4">
 				</video>
 

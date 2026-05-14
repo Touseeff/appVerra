@@ -1,8 +1,10 @@
-﻿<?php $meta_title = "About Us | AppVerra"; ?>
+<?php $meta_title = "About Us | AppVerra"; ?>
 
 <?php $meta_discription = "Discover how AppVerra blends cutting-edge technology with human-centered design to deliver scalable, custom-built digital solutions. "; ?>
 
 <?php $page_class = "about_us-page"; ?>
+
+<?php $og_image = "https://appverra.co/assets/images/logo.png"; ?>
 
 <?php include("header.php"); ?>
 
@@ -757,7 +759,7 @@
 			<div class="col-md-7 p-2" data-aos="fade-up" data-aos-delay="200">
 
 				<!-- <img src="assets/images/mile-img1.webp" loading="lazy" class="mile_img equal_radius" width="" height="" alt=""/> -->
-				<video autoplay="" muted="" loop="" class="mile_img equal_radius">
+				<video autoplay muted loop playsinline preload="none" class="mile_img equal_radius">
 				    <source src="assets/videos/mile-vdo1.mp4" type="video/mp4">
 				</video>
 
@@ -768,7 +770,7 @@
 			<div class="col-md-6 p-2" data-aos="fade-up" data-aos-delay="100">
 
 				<!-- <img src="assets/images/mile-img2.webp" loading="lazy" class="mile_img equal_radius" width="" height="" alt=""/> -->
-				<video autoplay="" muted="" loop="" class="mile_img equal_radius">
+				<video autoplay muted loop playsinline preload="none" class="mile_img equal_radius">
 				    <source src="assets/videos/mile-vdo2.mp4" type="video/mp4">
 				</video>
 
@@ -819,7 +821,7 @@
 			<div class="col-md-5 p-2" data-aos="fade-up" data-aos-delay="200">
 
 				<!-- <img src="assets/images/mile-img3.webp" loading="lazy" class="mile_img equal_radius" width="" height="" alt=""/> -->
-				<video autoplay="" muted="" loop="" class="mile_img equal_radius">
+				<video autoplay muted loop playsinline preload="none" class="mile_img equal_radius">
 				    <source src="assets/videos/mile-vdo3.mp4" type="video/mp4">
 				</video>
 

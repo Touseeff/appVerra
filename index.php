@@ -1,29 +1,19 @@
-﻿<?php $meta_title = "Build Apps That Win — AppVerra Solutions"; ?>
+<?php $meta_title = "Build Apps That Win — AppVerra Solutions"; ?>
 
 <?php $meta_discription = "Turn your app idea into a high-impact product. AppVerra builds custom, scalable, and stunning apps that grow your business fast. Let’s launch before they do."; ?>
 
 <?php $page_class = "home-page"; ?>
 
-<style>
-section.hero_banner {min-height: 1020px;display: flex;justify-content: center;/* align-items: center; */background-image: url(assets/images/banner-bg2.webp), url(assets/images/banner-bg1.webp);background-repeat: repeat, no-repeat;background-size: cover, cover;background-position: 0 0, center center;padding-top: 0px;animation: moveBannerBg 80s linear infinite;position: relative;}
-section.hero_banner p {font-size: 20px;font-weight: 300;padding-right: 50px;}
-section.hero_banner .phone_in_hand {right: -50px;top: 75px;}
-section.hero_banner img.ring_img {position: relative; top: 220px; }
-img.cube_img {top: 300px;left: -200px;}
-img.pizza_img {bottom: 130px;left: 35%;}
-img.pipe_img {right: 40px;top: 360px;}
-section.hero_banner svg.animated_svg2 {width: 50%; }
-section.who_we_are {
-    box-shadow: 0px -50px 130px 0px var(--black) !important;
-}	
-</style>
+<?php $og_image = "https://appverra.co/assets/images/banner-bg1.webp"; ?>
+
+<?php $extra_head_css = "section.hero_banner{min-height:1020px;display:flex;justify-content:center;background-image:url(/assets/images/banner-bg2.webp),url(/assets/images/banner-bg1.webp);background-repeat:repeat,no-repeat;background-size:cover,cover;background-position:0 0,center center;animation:moveBannerBg 80s linear infinite;position:relative;}section.hero_banner p{font-size:20px;font-weight:300;padding-right:50px;}section.hero_banner .phone_in_hand{right:-50px;top:75px;}section.hero_banner img.ring_img{position:relative;top:220px;}img.cube_img{top:300px;left:-200px;}img.pizza_img{bottom:130px;left:35%;}img.pipe_img{right:40px;top:360px;}section.hero_banner svg.animated_svg2{width:50%;}section.who_we_are{box-shadow:0px -50px 130px 0px var(--black)!important;}"; ?>
 
 <?php include("header.php"); ?>
 
 
 <!-- <section class="hero_banner mainBanner">
 
-	<img src="assets/images/banner-ele2.webp" loading="lazy" class="pipe_img img-fluid position-absolute scrollY spin" spin="-200" speed="1" y="-200" speedY="1"  width="132" height="132" alt="<?= $sitename ?>" loading="eager"/>
+	<img src="assets/images/banner-ele2.webp" loading="eager" fetchpriority="high" class="pipe_img img-fluid position-absolute scrollY spin" spin="-200" speed="1" y="-200" speedY="1"  width="132" height="132" alt="<?= $sitename ?>"/>
 
 	<div class="container position-relative">
 
@@ -157,7 +147,7 @@ section.who_we_are {
 
 <section class="hero_banner mainBanner">
 
-	<img src="assets/images/banner-ele2.webp" loading="lazy" class="pipe_img img-fluid position-absolute scrollY spin" spin="-200" speed="1" y="-200" speedY="1"  width="132" height="132" alt="<?= $sitename ?>" loading="eager"/>
+	<img src="assets/images/banner-ele2.webp" loading="eager" fetchpriority="high" class="pipe_img img-fluid position-absolute scrollY spin" spin="-200" speed="1" y="-200" speedY="1"  width="132" height="132" alt="<?= $sitename ?>"/>
 
 
 		<div class="row align-items-center">
@@ -361,7 +351,7 @@ section.who_we_are {
 
 			</div>
 			<div class="col-lg-3">
-				<video autoplay="" muted="" loop="" class="wwa_vdo w-100">
+				<video autoplay muted loop playsinline preload="none" class="wwa_vdo w-100">
 				    <source src="assets/videos/who-we-are-video.mp4" type="video/mp4">
 				</video>
 			</div>
@@ -579,7 +569,7 @@ section.who_we_are {
 
 					<div class="item tech_clm" data-aos="fade-up" data-aos-delay="600">
 
-						<img src="assets/images/mobile-app-marketing.svg" loading="lazy" class="tech_icon mb-4" width="" height="" alt="<?= $sitename ?>" loading="lazy"/>
+						<img src="assets/images/mobile-app-marketing.svg" loading="lazy" class="tech_icon mb-4" width="60" height="60" alt="<?= $sitename ?>"/>
 
 						<h3 class="heading32px dark">Mobile App Marketing</h3>
 
@@ -589,7 +579,7 @@ section.who_we_are {
 
 					<div class="item tech_clm" data-aos="fade-up" data-aos-delay="600">
 
-						<img src="assets/images/any-ecommerce.svg" loading="lazy" class="tech_icon mb-4" width="" height="" alt="<?= $sitename ?>" loading="lazy"/>
+						<img src="assets/images/any-ecommerce.svg" loading="lazy" class="tech_icon mb-4" width="60" height="60" alt="<?= $sitename ?>"/>
 
 						<h3 class="heading32px dark">Any<br> Ecommerce</h3>
 
@@ -720,7 +710,7 @@ section.who_we_are {
 			<div class="col-lg-5" data-aos="fade-up" data-aos-delay="1000">
 
 				<img src="assets/images/technology-img.webp" loading="lazy" class="technology_img w-100" width="526" height="674" alt="<?= $sitename ?>" loading="lazy"/>
-				<!-- <video autoplay="" muted="" loop="" class="technology_vdo w-100">
+				<!-- <video autoplay muted loop playsinline preload="none" class="technology_vdo w-100">
 				    <source src="assets/videos/technology_vdo.mp4" type="video/mp4">
 				</video> -->
 
@@ -768,7 +758,7 @@ section.who_we_are {
 
 					<span class="btn_wrap mt-4 ">
 
-						<a href="personal-finance-and-budgeting-tool.php" class="theme_btn black_btn ">
+						<a href="personal-finance-and-budgeting-tool" class="theme_btn black_btn ">
 
 			                <span class="btnTextWrap">
 
@@ -798,7 +788,7 @@ section.who_we_are {
 				<div class="col-lg-6 mb-4 mb-lg-0 order-1 order-lg-2">
 
 					<!-- <img src="assets/images/ow_img1.webp" loading="lazy" class="ow_img img-fluid" width="626" height="454" alt="<?= $sitename ?>" loading="lazy"/> -->
-					<video autoplay="" muted="" loop="" class="ow_vdo">
+					<video autoplay muted loop playsinline preload="none" class="ow_vdo">
 					    <source src="assets/videos/ow_img1.mp4" type="video/mp4">
 					</video>
 
@@ -815,7 +805,7 @@ section.who_we_are {
 				<div class="ow_row">
 
 					<!-- <img src="assets/images/ow_img2.webp" loading="lazy" class="ow_img img-fluid" width="616" height="377" alt="<?= $sitename ?>" loading="lazy"/> -->
-					<video autoplay="" muted="" loop="" class="ow_vdo">
+					<video autoplay muted loop playsinline preload="none" class="ow_vdo">
 					    <source src="assets/videos/ow_img2.mp4" type="video/mp4">
 					</video>
 
@@ -825,7 +815,7 @@ section.who_we_are {
 
 						<span class="btn_wrap">
 
-							<a href="meditation-and-mental-wellness-app.php" class="theme_btn black_btn">
+							<a href="meditation-and-mental-wellness-app" class="theme_btn black_btn">
 
 				                <span class="btnTextWrap">
 
@@ -861,7 +851,7 @@ section.who_we_are {
 				<div class="ow_row">
 
 					<!-- <img src="assets/images/ow_img3.webp" loading="lazy" class="ow_img img-fluid" width="616" height="377" alt="<?= $sitename ?>" loading="lazy"/> -->
-					<video autoplay="" muted="" loop="" class="ow_vdo">
+					<video autoplay muted loop playsinline preload="none" class="ow_vdo">
 					    <source src="assets/videos/ow_img3.mp4" type="video/mp4">
 					</video>
 
@@ -871,7 +861,7 @@ section.who_we_are {
 
 						<span class="btn_wrap">
 
-							<a href="event-planning-and-ticketing-app.php" class="theme_btn black_btn">
+							<a href="event-planning-and-ticketing-app" class="theme_btn black_btn">
 
 				                <span class="btnTextWrap">
 
@@ -947,7 +937,7 @@ section.who_we_are {
 				<div class="service_clm">
 
 					<!-- <img src="assets/images/ser1.webp" loading="lazy" class="img-fluid" width="370" height="396" alt="<?= $sitename ?>" loading="lazy"/> -->
-					<video autoplay="" muted="" loop="" class="ser_vdo">
+					<video autoplay muted loop playsinline preload="none" class="ser_vdo">
 					    <source src="assets/videos/ser1.mp4" type="video/mp4">
 					</video>
 
@@ -962,7 +952,7 @@ section.who_we_are {
 				<div class="service_clm mx-auto d-table">
 
 					<!-- <img src="assets/images/ser2.webp" loading="lazy" class="img-fluid" width="370" height="396" alt="<?= $sitename ?>" loading="lazy"/> -->
-					<video autoplay="" muted="" loop="" class="ser_vdo">
+					<video autoplay muted loop playsinline preload="none" class="ser_vdo">
 					    <source src="assets/videos/ser2.mp4" type="video/mp4">
 					</video>
 
@@ -977,7 +967,7 @@ section.who_we_are {
 				<div class="service_clm ms-auto d-table">
 
 					<!-- <img src="assets/images/ser3.webp" loading="lazy" class="img-fluid" width="370" height="396" alt="<?= $sitename ?>" loading="lazy"/> -->
-					<video autoplay="" muted="" loop="" class="ser_vdo">
+					<video autoplay muted loop playsinline preload="none" class="ser_vdo">
 					    <source src="assets/videos/ser3.mp4" type="video/mp4">
 					</video>
 
@@ -1001,9 +991,9 @@ section.who_we_are {
 
 <section class="book_an_appointment">
 
-	<img src="assets/images/banner-img1.webp" loading="lazy" class="baa_img1 scrollY d-none d-lg-block" y="-300" width="" height="" alt="<?= $sitename ?>" loading="lazy"/>
+	<img src="assets/images/banner-img1.webp" loading="lazy" class="baa_img1 scrollY d-none d-lg-block" y="-300" width="400" height="400" alt="<?= $sitename ?>"/>
 
-	<img src="assets/images/baa-img.webp" loading="lazy" class="baa_img2 scrollY d-none d-lg-block" y="-300" width="" height="" alt="<?= $sitename ?>" loading="lazy"/>
+	<img src="assets/images/baa-img.webp" loading="lazy" class="baa_img2 scrollY d-none d-lg-block" y="-300" width="400" height="300" alt="<?= $sitename ?>"/>
 
 	<div class="container">
 

@@ -1,14 +1,28 @@
-﻿<?php $meta_title = "Mobile App Marketing Experts | Boost Installs, ASO, & Revenue Today"; ?>
+<?php $meta_title = "Mobile App Marketing Experts | Boost Installs, ASO, & Revenue Today"; ?>
 
 <?php $meta_discription = "Struggling to get app downloads? AppVerra delivers high-performance mobile app marketing, ASO, and monetization strategies that skyrocket visibility, retention, and ROI. Let’s turn your app into a hit!"; ?>
 
 <?php $page_class = "reactNativeMarketing-page testimonial_light"; ?>
 
+<?php $og_image = "https://appverra.co/assets/images/mam_banner_img.png"; ?>
+
+<?php $schema_extra = '{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Mobile App Marketing",
+  "serviceType": "Digital Marketing",
+  "provider": {"@type": "Organization", "name": "AppVerra", "url": "https://appverra.co/"},
+  "url": "https://appverra.co/mobile-app-marketing",
+  "description": "High-performance mobile app marketing, ASO, and monetization strategies that skyrocket visibility, retention, and ROI.",
+  "image": "https://appverra.co/assets/images/mam_banner_img.png",
+  "areaServed": "US"
+}'; ?>
+
 <?php include("header.php"); ?>
 
 <section class="hero_banner mainBanner innerBanner mam_banner serviceBanner">
 
-	<img src="assets/images/mam_banner_img.webp" loading="lazy" class="mam_banner_img d-none d-lg-block position-absolute bottom-0 end-0" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
+	<img src="assets/images/mam_banner_img.webp" loading="eager" class="mam_banner_img d-none d-lg-block position-absolute bottom-0 end-0" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
 
 	<div class="container">		
 
@@ -550,7 +564,7 @@
 			<div class="col-lg-6">
 
 				<!-- <img src="assets/images/complete-img.webp" loading="lazy" class="complete_img img-fluid" width="" height="" alt=""/> -->
-				<video autoplay="" muted="" loop="" class="complete_vdo w-100">
+				<video autoplay muted loop playsinline preload="none" class="complete_vdo w-100">
 				    <source src="assets/videos/complete-vdo.mp4" type="video/mp4">
 				</video>
 

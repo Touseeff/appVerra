@@ -4,6 +4,8 @@
 
 <?php $page_class = "contact_us-page"; ?>
 
+<?php $og_image = "https://appverra.co/assets/images/logo.png"; ?>
+
 <?php include("header.php"); ?>
 
 <section class="hero_banner mainBanner innerBanner">

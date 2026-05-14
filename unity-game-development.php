@@ -1,14 +1,28 @@
-﻿<?php $meta_title = "Build Stunning Unity Games | Top Unity Game Dev Company"; ?>
+<?php $meta_title = "Build Stunning Unity Games | Top Unity Game Dev Company"; ?>
 
 <?php $meta_discription = "Level up your game idea with AppVerra. We build scalable, immersive Unity games in 2D, 3D, and AR/VR with top performance across all platforms."; ?>
 
 <?php $page_class = "ugd_services-page testimonial_light"; ?>
 
+<?php $og_image = "https://appverra.co/assets/images/ugd_img.png"; ?>
+
+<?php $schema_extra = '{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Unity Game Development",
+  "serviceType": "Game Development",
+  "provider": {"@type": "Organization", "name": "AppVerra", "url": "https://appverra.co/"},
+  "url": "https://appverra.co/unity-game-development",
+  "description": "AppVerra builds scalable, immersive Unity games in 2D, 3D, and AR/VR with top performance across all platforms.",
+  "image": "https://appverra.co/assets/images/ugd_img.png",
+  "areaServed": "US"
+}'; ?>
+
 <?php include("header.php"); ?>
 
 <section class="hero_banner mainBanner innerBanner ugd_banner serviceBanner">
 
-	<img src="assets/images/ugd_img.webp" loading="lazy" class="service_banner d-none d-lg-block" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
+	<img src="assets/images/ugd_img.webp" loading="eager" class="service_banner d-none d-lg-block" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
 
 	<div class="container">		
 
@@ -174,7 +188,7 @@
 
 	<!-- <img src="assets/images/video-thumb.webp" loading="lazy" class="game_dev_video" width="" height="" alt=""/> -->
 	
-	<video autoplay="" muted="" loop="" class="game_dev_video">
+	<video autoplay muted loop playsinline preload="none" class="game_dev_video">
 	    <source src="assets/videos/game-vdo.mp4" type="video/mp4">
 	</video>
 
@@ -301,7 +315,7 @@
 				<div class="unity_3d_clm">
 
 					<img src="assets/images/unity-img.webp" loading="lazy" class="unity_img" width="" height="" alt="" data-aos="fade-left" data-aos-delay="500"/>
-					<!-- <video autoplay="" muted="" loop="" class="unity_3d_vdo">
+					<!-- <video autoplay muted loop playsinline preload="none" class="unity_3d_vdo">
 					    <source src="assets/videos/unity-vdo.mp4" type="video/mp4">
 					</video> -->
 
