@@ -1,6 +1,7 @@
 ﻿<?php $meta_title = "Meditation and mental wellness app | AppVerra"; ?>
 <?php $meta_discription = "Discover AppVerra's meditation and mental wellness app — a calming digital experience designed to support mindfulness, stress relief, and daily mental health routines."; ?>
 <?php $page_class = "case_study-page"; ?>
+<?php $og_image = "https://appverra.co/assets/images/logo.webp"; ?>
 <?php include("header.php"); ?>
 <section class="terms_privacy_banner mainBanner">
     <div class="container">

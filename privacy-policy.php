@@ -4,6 +4,8 @@
 
 <?php $page_class = "privacy_policy-page"; ?>
 
+<?php $og_image = "https://appverra.co/assets/images/logo.webp"; ?>
+
 <?php include("header.php"); ?>
 
 <section class="terms_privacy_banner mainBanner">

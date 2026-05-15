@@ -8,7 +8,7 @@
 
 <?php $page_class = "case_study-page"; ?>
 
-
+<?php $og_image = "https://appverra.co/assets/images/logo.webp"; ?>
 
 <?php include("header.php"); ?>
 

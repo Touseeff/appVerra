@@ -4,9 +4,10 @@ $meta_title = "Low Budget Mobile App Marketing Hacks That Work";
 
 $meta_discription = "Discover creative, cost-effective mobile app marketing hacks, free tools, and retention strategies to grow your app without relying on expensive ad campaigns."; 
 
-$page_check = "blog-page"; 
+$page_check = "blog-page";
+$og_image = "https://appverra.co/assets/images/logo.webp";
 
-include("header.php"); 
+include("header.php");
 
 ?>
 

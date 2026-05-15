@@ -4,7 +4,7 @@
 
 <?php $page_class = "contact_us-page"; ?>
 
-<?php $og_image = "https://appverra.co/assets/images/logo.png"; ?>
+<?php $og_image = "https://appverra.co/assets/images/logo.webp"; ?>
 
 <?php include("header.php"); ?>
 

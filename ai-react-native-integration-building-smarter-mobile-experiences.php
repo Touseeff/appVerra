@@ -1,8 +1,9 @@
 ﻿<?php 
 $meta_title = "Integrate AI into Your React Native App Today"; 
 $meta_discription = "Boost engagement and retention—discover how to integrate AI into React Native apps with chatbots, predictive analytics, and TensorFlow.js. Get started in minutes!"; 
-$page_check = "blog-page"; 
-include("header.php"); 
+$page_check = "blog-page";
+$og_image = "https://appverra.co/assets/images/logo.webp";
+include("header.php");
 ?>
 
 <section class="terms_privacy_banner mainBanner">

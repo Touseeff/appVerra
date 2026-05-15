@@ -1,8 +1,9 @@
 ﻿<?php 
 $meta_title = "Unity vs Unreal vs Godot: Why Indies Choose Unity in 2025"; 
 $meta_discription = "Discover why Unity game development is still the go-to for indie developers in 2025. Learn its strengths, challenges, and why it outshines Unreal & Godot."; 
-$page_check = "blog-page"; 
-include("header.php"); 
+$page_check = "blog-page";
+$og_image = "https://appverra.co/assets/images/logo.webp";
+include("header.php");
 ?>
 
 <section class="terms_privacy_banner mainBanner">

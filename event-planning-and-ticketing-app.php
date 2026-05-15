@@ -1,6 +1,7 @@
 ﻿<?php $meta_title = "Event planning and ticketing app | AppVerra"; ?>
 <?php $meta_discription = "Explore AppVerra's event planning and ticketing app — a seamless platform for creating, managing, and selling tickets to events of all sizes across the USA."; ?>
 <?php $page_class = "case_study-page"; ?>
+<?php $og_image = "https://appverra.co/assets/images/logo.webp"; ?>
 <?php include("header.php"); ?>
 <section class="terms_privacy_banner mainBanner">
     <div class="container">

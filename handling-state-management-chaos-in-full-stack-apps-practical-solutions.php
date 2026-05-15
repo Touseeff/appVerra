@@ -3,9 +3,10 @@
     
     $meta_discription = "Learn how to fix frontend-backend state mismatches with practical tools, best practices, and future-ready solutions for full stack app development."; 
     
-    $page_check = "blog-page"; 
-    
-    include("header.php"); 
+    $page_check = "blog-page";
+    $og_image = "https://appverra.co/assets/images/logo.webp";
+
+    include("header.php");
     
     ?>
 <section class="terms_privacy_banner mainBanner">

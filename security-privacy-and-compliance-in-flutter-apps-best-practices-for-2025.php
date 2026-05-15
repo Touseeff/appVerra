@@ -1,8 +1,9 @@
 ﻿<?php 
 $meta_title = "Flutter App Security & Privacy: Best Practices 2025"; 
 $meta_discription = "Learn key Flutter app security best practices, data privacy tips, and compliance steps for 2025 to protect users, avoid risks, and build trust."; 
-$page_check = "blog-page"; 
-include("header.php"); 
+$page_check = "blog-page";
+$og_image = "https://appverra.co/assets/images/logo.webp";
+include("header.php");
 ?>
 
 <section class="terms_privacy_banner mainBanner">

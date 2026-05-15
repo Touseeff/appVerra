@@ -3,9 +3,10 @@
     
     $meta_discription = "Discover how to add voice commerce to your e-commerce app, boost conversions, and offer users a seamless hands-free shopping experience in 2025 and beyond."; 
     
-    $page_check = "blog-page"; 
-    
-    include("header.php"); 
+    $page_check = "blog-page";
+    $og_image = "https://appverra.co/assets/images/logo.webp";
+
+    include("header.php");
     
     ?>
 <section class="terms_privacy_banner mainBanner">

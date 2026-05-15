@@ -1,8 +1,9 @@
 ﻿<?php 
 $meta_title = "Unity Pricing Changes 2025: What Developers Must Know"; 
 $meta_discription = "Discover Unity’s 2025 pricing updates, new free tier limits, and Pro costs. Learn who’s affected, how to choose the right plan, and tips to save money."; 
-$page_check = "blog-page"; 
-include("header.php"); 
+$page_check = "blog-page";
+$og_image = "https://appverra.co/assets/images/logo.webp";
+include("header.php");
 ?>
 
 <section class="terms_privacy_banner mainBanner">

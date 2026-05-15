@@ -1,8 +1,9 @@
 ﻿<?php 
 $meta_title = "Accessibility in React Native: Build Inclusive Apps"; 
 $meta_discription = "Learn React Native accessibility best practices, tools, and tips to build inclusive apps that are WCAG compliant and user-friendly for everyone."; 
-$page_check = "blog-page"; 
-include("header.php"); 
+$page_check = "blog-page";
+$og_image = "https://appverra.co/assets/images/logo.webp";
+include("header.php");
 ?>
 
 <section class="terms_privacy_banner mainBanner">

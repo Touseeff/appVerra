@@ -1,8 +1,9 @@
 ﻿<?php 
 $meta_title = "Unlock Cross-Device Innovation: Flutter for IoT, Wearables & PWA"; 
 $meta_discription = "Looking to scale your app across smart devices, watches, and the web? Learn why Flutter powers high-performance IoT, wearable, and Progressive Web Apps"; 
-$page_check = "blog-page"; 
-include("header.php"); 
+$page_check = "blog-page";
+$og_image = "https://appverra.co/assets/images/logo.webp";
+include("header.php");
 ?>
 
 <section class="terms_privacy_banner mainBanner">
