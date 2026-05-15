@@ -26,6 +26,7 @@ Corporate marketing website for AppVerra, a full-service app development agency 
 ## Directory Structure
 ```
 appverse/
+├── favicon.ico                # Favicon at root (required for Google + Chrome)
 ├── index.php                  # Homepage
 ├── header.php                 # Shared header, site config vars, all CSS/JS imports, SEO meta
 ├── footer.php                 # Shared footer with copyright
@@ -67,7 +68,15 @@ appverse/
     │   └── reponsive.css      # Responsive rules (14KB)
     ├── js/
     │   └── custom.js          # GSAP animations, AOS init, parallax, scroll effects
-    ├── images/                # 515 files: PNG, WebP, SVG, GIF
+    ├── images/                # PNG, WebP, SVG, GIF + favicon assets
+    │   ├── favicon.ico        # Also kept here as backup
+    │   ├── favicon-32x32.png
+    │   ├── favicon-16x16.png
+    │   ├── apple-touch-icon.png   # 180x180 for iOS
+    │   ├── android-chrome-192x192.png
+    │   ├── android-chrome-512x512.png
+    │   ├── site.webmanifest
+    │   └── logo.webp          # Used as og:image sitewide
     ├── fonts/                 # 79 font files (EOT, TTF, WOFF, WOFF2)
     └── videos/                # 16 MP4 files
 ```
@@ -98,9 +107,37 @@ Every page automatically gets:
 - Force HTTPS redirect
 - Remove www
 - **Remove .php extension from all URLs** (301 redirect + internal rewrite)
+- `favicon.ico` served directly from root (do NOT rewrite it — breaks Google + Chrome)
 - GZIP compression
 - 1-year browser caching for images, CSS, JS, fonts, videos
 - Security headers (X-Frame-Options, XSS, nosniff)
+
+## Favicon Setup
+Favicon files generated via realfavicongenerator.net. The `favicon.ico` **must be at the site root** (`public_html/favicon.ico`) for Google Search Console and Chrome bookmarks/history to show it.
+
+```html
+<!-- In header.php -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/site.webmanifest">
+```
+
+**Why browser tab works but Chrome/Google doesn't:** Chrome bookmarks, history, new tab shortcuts, and Google Search Console all fetch `/favicon.ico` directly — they ignore HTML `<link>` tags. The file must exist at root with correct `image/x-icon` content type.
+
+## Social Share (og:image / twitter:image)
+Default og:image is set in `header.php`:
+```php
+if(empty($og_image)) $og_image = "https://appverra.co/assets/images/logo.webp";
+```
+
+Every page sets `$og_image` before `include('header.php')`. This controls the preview image on WhatsApp, Facebook, Instagram, X, LinkedIn. All pages currently use `logo.webp`. Service pages use their own banner images.
+
+**To override per page:**
+```php
+<?php $og_image = "https://appverra.co/assets/images/your-image.webp"; ?>
+```
 
 ## Key Patterns
 
@@ -110,6 +147,7 @@ Every page automatically gets:
 $meta_title      = "Page Title Here";
 $meta_discription = "Page description here.";
 $page_class      = "page-class-name";
+$og_image        = "https://appverra.co/assets/images/logo.webp"; // optional override
 include('header.php');
 ?>
 <!-- page content -->
@@ -155,11 +193,15 @@ Each image has two versions — use WebP for performance:
 - **Requires:** `info@appverra.co` email account created in Hostinger panel
 - Form actions use `/mail` (clean URL) to avoid POST→GET conversion by .htaccess
 
-## Favicon
-```html
-<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-```
+## Deployment (Hostinger)
+Changes are committed to GitHub (`main` branch). To go live, deploy via:
+1. Hostinger Git integration — pull from `https://github.com/Touseeff/appVerra.git`
+2. Or manually upload changed files via Hostinger File Manager to `public_html/`
+
+**Critical files that must be at Hostinger root (`public_html/`):**
+- `favicon.ico` — must be at root, not in a subfolder
+- `.htaccess` — controls all rewrites, caching, security
+- `header.php` — controls all SEO/favicon/og tags sitewide
 
 ## No Build Process
 No npm, no Composer, no build steps. Edit files directly and refresh the browser.
