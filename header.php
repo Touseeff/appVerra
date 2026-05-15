@@ -107,7 +107,7 @@
     <meta name="author" content="AppVerra">
     <link rel="canonical" href="<?= $fullpageurl ?>">
 
-    <?php if(empty($og_image)) $og_image = "https://appverra.co/assets/images/banner-bg1.webp"; ?>
+    <?php if(empty($og_image)) $og_image = "https://appverra.co/assets/images/logo.webp"; ?>
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="<?= $fullpageurl ?>">
