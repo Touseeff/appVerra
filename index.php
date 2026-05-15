@@ -4,7 +4,7 @@
 
 <?php $page_class = "home-page"; ?>
 
-<?php $og_image = "https://appverra.co/assets/images/banner-bg1.webp"; ?>
+<?php $og_image = "https://appverra.co/assets/images/logo.webp"; ?>
 
 <?php $extra_head_css = "section.hero_banner{min-height:1020px;display:flex;justify-content:center;background-image:url(/assets/images/banner-bg2.webp),url(/assets/images/banner-bg1.webp);background-repeat:repeat,no-repeat;background-size:cover,cover;background-position:0 0,center center;animation:moveBannerBg 80s linear infinite;position:relative;}section.hero_banner p{font-size:20px;font-weight:300;padding-right:50px;}section.hero_banner .phone_in_hand{right:-50px;top:75px;}section.hero_banner img.ring_img{position:relative;top:220px;}img.cube_img{top:300px;left:-200px;}img.pizza_img{bottom:130px;left:35%;}img.pipe_img{right:40px;top:360px;}section.hero_banner svg.animated_svg2{width:50%;}section.who_we_are{box-shadow:0px -50px 130px 0px var(--black)!important;}"; ?>
 
