@@ -1,0 +1,16 @@
+# Local secrets — never commit
+includes/config.local.php
+.env
+
+# Third-party WYSIWYG bundle — install on server, do not commit
+admin/assets/tinymce/
+
+# User-uploaded media
+uploads/*
+!uploads/.htaccess
+!uploads/.gitkeep
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.bak

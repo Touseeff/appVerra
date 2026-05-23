@@ -1,0 +1,122 @@
+/* AppVerra Admin — minimal, fast CSS. No framework. */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font: 14px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: #1a1a1f;
+  background: #f6f7f9;
+}
+a { color: #5b3df5; text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1, h2, h3 { margin: 0 0 .5rem; line-height: 1.2; }
+.muted { color: #6b7280; }
+
+/* AUTH PAGE */
+.auth-body { display: grid; place-items: center; min-height: 100vh; background: #0f0f17; }
+.auth-card {
+  background: #fff; border-radius: 14px; padding: 2.5rem; width: min(420px, 92vw);
+  box-shadow: 0 30px 60px -20px rgba(0,0,0,.4);
+}
+.auth-card h1 { font-size: 1.5rem; }
+.auth-sub { color: #6b7280; margin: 0 0 1.5rem; }
+.auth-card label { display: block; margin-bottom: 1rem; font-weight: 500; }
+.auth-card input { display: block; width: 100%; margin-top: .35rem; padding: .6rem .75rem;
+  border: 1px solid #d1d5db; border-radius: 8px; font: inherit; }
+.btn-primary {
+  display: inline-block; padding: .65rem 1.1rem; border: 0; border-radius: 8px;
+  background: #5b3df5; color: #fff; font-weight: 600; cursor: pointer; font-size: .95rem;
+}
+.btn-primary:hover { background: #4a2fe0; }
+.btn-secondary { display: inline-block; padding: .55rem 1rem; border: 1px solid #d1d5db;
+  border-radius: 8px; background: #fff; color: #1a1a1f; font-weight: 500; }
+.btn-secondary:hover { background: #f3f4f6; text-decoration: none; }
+.btn-danger { background: #dc2626; color: #fff; border: 0; padding: .55rem 1rem;
+  border-radius: 8px; cursor: pointer; }
+.btn-danger:hover { background: #b91c1c; }
+
+/* ALERTS */
+.alert { padding: .75rem 1rem; border-radius: 8px; margin: 0 0 1rem; }
+.alert-error { background: #fee2e2; color: #991b1b; }
+.alert-success { background: #dcfce7; color: #166534; }
+.alert-info { background: #dbeafe; color: #1e40af; }
+
+/* LAYOUT */
+.admin-body { display: flex; min-height: 100vh; }
+.sidebar-nav {
+  width: 220px; background: #0f0f17; color: #e4e4e7;
+  padding: 1.5rem 0; display: flex; flex-direction: column;
+}
+.sidebar-nav .brand {
+  display: block; padding: 0 1.5rem 1.5rem; color: #fff; font-size: 1.15rem; font-weight: 700;
+}
+.sidebar-nav .brand span { color: #b3ff00; margin-left: .35rem; font-weight: 400; }
+.sidebar-nav nav { display: flex; flex-direction: column; flex: 1; }
+.sidebar-nav nav a {
+  color: #a1a1aa; padding: .65rem 1.5rem; font-size: .95rem;
+}
+.sidebar-nav nav a:hover { background: #1a1a25; color: #fff; text-decoration: none; }
+.sidebar-nav nav a.active { background: #1a1a25; color: #fff; border-left: 3px solid #b3ff00; padding-left: calc(1.5rem - 3px); }
+.sidebar-foot { padding: 1.5rem; border-top: 1px solid #27272a; color: #71717a; font-size: .85rem; }
+.sidebar-foot a { color: #b3ff00; margin-left: .5rem; }
+
+.admin-main { flex: 1; min-width: 0; }
+.admin-header { background: #fff; padding: 1.25rem 2rem; border-bottom: 1px solid #e5e7eb; }
+.admin-header h1 { font-size: 1.35rem; margin: 0; }
+.admin-content { padding: 2rem; }
+
+/* DASHBOARD STATS */
+.stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem; margin-bottom: 2rem; }
+.stat { background: #fff; padding: 1.25rem; border-radius: 12px; border: 1px solid #e5e7eb; }
+.stat-num { display: block; font-size: 2rem; font-weight: 700; color: #5b3df5; }
+
+/* PANEL */
+.panel { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; }
+.panel-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+.panel-head h2 { font-size: 1.1rem; margin: 0; }
+
+/* TABLE */
+.data-table { width: 100%; border-collapse: collapse; }
+.data-table th, .data-table td { text-align: left; padding: .75rem; border-bottom: 1px solid #f3f4f6; font-size: .92rem; }
+.data-table th { font-weight: 600; color: #6b7280; text-transform: uppercase; font-size: .75rem; letter-spacing: .04em; }
+.data-table tr:hover { background: #fafafa; }
+
+/* BADGE */
+.badge { padding: .2rem .55rem; border-radius: 999px; font-size: .72rem; font-weight: 600; text-transform: uppercase; }
+.badge-published { background: #dcfce7; color: #166534; }
+.badge-draft { background: #f3f4f6; color: #4b5563; }
+.badge-scheduled { background: #dbeafe; color: #1e40af; }
+
+/* FORMS */
+.form-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 1.5rem; align-items: start; }
+@media (max-width: 900px) { .form-grid { grid-template-columns: 1fr; } }
+.form-section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; }
+.form-section h3 { font-size: .95rem; text-transform: uppercase; letter-spacing: .04em; color: #6b7280; margin-bottom: 1rem; }
+.field { display: block; margin-bottom: 1rem; }
+.field > label { display: block; font-weight: 500; margin-bottom: .35rem; font-size: .9rem; }
+.field input[type=text], .field input[type=url], .field input[type=email],
+.field input[type=password], .field input[type=datetime-local],
+.field textarea, .field select {
+  width: 100%; padding: .55rem .75rem; border: 1px solid #d1d5db; border-radius: 8px;
+  font: inherit; background: #fff;
+}
+.field textarea { min-height: 80px; resize: vertical; }
+.field .hint { font-size: .8rem; color: #6b7280; margin-top: .25rem; }
+.char-counter { float: right; font-size: .75rem; color: #6b7280; }
+
+.radio-row { display: flex; gap: 1rem; }
+.radio-row label { display: flex; align-items: center; gap: .35rem; font-weight: 500; }
+
+.image-preview { margin-top: .5rem; max-width: 100%; border-radius: 8px; }
+
+/* FILTERS BAR */
+.toolbar { display: flex; gap: .75rem; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; }
+.toolbar input[type=search], .toolbar select {
+  padding: .5rem .75rem; border: 1px solid #d1d5db; border-radius: 8px; font: inherit;
+}
+
+/* MEDIA GRID */
+.media-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1rem; }
+.media-item { background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: .5rem; }
+.media-item img { width: 100%; height: 120px; object-fit: cover; border-radius: 6px; display: block; }
+.media-item .actions { display: flex; justify-content: space-between; margin-top: .35rem; font-size: .8rem; }

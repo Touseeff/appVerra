@@ -28,6 +28,21 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^([^.]+)$ $1.php [L]
 
+# Dynamic blog routing — if a slug doesn't match any real file or .php,
+# treat it as a blog post and dispatch to blog-post.php
+RewriteCond %{REQUEST_FILENAME}    !-d
+RewriteCond %{REQUEST_FILENAME}    !-f
+RewriteCond %{REQUEST_FILENAME}.php !-f
+RewriteRule ^([a-z0-9-]+)/?$ blog-post.php?slug=$1 [L,QSA]
+
+# Deny direct access to backend includes
+<FilesMatch "\.(sql|env)$">
+  Require all denied
+</FilesMatch>
+<Files "config.php">
+  Require all denied
+</Files>
+
 # =============================================
 # GZIP Compression
 # =============================================

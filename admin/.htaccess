@@ -1,0 +1,8 @@
+# Block search engines from indexing the admin panel.
+<IfModule mod_headers.c>
+  Header always set X-Robots-Tag "noindex, nofollow"
+</IfModule>
+
+# Disable .php extension stripping inside /admin/ so we can route directly.
+RewriteEngine On
+RewriteBase /admin/
