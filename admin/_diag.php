@@ -1,100 +1,65 @@
 <?php
 /**
  * ONE-SHOT diagnostic — runs WITHOUT _layout.php so it survives even when
- * the layout itself is broken. Hit this URL while debugging the 500 error.
- *
- * DELETE THIS FILE after debugging.
+ * the layout itself is broken. DELETE after debugging.
  */
 
-// Force errors visible for this one page only.
 ini_set('display_errors', '1');
 error_reporting(E_ALL);
-
 header('Content-Type: text/plain; charset=utf-8');
 
-echo "=== AppVerra admin diagnostic ===\n\n";
+echo "=== AppVerra admin diagnostic v2 ===\n\n";
 
-echo "PHP version:    " . PHP_VERSION . "\n";
-echo "Server time:    " . date('c') . "\n";
-echo "Document root:  " . ($_SERVER['DOCUMENT_ROOT'] ?? '?') . "\n";
-echo "Script path:    " . __FILE__ . "\n";
-echo "Real path:      " . realpath(__FILE__) . "\n\n";
-
-echo "--- Required files: existence + mtime ---\n";
 $repo_root = realpath(__DIR__ . '/..');
-$files = [
-    'admin/_layout.php',
-    'admin/import-pending.php',
-    'admin/dashboard.php',
-    'includes/auth.php',
-    'includes/csrf.php',
-    'includes/db.php',
-    'includes/post_helpers.php',
-    'includes/slugify.php',
-    'includes/webp.php',
-    'includes/config.local.php',
-    'blog_factory/queue/pending',
-    'blog_factory/queue/pending/images',
-    'blog_factory/queue/topics.yaml',
-];
-foreach ($files as $f) {
-    $abs = $repo_root . '/' . $f;
-    $exists = file_exists($abs);
-    $mtime = $exists ? date('c', filemtime($abs)) : 'MISSING';
-    echo sprintf("%-40s %s   %s\n", $f, $exists ? 'OK' : 'MISSING', $mtime);
-}
-echo "\n";
+echo "Repo root:      $repo_root\n";
+echo "PHP version:    " . PHP_VERSION . "\n";
+echo "Server time:    " . date('c') . "\n\n";
 
-echo "--- _layout.php first 40 lines ---\n";
-$layout = $repo_root . '/admin/_layout.php';
-if (file_exists($layout)) {
-    $lines = array_slice(file($layout), 0, 40);
-    foreach ($lines as $i => $line) {
-        echo sprintf("%3d: %s", $i + 1, $line);
+echo "--- Full listing of includes/ ---\n";
+$inc = $repo_root . '/includes';
+if (is_dir($inc)) {
+    foreach (scandir($inc) as $f) {
+        if ($f === '.' || $f === '..') continue;
+        $abs = $inc . '/' . $f;
+        $size = is_file($abs) ? filesize($abs) : '-';
+        $perms = substr(sprintf('%o', fileperms($abs)), -4);
+        $mtime = date('c', filemtime($abs));
+        echo sprintf("  %-30s %-10s %s   %s\n", $f, $size . 'B', $perms, $mtime);
     }
 } else {
-    echo "_layout.php not found at $layout\n";
+    echo "  includes/ directory not found\n";
 }
 echo "\n";
 
-echo "--- Try loading _layout.php ---\n";
-try {
-    require_once $repo_root . '/admin/_layout.php';
-    echo "Loaded OK. Functions defined:\n";
-    foreach (['layout_start', 'layout_end', 'flash_set', 'flash_render', 'count_pending_imports'] as $fn) {
-        echo "  $fn: " . (function_exists($fn) ? 'defined' : 'NOT defined') . "\n";
-    }
-} catch (\Throwable $e) {
-    echo "EXCEPTION loading _layout.php: " . $e->getMessage() . "\n";
-    echo "File: " . $e->getFile() . ":" . $e->getLine() . "\n";
-    echo $e->getTraceAsString() . "\n";
+echo "--- Env vars (whichever path Hostinger uses) ---\n";
+foreach (['DB_HOST', 'DB_NAME', 'DB_USER', 'DB_PASS', 'APP_ENV'] as $k) {
+    $v = getenv($k);
+    $shown = $v === false ? '(unset)' : ($k === 'DB_PASS' ? str_repeat('*', strlen($v)) : $v);
+    echo sprintf("  %s = %s\n", $k, $shown);
 }
 echo "\n";
 
-echo "--- DB connection test ---\n";
+echo "--- Constants after loading config.php ---\n";
+require_once $repo_root . '/includes/config.php';
+foreach (['DB_HOST', 'DB_NAME', 'DB_USER', 'DB_PASS'] as $k) {
+    $v = defined($k) ? constant($k) : '(undefined)';
+    $shown = $k === 'DB_PASS' ? str_repeat('*', strlen($v)) : $v;
+    echo sprintf("  %s = %s\n", $k, $shown);
+}
+echo "\n";
+
+echo "--- DB connection attempt ---\n";
 try {
     require_once $repo_root . '/includes/db.php';
     $row = db_one('SELECT COUNT(*) AS c FROM posts');
-    echo "DB OK. posts table count: " . ($row['c'] ?? '?') . "\n";
+    echo "  DB OK. posts count: " . ($row['c'] ?? '?') . "\n";
 
     $olor = db_all('SELECT id, slug, title, status FROM posts WHERE slug = "olor" LIMIT 5');
-    echo "Posts with slug=olor: " . count($olor) . "\n";
+    echo "  Posts with slug=olor: " . count($olor) . "\n";
     foreach ($olor as $p) {
-        echo "  #{$p['id']} [{$p['status']}] " . substr($p['title'], 0, 80) . "\n";
+        echo "    #{$p['id']} [{$p['status']}] " . substr($p['title'], 0, 80) . "\n";
     }
 } catch (\Throwable $e) {
-    echo "DB EXCEPTION: " . $e->getMessage() . "\n";
-}
-echo "\n";
-
-echo "--- Last 30 lines of error_log (if accessible) ---\n";
-foreach ([ini_get('error_log'), '/home/u751124526/logs/error_log', $repo_root . '/error_log'] as $log) {
-    if ($log && file_exists($log) && is_readable($log)) {
-        echo "Source: $log\n";
-        $contents = file($log);
-        $tail = array_slice($contents, -30);
-        echo implode('', $tail);
-        break;
-    }
+    echo "  DB EXCEPTION: " . $e->getMessage() . "\n";
 }
 echo "\n=== end ===\n";
