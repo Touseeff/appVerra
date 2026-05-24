@@ -44,7 +44,7 @@ include("header.php");
                 <section id="section1">
                     <h2 class="heading55px darkpurple">Introduction</h2>
                     <p>In early 2025, many Unity developers found themselves asking: What exactly are the Unity pricing changes, and how will they affect my game, studio or idea? Unity, one of the leading engines for game and app development, has made significant updates to its pricing model—cancelling the controversial runtime fee, raising revenue thresholds, tweaking tiers. If you’re an indie developer, hobbyist, or work in a studio, these changes matter.</p>
-                    <p>In this post, I’ll walk you through what changed, why Unity made these changes, how different types of developers are affected, and how to choose the right plan for your project. I’ll also share tips to minimize costs and optimize ROI, compare Unity to some alternatives, and highlight how services like AppVerra’s Unity Development Services can help you navigate and leverage Unity’s pricing changes to your advantage.</p>
+                    <p>In this post, I’ll walk you through what changed, why Unity made these changes, how different types of developers are affected, and how to choose the right plan for your project. I’ll also share tips to minimize costs and optimize ROI, compare Unity to some alternatives, and highlight how services like Appverra’s Unity Development Services can help you navigate and leverage Unity’s pricing changes to your advantage.</p>
                 </section>
 
                 <section id="section2">
@@ -165,7 +165,7 @@ include("header.php");
                 <section id="section10" class="rvl_start">
                     <h2 class="heading55px darkpurple">Conclusion</h2>
                     <p>Unity’s pricing changes for 2025 mark a turnaround from the runtime-fee controversy and bring greater clarity and predictability. For many indie developers and hobbyists, the outcome is positive: more generous free tier limits, optional branding, and no surprise install-based fees. For studios and enterprises, the price increase means planning matters.</p>
-                    <p><strong>If you’re building something and feeling unsure which plan makes sense, or want guidance on optimizing your costs while still achieving high quality, I invite you to reach out to AppVerra. Our Unity Development Services specialize in helping creators map their roadmap, pick the right tier, and get the most out of Unity without unneeded overhead.</strong></p>
+                    <p><strong>If you’re building something and feeling unsure which plan makes sense, or want guidance on optimizing your costs while still achieving high quality, I invite you to reach out to Appverra. Our Unity Development Services specialize in helping creators map their roadmap, pick the right tier, and get the most out of Unity without unneeded overhead.</strong></p>
                 </section>
 
             </div>

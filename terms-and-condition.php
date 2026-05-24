@@ -1,6 +1,6 @@
-﻿<?php $meta_title = "Terms & Condition | AppVerra"; ?>
+﻿<?php $meta_title = "Terms & Condition | Appverra"; ?>
 
-<?php $meta_discription = "Review the official Terms & Conditions for using AppVerra services. Learn about your rights, legal responsibilities, disclaimers, and compliance with global laws including GDPR and U.S. regulations "; ?>
+<?php $meta_discription = "Review the official Terms & Conditions for using Appverra services. Learn about your rights, legal responsibilities, disclaimers, and compliance with global laws including GDPR and U.S. regulations "; ?>
 
 <?php $page_class = "privacy_policy-page"; ?>
 
@@ -98,7 +98,7 @@
 
                         <h2 class="heading55px dark fw_400">Interpretation and Definitions</h2>
 
-                        <p>The words capitalized in this document have specific meanings defined under the following conditions. The definitions shall apply regardless of whether they appear in singular or plural. "Company," "We," "Us," or "Our" refers to AppVerra. "Service" refers to the website and mobile application solutions we provide. "You" means the user or entity accessing our services.</p>
+                        <p>The words capitalized in this document have specific meanings defined under the following conditions. The definitions shall apply regardless of whether they appear in singular or plural. "Company," "We," "Us," or "Our" refers to Appverra. "Service" refers to the website and mobile application solutions we provide. "You" means the user or entity accessing our services.</p>
 
                     </div>
 
@@ -106,7 +106,7 @@
 
                         <h2 class="heading55px dark fw_400">Acknowledgement</h2>
 
-                        <p>By accessing or using our services, you agree to be bound by these Terms and Conditions. These terms govern your relationship with AppVerra and outline the rights and responsibilities of both parties.</p>
+                        <p>By accessing or using our services, you agree to be bound by these Terms and Conditions. These terms govern your relationship with Appverra and outline the rights and responsibilities of both parties.</p>
 
                     </div>
 
@@ -114,7 +114,7 @@
 
                         <h2 class="heading55px dark fw_400">Links to Other Websites</h2>
 
-                        <p>Our service may include links to third-party websites or services that are not owned or controlled by AppVerra. We assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p>
+                        <p>Our service may include links to third-party websites or services that are not owned or controlled by Appverra. We assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p>
 
                     </div>
 
@@ -130,7 +130,7 @@
 
                         <h2 class="heading55px dark fw_400">Limitation of Liability</h2>
 
-                        <p>To the maximum extent permitted by applicable law, AppVerra and its affiliates shall not be held liable for any indirect, incidental, special, or consequential damages resulting from your use or inability to use our service.</p>
+                        <p>To the maximum extent permitted by applicable law, Appverra and its affiliates shall not be held liable for any indirect, incidental, special, or consequential damages resulting from your use or inability to use our service.</p>
 
                     </div>
 
@@ -146,7 +146,7 @@
 
                         <h2 class="heading55px dark fw_400">Governing Law</h2>
 
-                        <p>These Terms shall be governed and construed in accordance with the laws of the jurisdiction in which AppVerra operates, without regard to its conflict of law provisions. </p>
+                        <p>These Terms shall be governed and construed in accordance with the laws of the jurisdiction in which Appverra operates, without regard to its conflict of law provisions. </p>
 
                     </div>
 

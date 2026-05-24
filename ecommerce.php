@@ -1,6 +1,6 @@
-<?php $meta_title = "Launch Your E-commerce Store in Just 7 Days"; ?>
+﻿<?php $meta_title = "Shopify Mobile Companion App Developer | Appverra"; ?>
 
-<?php $meta_discription = "Why wait months? Go live in just 7 days with AppVerra! Get high-performing e-commerce mobile apps & websites with full integration."; ?>
+<?php $meta_discription = "Branded mobile apps that wrap your Shopify or WooCommerce store. Push notifications, loyalty, faster checkout, mobile-only deals. Shipped in 6 weeks."; ?>
 
 <?php $page_class = "ecommerceDevelopment-page testimonial_light"; ?>
 
@@ -9,13 +9,13 @@
 <?php $schema_extra = '{
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Ecommerce Development",
-  "serviceType": "Ecommerce Development",
-  "provider": {"@type": "Organization", "name": "AppVerra", "url": "https://appverra.co/"},
+  "name": "Shopify Mobile Companion App Development",
+  "serviceType": "Mobile App Development",
+  "provider": {"@type": "Organization", "name": "Appverra", "url": "https://appverra.co/"},
   "url": "https://appverra.co/ecommerce",
-  "description": "Custom ecommerce platforms that are fast, secure, and built to convert — from Shopify to full-scale custom builds.",
+  "description": "Branded mobile apps that wrap your existing Shopify or WooCommerce store — push notifications for restocks and deals, loyalty programs, mobile-only pricing, faster checkout flow. Shipped in 6 weeks.",
   "image": "https://appverra.co/assets/images/ecommer-banner-img.png",
-  "areaServed": "US"
+  "areaServed": ["US", "CA", "GB"]
 }'; ?>
 
 <?php include("header.php"); ?>
@@ -186,7 +186,7 @@
 
 			<svg class="animated_svg2 mb-3 mx-auto d-table" width="672" height="36" viewBox="0 0 672 36" fill="none" xmlns="http://www.w3.org/2000/svg"> <path style="stroke: var(--secondColor);" d="M4 32C199.013 20.5125 606.673 -9.88059 663.31 11.341C719.946 32.5627 249.686 20.1834 7.47644 11.341" stroke-width="7" stroke-linecap="round"></path></svg>
 
-			<p data-aos="fade-up" data-aos-delay="100">Your internet store shouldn't take months to launch. With AppVerra, you can launch a completely functional, aesthetically pleasing, and performance-optimized commerce platform in as little as seven days. Our pre-built integrations, streamlined workflow, and editable templates speed your time-to-market without sacrificing quality. We take care of everything, from responsive design and backend configuration to product setup and payment methods, regardless of how big your business is. Our knowledgeable staff makes sure your store is prepared to wow and convert right away. Make your business idea a reality in a week and begin selling to the globe quickly and confidently.</p>
+			<p data-aos="fade-up" data-aos-delay="100">Your internet store shouldn't take months to launch. With Appverra, you can launch a completely functional, aesthetically pleasing, and performance-optimized commerce platform in as little as seven days. Our pre-built integrations, streamlined workflow, and editable templates speed your time-to-market without sacrificing quality. We take care of everything, from responsive design and backend configuration to product setup and payment methods, regardless of how big your business is. Our knowledgeable staff makes sure your store is prepared to wow and convert right away. Make your business idea a reality in a week and begin selling to the globe quickly and confidently.</p>
 
 			<div class="btn_set mt-lg-5 mt-4 justify-content-center">
 					<span class="btn_wrap"  data-aos="fade-up" data-aos-delay="600">
@@ -312,7 +312,7 @@
 
 					</h2>
 
-					<p class="light">At AppVerra, we specialize in building results-driven apps tailored for entrepreneurs. From concept to launch, our solutions are crafted to solve real problems, engage users, and drive measurable growth. With a focus on innovation, scalability, and user experience, we help transform your business idea into a high-performing digital product. Trust us to deliver apps that fuel your vision and turn ambition into real-world success.</p>
+					<p class="light">At Appverra, we specialize in building results-driven apps tailored for entrepreneurs. From concept to launch, our solutions are crafted to solve real problems, engage users, and drive measurable growth. With a focus on innovation, scalability, and user experience, we help transform your business idea into a high-performing digital product. Trust us to deliver apps that fuel your vision and turn ambition into real-world success.</p>
 
 					<h3 class="heading35px light">Benefits</h3>
 

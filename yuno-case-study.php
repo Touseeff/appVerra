@@ -1,8 +1,8 @@
-﻿<?php $meta_title = "AppVerra | Toriino Case Study — Yuno Reviews App Success"; ?>
+﻿<?php $meta_title = "Appverra | Toriino Case Study — Yuno Reviews App Success"; ?>
 
 
 
-<?php $meta_discription = "Explore how AppVerra built Yuno: a trusted review platform with verification, business dashboards, and clean UX to empower users & businesses alike."; ?>
+<?php $meta_discription = "Explore how Appverra built Yuno: a trusted review platform with verification, business dashboards, and clean UX to empower users & businesses alike."; ?>
 
 
 

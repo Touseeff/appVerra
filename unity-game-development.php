@@ -1,22 +1,13 @@
-<?php $meta_title = "Build Stunning Unity Games | Top Unity Game Dev Company"; ?>
+﻿<?php $meta_title = "Unity Game Development | Appverra"; ?>
 
-<?php $meta_discription = "Level up your game idea with AppVerra. We build scalable, immersive Unity games in 2D, 3D, and AR/VR with top performance across all platforms."; ?>
+<?php $meta_discription = "Unity game development is no longer a primary service at Appverra. We focus on Flutter mobile app development for startups and SMBs."; ?>
 
 <?php $page_class = "ugd_services-page testimonial_light"; ?>
 
 <?php $og_image = "https://appverra.co/assets/images/ugd_img.png"; ?>
 
-<?php $schema_extra = '{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Unity Game Development",
-  "serviceType": "Game Development",
-  "provider": {"@type": "Organization", "name": "AppVerra", "url": "https://appverra.co/"},
-  "url": "https://appverra.co/unity-game-development",
-  "description": "AppVerra builds scalable, immersive Unity games in 2D, 3D, and AR/VR with top performance across all platforms.",
-  "image": "https://appverra.co/assets/images/ugd_img.png",
-  "areaServed": "US"
-}'; ?>
+<?php // Deindexed 2026-05-24 — games out of scope per current Appverra focus (Flutter mobile apps for startups/SMBs). Page kept live to avoid 404s on existing inbound links, but excluded from search engine indexes. Consider 301 redirect to /our-services in a future cleanup pass. ?>
+<?php $page_robots = "noindex, follow"; ?>
 
 <?php include("header.php"); ?>
 
@@ -449,7 +440,7 @@
 
 					<span class="revealUp"><span>
 
-						AppVerra Is
+						Appverra Is
 
 					</span></span><br>
 
@@ -469,7 +460,7 @@
 
 				<svg class="animated_svg2 mb-3" width="672" height="36" viewBox="0 0 672 36" fill="none" xmlns="http://www.w3.org/2000/svg"> <path style="stroke: var(--primeColor);" d="M4 32C199.013 20.5125 606.673 -9.88059 663.31 11.341C719.946 32.5627 249.686 20.1834 7.47644 11.341" stroke-width="7" stroke-linecap="round"></path></svg>
 
-				<p data-aos="fade-up" data-aos-delay="300"/>AppVerra is a leading Unity game development company that prioritizes scalability, creativity, and performance. Across platforms, our knowledgeable staff transforms concepts into captivating game experiences. Our commitment to quality, speed, and creativity from conception to launch makes us the go-to partner for creating games that are genuinely unique.</p>
+				<p data-aos="fade-up" data-aos-delay="300"/>Appverra is a leading Unity game development company that prioritizes scalability, creativity, and performance. Across platforms, our knowledgeable staff transforms concepts into captivating game experiences. Our commitment to quality, speed, and creativity from conception to launch makes us the go-to partner for creating games that are genuinely unique.</p>
 
 				<div class="btn_set mt-4">
 					<span class="btn_wrap"  data-aos="fade-up" data-aos-delay="600">
@@ -1097,7 +1088,7 @@
 
 						<span class="secondColor">
 
-							AppVerra
+							Appverra
 
 						</span>
 
@@ -1111,7 +1102,7 @@
 
 					<span>
 
-						<p>Bring your game vision to life with AppVerra. We create innovative, high-performance Unity games that engage users, scale effortlessly, and deliver immersive experiences across all platforms.</p>
+						<p>Bring your game vision to life with Appverra. We create innovative, high-performance Unity games that engage users, scale effortlessly, and deliver immersive experiences across all platforms.</p>
 
 					</span>
 

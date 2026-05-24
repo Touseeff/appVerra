@@ -125,7 +125,7 @@ include("header.php");
                 <section id="section8">
                     <h2 class="heading55px darkpurple">Conclusion</h2>
                     <p>Flutter is advancing innovation in wearables, PWAs, and the Internet of Things. It is no longer limited to mobile development. Businesses cannot overlook this framework because of its cross-platform capabilities, optimization possibilities, and expanding ecosystem.</p>
-                     <p>This is the ideal moment to investigate these opportunities. Get in contact with AppVerra to realize your idea; we specialize in <a href="https://appverra.co/flutter-app-development.php">Flutter App Development</a> services for wearables, PWAs, and the Internet of Things.</p>
+                     <p>This is the ideal moment to investigate these opportunities. Get in contact with Appverra to realize your idea; we specialize in <a href="https://appverra.co/flutter-app-development.php">Flutter App Development</a> services for wearables, PWAs, and the Internet of Things.</p>
                 </section>
                 <section id="section9" class="rvl_start">
                     <h2 class="heading55px darkpurple">Sources</h2>

@@ -1,8 +1,8 @@
-﻿<?php $meta_title = "Reactosphere Case Study | AppVerra — Gamified Chat App"; ?>
+﻿<?php $meta_title = "Reactosphere Case Study | Appverra — Gamified Chat App"; ?>
 
 
 
-<?php $meta_discription = "Discover how AppVerra built Reactosphere: a chat app with tokens, video reactions, and privacy-focused design to boost engagement."; ?>
+<?php $meta_discription = "Discover how Appverra built Reactosphere: a chat app with tokens, video reactions, and privacy-focused design to boost engagement."; ?>
 
 
 

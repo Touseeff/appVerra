@@ -1,6 +1,6 @@
-﻿<?php $meta_title = "Privacy Policy | AppVerra"; ?>
+﻿<?php $meta_title = "Privacy Policy | Appverra"; ?>
 
-<?php $meta_discription = "Learn how AppVerra collects, uses, and protects your personal data. Read our privacy policy for details on data security, user rights, cookies, and third-party links."; ?>
+<?php $meta_discription = "Learn how Appverra collects, uses, and protects your personal data. Read our privacy policy for details on data security, user rights, cookies, and third-party links."; ?>
 
 <?php $page_class = "privacy_policy-page"; ?>
 
@@ -24,7 +24,7 @@
 
             </h1>
 
-            <p>At AppVerra, we value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and safeguard your information when you interact with our website or services.</p>
+            <p>At Appverra, we value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and safeguard your information when you interact with our website or services.</p>
 
         </div>
 
@@ -108,7 +108,7 @@
 
                             <li><strong>Cookies:</strong> Small data files stored on your device to improve functionality and user experience.</li>
 
-                            <li><strong>Service:</strong> Refers to the AppVerra website and related platforms.</li>
+                            <li><strong>Service:</strong> Refers to the Appverra website and related platforms.</li>
 
                             <li><strong>User/You:</strong> The individual using our Service or accessing our website.</li>
 
@@ -148,7 +148,7 @@
 
                         <h2 class="heading55px dark fw_400">Links To Other Websites</h2>
 
-                        <p>Our website may contain links to external websites not operated by AppVerra. We are not responsible for the privacy practices or content of third-party sites. We strongly encourage you to review the privacy policy of every website you visit through external links.</p>
+                        <p>Our website may contain links to external websites not operated by Appverra. We are not responsible for the privacy practices or content of third-party sites. We strongly encourage you to review the privacy policy of every website you visit through external links.</p>
 
                     </div>
 

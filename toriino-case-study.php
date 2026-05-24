@@ -1,6 +1,6 @@
-﻿<?php $meta_title = "Toriino Case Study | AppVerra"; ?>
+﻿<?php $meta_title = "Toriino Case Study | Appverra"; ?>
 
-<?php $meta_discription = "Discover how AppVerra designed and launched Toriino — a feature-rich app with seamless UX, scalable architecture, and smart integrations built for real-world impact."; ?>
+<?php $meta_discription = "Discover how Appverra designed and launched Toriino — a feature-rich app with seamless UX, scalable architecture, and smart integrations built for real-world impact."; ?>
 
 <?php $page_class = "case_study-page"; ?>
 

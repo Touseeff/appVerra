@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $name     = strip_tags(trim($_POST['name'] ?? ''));

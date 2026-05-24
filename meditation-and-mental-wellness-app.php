@@ -1,5 +1,5 @@
-﻿<?php $meta_title = "Meditation and mental wellness app | AppVerra"; ?>
-<?php $meta_discription = "Discover AppVerra's meditation and mental wellness app — a calming digital experience designed to support mindfulness, stress relief, and daily mental health routines."; ?>
+﻿<?php $meta_title = "Meditation and mental wellness app | Appverra"; ?>
+<?php $meta_discription = "Discover Appverra's meditation and mental wellness app — a calming digital experience designed to support mindfulness, stress relief, and daily mental health routines."; ?>
 <?php $page_class = "case_study-page"; ?>
 <?php $og_image = "https://appverra.co/assets/images/logo.webp"; ?>
 <?php include("header.php"); ?>
@@ -17,7 +17,7 @@
         <!-- Client’s Challenge -->
         <h2>The Client’s Challenge</h2>
         <p>
-            A wellness-focused entrepreneur approached AppVerra with an inspiring idea: 
+            A wellness-focused entrepreneur approached Appverra with an inspiring idea: 
             a meditation and mental wellness app that could help people manage stress, 
             improve focus, and build healthier habits.
         </p>
@@ -36,7 +36,7 @@
         <!-- Vision -->
         <h2>Understanding the Vision</h2>
         <p>
-            At AppVerra, we don’t just code—we listen. Through deep discovery workshops, we learned that the client wanted to stand out by:
+            At Appverra, we don’t just code—we listen. Through deep discovery workshops, we learned that the client wanted to stand out by:
         </p>
         <ul class="vision-list">
             <li><strong>Human-centric design:</strong> A minimal, soothing interface that reduces screen stress.</li>

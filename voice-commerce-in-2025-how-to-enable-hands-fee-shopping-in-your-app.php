@@ -201,7 +201,7 @@
                         global rollouts, and enterprise-grade security need professional handling.
                     </p>
                     <p>That’s where expert partners come in. <br> 
-                        <strong>At AppVerra, we specialize in building next-gen Ecommerce Mobile Apps, including 
+                        <strong>At Appverra, we specialize in building next-gen Ecommerce Mobile Apps, including 
                         voice commerce solutions, to help brands stay ahead of the 2025 shopping trends.</strong>
                     </p>
                     <p>If your goal is to go beyond experimentation and deliver a polished, scalable solution, 

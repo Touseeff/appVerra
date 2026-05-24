@@ -134,7 +134,7 @@ import { TouchableOpacity, Text } from "react-native";
                 <section id="section9">
                     <h2 class="heading55px darkpurple">When to Get Professional Help</h2>
                     <p>DIY fixes are great for smaller apps, but enterprise projects require expertise to meet global compliance and scale effectively.</p>
-                    <p><strong>At AppVerra, we help businesses build inclusive, accessible, and scalable React Native development, ensuring compliance and better user experience for everyone.</strong></p>
+                    <p><strong>At Appverra, we help businesses build inclusive, accessible, and scalable React Native development, ensuring compliance and better user experience for everyone.</strong></p>
                 </section>
 
                 <section id="section10" class="rvl_start">

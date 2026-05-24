@@ -1,6 +1,6 @@
-<?php $meta_title = "Flutter App Development Company | Build Fast, Stunning Cross-Platform Apps Today"; ?>
+﻿<?php $meta_title = "Flutter Development Agency for Startups — 6-Week MVPs | Appverra"; ?>
 
-<?php $meta_discription = "Launch high-performance apps with Flutter! AppVerra delivers beautiful, scalable iOS & Android apps from a single codebase—faster time-to-market, seamless UI, expert developers, and full support. Start now!"; ?>
+<?php $meta_discription = "Founder-led Flutter agency. 150+ apps shipped, 700+ customers, millions of downloads. We ship Flutter MVPs in 6 weeks. Starter $7,997. Book a Discovery Sprint."; ?>
 
 <?php $page_class = "flutterAppDevelopment-page"; ?>
 
@@ -9,13 +9,19 @@
 <?php $schema_extra = '{
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Flutter App Development",
+  "name": "Flutter App Development for Startups",
   "serviceType": "Mobile App Development",
-  "provider": {"@type": "Organization", "name": "AppVerra", "url": "https://appverra.co/"},
+  "provider": {"@type": "Organization", "name": "Appverra", "url": "https://appverra.co/"},
   "url": "https://appverra.co/flutter-app-development",
-  "description": "AppVerra delivers beautiful, scalable iOS & Android apps from a single Flutter codebase with faster time-to-market and seamless UI.",
+  "description": "Founder-led Flutter development agency. 150+ apps shipped for 700+ customers. We ship Flutter MVPs in 6 weeks for startups across the US, Canada, and UK. Pricing from $7,997 Starter to $99,997+ Enterprise.",
   "image": "https://appverra.co/assets/images/fad_banner_img.png",
-  "areaServed": "US"
+  "areaServed": ["US", "CA", "GB"],
+  "offers": {
+    "@type": "Offer",
+    "name": "Discovery Sprint",
+    "price": "1997",
+    "priceCurrency": "USD"
+  }
 }'; ?>
 
 <?php include("header.php"); ?>
@@ -56,7 +62,7 @@
 
 				<svg class="animated_svg2 mb-3" width="672" height="36" viewBox="0 0 672 36" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M4 32C199.013 20.5125 606.673 -9.88059 663.31 11.341C719.946 32.5627 249.686 20.1834 7.47644 11.341" stroke="#B3FF00" stroke-width="7" stroke-linecap="round"/></svg>
 
-				<span class="revealUp"><span><p style="color: #C3C9CE;">Build stunning, high-performance apps faster with Flutter — one codebase, multiple platforms, limitless potential. From sleek UI to native-like speed, our Flutter solutions bring your app ideas to life with precision and scalability</p></span></span>
+				<span class="revealUp"><span><p style="color: #C3C9CE;">We've shipped 20+ Flutter apps with 1M+ combined downloads — including a live US ride-booking marketplace running in production right now, on Stripe Connect. We ship Flutter MVPs in 6 weeks. One codebase. iOS, Android, and web from the same team that writes your code. Pricing: $7,997 Starter to $99,997+ Enterprise. $1,997 Discovery Sprint to scope your build first.</p></span></span>
 
 				<div class="btn_set">
 					<span class="btn_wrap"  data-aos="fade-up" data-aos-delay="600">
@@ -207,7 +213,7 @@
 
 				<svg class="mb-3 w w_300px" width="672" height="36" viewBox="0 0 672 36" fill="none" xmlns="http://www.w3.org/2000/svg"> <path style="stroke: var(--secondColor);" d="M4 32C199.013 20.5125 606.673 -9.88059 663.31 11.341C719.946 32.5627 249.686 20.1834 7.47644 11.341" stroke-width="7" stroke-linecap="round" data-aos="fade-up" data-aos-delay="300"></path></svg>
 
-				<p data-aos="fade-up" data-aos-delay="400">We at AppVerra combine pixel-perfect design, fluid performance, and seamless functionality to create Flutter mobile applications of the highest caliber. Consistent user experiences are guaranteed by our apps' scalability, dependability, and iOS and Android optimization. To provide outcomes that improve your mobile presence, we place a high value on creativity, speed, and accuracy.</p>
+				<p data-aos="fade-up" data-aos-delay="400">We at Appverra combine pixel-perfect design, fluid performance, and seamless functionality to create Flutter mobile applications of the highest caliber. Consistent user experiences are guaranteed by our apps' scalability, dependability, and iOS and Android optimization. To provide outcomes that improve your mobile presence, we place a high value on creativity, speed, and accuracy.</p>
 
 				<h3 class="heading35px dark" data-aos="fade-up" data-aos-delay="500">Features Of Flutter App:</h3>
 
@@ -577,7 +583,7 @@
 
 		<svg class="mb-3 w w_50 mx-auto d-table" width="672" height="36" viewBox="0 0 672 36" fill="none" xmlns="http://www.w3.org/2000/svg"> <path style="stroke: var(--primeColor);" d="M4 32C199.013 20.5125 606.673 -9.88059 663.31 11.341C719.946 32.5627 249.686 20.1834 7.47644 11.341" stroke-width="7" stroke-linecap="round" data-aos="fade-up" data-aos-delay="300"></path></svg>
 
-		<p class="text-center">Use AppVerra’ss Flutter development services to launch your app more quickly. We reduce development time and expenses by creating high-performing apps for both iOS and Android using a single codebase. Our knowledgeable staff guarantees smooth user experiences, quick deployment, and scalable solutions to help you get to market more quickly and effectively.</p>
+		<p class="text-center">Use Appverra’ss Flutter development services to launch your app more quickly. We reduce development time and expenses by creating high-performing apps for both iOS and Android using a single codebase. Our knowledgeable staff guarantees smooth user experiences, quick deployment, and scalable solutions to help you get to market more quickly and effectively.</p>
 
 		<div class="row g-0 position-relative mt-4 mt-lg-5">
 
@@ -807,7 +813,7 @@
 
 			</h2>
 
-			<p class="light" data-aos="fade-up" data-aos-delay="300">We at AppVerra provide comprehensive Flutter app development services, including testing, deployment, and support in addition to UI/UX design and cross-platform coding. With just one codebase, our skilled team creates scalable, fast apps that emulate native experiences. We offer comprehensive solutions that are suited to your company's objectives, regardless of your size.</p>
+			<p class="light" data-aos="fade-up" data-aos-delay="300">We at Appverra provide comprehensive Flutter app development services, including testing, deployment, and support in addition to UI/UX design and cross-platform coding. With just one codebase, our skilled team creates scalable, fast apps that emulate native experiences. We offer comprehensive solutions that are suited to your company's objectives, regardless of your size.</p>
 
 			<div class="btn_set mt-4">
 					<span class="btn_wrap"  data-aos="fade-up" data-aos-delay="600">

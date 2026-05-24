@@ -1,6 +1,6 @@
-<?php $meta_title = "AppVerra | Our Work – Mobile App & Web Development Projects"; ?>
+﻿<?php $meta_title = "Appverra | Our Work – Mobile App & Web Development Projects"; ?>
 
-<?php $meta_discription = "Discover AppVerra’s portfolio of mobile apps, websites, and digital solutions. See how we help startups and enterprises turn ideas into powerful products."; ?>
+<?php $meta_discription = "Discover Appverra’s portfolio of mobile apps, websites, and digital solutions. See how we help startups and enterprises turn ideas into powerful products."; ?>
 
 <?php $page_class = "our_work-page"; ?>
 

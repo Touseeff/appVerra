@@ -169,7 +169,7 @@
                         your app is scaling fast, needs real-time updates, or handles sensitive data, professional 
                         expertise can make all the difference.
                     </p>
-                    <p><strong>At AppVerra, we specialize in delivering professional Full Stack Development 
+                    <p><strong>At Appverra, we specialize in delivering professional Full Stack Development 
                         solutions, including state management strategies, that keep your apps scalable, 
                         secure, and user-friendly.</strong>
                     </p>

@@ -1,6 +1,6 @@
-﻿<?php $meta_title = " AppVerra | Contact Us – Let’s Build Your App Idea Today"; ?>
+﻿<?php $meta_title = " Appverra | Contact Us – Let’s Build Your App Idea Today"; ?>
 
-<?php $meta_discription = "Have an idea? Contact AppVerra for app design, development & strategy. Drop us a line to get started, fast and full-stack backed by experts"; ?>
+<?php $meta_discription = "Have an idea? Contact Appverra for app design, development & strategy. Drop us a line to get started, fast and full-stack backed by experts"; ?>
 
 <?php $page_class = "contact_us-page"; ?>
 

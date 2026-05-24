@@ -99,7 +99,7 @@ include("header.php");
                 <section id="section6">
                     <h2 class="heading55px darkpurple">Should Indie Developers Choose Unity in 2025?</h2>
                     <p>The short answer is yes. Unity remains a powerhouse for indie developers because it combines accessibility, affordability, and scalability with a supportive ecosystem. Despite past controversies, its tools and community continue to make it the go-to choice for many.</p>
-                    <p>If you’re an indie creator looking for expert guidance, development support, or a partner to bring your vision to life, AppVerra’s “Unity Game Development” services can help you navigate the process with confidence and efficiency.</p>
+                    <p>If you’re an indie creator looking for expert guidance, development support, or a partner to bring your vision to life, Appverra’s “Unity Game Development” services can help you navigate the process with confidence and efficiency.</p>
                 </section>
 
                 <section id="section7">

@@ -312,7 +312,7 @@ scale campaigns, or measure ROI with precision, it’s time.</p>
 
 
 
-<p><strong>At AppVerra, we help businesses scale beyond DIY with expert Mobile App Marketing 
+<p><strong>At Appverra, we help businesses scale beyond DIY with expert Mobile App Marketing 
 
 strategies that maximize growth even on limited budgets.</strong></p>
 

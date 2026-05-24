@@ -1,6 +1,6 @@
-<?php
-$meta_title = "Page Not Found — AppVerra";
-$meta_discription = "The page you're looking for doesn't exist. Return to AppVerra's homepage.";
+﻿<?php
+$meta_title = "Page Not Found — Appverra";
+$meta_discription = "The page you're looking for doesn't exist. Return to Appverra's homepage.";
 $page_class = "error-page";
 http_response_code(404);
 include("header.php");

@@ -1,4 +1,4 @@
-<?php $meta_title = "About Appverra — Founder-Led Flutter App Development Agency"; ?>
+﻿<?php $meta_title = "About Appverra — Founder-Led Flutter App Development Agency"; ?>
 
 <?php $meta_discription = "Three co-founders. 150+ apps shipped for 700+ customers. Apps with millions of downloads. Live US ride-booking marketplace in production. Apps that ship. Founders who answer."; ?>
 

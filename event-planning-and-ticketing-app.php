@@ -1,5 +1,5 @@
-﻿<?php $meta_title = "Event planning and ticketing app | AppVerra"; ?>
-<?php $meta_discription = "Explore AppVerra's event planning and ticketing app — a seamless platform for creating, managing, and selling tickets to events of all sizes across the USA."; ?>
+﻿<?php $meta_title = "Event planning and ticketing app | Appverra"; ?>
+<?php $meta_discription = "Explore Appverra's event planning and ticketing app — a seamless platform for creating, managing, and selling tickets to events of all sizes across the USA."; ?>
 <?php $page_class = "case_study-page"; ?>
 <?php $og_image = "https://appverra.co/assets/images/logo.webp"; ?>
 <?php include("header.php"); ?>
@@ -17,7 +17,7 @@
         <!-- Client’s Challenge -->
         <h2>The Client’s Challenge</h2>
         <p>
-            A fast-growing event management company approached AppVerra with a pressing need: 
+            A fast-growing event management company approached Appverra with a pressing need: 
             a modern event planning and ticketing app that could simplify event organization 
             while providing a seamless ticket-purchasing experience for users.
         </p>
@@ -37,7 +37,7 @@
         <!-- Vision -->
         <h2>Understanding the Vision</h2>
         <p>
-            At AppVerra, we started with deep discovery sessions to understand both the event organizers’ needs and the end-user journey.
+            At Appverra, we started with deep discovery sessions to understand both the event organizers’ needs and the end-user journey.
         </p>
         <p>From this, we identified three critical success factors:</p>
         <ul class="vision-list">
@@ -79,7 +79,7 @@
                 <h4 class="dark">Launch & Marketing Support</h4>
                 <ul>
                     <li>Supported a phased rollout, starting with mid-sized events before scaling to concerts.</li>
-                    <li>Leveraged AppVerra’s mobile app marketing services for app store optimization and ad campaigns.</li>
+                    <li>Leveraged Appverra’s mobile app marketing services for app store optimization and ad campaigns.</li>
                 </ul>
             </div>
         </div>
@@ -94,7 +94,7 @@
         </ul>
         <!-- Testimonial -->
         <blockquote>
-            “AppVerra turned our vision into reality. Their team understood the complexity of event management 
+            “Appverra turned our vision into reality. Their team understood the complexity of event management 
             and delivered an app that works flawlessly at scale. From smooth bookings to hassle-free check-ins, 
             the impact has been incredible—for both our organizers and attendees.”
         </blockquote>

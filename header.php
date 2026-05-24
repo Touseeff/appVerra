@@ -105,7 +105,7 @@
     <title><?= $meta_title ?></title>
     <meta name="description" content="<?= $meta_discription ?>">
     <meta name="keywords" content="mobile app development company USA, iOS app development, Android app development, React Native developer, Flutter app development, Unity game development, full stack development company, app development agency New York, hire mobile app developers USA, custom mobile app development, cross-platform app development, game development company USA, ecommerce app development, mobile app marketing agency, app development services USA">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="robots" content="<?= !empty($page_robots) ? $page_robots : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' ?>">
     <meta name="author" content="Appverra">
     <link rel="canonical" href="<?= $fullpageurl ?>">
 
@@ -180,7 +180,7 @@
       },
       "sameAs": [
         "https://www.facebook.com/AppVerra.Official",
-        "https://www.linkedin.com/company/appverra",
+        "https://www.linkedin.com/company/Appverra",
         "https://www.instagram.com/appverraco/",
         "https://x.com/appverra1"
       ]

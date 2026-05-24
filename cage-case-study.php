@@ -1,8 +1,8 @@
-﻿<?php $meta_title = "AppVerra | Cage Case Study — App Development Success Story"; ?>
+﻿<?php $meta_title = "Appverra | Cage Case Study — App Development Success Story"; ?>
 
 
 
-<?php $meta_discription = "See how AppVerra designed & launched Cage: user-centered features, seamless UX, and scalable app solutions to drive engagement & business growth."; ?>
+<?php $meta_discription = "See how Appverra designed & launched Cage: user-centered features, seamless UX, and scalable app solutions to drive engagement & business growth."; ?>
 
 
 

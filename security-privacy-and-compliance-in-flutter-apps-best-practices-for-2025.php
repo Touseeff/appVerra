@@ -106,7 +106,7 @@ include("header.php");
                 <section id="section7" class="rvl_start">
                     <h2 class="heading55px darkpurple">Conclusion + Call-to-Action</h2>
                     <p>To wrap up, building a Flutter app that’s fast, beautiful, and cross-platform is only half the job. The rest is ensuring flutter app security best practices are baked in from day one — secure data storage, strong authentication, encrypted network traffic, code obfuscation, continuous testing. Pair that with strong privacy compliance: transparent policies, user consent, minimal data collection. Do this, and you protect your users, your reputation, and avoid legal and financial pain.</p>
-                    <p><strong>If you need help turning these practices into action, AppVerra offers Flutter Development services that emphasize security, privacy, and compliance at every stage. Reach out to us to build not just an app—but a trusted, secure experience your users will love.</strong></p>
+                    <p><strong>If you need help turning these practices into action, Appverra offers Flutter Development services that emphasize security, privacy, and compliance at every stage. Reach out to us to build not just an app—but a trusted, secure experience your users will love.</strong></p>
                 </section>
 
             </div>

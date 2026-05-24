@@ -1,6 +1,6 @@
-<?php $meta_title = "Build Stunning Apps That Scale — Start With Us Today"; ?>
+﻿<?php $meta_title = "Mobile App Development Services for Startups | Appverra"; ?>
 
-<?php $meta_discription = "Launch your app with expert developers. From mobile to full-stack, we craft scalable, game-ready, and growth-driven digital solutions. Let's build your next big win."; ?>
+<?php $meta_discription = "Flutter, React Native, and full-stack app development. 150+ apps shipped for 700+ customers. 6-week MVPs. Pricing $1,997 Discovery Sprint to $99,997+ Enterprise."; ?>
 
 <?php $page_class = "services-page"; ?>
 
@@ -66,7 +66,7 @@
 
 				<svg class="animated_svg2 mb-3" width="672" height="36" viewBox="0 0 672 36" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M4 32C199.013 20.5125 606.673 -9.88059 663.31 11.341C719.946 32.5627 249.686 20.1834 7.47644 11.341" stroke="#B3FF00" stroke-width="7" stroke-linecap="round"/></svg>
 
-				<span class="revealUp"><span><p style="color: #C3C9CE;">We offer a full suite of development services — from concept to launch — designed to turn your ideas into high-performing apps. Our solutions are built for growth, usability, and long-term success across mobile, web, and game platforms.</p></span></span>
+				<span class="revealUp"><span><p style="color: #C3C9CE;">Flutter mobile apps in 6 weeks. Full-stack MVPs in 6-8 weeks. App marketing and ASO bundled in Launch tier and above. 150+ apps shipped, 700+ customers, apps with millions of downloads. Pricing: $1,997 Discovery Sprint to scope your build, then Starter $7,997, Launch $14,997, Growth $29,997, Scale $59,997+, Enterprise $99,997+. Three co-founders. No account managers.</p></span></span>
 
 				<span class="btn_wrap"  data-aos="fade-up" data-aos-delay="600">
 

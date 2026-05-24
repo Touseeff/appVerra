@@ -1,4 +1,4 @@
-<section class="contact_us">
+﻿<section class="contact_us">
 
 	<div class="container">
 
@@ -72,7 +72,7 @@
                     </a>
                     <!-- <a href="https://www.instagram.com/" class="social_icon insta_icon"><i class="fa-brands fa-instagram"></i></a> -->
 
-					<a href="https://www.linkedin.com/company/appverra" target="_blank" rel="noopener" class="social_icon linked_icon"><i class="fa-brands fa-linkedin-in"></i></a>
+					<a href="https://www.linkedin.com/company/Appverra" target="_blank" rel="noopener" class="social_icon linked_icon"><i class="fa-brands fa-linkedin-in"></i></a>
 
 					<a href="https://x.com/appverra1" target="_blank" rel="noopener" class="social_icon x_twitter_icon"><i class="fa-brands fa-x-twitter"></i></a>
 

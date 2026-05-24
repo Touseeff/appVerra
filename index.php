@@ -1,4 +1,4 @@
-<?php $meta_title = "Founder-Friendly App Development Agency — Apps That Ship | Appverra"; ?>
+﻿<?php $meta_title = "Founder-Friendly App Development Agency — Apps That Ship | Appverra"; ?>
 
 <?php $meta_discription = "We've shipped 150+ apps for 700+ customers — apps with millions of downloads, including a live US ride-booking marketplace. Flutter apps in 6 weeks. Book a Discovery Sprint."; ?>
 
@@ -394,7 +394,7 @@
 
 							<span>
 
-								<p class="heading20px">We’re not just coders — we’re your strategic partners in turning ideas into apps people love to use. At AppVerra, we blend creativity, technical skill, and business thinking to build solutions that are fast, reliable, and tailored to your goals. Whether you're a startup with a big idea or an enterprise ready to scale, we speak your language and work closely with you every step of the way. We care about delivering real value — not just lines of code. Because for us, it’s not just about building apps; it’s about building what’s next for your business.</p>
+								<p class="heading20px">We’re not just coders — we’re your strategic partners in turning ideas into apps people love to use. At Appverra, we blend creativity, technical skill, and business thinking to build solutions that are fast, reliable, and tailored to your goals. Whether you're a startup with a big idea or an enterprise ready to scale, we speak your language and work closely with you every step of the way. We care about delivering real value — not just lines of code. Because for us, it’s not just about building apps; it’s about building what’s next for your business.</p>
 
 							</span>
 

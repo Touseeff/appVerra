@@ -1,5 +1,5 @@
-﻿<?php $meta_title = "Personal Finance And Budgeting Tool | AppVerra"; ?>
-<?php $meta_discription = "See how AppVerra built a powerful personal finance and budgeting tool that helps users track spending, set savings goals, and take full control of their financial future."; ?>
+﻿<?php $meta_title = "Personal Finance And Budgeting Tool | Appverra"; ?>
+<?php $meta_discription = "See how Appverra built a powerful personal finance and budgeting tool that helps users track spending, set savings goals, and take full control of their financial future."; ?>
 <?php $page_class = "case_study-page"; ?>
 <?php $og_image = "https://appverra.co/assets/images/logo.webp"; ?>
 <?php include("header.php"); ?>
@@ -17,7 +17,7 @@
         <!-- Client’s Challenge -->
         <h2>The Client’s Challenge</h2>
         <p>
-            A fintech company came to AppVerra with the goal of giving young professionals access 
+            A fintech company came to Appverra with the goal of giving young professionals access 
             to an easy-to-use, entertaining, and intuitive personal finance and budgeting tool. 
             Their main objective was to provide customers with a safe and intuitive mobile app 
             that would enable them to track spending, set savings targets, and obtain individualized 
@@ -32,7 +32,7 @@
         <!-- Vision -->
         <h2>Understanding the Vision</h2>
         <p>
-            At AppVerra, we believe that the best technology solutions are built on human-centric thinking. 
+            At Appverra, we believe that the best technology solutions are built on human-centric thinking. 
             Our first step was to deeply understand the client’s audience and their pain points. 
             Through workshops, user interviews, and competitor analysis, we discovered that users wanted:
         </p>
@@ -74,7 +74,7 @@
                 <h4 class="dark">Launch & Marketing</h4>
                 <ul>
                     <li>Collaborated with the client’s team to create a go-to-market strategy.</li>
-                    <li>Leveraged AppVerra’s mobile app marketing expertise to maximize visibility in app stores.</li>
+                    <li>Leveraged Appverra’s mobile app marketing expertise to maximize visibility in app stores.</li>
                 </ul>
             </div>
         </div>
@@ -88,7 +88,7 @@
         </ul>
         <!-- Testimonial -->
         <blockquote>
-            “Working with AppVerra was a game-changer. They didn’t just build an app, they understood our mission and 
+            “Working with Appverra was a game-changer. They didn’t just build an app, they understood our mission and 
             translated it into a product our users love. Their mix of technical expertise and human-focused design 
             was exactly what we needed.”
         </blockquote>
