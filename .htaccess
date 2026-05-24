@@ -17,6 +17,14 @@ RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
 RewriteCond %{REQUEST_FILENAME} -f
 RewriteRule ^favicon\.ico$ - [L]
 
+# Deny public web access to the entire blog_factory/ tree.
+# It contains: unreviewed draft posts, intermediate AI run artifacts, brand
+# voice guides, and the local .env reference. None of it should be browseable.
+# Server-side PHP (import-pending.php) reads these files via the filesystem,
+# which is unaffected by mod_rewrite rules.
+# Placed early so it fires BEFORE any rewrite rules can match.
+RewriteRule ^blog_factory/ - [F,L]
+
 # Remove .php extension from URLs
 # Redirect /page.php to /page (301 permanent)
 RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]

@@ -1,3 +1,7 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
 # AppVerra Website
 
 ## Project Overview
@@ -18,7 +22,7 @@ Corporate marketing website for AppVerra, a full-service app development agency 
 ## Tech Stack
 - **Backend:** PHP (no framework, no Composer, no database)
 - **Frontend:** HTML5, CSS3, Bootstrap, jQuery, vanilla JS
-- **Animations:** GSAP + ScrollTrigger, AOS (Animate on Scroll)
+- **Animations:** GSAP + ScrollTrigger + ScrollSmoother, AOS (Animate on Scroll)
 - **Sliders:** Owl Carousel, Slick, Swiper
 - **Icons:** Feather, FontAwesome
 - **Fonts:** Aeonik, Apercu (local), Bricolage Grotesque, Manrope (Google)
@@ -154,6 +158,22 @@ include('header.php');
 <?php include('footer.php'); ?>
 ```
 
+**Blog pages** use `$page_check = "blog-page"` instead of `$page_class`. This variable is never read by any shared component, so blog pages render with an empty `<body>` class — a known inconsistency. New blog pages should follow this same pattern (set `$page_check`, omit `$page_class`) to stay consistent, unless the body class is specifically needed.
+
+```php
+<?php
+$meta_title       = "Blog Post Title";
+$meta_discription = "Blog description.";
+$page_check       = "blog-page";   // vestigial — not used by header.php or footer.php
+include('header.php');
+?>
+<!-- blog content -->
+<?php include('footer.php'); ?>
+```
+
+### Notes on Existing Files
+- `testing.php` — stale draft page; duplicate of `why-unity-is-still-a-powerhouse-for-indie-game-development-in-2025.php`. Not linked anywhere and not in the sitemap. Safe to delete if no longer needed.
+
 ### URL Structure
 All pages use clean URLs (no .php):
 - `appverra.co/about-us` → serves `about-us.php`
@@ -181,6 +201,7 @@ Both forms POST to `/mail` (not `mail.php` — avoids .htaccess 301 redirect bre
 - Spin animation: add class `.spin`
 - On-scroll reveal: use AOS `data-aos=""` attributes
 - All GSAP logic in `assets/js/custom.js`
+- `ScrollSmoother` is loaded via `footer.php` (`scrollsmoother.min.js`) and initialised in `custom.js` alongside `ScrollTrigger`
 
 ### Images
 Each image has two versions — use WebP for performance:
@@ -205,3 +226,32 @@ Changes are committed to GitHub (`main` branch). To go live, deploy via:
 
 ## No Build Process
 No npm, no Composer, no build steps. Edit files directly and refresh the browser.
+
+## Blog Factory (Automated Publishing Pipeline)
+
+Zero-cost pipeline for generating + publishing blog posts using Claude Code (no Anthropic API spend). Runs locally on Noor's machine, uses Git as the queue, Hostinger auto-pull as delivery.
+
+**Flow:** Noor types `/publish-blog "topic"` → 5 subagents run (researcher → keyword strategist → drafter → SEO packager → editor) → if editor passes, markdown file lands in `blog_factory/queue/pending/` → git push → Hostinger auto-pulls → Noor visits `/admin/import-pending` → clicks Import → post inserted as draft → Noor reviews + publishes via existing `/admin/posts/` flow.
+
+**Critical files:**
+- `~/.claude/agents/appverra-blog-*.md` — 5 subagent definitions (NOT in repo, on Noor's machine only)
+- `~/.claude/commands/publish-blog.md` — slash command orchestrator (NOT in repo)
+- `blog_factory/voice/style_guide.md` — brand voice rules (drafter reads this every run)
+- `blog_factory/voice/examples/` — 2 anchor posts copied from existing 9 posts
+- `blog_factory/queue/topics.yaml` — backlog of seeded topics
+- `blog_factory/queue/pending/*.md` — drafts awaiting import (YAML frontmatter + HTML body)
+- `blog_factory/queue/imported/*.md` — archived after successful import
+- `blog_factory/queue/published.json` — local dedupe log (gitignored)
+- `blog_factory/runs/` — per-run intermediate artifacts (gitignored, local-only)
+- `blog_factory/.env` — `UNSPLASH_ACCESS_KEY` (gitignored)
+- `admin/import-pending.php` — the import UI page in admin
+- `.htaccess` — denies public web access to `/blog_factory/` (drafts are not browseable)
+
+**Setup steps for first use:**
+1. Sign up for free Unsplash API key at unsplash.com/developers
+2. Copy `blog_factory/.env.example` → `blog_factory/.env`, paste Unsplash key
+3. Delete the `olor` lorem-ipsum post via `/admin/posts/` (one-time cleanup)
+
+**Safety rails:** Bot writes drafts only (never auto-publishes). Editor agent hard-fails on word count out of range, missing FAQ, dead citations (HEAD-checks every URL), slug collisions, or brand-voice red flags. HTML sanitized twice — drafter prompt discipline + server-side `post_sanitize_html()`.
+
+The import page reuses ALL existing helpers (`post_validate`, `post_sanitize_html`, `slug_unique`, `post_regenerate_sitemap`) — no duplicated validation logic. Featured images flow through `image_to_webp()` and land in `/uploads/YYYY/MM/`.

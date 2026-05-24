@@ -1,0 +1,45 @@
+# AppVerra Blog Topic Backlog
+#
+# Used by the /publish-blog command when no topic is supplied.
+# Each entry maps to one of the 6 AppVerra service areas so the drafter
+# can weave in a relevant internal link.
+#
+# Edit freely. Drafted topics auto-move to backlog/published.json on success.
+
+flutter:
+  - "Flutter vs Kotlin Multiplatform in 2026: Which Cross-Platform Stack Wins for Your Team"
+  - "Optimizing Flutter App Startup Time: 7 Real Fixes That Cut Cold Starts in Half"
+  - "Flutter for Web in 2026: Honest Strengths, Real Limits, and When to Pick It"
+  - "Migrating an Old Native Android App to Flutter: A Pragmatic Playbook"
+  - "State Management in Flutter 2026: Riverpod vs Bloc vs GetX — Decision Framework"
+
+react-native:
+  - "React Native New Architecture in 2026: What Actually Changed and What It Means for Your App"
+  - "Expo vs Bare React Native in 2026: Stop Picking the Wrong Workflow"
+  - "Reducing React Native App Bundle Size: 8 Techniques That Actually Work"
+  - "React Native Push Notifications in 2026: A Complete Implementation Guide"
+  - "Debugging React Native Performance: A Senior Engineer's Toolkit"
+
+unity:
+  - "Unity 6 vs Unreal Engine 5.5 for Indie Studios in 2026"
+  - "Multiplayer Games in Unity 2026: NetCode for GameObjects vs Mirror vs Photon"
+  - "Optimizing Unity Mobile Games: 10 Lessons from Shipped Titles"
+  - "Unity URP vs HDRP in 2026: Picking the Right Render Pipeline"
+
+full-stack:
+  - "Next.js 15 vs Nuxt 4 in 2026: Which Full-Stack Framework Fits Your Team"
+  - "PostgreSQL vs MongoDB in 2026: A Decision Guide for Product Teams"
+  - "Designing Multi-Tenant SaaS Architecture: Patterns That Scale Past 10k Customers"
+  - "API Design in 2026: REST, GraphQL, and tRPC — When Each Wins"
+
+mobile-marketing:
+  - "ASO in 2026: What Actually Moves App Store Rankings This Year"
+  - "User Acquisition for Mobile Apps Without Burning Cash on Meta and TikTok"
+  - "Retention Beats Acquisition: 6 Push Notification Patterns That Don't Annoy Users"
+  - "Mobile Attribution in a Post-IDFA World: SKAdNetwork 4, AdAttributionKit, and What Comes Next"
+
+ecommerce:
+  - "Headless Commerce in 2026: When It's Worth the Engineering Lift"
+  - "Shopify vs Custom E-commerce Build: When Each Makes Sense"
+  - "Mobile Checkout Optimization: 12 Friction Points Killing Your Conversion Rate"
+  - "Implementing Apple Pay and Google Pay in 2026: A Step-by-Step Guide"

@@ -5,6 +5,7 @@ require_once __DIR__ . '/../includes/auth.php';
 function layout_start(string $title): void {
     $user = require_auth();
     $current = $_SERVER['REQUEST_URI'] ?? '';
+    $pending_count = count_pending_imports();
     ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,6 +22,11 @@ function layout_start(string $title): void {
     <a href="/admin/dashboard.php" class="<?= str_contains($current, 'dashboard') ? 'active' : '' ?>">Dashboard</a>
     <a href="/admin/posts/" class="<?= str_contains($current, '/posts') ? 'active' : '' ?>">Posts</a>
     <a href="/admin/posts/create.php">+ New post</a>
+    <a href="/admin/import-pending.php" class="<?= str_contains($current, 'import-pending') ? 'active' : '' ?>">
+      Import drafts<?php if ($pending_count > 0): ?>
+        <span style="background:#dc2626;color:#fff;border-radius:10px;padding:.1rem .5rem;font-size:.75rem;margin-left:.4rem;"><?= $pending_count ?></span>
+      <?php endif ?>
+    </a>
     <a href="/admin/media/" class="<?= str_contains($current, '/media') ? 'active' : '' ?>">Media</a>
     <a href="/admin/settings.php" class="<?= str_contains($current, 'settings') ? 'active' : '' ?>">Settings</a>
   </nav>
@@ -40,6 +46,13 @@ function layout_end(): void {
 </main>
 </body>
 </html><?php
+}
+
+function count_pending_imports(): int {
+    $dir = realpath(__DIR__ . '/../blog_factory/queue/pending');
+    if (!$dir || !is_dir($dir)) return 0;
+    $files = glob($dir . '/*.md') ?: [];
+    return count($files);
 }
 
 function flash_set(string $type, string $msg): void {
