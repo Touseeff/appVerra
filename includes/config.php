@@ -5,10 +5,22 @@
 if (!defined('APPVERRA_DB_LOADED')) {
     define('APPVERRA_DB_LOADED', true);
 
-    // Real credentials live in `includes/config.local.php` (gitignored).
-    // That file is loaded first if present; defaults below are safe placeholders.
-    if (is_file(__DIR__ . '/config.local.php')) {
-        require __DIR__ . '/config.local.php';
+    // Real credentials live in `config.local.php` (gitignored).
+    // We try multiple locations in priority order:
+    //   1. includes/config.local.php (in-repo location — convenient but Hostinger
+    //      Git deploys can wipe it on push)
+    //   2. /home/u751124526/config.local.php (home dir — OUTSIDE public_html, so
+    //      Git deploys never touch it. Recommended for production.)
+    //   3. Env vars via getenv() — works if Hostinger PHP-FPM picks them up.
+    //   4. CHANGE_ME placeholders below — fatal at first DB query (intentional).
+    foreach ([
+        __DIR__ . '/config.local.php',
+        '/home/u751124526/config.local.php',
+    ] as $candidate) {
+        if (is_file($candidate) && is_readable($candidate)) {
+            require $candidate;
+            break;
+        }
     }
     if (!defined('DB_HOST')) define('DB_HOST', getenv('DB_HOST') ?: 'localhost');
     if (!defined('DB_NAME')) define('DB_NAME', getenv('DB_NAME') ?: 'CHANGE_ME_DB_NAME');
