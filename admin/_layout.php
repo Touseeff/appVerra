@@ -5,7 +5,18 @@ require_once __DIR__ . '/../includes/auth.php';
 function layout_start(string $title): void {
     $user = require_auth();
     $current = $_SERVER['REQUEST_URI'] ?? '';
-    $pending_count = count_pending_imports();
+
+    // Count pending imports safely — never let badge logic break the layout.
+    $pending_count = 0;
+    try {
+        $dir = __DIR__ . '/../blog_factory/queue/pending';
+        if (is_dir($dir)) {
+            $files = @glob($dir . '/*.md');
+            $pending_count = is_array($files) ? count($files) : 0;
+        }
+    } catch (\Throwable $e) {
+        $pending_count = 0;
+    }
     ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,13 +57,6 @@ function layout_end(): void {
 </main>
 </body>
 </html><?php
-}
-
-function count_pending_imports(): int {
-    $dir = realpath(__DIR__ . '/../blog_factory/queue/pending');
-    if (!$dir || !is_dir($dir)) return 0;
-    $files = glob($dir . '/*.md') ?: [];
-    return count($files);
 }
 
 function flash_set(string $type, string $msg): void {
