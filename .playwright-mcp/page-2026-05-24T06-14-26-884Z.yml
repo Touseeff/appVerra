@@ -1,0 +1,56 @@
+- generic [active]:
+  - generic [ref=e1]:
+    - generic [ref=e2] [cursor=pointer]: +
+    - list [ref=e3]:
+      - listitem [ref=e4]:
+        - link "Home" [ref=e5] [cursor=pointer]:
+          - /url: https://appverra.co/
+      - listitem [ref=e6]:
+        - link "About" [ref=e7] [cursor=pointer]:
+          - /url: about-us
+      - listitem [ref=e8]:
+        - link "Services" [ref=e9] [cursor=pointer]:
+          - /url: javascript:;
+          - text: Services
+      - listitem [ref=e10]:
+        - link "Work" [ref=e11] [cursor=pointer]:
+          - /url: our-work
+      - listitem [ref=e12]:
+        - link "Contact Us" [ref=e13] [cursor=pointer]:
+          - /url: contact-us
+      - list [ref=e14]:
+        - generic [ref=e15] [cursor=pointer]: Back
+        - listitem [ref=e17]:
+          - link "Unity Game Development" [ref=e18] [cursor=pointer]:
+            - /url: unity-game-development
+        - listitem [ref=e19]:
+          - link "React Native Development" [ref=e20] [cursor=pointer]:
+            - /url: react-native-developer
+        - listitem [ref=e21]:
+          - link "Flutter App Development" [ref=e22] [cursor=pointer]:
+            - /url: flutter-app-development
+        - listitem [ref=e23]:
+          - link "Full Stack Development" [ref=e24] [cursor=pointer]:
+            - /url: full-stack-development
+        - listitem [ref=e25]:
+          - link "Mobile App Marketing" [ref=e26] [cursor=pointer]:
+            - /url: mobile-app-marketing
+        - listitem [ref=e27]:
+          - link "Ecommerce" [ref=e28] [cursor=pointer]:
+            - /url: ecommerce
+  - banner [ref=e29]:
+    - navigation [ref=e30]:
+      - generic [ref=e31]:
+        - link "Logo" [ref=e33] [cursor=pointer]:
+          - /url: https://appverra.co/
+          - img "Logo" [ref=e34]
+        - list [ref=e40]:
+          - listitem [ref=e41]:
+            - generic [ref=e42]:
+              - link "Get Started Get Started" [ref=e43] [cursor=pointer]:
+                - /url: javascript:;
+                - generic [ref=e44]:
+                  - generic [ref=e45]: Get Started
+                  - generic [ref=e46]: Get Started
+              - link [ref=e48] [cursor=pointer]:
+                - /url: tel:(213) 714-7176

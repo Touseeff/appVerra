@@ -1,0 +1,303 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3] [cursor=pointer]: +
+    - list [ref=e4]:
+      - listitem [ref=e5]:
+        - link "Home" [ref=e6] [cursor=pointer]:
+          - /url: https://appverra.co/
+      - listitem [ref=e7]:
+        - link "About" [ref=e8] [cursor=pointer]:
+          - /url: about-us
+      - listitem [ref=e9]:
+        - link "Services" [ref=e10] [cursor=pointer]:
+          - /url: javascript:;
+          - text: Services
+      - listitem [ref=e11]:
+        - link "Work" [ref=e12] [cursor=pointer]:
+          - /url: our-work
+      - listitem [ref=e13]:
+        - link "Contact Us" [ref=e14] [cursor=pointer]:
+          - /url: contact-us
+      - list [ref=e15]:
+        - generic [ref=e16] [cursor=pointer]: Back
+        - listitem [ref=e18]:
+          - link "Unity Game Development" [ref=e19] [cursor=pointer]:
+            - /url: unity-game-development
+        - listitem [ref=e20]:
+          - link "React Native Development" [ref=e21] [cursor=pointer]:
+            - /url: react-native-developer
+        - listitem [ref=e22]:
+          - link "Flutter App Development" [ref=e23] [cursor=pointer]:
+            - /url: flutter-app-development
+        - listitem [ref=e24]:
+          - link "Full Stack Development" [ref=e25] [cursor=pointer]:
+            - /url: full-stack-development
+        - listitem [ref=e26]:
+          - link "Mobile App Marketing" [ref=e27] [cursor=pointer]:
+            - /url: mobile-app-marketing
+        - listitem [ref=e28]:
+          - link "Ecommerce" [ref=e29] [cursor=pointer]:
+            - /url: ecommerce
+  - generic [ref=e31]:
+    - banner [ref=e32]:
+      - navigation [ref=e33]:
+        - generic [ref=e34]:
+          - link "Logo" [ref=e36] [cursor=pointer]:
+            - /url: https://appverra.co/
+            - img "Logo" [ref=e37]
+          - list [ref=e43]:
+            - listitem [ref=e44]:
+              - generic [ref=e45]:
+                - link "Get Started Get Started" [ref=e46] [cursor=pointer]:
+                  - /url: javascript:;
+                  - generic [ref=e47]:
+                    - generic [ref=e48]: Get Started
+                    - generic [ref=e49]: Get Started
+                  - generic [ref=e50]:
+                    - generic:
+                      - img [ref=e51]
+                      - img [ref=e53]
+                - link [ref=e55] [cursor=pointer]:
+                  - /url: tel:(213) 714-7176
+                  - img [ref=e56]
+    - generic [ref=e58]:
+      - generic: Our Blogs Our Blogs Our Blogs Our Blogs Our Blogs Our Blogs Our Blogs Our Blogs Our Blogs Our Blogs Our Blogs Our Blogs Our Blogs Our Blogs Our Blogs Our Blogs
+      - generic [ref=e61]:
+        - generic [ref=e63]: Our Blogs
+        - heading "Insights, Updates & Ideas from AppVerra" [level=2] [ref=e64]:
+          - generic [ref=e66]:
+            - text: Insights, Updates & Ideas
+            - generic [ref=e67]: from AppVerra
+        - img [ref=e68]
+        - paragraph [ref=e72]: Explore expert articles, product updates, and helpful resources designed to keep you informed and inspired. Stay connected with the latest tips, stories, and news from our team and community.
+        - generic [ref=e73]:
+          - link "Get Started Get Started" [ref=e75] [cursor=pointer]:
+            - /url: javascript:;
+            - generic [ref=e76]:
+              - generic [ref=e77]: Get Started
+              - generic [ref=e78]: Get Started
+            - generic [ref=e79]:
+              - generic:
+                - img [ref=e80]
+                - img [ref=e82]
+          - link "Call Now Call Now" [ref=e85] [cursor=pointer]:
+            - /url: tel:2137147176
+            - generic [ref=e86]:
+              - generic [ref=e87]: Call Now
+              - generic [ref=e88]: Call Now
+            - generic [ref=e89]:
+              - generic:
+                - img [ref=e90]
+                - img [ref=e92]
+          - link "Chat Now Chat Now" [ref=e95] [cursor=pointer]:
+            - /url: javascript:;
+            - generic [ref=e96]:
+              - generic [ref=e97]: Chat Now
+              - generic [ref=e98]: Chat Now
+            - generic [ref=e99]:
+              - generic:
+                - img [ref=e100]
+                - img [ref=e102]
+    - generic [ref=e106]:
+      - generic [ref=e107]: Our Blogs
+      - heading "Our Blogs" [level=2] [ref=e108]:
+        - generic [ref=e110]:
+          - text: Our
+          - generic [ref=e111]: Blogs
+      - img [ref=e112]
+      - generic [ref=e114]:
+        - generic [ref=e116]:
+          - img "Why Unity is Still a Powerhouse for Indie Game Development in 2025" [ref=e117]
+          - generic [ref=e118]:
+            - heading "Why Unity is Still a Powerhouse for Indie Game Development in 2025" [level=3] [ref=e119]
+            - link "Learn More Learn More" [ref=e121] [cursor=pointer]:
+              - /url: why-unity-is-still-a-powerhouse-for-indie-game-development-in-2025
+              - generic [ref=e122]:
+                - generic [ref=e123]: Learn More
+                - generic [ref=e124]: Learn More
+              - generic [ref=e125]:
+                - generic:
+                  - img [ref=e126]
+                  - img [ref=e128]
+        - generic [ref=e131]:
+          - img "Ai React Native Integration Building Smarter Mobile Experiences" [ref=e132]
+          - generic [ref=e133]:
+            - heading "Ai React Native Integration Building Smarter Mobile Experiences" [level=3] [ref=e134]
+            - link "Learn More Learn More" [ref=e136] [cursor=pointer]:
+              - /url: ai-react-native-integration-building-smarter-mobile-experiences
+              - generic [ref=e137]:
+                - generic [ref=e138]: Learn More
+                - generic [ref=e139]: Learn More
+              - generic [ref=e140]:
+                - generic:
+                  - img [ref=e141]
+                  - img [ref=e143]
+        - generic [ref=e146]:
+          - img "Developing Flutter Apps for Emerging Use Cases Iot Wearables and Pwas" [ref=e147]
+          - generic [ref=e148]:
+            - heading "Developing Flutter Apps for Emerging Use Cases Iot Wearables and Pwas" [level=3] [ref=e149]
+            - link "Learn More Learn More" [ref=e151] [cursor=pointer]:
+              - /url: developing-flutter-apps-for-emerging-use-cases-iot-wearables-and-pwas
+              - generic [ref=e152]:
+                - generic [ref=e153]: Learn More
+                - generic [ref=e154]: Learn More
+              - generic [ref=e155]:
+                - generic:
+                  - img [ref=e156]
+                  - img [ref=e158]
+        - generic [ref=e161]:
+          - img "Handling State Management Chaos in Full Stack Apps Practical Solutions" [ref=e162]
+          - generic [ref=e163]:
+            - heading "Handling State Management Chaos in Full Stack Apps Practical Solutions" [level=3] [ref=e164]
+            - link "Learn More Learn More" [ref=e166] [cursor=pointer]:
+              - /url: handling-state-management-chaos-in-full-stack-apps-practical-solutions
+              - generic [ref=e167]:
+                - generic [ref=e168]: Learn More
+                - generic [ref=e169]: Learn More
+              - generic [ref=e170]:
+                - generic:
+                  - img [ref=e171]
+                  - img [ref=e173]
+        - generic [ref=e176]:
+          - img "Low Ad Budgets Creative Mobile App Marketing Hacks That Work" [ref=e177]
+          - generic [ref=e178]:
+            - heading "Low Ad Budgets Creative Mobile App Marketing Hacks That Work" [level=3] [ref=e179]
+            - link "Learn More Learn More" [ref=e181] [cursor=pointer]:
+              - /url: low-ad-budgets-creative-mobile-app-marketing-hacks-that-work
+              - generic [ref=e182]:
+                - generic [ref=e183]: Learn More
+                - generic [ref=e184]: Learn More
+              - generic [ref=e185]:
+                - generic:
+                  - img [ref=e186]
+                  - img [ref=e188]
+        - generic [ref=e191]:
+          - img "Voice Commerce in 2025 How to Enable Hands Fee Shopping in Your App" [ref=e192]
+          - generic [ref=e193]:
+            - heading "Voice Commerce in 2025 How to Enable Hands Fee Shopping in Your App" [level=3] [ref=e194]
+            - link "Learn More Learn More" [ref=e196] [cursor=pointer]:
+              - /url: voice-commerce-in-2025-how-to-enable-hands-fee-shopping-in-your-app
+              - generic [ref=e197]:
+                - generic [ref=e198]: Learn More
+                - generic [ref=e199]: Learn More
+              - generic [ref=e200]:
+                - generic:
+                  - img [ref=e201]
+                  - img [ref=e203]
+        - generic [ref=e206]:
+          - img "Accessibility in React Native Bridging Gaps for Inclusive Apps" [ref=e207]
+          - generic [ref=e208]:
+            - heading "Accessibility in React Native Bridging Gaps for Inclusive Apps" [level=3] [ref=e209]
+            - link "Learn More Learn More" [ref=e211] [cursor=pointer]:
+              - /url: accessibility-in-react-native-bridging-gaps-for-inclusive-apps
+              - generic [ref=e212]:
+                - generic [ref=e213]: Learn More
+                - generic [ref=e214]: Learn More
+              - generic [ref=e215]:
+                - generic:
+                  - img [ref=e216]
+                  - img [ref=e218]
+        - generic [ref=e221]:
+          - img "Security Privacy and Compliance in Flutter Apps Best Practices for 2025" [ref=e222]
+          - generic [ref=e223]:
+            - heading "Security Privacy and Compliance in Flutter Apps Best Practices for 2025" [level=3] [ref=e224]
+            - link "Learn More Learn More" [ref=e226] [cursor=pointer]:
+              - /url: security-privacy-and-compliance-in-flutter-apps-best-practices-for-2025
+              - generic [ref=e227]:
+                - generic [ref=e228]: Learn More
+                - generic [ref=e229]: Learn More
+              - generic [ref=e230]:
+                - generic:
+                  - img [ref=e231]
+                  - img [ref=e233]
+        - generic [ref=e236]:
+          - img "Unity Pricing Changes Explained What Developers Need to Know in 2025" [ref=e237]
+          - generic [ref=e238]:
+            - heading "Unity Pricing Changes Explained What Developers Need to Know in 2025" [level=3] [ref=e239]
+            - link "Learn More Learn More" [ref=e241] [cursor=pointer]:
+              - /url: unity-pricing-changes-explained-what-developers-need-to-know-in-2025
+              - generic [ref=e242]:
+                - generic [ref=e243]: Learn More
+                - generic [ref=e244]: Learn More
+              - generic [ref=e245]:
+                - generic:
+                  - img [ref=e246]
+                  - img [ref=e248]
+        - generic [ref=e251]:
+          - img "Doloribus qui aut pariatur Perferendis laboriosam expedita" [ref=e252]
+          - generic [ref=e253]:
+            - heading "Doloribus qui aut pariatur Perferendis laboriosam expedita" [level=3] [ref=e254]
+            - link "Learn More Learn More" [ref=e256] [cursor=pointer]:
+              - /url: doloribus-qui-aut-pariatur-perferendis-laboriosam-expedita
+              - generic [ref=e257]:
+                - generic [ref=e258]: Learn More
+                - generic [ref=e259]: Learn More
+              - generic [ref=e260]:
+                - generic:
+                  - img [ref=e261]
+                  - img [ref=e263]
+    - contentinfo [ref=e265]:
+      - generic [ref=e266]:
+        - generic [ref=e268]:
+          - generic [ref=e270]:
+            - heading "Quick links" [level=3] [ref=e271]
+            - list [ref=e272]:
+              - listitem [ref=e273]:
+                - link "HOME" [ref=e274] [cursor=pointer]:
+                  - /url: https://appverra.co/
+              - listitem [ref=e275]:
+                - link "ABOUT US" [ref=e276] [cursor=pointer]:
+                  - /url: about-us
+              - listitem [ref=e277]:
+                - link "OUR SERVICES" [ref=e278] [cursor=pointer]:
+                  - /url: our-services
+              - listitem [ref=e279]:
+                - link "WORK" [ref=e280] [cursor=pointer]:
+                  - /url: our-work
+              - listitem [ref=e281]:
+                - link "CONTACT US" [ref=e282] [cursor=pointer]:
+                  - /url: contact-us
+          - generic [ref=e284]:
+            - heading "Services" [level=3] [ref=e285]
+            - list [ref=e286]:
+              - listitem [ref=e287]:
+                - link "UNITY GAME DEVELOPMENT" [ref=e288] [cursor=pointer]:
+                  - /url: unity-game-development
+              - listitem [ref=e289]:
+                - link "REACT NATIVE DEVELOPMENT" [ref=e290] [cursor=pointer]:
+                  - /url: react-native-developer
+              - listitem [ref=e291]:
+                - link "FLUTTER APP DEVELOPMENT" [ref=e292] [cursor=pointer]:
+                  - /url: flutter-app-development
+              - listitem [ref=e293]:
+                - link "FULL STACK DEVELOPMENT" [ref=e294] [cursor=pointer]:
+                  - /url: full-stack-development
+              - listitem [ref=e295]:
+                - link "MOBILE APP MARKETING" [ref=e296] [cursor=pointer]:
+                  - /url: mobile-app-marketing
+              - listitem [ref=e297]:
+                - link "ANY ECOMMERCE" [ref=e298] [cursor=pointer]:
+                  - /url: ecommerce
+          - generic [ref=e300]:
+            - heading "Contact Us" [level=3] [ref=e301]
+            - heading "Email Us:" [level=4] [ref=e302]
+            - link "info@appverra.co" [ref=e303] [cursor=pointer]:
+              - /url: mailto:info@appverra.co
+            - heading "Phone:" [level=4] [ref=e304]
+            - link "(213) 714-7176" [ref=e305] [cursor=pointer]:
+              - /url: tel:2137147176
+          - generic [ref=e307]:
+            - heading "Location" [level=3] [ref=e308]
+            - paragraph [ref=e311]: 20 N Moore St, New York, NY 10013, United States
+        - generic [ref=e314]: AppVerra
+      - generic [ref=e317]:
+        - paragraph [ref=e319]: © 2026 AppVerra — Powered by Artistic Web Services
+        - generic [ref=e321]:
+          - link "Terms of Services" [ref=e322] [cursor=pointer]:
+            - /url: https://appverra.co/terms-and-condition
+          - link "Privacy Policy" [ref=e323] [cursor=pointer]:
+            - /url: https://appverra.co/privacy-policy
+  - option "$1500 – $2999"
+  - option "$3000 – $4999"
+  - option "$5000 – $6499"
+  - option "$6500 and above"

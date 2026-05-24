@@ -1,0 +1,195 @@
+- generic [active] [ref=e1]:
+  - complementary [ref=e2]:
+    - link "AppVerraAdmin" [ref=e3] [cursor=pointer]:
+      - /url: /admin/dashboard.php
+    - navigation [ref=e4]:
+      - link "Dashboard" [ref=e5] [cursor=pointer]:
+        - /url: /admin/dashboard.php
+      - link "Posts" [ref=e6] [cursor=pointer]:
+        - /url: /admin/posts/
+      - link "+ New post" [ref=e7] [cursor=pointer]:
+        - /url: /admin/posts/create.php
+      - link "Import drafts" [ref=e8] [cursor=pointer]:
+        - /url: /admin/import-pending.php
+      - link "Media" [ref=e9] [cursor=pointer]:
+        - /url: /admin/media/
+      - link "Settings" [ref=e10] [cursor=pointer]:
+        - /url: /admin/settings.php
+    - generic [ref=e11]:
+      - text: admin
+      - link "Log out" [ref=e12] [cursor=pointer]:
+        - /url: /admin/logout.php
+  - main [ref=e13]:
+    - heading "Posts" [level=1] [ref=e15]
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - searchbox "Search title or slug" [ref=e19]
+          - combobox [ref=e20]:
+            - option "All statuses" [selected]
+            - option "Draft"
+            - option "Scheduled"
+            - option "Published"
+          - button "Filter" [ref=e21]
+        - link "+ New post" [ref=e22] [cursor=pointer]:
+          - /url: /admin/posts/create.php
+      - table [ref=e24]:
+        - rowgroup [ref=e25]:
+          - row "Title Slug Status Publish at Updated" [ref=e26]:
+            - columnheader "Title" [ref=e27]
+            - columnheader "Slug" [ref=e28]
+            - columnheader "Status" [ref=e29]
+            - columnheader "Publish at" [ref=e30]
+            - columnheader "Updated" [ref=e31]
+            - columnheader [ref=e32]
+        - rowgroup [ref=e33]:
+          - row "Why Unity is Still a Powerhouse for Indie Game Development in 2025 why-unity-is-still-a-powerhouse-for-indie-game-development-in-2025 published 2026-05-23 08:24:00 2026-05-24 05:30:16 Edit · View" [ref=e34]:
+            - cell "Why Unity is Still a Powerhouse for Indie Game Development in 2025" [ref=e35]:
+              - link "Why Unity is Still a Powerhouse for Indie Game Development in 2025" [ref=e36] [cursor=pointer]:
+                - /url: /admin/posts/edit.php?id=2
+            - cell "why-unity-is-still-a-powerhouse-for-indie-game-development-in-2025" [ref=e37]:
+              - code [ref=e38]: why-unity-is-still-a-powerhouse-for-indie-game-development-in-2025
+            - cell "published" [ref=e39]
+            - cell "2026-05-23 08:24:00" [ref=e40]
+            - cell "2026-05-24 05:30:16" [ref=e41]
+            - cell "Edit · View" [ref=e42]:
+              - link "Edit" [ref=e43] [cursor=pointer]:
+                - /url: /admin/posts/edit.php?id=2
+              - text: ·
+              - link "View" [ref=e44] [cursor=pointer]:
+                - /url: /why-unity-is-still-a-powerhouse-for-indie-game-development-in-2025
+          - row "Low Ad Budgets Creative Mobile App Marketing Hacks That Work low-ad-budgets-creative-mobile-app-marketing-hacks-that-work published 2026-05-23 08:24:00 2026-05-24 05:23:18 Edit · View" [ref=e45]:
+            - cell "Low Ad Budgets Creative Mobile App Marketing Hacks That Work" [ref=e46]:
+              - link "Low Ad Budgets Creative Mobile App Marketing Hacks That Work" [ref=e47] [cursor=pointer]:
+                - /url: /admin/posts/edit.php?id=6
+            - cell "low-ad-budgets-creative-mobile-app-marketing-hacks-that-work" [ref=e48]:
+              - code [ref=e49]: low-ad-budgets-creative-mobile-app-marketing-hacks-that-work
+            - cell "published" [ref=e50]
+            - cell "2026-05-23 08:24:00" [ref=e51]
+            - cell "2026-05-24 05:23:18" [ref=e52]
+            - cell "Edit · View" [ref=e53]:
+              - link "Edit" [ref=e54] [cursor=pointer]:
+                - /url: /admin/posts/edit.php?id=6
+              - text: ·
+              - link "View" [ref=e55] [cursor=pointer]:
+                - /url: /low-ad-budgets-creative-mobile-app-marketing-hacks-that-work
+          - row "Ai React Native Integration Building Smarter Mobile Experiences ai-react-native-integration-building-smarter-mobile-experiences published 2026-05-23 08:24:00 2026-05-24 05:22:04 Edit · View" [ref=e56]:
+            - cell "Ai React Native Integration Building Smarter Mobile Experiences" [ref=e57]:
+              - link "Ai React Native Integration Building Smarter Mobile Experiences" [ref=e58] [cursor=pointer]:
+                - /url: /admin/posts/edit.php?id=3
+            - cell "ai-react-native-integration-building-smarter-mobile-experiences" [ref=e59]:
+              - code [ref=e60]: ai-react-native-integration-building-smarter-mobile-experiences
+            - cell "published" [ref=e61]
+            - cell "2026-05-23 08:24:00" [ref=e62]
+            - cell "2026-05-24 05:22:04" [ref=e63]
+            - cell "Edit · View" [ref=e64]:
+              - link "Edit" [ref=e65] [cursor=pointer]:
+                - /url: /admin/posts/edit.php?id=3
+              - text: ·
+              - link "View" [ref=e66] [cursor=pointer]:
+                - /url: /ai-react-native-integration-building-smarter-mobile-experiences
+          - row "Doloribus qui aut pariatur Perferendis laboriosam expedita doloribus-qui-aut-pariatur-perferendis-laboriosam-expedita published 2026-05-23 08:08:00 2026-05-24 05:21:39 Edit · View" [ref=e67]:
+            - cell "Doloribus qui aut pariatur Perferendis laboriosam expedita" [ref=e68]:
+              - link "Doloribus qui aut pariatur Perferendis laboriosam expedita" [ref=e69] [cursor=pointer]:
+                - /url: /admin/posts/edit.php?id=1
+            - cell "doloribus-qui-aut-pariatur-perferendis-laboriosam-expedita" [ref=e70]:
+              - code [ref=e71]: doloribus-qui-aut-pariatur-perferendis-laboriosam-expedita
+            - cell "published" [ref=e72]
+            - cell "2026-05-23 08:08:00" [ref=e73]
+            - cell "2026-05-24 05:21:39" [ref=e74]
+            - cell "Edit · View" [ref=e75]:
+              - link "Edit" [ref=e76] [cursor=pointer]:
+                - /url: /admin/posts/edit.php?id=1
+              - text: ·
+              - link "View" [ref=e77] [cursor=pointer]:
+                - /url: /doloribus-qui-aut-pariatur-perferendis-laboriosam-expedita
+          - row "Unity Pricing Changes Explained What Developers Need to Know in 2025 unity-pricing-changes-explained-what-developers-need-to-know-in-2025 published 2026-05-23 08:24:00 2026-05-24 05:21:19 Edit · View" [ref=e78]:
+            - cell "Unity Pricing Changes Explained What Developers Need to Know in 2025" [ref=e79]:
+              - link "Unity Pricing Changes Explained What Developers Need to Know in 2025" [ref=e80] [cursor=pointer]:
+                - /url: /admin/posts/edit.php?id=10
+            - cell "unity-pricing-changes-explained-what-developers-need-to-know-in-2025" [ref=e81]:
+              - code [ref=e82]: unity-pricing-changes-explained-what-developers-need-to-know-in-2025
+            - cell "published" [ref=e83]
+            - cell "2026-05-23 08:24:00" [ref=e84]
+            - cell "2026-05-24 05:21:19" [ref=e85]
+            - cell "Edit · View" [ref=e86]:
+              - link "Edit" [ref=e87] [cursor=pointer]:
+                - /url: /admin/posts/edit.php?id=10
+              - text: ·
+              - link "View" [ref=e88] [cursor=pointer]:
+                - /url: /unity-pricing-changes-explained-what-developers-need-to-know-in-2025
+          - row "Security Privacy and Compliance in Flutter Apps Best Practices for 2025 security-privacy-and-compliance-in-flutter-apps-best-practices-for-2025 published 2026-05-23 08:24:00 2026-05-24 05:20:51 Edit · View" [ref=e89]:
+            - cell "Security Privacy and Compliance in Flutter Apps Best Practices for 2025" [ref=e90]:
+              - link "Security Privacy and Compliance in Flutter Apps Best Practices for 2025" [ref=e91] [cursor=pointer]:
+                - /url: /admin/posts/edit.php?id=9
+            - cell "security-privacy-and-compliance-in-flutter-apps-best-practices-for-2025" [ref=e92]:
+              - code [ref=e93]: security-privacy-and-compliance-in-flutter-apps-best-practices-for-2025
+            - cell "published" [ref=e94]
+            - cell "2026-05-23 08:24:00" [ref=e95]
+            - cell "2026-05-24 05:20:51" [ref=e96]
+            - cell "Edit · View" [ref=e97]:
+              - link "Edit" [ref=e98] [cursor=pointer]:
+                - /url: /admin/posts/edit.php?id=9
+              - text: ·
+              - link "View" [ref=e99] [cursor=pointer]:
+                - /url: /security-privacy-and-compliance-in-flutter-apps-best-practices-for-2025
+          - row "Accessibility in React Native Bridging Gaps for Inclusive Apps accessibility-in-react-native-bridging-gaps-for-inclusive-apps published 2026-05-23 08:24:00 2026-05-24 05:20:31 Edit · View" [ref=e100]:
+            - cell "Accessibility in React Native Bridging Gaps for Inclusive Apps" [ref=e101]:
+              - link "Accessibility in React Native Bridging Gaps for Inclusive Apps" [ref=e102] [cursor=pointer]:
+                - /url: /admin/posts/edit.php?id=8
+            - cell "accessibility-in-react-native-bridging-gaps-for-inclusive-apps" [ref=e103]:
+              - code [ref=e104]: accessibility-in-react-native-bridging-gaps-for-inclusive-apps
+            - cell "published" [ref=e105]
+            - cell "2026-05-23 08:24:00" [ref=e106]
+            - cell "2026-05-24 05:20:31" [ref=e107]
+            - cell "Edit · View" [ref=e108]:
+              - link "Edit" [ref=e109] [cursor=pointer]:
+                - /url: /admin/posts/edit.php?id=8
+              - text: ·
+              - link "View" [ref=e110] [cursor=pointer]:
+                - /url: /accessibility-in-react-native-bridging-gaps-for-inclusive-apps
+          - row "Voice Commerce in 2025 How to Enable Hands Fee Shopping in Your App voice-commerce-in-2025-how-to-enable-hands-fee-shopping-in-your-app published 2026-05-23 08:24:00 2026-05-24 05:20:15 Edit · View" [ref=e111]:
+            - cell "Voice Commerce in 2025 How to Enable Hands Fee Shopping in Your App" [ref=e112]:
+              - link "Voice Commerce in 2025 How to Enable Hands Fee Shopping in Your App" [ref=e113] [cursor=pointer]:
+                - /url: /admin/posts/edit.php?id=7
+            - cell "voice-commerce-in-2025-how-to-enable-hands-fee-shopping-in-your-app" [ref=e114]:
+              - code [ref=e115]: voice-commerce-in-2025-how-to-enable-hands-fee-shopping-in-your-app
+            - cell "published" [ref=e116]
+            - cell "2026-05-23 08:24:00" [ref=e117]
+            - cell "2026-05-24 05:20:15" [ref=e118]
+            - cell "Edit · View" [ref=e119]:
+              - link "Edit" [ref=e120] [cursor=pointer]:
+                - /url: /admin/posts/edit.php?id=7
+              - text: ·
+              - link "View" [ref=e121] [cursor=pointer]:
+                - /url: /voice-commerce-in-2025-how-to-enable-hands-fee-shopping-in-your-app
+          - row "Handling State Management Chaos in Full Stack Apps Practical Solutions handling-state-management-chaos-in-full-stack-apps-practical-solutions published 2026-05-23 08:24:00 2026-05-24 05:19:55 Edit · View" [ref=e122]:
+            - cell "Handling State Management Chaos in Full Stack Apps Practical Solutions" [ref=e123]:
+              - link "Handling State Management Chaos in Full Stack Apps Practical Solutions" [ref=e124] [cursor=pointer]:
+                - /url: /admin/posts/edit.php?id=5
+            - cell "handling-state-management-chaos-in-full-stack-apps-practical-solutions" [ref=e125]:
+              - code [ref=e126]: handling-state-management-chaos-in-full-stack-apps-practical-solutions
+            - cell "published" [ref=e127]
+            - cell "2026-05-23 08:24:00" [ref=e128]
+            - cell "2026-05-24 05:19:55" [ref=e129]
+            - cell "Edit · View" [ref=e130]:
+              - link "Edit" [ref=e131] [cursor=pointer]:
+                - /url: /admin/posts/edit.php?id=5
+              - text: ·
+              - link "View" [ref=e132] [cursor=pointer]:
+                - /url: /handling-state-management-chaos-in-full-stack-apps-practical-solutions
+          - row "Developing Flutter Apps for Emerging Use Cases Iot Wearables and Pwas developing-flutter-apps-for-emerging-use-cases-iot-wearables-and-pwas published 2026-05-23 08:24:00 2026-05-24 05:19:34 Edit · View" [ref=e133]:
+            - cell "Developing Flutter Apps for Emerging Use Cases Iot Wearables and Pwas" [ref=e134]:
+              - link "Developing Flutter Apps for Emerging Use Cases Iot Wearables and Pwas" [ref=e135] [cursor=pointer]:
+                - /url: /admin/posts/edit.php?id=4
+            - cell "developing-flutter-apps-for-emerging-use-cases-iot-wearables-and-pwas" [ref=e136]:
+              - code [ref=e137]: developing-flutter-apps-for-emerging-use-cases-iot-wearables-and-pwas
+            - cell "published" [ref=e138]
+            - cell "2026-05-23 08:24:00" [ref=e139]
+            - cell "2026-05-24 05:19:34" [ref=e140]
+            - cell "Edit · View" [ref=e141]:
+              - link "Edit" [ref=e142] [cursor=pointer]:
+                - /url: /admin/posts/edit.php?id=4
+              - text: ·
+              - link "View" [ref=e143] [cursor=pointer]:
+                - /url: /developing-flutter-apps-for-emerging-use-cases-iot-wearables-and-pwas

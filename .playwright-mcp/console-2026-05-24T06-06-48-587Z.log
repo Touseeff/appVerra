@@ -1,0 +1,2 @@
+[    1223ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://appverra.co/admin/login.php?next=%2Fadmin%2Fimport-pending.php:0
+[   31526ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ chrome-error://chromewebdata/:0

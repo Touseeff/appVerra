@@ -43,7 +43,7 @@
 					<i class="fa fa-star" aria-hidden="true"></i>
 
 				</div>
-				<p class="heading20px dark">“We came to AppVerra with just a rough idea, and they turned it into a fully working app. What impressed me the most was how they didn’t just build what we asked for, they actually improved the concept and made it user-friendly. The app runs smoothly, and our customers love it. They really feel like partners, not just developers” </p>
+				<p class="heading20px dark">“We came to Appverra with just a rough idea, and they turned it into a fully working app. What impressed me the most was how they didn’t just build what we asked for, they actually improved the concept and made it user-friendly. The app runs smoothly, and our customers love it. They really feel like partners, not just developers” </p>
 
 			</div>
 			<div class="mt-4 d-lg-flex gap-2 align-items-center justify-content-between">
@@ -84,7 +84,7 @@
 					<i class="fa fa-star" aria-hidden="true"></i>
 
 				</div>
-				<p class="heading20px dark">“As a startup, we were nervous about finding the right team to bring our app to life. AppVerra gave us confidence from day one. They understood our vision, suggested smart solutions, and handled both design and development like pros. The end result? A smooth app that feels exactly how we dreamed it would.” </p>
+				<p class="heading20px dark">“As a startup, we were nervous about finding the right team to bring our app to life. Appverra gave us confidence from day one. They understood our vision, suggested smart solutions, and handled both design and development like pros. The end result? A smooth app that feels exactly how we dreamed it would.” </p>
 
 			</div>
 			<div class="mt-4 d-lg-flex gap-2 align-items-center justify-content-between">
@@ -125,7 +125,7 @@
 					<i class="fa fa-star" aria-hidden="true"></i>
 
 				</div>
-				<p class="heading20px dark">“Honestly, working with AppVerra was a relief. I’ve dealt with agencies before that just deliver code and move on. These guys actually cared about the business side too. They explained everything in simple terms and kept us updated. The final product is fast, reliable, and looks amazing. Couldn’t ask for more!” </p>
+				<p class="heading20px dark">“Honestly, working with Appverra was a relief. I’ve dealt with agencies before that just deliver code and move on. These guys actually cared about the business side too. They explained everything in simple terms and kept us updated. The final product is fast, reliable, and looks amazing. Couldn’t ask for more!” </p>
 
 			</div>
 			<div class="mt-4 d-lg-flex gap-2 align-items-center justify-content-between">
@@ -166,7 +166,7 @@
 					<i class="fa fa-star" aria-hidden="true"></i>
 
 				</div>
-				<p class="heading20px dark">“We needed a scalable solution that could handle thousands of users daily, and AppVerra delivered flawlessly. From backend architecture to app performance, everything exceeded expectations. What stood out was their ability to think strategically about growth, not just immediate delivery. A real game-changer for our business.” </p>
+				<p class="heading20px dark">“We needed a scalable solution that could handle thousands of users daily, and Appverra delivered flawlessly. From backend architecture to app performance, everything exceeded expectations. What stood out was their ability to think strategically about growth, not just immediate delivery. A real game-changer for our business.” </p>
 
 			</div>
 			<div class="mt-4 d-lg-flex gap-2 align-items-center justify-content-between">
@@ -207,7 +207,7 @@
 					<i class="fa fa-star" aria-hidden="true"></i>
 
 				</div>
-				<p class="heading20px dark">“I can’t thank the AppVerra team enough! I had this dream of creating a mobile game but zero clue where to start. They guided me step by step, and today, my Unity game is live and getting downloads every day. Their creativity and patience really stood out. It feels like they cared about my project as much as I did.” </p>
+				<p class="heading20px dark">“I can’t thank the Appverra team enough! I had this dream of creating a mobile game but zero clue where to start. They guided me step by step, and today, my Unity game is live and getting downloads every day. Their creativity and patience really stood out. It feels like they cared about my project as much as I did.” </p>
 
 			</div>
 			<div class="mt-4 d-lg-flex gap-2 align-items-center justify-content-between">
@@ -248,7 +248,7 @@
 					<i class=”fa fa-star” aria-hidden=”true”></i>
 
 				</div>
-				<p class=”heading20px dark”>”AppVerra is the real deal. Great communication, super professional, and the final app works like a charm. What impressed me most was how fast they understood what I needed, and they nailed it. I'd 100% work with them again.”</p>
+				<p class=”heading20px dark”>”Appverra is the real deal. Great communication, super professional, and the final app works like a charm. What impressed me most was how fast they understood what I needed, and they nailed it. I'd 100% work with them again.”</p>
 
 			</div>
 			<div class=”mt-4 d-lg-flex gap-2 align-items-center justify-content-between”>

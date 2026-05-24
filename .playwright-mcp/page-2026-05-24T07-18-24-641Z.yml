@@ -1,0 +1,106 @@
+- generic [active] [ref=e1]:
+  - complementary [ref=e2]:
+    - link "AppVerraAdmin" [ref=e3] [cursor=pointer]:
+      - /url: /admin/dashboard.php
+    - navigation [ref=e4]:
+      - link "Dashboard" [ref=e5] [cursor=pointer]:
+        - /url: /admin/dashboard.php
+      - link "Posts" [ref=e6] [cursor=pointer]:
+        - /url: /admin/posts/
+      - link "+ New post" [ref=e7] [cursor=pointer]:
+        - /url: /admin/posts/create.php
+      - link "Import drafts" [ref=e8] [cursor=pointer]:
+        - /url: /admin/import-pending.php
+      - link "Media" [ref=e9] [cursor=pointer]:
+        - /url: /admin/media/
+      - link "Settings" [ref=e10] [cursor=pointer]:
+        - /url: /admin/settings.php
+    - generic [ref=e11]:
+      - text: admin
+      - link "Log out" [ref=e12] [cursor=pointer]:
+        - /url: /admin/logout.php
+  - main [ref=e13]:
+    - heading "Dashboard" [level=1] [ref=e15]
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - generic [ref=e19]: "10"
+          - text: Published
+        - generic [ref=e20]:
+          - generic [ref=e21]: "0"
+          - text: Drafts
+        - generic [ref=e22]:
+          - generic [ref=e23]: "0"
+          - text: Scheduled
+        - generic [ref=e24]:
+          - generic [ref=e25]: "10"
+          - text: Total
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - heading "Recent activity" [level=2] [ref=e28]
+          - link "+ New post" [ref=e29] [cursor=pointer]:
+            - /url: /admin/posts/create.php
+        - table [ref=e30]:
+          - rowgroup [ref=e31]:
+            - row "Title Status Updated" [ref=e32]:
+              - columnheader "Title" [ref=e33]
+              - columnheader "Status" [ref=e34]
+              - columnheader "Updated" [ref=e35]
+              - columnheader [ref=e36]
+          - rowgroup [ref=e37]:
+            - row "Why Unity is Still a Powerhouse for Indie Game Development in 2025 published 2026-05-24 05:30:16 Edit" [ref=e38]:
+              - cell "Why Unity is Still a Powerhouse for Indie Game Development in 2025" [ref=e39]
+              - cell "published" [ref=e40]
+              - cell "2026-05-24 05:30:16" [ref=e41]
+              - cell "Edit" [ref=e42]:
+                - link "Edit" [ref=e43] [cursor=pointer]:
+                  - /url: /admin/posts/edit.php?id=2
+            - row "Low Ad Budgets Creative Mobile App Marketing Hacks That Work published 2026-05-24 05:23:18 Edit" [ref=e44]:
+              - cell "Low Ad Budgets Creative Mobile App Marketing Hacks That Work" [ref=e45]
+              - cell "published" [ref=e46]
+              - cell "2026-05-24 05:23:18" [ref=e47]
+              - cell "Edit" [ref=e48]:
+                - link "Edit" [ref=e49] [cursor=pointer]:
+                  - /url: /admin/posts/edit.php?id=6
+            - row "Ai React Native Integration Building Smarter Mobile Experiences published 2026-05-24 05:22:04 Edit" [ref=e50]:
+              - cell "Ai React Native Integration Building Smarter Mobile Experiences" [ref=e51]
+              - cell "published" [ref=e52]
+              - cell "2026-05-24 05:22:04" [ref=e53]
+              - cell "Edit" [ref=e54]:
+                - link "Edit" [ref=e55] [cursor=pointer]:
+                  - /url: /admin/posts/edit.php?id=3
+            - row "Doloribus qui aut pariatur Perferendis laboriosam expedita published 2026-05-24 05:21:39 Edit" [ref=e56]:
+              - cell "Doloribus qui aut pariatur Perferendis laboriosam expedita" [ref=e57]
+              - cell "published" [ref=e58]
+              - cell "2026-05-24 05:21:39" [ref=e59]
+              - cell "Edit" [ref=e60]:
+                - link "Edit" [ref=e61] [cursor=pointer]:
+                  - /url: /admin/posts/edit.php?id=1
+            - row "Unity Pricing Changes Explained What Developers Need to Know in 2025 published 2026-05-24 05:21:19 Edit" [ref=e62]:
+              - cell "Unity Pricing Changes Explained What Developers Need to Know in 2025" [ref=e63]
+              - cell "published" [ref=e64]
+              - cell "2026-05-24 05:21:19" [ref=e65]
+              - cell "Edit" [ref=e66]:
+                - link "Edit" [ref=e67] [cursor=pointer]:
+                  - /url: /admin/posts/edit.php?id=10
+            - row "Security Privacy and Compliance in Flutter Apps Best Practices for 2025 published 2026-05-24 05:20:51 Edit" [ref=e68]:
+              - cell "Security Privacy and Compliance in Flutter Apps Best Practices for 2025" [ref=e69]
+              - cell "published" [ref=e70]
+              - cell "2026-05-24 05:20:51" [ref=e71]
+              - cell "Edit" [ref=e72]:
+                - link "Edit" [ref=e73] [cursor=pointer]:
+                  - /url: /admin/posts/edit.php?id=9
+            - row "Accessibility in React Native Bridging Gaps for Inclusive Apps published 2026-05-24 05:20:31 Edit" [ref=e74]:
+              - cell "Accessibility in React Native Bridging Gaps for Inclusive Apps" [ref=e75]
+              - cell "published" [ref=e76]
+              - cell "2026-05-24 05:20:31" [ref=e77]
+              - cell "Edit" [ref=e78]:
+                - link "Edit" [ref=e79] [cursor=pointer]:
+                  - /url: /admin/posts/edit.php?id=8
+            - row "Voice Commerce in 2025 How to Enable Hands Fee Shopping in Your App published 2026-05-24 05:20:15 Edit" [ref=e80]:
+              - cell "Voice Commerce in 2025 How to Enable Hands Fee Shopping in Your App" [ref=e81]
+              - cell "published" [ref=e82]
+              - cell "2026-05-24 05:20:15" [ref=e83]
+              - cell "Edit" [ref=e84]:
+                - link "Edit" [ref=e85] [cursor=pointer]:
+                  - /url: /admin/posts/edit.php?id=7

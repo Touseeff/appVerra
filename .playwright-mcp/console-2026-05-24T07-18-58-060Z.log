@@ -1,0 +1,7 @@
+[    1819ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://appverra.co/admin/assets/tinymce/js/tinymce/tinymce.min.js:0
+[    1820ms] [ERROR] Refused to execute script from 'https://appverra.co/admin/assets/tinymce/js/tinymce/tinymce.min.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled. @ https://appverra.co/admin/posts/edit.php?id=2:0
+[    2081ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://appverra.co/assets/images/blogs.webp:0
+[   77960ms] [ERROR] Pattern attribute value [a-z0-9-]+ is not a valid regular expression: Uncaught SyntaxError: Failed to execute 'click' on 'HTMLElement': Invalid regular expression: /[a-z0-9-]+/v: Invalid character class @ :1
+[   80760ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://appverra.co/assets/images/blogs.webp:0
+[   80990ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://appverra.co/admin/assets/tinymce/js/tinymce/tinymce.min.js:0
+[   80991ms] [ERROR] Refused to execute script from 'https://appverra.co/admin/assets/tinymce/js/tinymce/tinymce.min.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled. @ https://appverra.co/admin/posts/edit.php?id=2:0

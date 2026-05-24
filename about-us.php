@@ -1,6 +1,6 @@
-<?php $meta_title = "About Us | AppVerra"; ?>
+<?php $meta_title = "About Appverra — Founder-Led Flutter App Development Agency"; ?>
 
-<?php $meta_discription = "Discover how AppVerra blends cutting-edge technology with human-centered design to deliver scalable, custom-built digital solutions. "; ?>
+<?php $meta_discription = "Three co-founders. 150+ apps shipped for 700+ customers. Apps with millions of downloads. Live US ride-booking marketplace in production. Apps that ship. Founders who answer."; ?>
 
 <?php $page_class = "about_us-page"; ?>
 
@@ -26,13 +26,13 @@
 
 					<marquee behavior="scroll" direction="left" scrollamount="4" class="users_txt">
 
-						Love by over 5000+ Customers worldwide 
+						Loved by 700+ customers worldwide
 
-						Love by over 5000+ Customers worldwide 
+						Loved by 700+ customers worldwide
 
-						Love by over 5000+ Customers worldwide 
+						Loved by 700+ customers worldwide
 
-						Love by over 5000+ Customers worldwide 
+						Loved by 700+ customers worldwide
 
 					</marquee>
 
@@ -50,7 +50,7 @@
 
 						<span>
 
-							We Provide Technology 
+							Apps That Ship.
 
 						</span>
 
@@ -60,7 +60,7 @@
 
 						<span>
 
-							& <span class="secondColor">Human Acuity Based</span>
+							<span class="secondColor">Founders</span> Who
 
 						</span>
 
@@ -70,7 +70,7 @@
 
 						<span class="fw_400">
 
-							Solutions
+							Answer.
 
 						</span>
 
@@ -80,7 +80,7 @@
 
 				<svg class="animated_svg2 mb-3" width="672" height="36" viewBox="0 0 672 36" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M4 32C199.013 20.5125 606.673 -9.88059 663.31 11.341C719.946 32.5627 249.686 20.1834 7.47644 11.341" stroke="#B3FF00" stroke-width="7" stroke-linecap="round"/></svg>
 
-				<span class="revealUp"><span><p style="color: #C3C9CE;"> Blending innovation with insight, we create intelligent digital solutions that solve real-world problems. At AppVerra, human-centric thinking powers every line of code we write. </p></span></span>
+				<span class="revealUp"><span><p style="color: #C3C9CE;"> 150+ apps shipped for 700+ customers. Apps with millions of downloads. We run a live US ride-booking marketplace in production right now — built in Flutter, on Stripe Connect, with real-time driver tracking. Three co-founders. No account managers. No outsourced builds. You talk to the people writing your code. </p></span></span>
 
 				<div class="btn_set">
 					<span class="btn_wrap"  data-aos="fade-up" data-aos-delay="600">

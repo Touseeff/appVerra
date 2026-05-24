@@ -2,7 +2,7 @@
 
     $siteurl = "https://appverra.co/";
 
-    $sitename = "AppVerra";
+    $sitename = "Appverra";
 
     $sitenumber = "(213) 714-7176";
 
@@ -106,7 +106,7 @@
     <meta name="description" content="<?= $meta_discription ?>">
     <meta name="keywords" content="mobile app development company USA, iOS app development, Android app development, React Native developer, Flutter app development, Unity game development, full stack development company, app development agency New York, hire mobile app developers USA, custom mobile app development, cross-platform app development, game development company USA, ecommerce app development, mobile app marketing agency, app development services USA">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="author" content="AppVerra">
+    <meta name="author" content="Appverra">
     <link rel="canonical" href="<?= $fullpageurl ?>">
 
     <?php if(empty($og_image)) $og_image = "https://appverra.co/assets/images/logo.webp"; ?>
@@ -118,7 +118,7 @@
     <meta property="og:image" content="<?= $og_image ?>">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="AppVerra">
+    <meta property="og:site_name" content="Appverra">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter Card -->
@@ -128,14 +128,16 @@
     <meta name="twitter:description" content="<?= $meta_discription ?>">
     <meta name="twitter:image" content="<?= $og_image ?>">
 
-    <!-- Schema: LocalBusiness -->
+    <!-- Schema: Organization + LocalBusiness (combined) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "AppVerra",
+      "@type": ["Organization", "LocalBusiness"],
+      "name": "Appverra",
+      "alternateName": "Appverra Mobile App Development Agency",
       "url": "https://appverra.co/",
       "logo": "https://appverra.co/assets/images/logo.webp",
+      "image": "https://appverra.co/assets/images/logo.webp",
       "telephone": "(213) 714-7176",
       "email": "info@appverra.co",
       "address": {
@@ -151,12 +153,32 @@
         "latitude": 40.7209,
         "longitude": -74.0096
       },
-      "description": "AppVerra is a leading mobile app development company in the USA specializing in iOS, Android, React Native, Flutter, Unity game development, full-stack solutions, and mobile app marketing.",
-      "areaServed": "US",
+      "description": "Appverra is a founder-led mobile app development agency. 150+ apps shipped for 700+ customers. Our apps have millions of downloads. We deliver Flutter, React Native, and full-stack builds in 6 weeks for startups and SMBs across the US, Canada, and UK.",
+      "areaServed": ["US", "CA", "GB"],
       "priceRange": "$$",
       "openingHours": "Mo-Fr 09:00-18:00",
+      "knowsAbout": [
+        "Flutter app development",
+        "React Native app development",
+        "Mobile app development for startups",
+        "MVP development",
+        "Marketplace app development",
+        "On-demand app development",
+        "Full-stack mobile development"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "App development packages",
+        "itemListElement": [
+          { "@type": "Offer", "name": "Discovery Sprint", "price": "1997", "priceCurrency": "USD", "description": "90-minute scoping call plus Figma prototype and fixed-bid SOW" },
+          { "@type": "Offer", "name": "Starter App",    "price": "7997",  "priceCurrency": "USD" },
+          { "@type": "Offer", "name": "Launch App",     "price": "14997", "priceCurrency": "USD" },
+          { "@type": "Offer", "name": "Growth App",     "price": "29997", "priceCurrency": "USD" },
+          { "@type": "Offer", "name": "Scale App",      "price": "59997", "priceCurrency": "USD" },
+          { "@type": "Offer", "name": "Enterprise App", "price": "99997", "priceCurrency": "USD" }
+        ]
+      },
       "sameAs": [
-        "https://appverra.co/",
         "https://www.facebook.com/AppVerra.Official",
         "https://www.linkedin.com/company/appverra",
         "https://www.instagram.com/appverraco/",
@@ -170,7 +192,7 @@
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "AppVerra",
+      "name": "Appverra",
       "url": "https://appverra.co/",
       "potentialAction": {
         "@type": "SearchAction",

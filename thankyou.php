@@ -1,6 +1,6 @@
 <?php $meta_title = "Thank You!"; ?>
 
-<?php $meta_discription = "Thank you for contacting AppVerra! Our team will get back to you shortly to discuss your app development project."; ?>
+<?php $meta_discription = "Thank you for contacting Appverra. We respond within 1 business day to scope your app build."; ?>
 
 <?php $page_class = "thankyou-page"; ?>
 

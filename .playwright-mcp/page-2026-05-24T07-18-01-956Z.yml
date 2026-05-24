@@ -1,0 +1,11 @@
+- main [ref=e2]:
+  - heading "AppVerra Admin" [level=1] [ref=e3]
+  - paragraph [ref=e4]: Sign in to manage blog posts.
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - text: Username or email
+      - textbox "Username or email" [active] [ref=e7]
+    - generic [ref=e8]:
+      - text: Password
+      - textbox "Password" [ref=e9]
+    - button "Sign in" [ref=e10] [cursor=pointer]

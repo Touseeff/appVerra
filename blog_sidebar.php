@@ -19,6 +19,6 @@ $nav_posts = db_all('
     </div>
     <div class="sidebar__box">
         <h3 class="sidebar__title">About Author</h3>
-        <p><strong><?= htmlspecialchars($sitename ?? 'AppVerra') ?></strong> helps businesses ship high-quality mobile and web apps — from concept to launch.</p>
+        <p><strong><?= htmlspecialchars($sitename ?? 'Appverra') ?></strong> helps businesses ship high-quality mobile and web apps — from concept to launch.</p>
     </div>
 </aside>

@@ -18,11 +18,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $city     = $_POST['city'] ?? '';
 
     $to      = "info@appverra.co";
-    $subject = "New Lead: " . $name . " via AppVerra";
+    $subject = "New Lead: " . $name . " via Appverra";
 
     $headers  = "MIME-Version: 1.0\r\n";
     $headers .= "Content-type: text/html; charset=UTF-8\r\n";
-    $headers .= "From: AppVerra <info@appverra.co>\r\n";
+    $headers .= "From: Appverra <info@appverra.co>\r\n";
     $headers .= "Reply-To: " . $email . "\r\n";
     $headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
 

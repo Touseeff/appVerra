@@ -1,6 +1,6 @@
-<?php $meta_title = "Build Apps That Win — AppVerra Solutions"; ?>
+<?php $meta_title = "Founder-Friendly App Development Agency — Apps That Ship | Appverra"; ?>
 
-<?php $meta_discription = "Turn your app idea into a high-impact product. AppVerra builds custom, scalable, and stunning apps that grow your business fast. Let’s launch before they do."; ?>
+<?php $meta_discription = "We've shipped 150+ apps for 700+ customers — apps with millions of downloads, including a live US ride-booking marketplace. Flutter apps in 6 weeks. Book a Discovery Sprint."; ?>
 
 <?php $page_class = "home-page"; ?>
 
@@ -211,23 +211,25 @@
 
 			<div class="col-lg-6 translate-middle-y">
 
-				<h1><span class="title fw_600 uppercase light">Transform Your App Idea Into Reality</span></h1>
+				<h1><span class="title fw_600 uppercase light">Founder-Friendly App Development Agency</span></h1>
 
 				<h2 class="heading70px m-0 light">
 
 
 
-					<span class="revealUp"><span> <span class="primeColor">Custom App</span> Solutions</span></span> <br>
+					<span class="revealUp"><span> <span class="primeColor">Apps That</span> Ship.</span></span> <br>
 
-					<span class="revealUp"><span>That Solve <span class="secondColor">Real</span>  </span></span>
+					<span class="revealUp"><span><span class="secondColor">Founders</span> Who</span></span>
 
-					<span class="revealUp"><span class="secondColor">Business </span></span>
-
-					<span class="revealUp fw_300"><span> Challenges</span></span>
+					<span class="revealUp fw_300"><span> Answer.</span></span>
 
 				</h2>
 
 				<svg class="animated_svg2 mb-3" width="672" height="36" viewBox="0 0 672 36" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M4 32C199.013 20.5125 606.673 -9.88059 663.31 11.341C719.946 32.5627 249.686 20.1834 7.47644 11.341" stroke="#B3FF00" stroke-width="7" stroke-linecap="round"/></svg>
+
+				<p class="hero_credibility light mb-4" style="color: #fff; font-size: 18px; font-weight: 300; line-height: 1.5;" data-aos="fade-up" data-aos-delay="400">
+					<strong>150+ apps shipped</strong> for <strong>700+ customers</strong>. Apps with <strong>millions of downloads</strong>. We run a live US ride-booking marketplace in production — built in Flutter, on Stripe Connect. We deliver Flutter apps in <strong>6 weeks</strong>. Three co-founders. No account managers.
+				</p>
 
 				<!-- <span class="revealUp"><span><p style="color: #fff;">We design and build powerful, intuitive apps that drive efficiency, engagement, and growth. Whether you're launching or scaling, we turn your vision into a seamless digital experience.</p></span></span> -->
 
@@ -371,7 +373,7 @@
 			                 sizes="(max-width:576px) 240px, 436px"
 			                 class="phones_img"
 			                 width="436" height="600"
-			                 alt="AppVerra Phones Mockup"
+			                 alt="Appverra Phones Mockup"
 			                 loading="eager"
 			                 fetchpriority="high" />
 
@@ -1021,7 +1023,7 @@
 
 			<svg class="animated_svg2 mb-3 w-50" width="672" height="36" viewBox="0 0 672 36" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M4 32C199.013 20.5125 606.673 -9.88059 663.31 11.341C719.946 32.5627 249.686 20.1834 7.47644 11.341" stroke="#B3FF00" stroke-width="7" stroke-linecap="round"/></svg>   
 
-			<p>Great ideas don’t wait — and neither should you. Partner with AppVerra to turn your vision into a revenue-driving reality. We build apps that make noise, get noticed, and move fast. Are you in?</p>
+			<p>Great ideas don’t wait — and neither should you. Partner with Appverra to turn your vision into a shipped, revenue-driving product. We ship Flutter apps in 6 weeks. Three co-founders. No account managers. Book a 90-minute Discovery Sprint and we'll scope your build together. Are you in?</p>
 
 			<div class="btn_set mt-4">
 				<span class="btn_wrap"  data-aos="fade-up" data-aos-delay="600">
