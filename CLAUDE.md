@@ -255,3 +255,54 @@ Zero-cost pipeline for generating + publishing blog posts using Claude Code (no 
 **Safety rails:** Bot writes drafts only (never auto-publishes). Editor agent hard-fails on word count out of range, missing FAQ, dead citations (HEAD-checks every URL), slug collisions, or brand-voice red flags. HTML sanitized twice — drafter prompt discipline + server-side `post_sanitize_html()`.
 
 The import page reuses ALL existing helpers (`post_validate`, `post_sanitize_html`, `slug_unique`, `post_regenerate_sitemap`) — no duplicated validation logic. Featured images flow through `image_to_webp()` and land in `/uploads/YYYY/MM/`.
+
+## Per-Post SEO (BlogPosting / FAQPage / BreadcrumbList)
+
+Every blog post served from `blog-post.php` emits three JSON-LD blocks for rich results:
+
+| Schema | What it does | Where parsed from |
+|---|---|---|
+| `BlogPosting` | Date, author, image rich snippets in SERP | `posts` row + `post_author_display()` fallback |
+| `BreadcrumbList` | Replaces URL with `Home › Blog › Title` in SERP | Static — built from `post.title` + slug |
+| `FAQPage` | FAQ rich results (huge CTR) | `post_extract_faqs()` parses any `<h2 …>FAQ…</h2>` block followed by `<p><strong>Q?</strong><br>A.</p>` pairs |
+
+The blog post also gets:
+- `og:type=article` + `article:published_time` + `article:modified_time` + `article:author` OG tags
+- Visible breadcrumb above the title
+- Visible byline (`By <author> · Published <date> · Updated <date> · N min read`)
+- Real `featured_image_alt` (descriptive of the photo, not the post title)
+- Working `$canonical_override` (previously dead)
+
+### New DB columns on `posts`
+
+| Column | Purpose | Default |
+|---|---|---|
+| `featured_image_alt` | Alt text for hero image (a11y + image search) | `NULL` → falls back to title |
+| `author_name` | Byline display name | `NULL` → falls back to "AppVerra Editorial" |
+| `author_url` | Byline link target | `NULL` → falls back to `/about-us` |
+
+Migration file: `migrations/2026-05-24-add-blog-seo-columns.sql`. **Run this in phpMyAdmin BEFORE the code deploys** — `blog-post.php` SELECTs the new columns and 500s if they're missing.
+
+### Header.php contract (variables blog pages can set)
+
+| Variable | Effect |
+|---|---|
+| `$og_type` | Overrides default `"website"`. Set to `"article"` on blog posts. |
+| `$canonical_override` | Overrides the auto canonical (`$fullpageurl`). Used for syndicated posts. |
+| `$og_image_alt` | Emits `og:image:alt` + `twitter:image:alt`. |
+| `$article_meta` | Array with `published_time`, `modified_time`, `author`, `section`. Only emitted when `$og_type === 'article'`. |
+| `$schema_extra` | Either a JSON-LD string (legacy) or an **array of strings** (each becomes its own `<script>`). Blog posts pass an array of 2–3 schemas. |
+
+### FAQ parser convention (matches drafter agent + style guide)
+
+```html
+<h2 class="heading55px darkpurple">FAQs on [Topic]</h2>
+<p><strong>Question?</strong><br>Answer.</p>
+<p><strong>Q: Another question?</strong><br>Answer.</p>
+```
+
+- Any h2 whose text contains "FAQ" (case-insensitive) triggers the parser.
+- Each Q&A must be ONE `<p>` containing `<strong>Question</strong>` then `<br>` then answer text.
+- Optional leading `"Q:"` is stripped.
+- Parser stops at the next `<h2>`.
+- Editor agent rejects drafts with `< 3` parseable pairs.

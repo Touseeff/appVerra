@@ -107,19 +107,40 @@
     <meta name="keywords" content="mobile app development company USA, iOS app development, Android app development, React Native developer, Flutter app development, Unity game development, full stack development company, app development agency New York, hire mobile app developers USA, custom mobile app development, cross-platform app development, game development company USA, ecommerce app development, mobile app marketing agency, app development services USA">
     <meta name="robots" content="<?= !empty($page_robots) ? $page_robots : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' ?>">
     <meta name="author" content="Appverra">
-    <link rel="canonical" href="<?= $fullpageurl ?>">
+    <link rel="canonical" href="<?= !empty($canonical_override) ? htmlspecialchars($canonical_override, ENT_QUOTES) : $fullpageurl ?>">
 
-    <?php if(empty($og_image)) $og_image = "https://appverra.co/assets/images/logo.webp"; ?>
+    <?php
+      if(empty($og_image)) $og_image = "https://appverra.co/assets/images/logo.webp";
+      // og:type — pages can override (blog-post.php sets "article").
+      $__og_type = !empty($og_type) ? $og_type : 'website';
+    ?>
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="<?= htmlspecialchars($__og_type, ENT_QUOTES) ?>">
     <meta property="og:url" content="<?= $fullpageurl ?>">
     <meta property="og:title" content="<?= $meta_title ?>">
     <meta property="og:description" content="<?= $meta_discription ?>">
     <meta property="og:image" content="<?= $og_image ?>">
+    <?php if (!empty($og_image_alt)): ?>
+    <meta property="og:image:alt" content="<?= htmlspecialchars($og_image_alt, ENT_QUOTES) ?>">
+    <?php endif; ?>
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="Appverra">
     <meta property="og:locale" content="en_US">
+    <?php if ($__og_type === 'article' && !empty($article_meta)): ?>
+      <?php if (!empty($article_meta['published_time'])): ?>
+    <meta property="article:published_time" content="<?= htmlspecialchars($article_meta['published_time'], ENT_QUOTES) ?>">
+      <?php endif; ?>
+      <?php if (!empty($article_meta['modified_time'])): ?>
+    <meta property="article:modified_time" content="<?= htmlspecialchars($article_meta['modified_time'], ENT_QUOTES) ?>">
+      <?php endif; ?>
+      <?php if (!empty($article_meta['author'])): ?>
+    <meta property="article:author" content="<?= htmlspecialchars($article_meta['author'], ENT_QUOTES) ?>">
+      <?php endif; ?>
+      <?php if (!empty($article_meta['section'])): ?>
+    <meta property="article:section" content="<?= htmlspecialchars($article_meta['section'], ENT_QUOTES) ?>">
+      <?php endif; ?>
+    <?php endif; ?>
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -127,6 +148,9 @@
     <meta name="twitter:title" content="<?= $meta_title ?>">
     <meta name="twitter:description" content="<?= $meta_discription ?>">
     <meta name="twitter:image" content="<?= $og_image ?>">
+    <?php if (!empty($og_image_alt)): ?>
+    <meta name="twitter:image:alt" content="<?= htmlspecialchars($og_image_alt, ENT_QUOTES) ?>">
+    <?php endif; ?>
 
     <!-- Schema: Organization + LocalBusiness (combined) -->
     <script type="application/ld+json">
@@ -202,11 +226,19 @@
     }
     </script>
 
-    <?php if(!empty($schema_extra)): ?>
-    <script type="application/ld+json">
-    <?= $schema_extra ?>
-    </script>
-    <?php endif; ?>
+    <?php
+      // $schema_extra accepts either:
+      //   - a string (one JSON-LD blob — legacy callers)
+      //   - an array of strings (multiple blobs; each becomes its own <script>)
+      // Use the array form for blog posts (BlogPosting + FAQPage + BreadcrumbList).
+      if (!empty($schema_extra)) {
+        $__schema_blobs = is_array($schema_extra) ? $schema_extra : [$schema_extra];
+        foreach ($__schema_blobs as $__blob) {
+          if (trim((string)$__blob) === '') continue;
+          echo '<script type="application/ld+json">' . "\n" . $__blob . "\n" . '</script>' . "\n";
+        }
+      }
+    ?>
 
 </head>
 

@@ -1,45 +1,79 @@
-# AppVerra Blog Topic Backlog
+# AppVerra Blog Topic Backlog — Client-Acquisition Focused
+#
+# Replaced the original developer-targeted backlog (Dec 2025) with topics
+# engineered to attract MOBILE APP DEV CLIENTS, not developers.
 #
 # Used by the /publish-blog command when no topic is supplied.
-# Each entry maps to one of the 6 AppVerra service areas so the drafter
-# can weave in a relevant internal link.
+# Topics are grouped by AppVerra service area so the drafter can weave in
+# the relevant internal service link.
 #
-# Edit freely. Drafted topics auto-move to backlog/published.json on success.
+# Tiering (write top-down inside each section):
+#   Tier 1 = cost + industry-vertical posts (highest commercial intent)
+#   Tier 2 = comparison + decision-framework posts (mid-funnel buyers)
+#   Tier 3 = founder-pain + process transparency (authority builders)
+#
+# Edit freely. Drafted topics auto-move to published.json on success.
 
 flutter:
-  - "Flutter vs Kotlin Multiplatform in 2026: Which Cross-Platform Stack Wins for Your Team"
-  - "Optimizing Flutter App Startup Time: 7 Real Fixes That Cut Cold Starts in Half"
-  - "Flutter for Web in 2026: Honest Strengths, Real Limits, and When to Pick It"
-  - "Migrating an Old Native Android App to Flutter: A Pragmatic Playbook"
-  - "State Management in Flutter 2026: Riverpod vs Bloc vs GetX — Decision Framework"
+  # Tier 1 — cost & decision
+  - "Flutter App Development Cost in 2026: Realistic US Pricing for SMB Founders"
+  - "How Long Does It Take to Build a Flutter App? A 2026 Timeline Breakdown"
+  # Tier 2 — comparison
+  - "React Native vs Flutter for Startup MVPs in 2026: A Founder's Honest Comparison"
+  - "Native iOS/Android vs Flutter: What SMB Founders Actually Need to Know"
+  # Tier 3 — authority
+  - "Mobile App MVP in 6 Weeks with Flutter: AppVerra's Realistic Delivery Model"
 
 react-native:
-  - "React Native New Architecture in 2026: What Actually Changed and What It Means for Your App"
-  - "Expo vs Bare React Native in 2026: Stop Picking the Wrong Workflow"
-  - "Reducing React Native App Bundle Size: 8 Techniques That Actually Work"
-  - "React Native Push Notifications in 2026: A Complete Implementation Guide"
-  - "Debugging React Native Performance: A Senior Engineer's Toolkit"
+  # Tier 1 — cost
+  - "React Native App Development Cost in 2026: What US Businesses Actually Pay"
+  - "How Much Does a Cross-Platform Mobile App Cost in 2026? Honest Breakdown"
+  # Tier 2 — comparison
+  - "Hire a React Native Agency vs Freelancer vs Offshore: True 2026 Cost Analysis"
+  - "iOS-First vs Android-First Launch: Which Platform Should Your Startup Pick?"
+  # Tier 3 — authority
+  - "7 Mistakes First-Time Founders Make Hiring Their Mobile App Developer"
+  - "How to Brief a Mobile App Agency: A Founder's One-Page Cheatsheet"
 
 unity:
-  - "Unity 6 vs Unreal Engine 5.5 for Indie Studios in 2026"
-  - "Multiplayer Games in Unity 2026: NetCode for GameObjects vs Mirror vs Photon"
-  - "Optimizing Unity Mobile Games: 10 Lessons from Shipped Titles"
-  - "Unity URP vs HDRP in 2026: Picking the Right Render Pipeline"
+  # Tier 1 — cost & vertical
+  - "Custom Mobile Game Development Cost in 2026: Indie & Studio Pricing Guide"
+  - "Branded Mobile Game for Marketing: Cost, Timeline, and ROI for Brands in 2026"
+  # Tier 2 — decision
+  - "Custom Unity Game vs White-Label Game Engine: A Decision Framework for Brands"
 
 full-stack:
-  - "Next.js 15 vs Nuxt 4 in 2026: Which Full-Stack Framework Fits Your Team"
-  - "PostgreSQL vs MongoDB in 2026: A Decision Guide for Product Teams"
-  - "Designing Multi-Tenant SaaS Architecture: Patterns That Scale Past 10k Customers"
-  - "API Design in 2026: REST, GraphQL, and tRPC — When Each Wins"
+  # Tier 1 — universal
+  - "How Much Does It Cost to Build a Mobile App in 2026? US Market Breakdown"
+  - "Mobile App MVP Cost in 2026: Realistic Pricing for First-Time Founders"
+  - "Custom App vs SaaS: A Decision Framework for SMB Business Owners"
+  # Tier 2 — vertical (industry-specific apps)
+  - "Restaurant Ordering App Development: 2026 Cost & Feature Guide"
+  - "Salon Booking App Development: Cost, Timeline, and Must-Have Features"
+  - "HVAC Service Dispatch App: Custom Build vs Off-the-Shelf SaaS"
+  - "Dental Practice Patient App: 2026 Development Guide for US Clinics"
+  - "Real Estate Brokerage App: Cost & ROI Analysis for Mid-Size Firms"
+  - "Fitness Studio Booking App: Build, Buy, or White-Label in 2026?"
+  - "Auto Repair Shop Mobile App: When Custom Beats Generic Software"
+  # Tier 3 — authority + local
+  - "Top Mobile App Development Companies in NYC: 2026 Honest Comparison"
+  - "Why NYC Startups Should Hire a Local App Developer Over Offshore"
+  - "Mobile App Maintenance Costs After Launch: What to Budget in Year 2"
+  - "How to Validate a Mobile App Idea Before Spending $10k on Development"
 
 mobile-marketing:
-  - "ASO in 2026: What Actually Moves App Store Rankings This Year"
-  - "User Acquisition for Mobile Apps Without Burning Cash on Meta and TikTok"
-  - "Retention Beats Acquisition: 6 Push Notification Patterns That Don't Annoy Users"
-  - "Mobile Attribution in a Post-IDFA World: SKAdNetwork 4, AdAttributionKit, and What Comes Next"
+  # Tier 1 — cost
+  - "Mobile App Marketing Cost in 2026: What to Budget for Your First 10k Users"
+  - "App Store Optimization (ASO) Services Cost in 2026: What Founders Should Pay"
+  # Tier 2 — decision
+  - "DIY App Marketing vs Hiring an Agency: When Each Pays Off for SMB Founders"
+  # Tier 3 — authority
+  - "App Store Submission Without a CTO: A Non-Technical Founder's Walkthrough"
 
 ecommerce:
-  - "Headless Commerce in 2026: When It's Worth the Engineering Lift"
-  - "Shopify vs Custom E-commerce Build: When Each Makes Sense"
-  - "Mobile Checkout Optimization: 12 Friction Points Killing Your Conversion Rate"
-  - "Implementing Apple Pay and Google Pay in 2026: A Step-by-Step Guide"
+  # Tier 1 — cost
+  - "Custom E-commerce Mobile App Cost in 2026: What US Brands Actually Pay"
+  - "Shopify Mobile App vs Custom-Built: A Cost & Conversion Comparison for 2026"
+  # Tier 2 — vertical
+  - "Beauty & Cosmetics Brand Mobile App: 2026 Build Guide & ROI Breakdown"
+  - "Custom Loyalty App for SMB Retailers: When It Pays Off in 2026"

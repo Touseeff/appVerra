@@ -13,18 +13,31 @@ function post_collect_form(): array {
     }
 
     return [
-        'title'            => trim($_POST['title'] ?? ''),
-        'slug'             => trim($_POST['slug'] ?? ''),
-        'excerpt'          => trim($_POST['excerpt'] ?? ''),
-        'content'          => post_sanitize_html($_POST['content'] ?? ''),
-        'featured_image'   => trim($_POST['featured_image'] ?? ''),
-        'meta_title'       => trim($_POST['meta_title'] ?? ''),
-        'meta_description' => trim($_POST['meta_description'] ?? ''),
-        'og_image'         => trim($_POST['og_image'] ?? ''),
-        'canonical_url'    => trim($_POST['canonical_url'] ?? ''),
-        'status'           => $status,
-        'publish_at'       => $publish_at,
+        'title'              => trim($_POST['title'] ?? ''),
+        'slug'               => trim($_POST['slug'] ?? ''),
+        'excerpt'            => trim($_POST['excerpt'] ?? ''),
+        'content'            => post_sanitize_html($_POST['content'] ?? ''),
+        'featured_image'     => trim($_POST['featured_image'] ?? ''),
+        'featured_image_alt' => trim($_POST['featured_image_alt'] ?? ''),
+        'meta_title'         => trim($_POST['meta_title'] ?? ''),
+        'meta_description'   => trim($_POST['meta_description'] ?? ''),
+        'og_image'           => trim($_POST['og_image'] ?? ''),
+        'canonical_url'      => trim($_POST['canonical_url'] ?? ''),
+        'author_name'        => trim($_POST['author_name'] ?? ''),
+        'author_url'         => trim($_POST['author_url'] ?? ''),
+        'status'             => $status,
+        'publish_at'         => $publish_at,
     ];
+}
+
+// Defaults used in the public template when a post has no explicit author.
+// Centralized so blog-post.php and JSON-LD agree.
+function post_author_display(array $post): array {
+    $name = trim((string)($post['author_name'] ?? ''));
+    $url  = trim((string)($post['author_url']  ?? ''));
+    if ($name === '') $name = 'AppVerra Editorial';
+    if ($url  === '') $url  = 'https://appverra.co/about-us';
+    return ['name' => $name, 'url' => $url];
 }
 
 function post_validate(array $data): array {
@@ -57,6 +70,69 @@ function post_excerpt_from_content(string $html, int $len = 200): string {
     $text = trim(preg_replace('/\s+/', ' ', strip_tags($html)));
     if (mb_strlen($text) <= $len) return $text;
     return rtrim(mb_substr($text, 0, $len)) . '…';
+}
+
+/**
+ * Extract Q&A pairs from the post body for FAQPage JSON-LD schema.
+ *
+ * Convention (from blog_factory/voice/style_guide.md):
+ *   <h2 ...>FAQs on …</h2>           ← any h2 whose text contains "FAQ" (case-insensitive)
+ *   <p><strong>Question?</strong><br>Answer text.</p>
+ *   <p><strong>Question?</strong><br>Answer text.</p>
+ *   …
+ *   <h2>...</h2>                      ← stops at the next h2
+ *
+ * Returns: [['question' => '…', 'answer' => '…'], …] or [] if no parseable FAQ.
+ */
+function post_extract_faqs(string $html): array {
+    // Locate the FAQ h2 — match the whole h2 tag, then capture everything up to
+    // the next h2 (or end of string).
+    if (!preg_match(
+        '#<h2[^>]*>\s*[^<]*\bFAQ[^<]*</h2>\s*(.*?)(?=<h2[\s>]|$)#is',
+        $html,
+        $m
+    )) {
+        return [];
+    }
+    $block = $m[1];
+    // Each Q&A pair: <p><strong>Q</strong><br>Answer</p>
+    if (!preg_match_all(
+        '#<p[^>]*>\s*<strong[^>]*>(.*?)</strong>\s*(?:<br\s*/?>|:)\s*(.*?)</p>#is',
+        $block,
+        $pairs,
+        PREG_SET_ORDER
+    )) {
+        return [];
+    }
+    $faqs = [];
+    foreach ($pairs as $p) {
+        $q = trim(strip_tags($p[1]));
+        $a = trim(strip_tags($p[2]));
+        // Strip leading "Q:" if the author prefixed it.
+        $q = preg_replace('/^Q\s*:\s*/i', '', $q);
+        if ($q === '' || $a === '') continue;
+        $faqs[] = ['question' => $q, 'answer' => $a];
+    }
+    return $faqs;
+}
+
+/**
+ * Rough reading-time estimate. ~225 wpm is the standard for English prose.
+ * Returns minutes, minimum 1.
+ */
+function post_reading_minutes(string $html): int {
+    $words = str_word_count(strip_tags($html));
+    return max(1, (int)ceil($words / 225));
+}
+
+/**
+ * Convert any MySQL DATETIME string to ISO 8601 (with timezone offset) for
+ * <time datetime="…"> and JSON-LD datePublished / dateModified fields.
+ */
+function post_iso8601(?string $dt): string {
+    if (!$dt) return '';
+    $ts = strtotime($dt);
+    return $ts ? date('c', $ts) : '';
 }
 
 function post_regenerate_sitemap(): void {

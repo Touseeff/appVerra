@@ -18,14 +18,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $id = db_exec(
             'INSERT INTO posts
-               (slug, title, excerpt, content, featured_image,
+               (slug, title, excerpt, content,
+                featured_image, featured_image_alt,
                 meta_title, meta_description, og_image, canonical_url,
+                author_name, author_url,
                 status, publish_at, author_id)
-             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
-            'sssssssssssi',
+             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
+            'ssssssssssssssi',
             [
-                $slug, $data['title'], $data['excerpt'], $data['content'], $data['featured_image'],
+                $slug, $data['title'], $data['excerpt'], $data['content'],
+                $data['featured_image'], $data['featured_image_alt'],
                 $data['meta_title'], $data['meta_description'], $data['og_image'], $data['canonical_url'],
+                $data['author_name'], $data['author_url'],
                 $data['status'], $data['publish_at'], $user['id']
             ]
         );
@@ -39,8 +43,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 $post = array_merge([
     'id' => 0, 'title' => '', 'slug' => '', 'excerpt' => '', 'content' => '',
-    'featured_image' => '', 'meta_title' => '', 'meta_description' => '',
-    'og_image' => '', 'canonical_url' => '', 'status' => 'draft', 'publish_at' => null,
+    'featured_image' => '', 'featured_image_alt' => '',
+    'meta_title' => '', 'meta_description' => '',
+    'og_image' => '', 'canonical_url' => '',
+    'author_name' => '', 'author_url' => '',
+    'status' => 'draft', 'publish_at' => null,
 ], $_POST);
 
 $action_url   = '/admin/posts/create.php';

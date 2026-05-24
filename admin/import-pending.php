@@ -209,16 +209,19 @@ function import_pending_post(
     // Build the post payload. Image fields override anything in frontmatter so
     // we always end up with a real /uploads/ URL (not the queue path).
     $data = [
-        'title'            => trim((string)($fm['title'] ?? '')),
-        'excerpt'          => trim((string)($fm['excerpt'] ?? '')),
-        'content'          => post_sanitize_html($body),
-        'featured_image'   => $img_url ?: '',
-        'meta_title'       => trim((string)($fm['meta_title'] ?? '')),
-        'meta_description' => trim((string)($fm['meta_description'] ?? '')),
-        'og_image'         => $img_url ?: '',
-        'canonical_url'    => trim((string)($fm['canonical_url'] ?? '')),
-        'status'           => 'draft',
-        'publish_at'       => null,
+        'title'              => trim((string)($fm['title'] ?? '')),
+        'excerpt'            => trim((string)($fm['excerpt'] ?? '')),
+        'content'            => post_sanitize_html($body),
+        'featured_image'     => $img_url ?: '',
+        'featured_image_alt' => trim((string)($fm['featured_image_alt'] ?? '')),
+        'meta_title'         => trim((string)($fm['meta_title'] ?? '')),
+        'meta_description'   => trim((string)($fm['meta_description'] ?? '')),
+        'og_image'           => $img_url ?: '',
+        'canonical_url'      => trim((string)($fm['canonical_url'] ?? '')),
+        'author_name'        => trim((string)($fm['author_name'] ?? '')),
+        'author_url'         => trim((string)($fm['author_url']  ?? '')),
+        'status'             => 'draft',
+        'publish_at'         => null,
     ];
 
     $errors = post_validate($data);
@@ -232,14 +235,18 @@ function import_pending_post(
 
     $post_id = db_exec(
         'INSERT INTO posts
-           (slug, title, excerpt, content, featured_image,
+           (slug, title, excerpt, content,
+            featured_image, featured_image_alt,
             meta_title, meta_description, og_image, canonical_url,
+            author_name, author_url,
             status, publish_at, author_id)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
-        'sssssssssssi',
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
+        'ssssssssssssssi',
         [
-            $final_slug, $data['title'], $data['excerpt'], $data['content'], $data['featured_image'],
+            $final_slug, $data['title'], $data['excerpt'], $data['content'],
+            $data['featured_image'], $data['featured_image_alt'],
             $data['meta_title'], $data['meta_description'], $data['og_image'], $data['canonical_url'],
+            $data['author_name'], $data['author_url'],
             $data['status'], $data['publish_at'], $author_id
         ]
     );

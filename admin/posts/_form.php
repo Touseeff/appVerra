@@ -48,6 +48,15 @@ require_once __DIR__ . '/../../includes/csrf.php';
         </div>
 
         <div class="field">
+          <label>Featured image alt text
+            <span class="hint">For accessibility + SEO. Describe the photo, not the post title.</span>
+          </label>
+          <input type="text" name="featured_image_alt" maxlength="255"
+                 placeholder="e.g. Founder reviewing a Flutter app prototype on a tablet"
+                 value="<?= htmlspecialchars($post['featured_image_alt'] ?? '') ?>">
+        </div>
+
+        <div class="field">
           <label>Content <span style="color:#dc2626;">*</span></label>
           <textarea name="content" id="content-editor" required><?= htmlspecialchars($post['content'] ?? '') ?></textarea>
         </div>
@@ -83,6 +92,26 @@ require_once __DIR__ . '/../../includes/csrf.php';
           <label>Canonical URL (optional)</label>
           <input type="url" name="canonical_url"
                  value="<?= htmlspecialchars($post['canonical_url'] ?? '') ?>">
+        </div>
+      </section>
+
+      <section class="form-section">
+        <h3>Author</h3>
+        <div class="field">
+          <label>Author name
+            <span class="hint">Shown on the post byline. Leave blank to default to "AppVerra Editorial".</span>
+          </label>
+          <input type="text" name="author_name" maxlength="120"
+                 placeholder="AppVerra Editorial"
+                 value="<?= htmlspecialchars($post['author_name'] ?? '') ?>">
+        </div>
+        <div class="field">
+          <label>Author profile URL
+            <span class="hint">Optional. Defaults to /about-us.</span>
+          </label>
+          <input type="url" name="author_url"
+                 placeholder="https://appverra.co/about-us"
+                 value="<?= htmlspecialchars($post['author_url'] ?? '') ?>">
         </div>
       </section>
     </div>
