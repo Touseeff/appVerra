@@ -1,14 +1,23 @@
-﻿<?php $meta_title = "Appverra | Toriino Case Study — Yuno Reviews App Success"; ?>
+﻿<?php $meta_title = "Yuno — Verified Review Platform Case Study | Appverra"; ?>
 
-
-
-<?php $meta_discription = "Explore how Appverra built Yuno: a trusted review platform with verification, business dashboards, and clean UX to empower users & businesses alike."; ?>
-
-
+<?php $meta_discription = "How Appverra built Yuno — a verified-review platform with business dashboards and identity verification. Stack choices, anti-fraud architecture, lessons learned."; ?>
 
 <?php $page_class = "case_study-page"; ?>
 
 <?php $og_image = "https://appverra.co/assets/images/logo.webp"; ?>
+
+<?php $schema_extra = '{
+  "@context": "https://schema.org",
+  "@type": ["Article", "CreativeWork"],
+  "headline": "Yuno — Verified Review Platform Case Study",
+  "description": "Case study of Yuno, a verified review platform with business dashboards built by Appverra.",
+  "author": {"@type": "Organization", "name": "Appverra", "url": "https://appverra.co/"},
+  "publisher": {"@type": "Organization", "name": "Appverra", "url": "https://appverra.co/", "logo": {"@type": "ImageObject", "url": "https://appverra.co/assets/images/logo.webp"}},
+  "url": "https://appverra.co/yuno-case-study",
+  "image": "https://appverra.co/assets/images/logo.webp",
+  "about": {"@type": "SoftwareApplication", "name": "Yuno", "applicationCategory": "BusinessApplication"},
+  "inLanguage": "en-US"
+}'; ?>
 
 <?php include("header.php"); ?>
 

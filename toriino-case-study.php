@@ -1,10 +1,23 @@
-﻿<?php $meta_title = "Toriino Case Study | Appverra"; ?>
+﻿<?php $meta_title = "Toriino — Mobile App Case Study | Appverra Flutter Development"; ?>
 
-<?php $meta_discription = "Discover how Appverra designed and launched Toriino — a feature-rich app with seamless UX, scalable architecture, and smart integrations built for real-world impact."; ?>
+<?php $meta_discription = "How Appverra designed and shipped Toriino — feature set, stack choices, integration challenges, and what we'd do differently building it in 2026."; ?>
 
 <?php $page_class = "case_study-page"; ?>
 
 <?php $og_image = "https://appverra.co/assets/images/logo.webp"; ?>
+
+<?php $schema_extra = '{
+  "@context": "https://schema.org",
+  "@type": ["Article", "CreativeWork"],
+  "headline": "Toriino — Mobile App Case Study",
+  "description": "Case study of Toriino built by Appverra. Covers the build process, integrations, and lessons learned.",
+  "author": {"@type": "Organization", "name": "Appverra", "url": "https://appverra.co/"},
+  "publisher": {"@type": "Organization", "name": "Appverra", "url": "https://appverra.co/", "logo": {"@type": "ImageObject", "url": "https://appverra.co/assets/images/logo.webp"}},
+  "url": "https://appverra.co/toriino-case-study",
+  "image": "https://appverra.co/assets/images/logo.webp",
+  "about": {"@type": "SoftwareApplication", "name": "Toriino", "applicationCategory": "MobileApplication"},
+  "inLanguage": "en-US"
+}'; ?>
 
 <?php include("header.php"); ?>
 <section class="terms_privacy_banner mainBanner">

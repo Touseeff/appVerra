@@ -1,7 +1,21 @@
-﻿<?php $meta_title = "Personal Finance And Budgeting Tool | Appverra"; ?>
-<?php $meta_discription = "See how Appverra built a powerful personal finance and budgeting tool that helps users track spending, set savings goals, and take full control of their financial future."; ?>
+﻿<?php $meta_title = "Personal Finance & Budgeting App — Case Study | Appverra"; ?>
+<?php $meta_discription = "How Appverra built a personal finance and budgeting app — spend tracking, savings goals, and bank-sync architecture. Stack, build timeline, and 2026 lessons."; ?>
 <?php $page_class = "case_study-page"; ?>
 <?php $og_image = "https://appverra.co/assets/images/logo.webp"; ?>
+
+<?php $schema_extra = '{
+  "@context": "https://schema.org",
+  "@type": ["Article", "CreativeWork"],
+  "headline": "Personal Finance and Budgeting App — Case Study",
+  "description": "Case study of a personal finance and budgeting app built by Appverra for a fintech client.",
+  "author": {"@type": "Organization", "name": "Appverra", "url": "https://appverra.co/"},
+  "publisher": {"@type": "Organization", "name": "Appverra", "url": "https://appverra.co/", "logo": {"@type": "ImageObject", "url": "https://appverra.co/assets/images/logo.webp"}},
+  "url": "https://appverra.co/personal-finance-and-budgeting-tool",
+  "image": "https://appverra.co/assets/images/logo.webp",
+  "about": {"@type": "SoftwareApplication", "applicationCategory": "FinanceApplication"},
+  "inLanguage": "en-US"
+}'; ?>
+
 <?php include("header.php"); ?>
 <section class="terms_privacy_banner mainBanner">
     <div class="container">

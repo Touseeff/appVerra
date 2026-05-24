@@ -1,14 +1,23 @@
-﻿<?php $meta_title = "Appverra | Cage Case Study — App Development Success Story"; ?>
+﻿<?php $meta_title = "Cage — Mobile App Case Study | Appverra Flutter Development"; ?>
 
-
-
-<?php $meta_discription = "See how Appverra designed & launched Cage: user-centered features, seamless UX, and scalable app solutions to drive engagement & business growth."; ?>
-
-
+<?php $meta_discription = "How Appverra built Cage — a custom mobile app shipped on Flutter. Read the build process, stack choices, and what we'd do differently in 2026."; ?>
 
 <?php $page_class = "case_study-page"; ?>
 
 <?php $og_image = "https://appverra.co/assets/images/logo.webp"; ?>
+
+<?php $schema_extra = '{
+  "@context": "https://schema.org",
+  "@type": ["Article", "CreativeWork"],
+  "headline": "Cage — Mobile App Case Study",
+  "description": "Case study of the Cage mobile app built by Appverra. Covers the build process, stack choices, and outcomes.",
+  "author": {"@type": "Organization", "name": "Appverra", "url": "https://appverra.co/"},
+  "publisher": {"@type": "Organization", "name": "Appverra", "url": "https://appverra.co/", "logo": {"@type": "ImageObject", "url": "https://appverra.co/assets/images/logo.webp"}},
+  "url": "https://appverra.co/cage-case-study",
+  "image": "https://appverra.co/assets/images/logo.webp",
+  "about": {"@type": "SoftwareApplication", "name": "Cage", "applicationCategory": "MobileApplication"},
+  "inLanguage": "en-US"
+}'; ?>
 
 <?php include("header.php"); ?>
 

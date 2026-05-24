@@ -1,7 +1,21 @@
-﻿<?php $meta_title = "Meditation and mental wellness app | Appverra"; ?>
-<?php $meta_discription = "Discover Appverra's meditation and mental wellness app — a calming digital experience designed to support mindfulness, stress relief, and daily mental health routines."; ?>
+﻿<?php $meta_title = "Meditation & Mental Wellness App — Case Study | Appverra"; ?>
+<?php $meta_discription = "How Appverra built a meditation and mental wellness app — daily routines, audio streaming, progress tracking. Stack choices and 2026 lessons learned."; ?>
 <?php $page_class = "case_study-page"; ?>
 <?php $og_image = "https://appverra.co/assets/images/logo.webp"; ?>
+
+<?php $schema_extra = '{
+  "@context": "https://schema.org",
+  "@type": ["Article", "CreativeWork"],
+  "headline": "Meditation and Mental Wellness App — Case Study",
+  "description": "Case study of a meditation and mental wellness app built by Appverra.",
+  "author": {"@type": "Organization", "name": "Appverra", "url": "https://appverra.co/"},
+  "publisher": {"@type": "Organization", "name": "Appverra", "url": "https://appverra.co/", "logo": {"@type": "ImageObject", "url": "https://appverra.co/assets/images/logo.webp"}},
+  "url": "https://appverra.co/meditation-and-mental-wellness-app",
+  "image": "https://appverra.co/assets/images/logo.webp",
+  "about": {"@type": "SoftwareApplication", "applicationCategory": "HealthApplication"},
+  "inLanguage": "en-US"
+}'; ?>
+
 <?php include("header.php"); ?>
 <section class="terms_privacy_banner mainBanner">
     <div class="container">

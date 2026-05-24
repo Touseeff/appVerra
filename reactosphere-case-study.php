@@ -1,14 +1,23 @@
-﻿<?php $meta_title = "Reactosphere Case Study | Appverra — Gamified Chat App"; ?>
+﻿<?php $meta_title = "Reactosphere — Gamified Chat App Case Study | Appverra"; ?>
 
-
-
-<?php $meta_discription = "Discover how Appverra built Reactosphere: a chat app with tokens, video reactions, and privacy-focused design to boost engagement."; ?>
-
-
+<?php $meta_discription = "How Appverra built Reactosphere — a chat app with token economy, video reactions, and privacy-first architecture. Stack choices, lessons learned, what we'd build differently."; ?>
 
 <?php $page_class = "case_study-page"; ?>
 
 <?php $og_image = "https://appverra.co/assets/images/logo.webp"; ?>
+
+<?php $schema_extra = '{
+  "@context": "https://schema.org",
+  "@type": ["Article", "CreativeWork"],
+  "headline": "Reactosphere — Gamified Chat App Case Study",
+  "description": "Case study of Reactosphere, a chat app with token economy and video reactions built by Appverra.",
+  "author": {"@type": "Organization", "name": "Appverra", "url": "https://appverra.co/"},
+  "publisher": {"@type": "Organization", "name": "Appverra", "url": "https://appverra.co/", "logo": {"@type": "ImageObject", "url": "https://appverra.co/assets/images/logo.webp"}},
+  "url": "https://appverra.co/reactosphere-case-study",
+  "image": "https://appverra.co/assets/images/logo.webp",
+  "about": {"@type": "SoftwareApplication", "name": "Reactosphere", "applicationCategory": "SocialNetworkingApplication"},
+  "inLanguage": "en-US"
+}'; ?>
 
 <?php include("header.php"); ?>
 

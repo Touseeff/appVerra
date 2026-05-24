@@ -1,7 +1,21 @@
-﻿<?php $meta_title = "Event planning and ticketing app | Appverra"; ?>
-<?php $meta_discription = "Explore Appverra's event planning and ticketing app — a seamless platform for creating, managing, and selling tickets to events of all sizes across the USA."; ?>
+﻿<?php $meta_title = "Event Planning & Ticketing App — Case Study | Appverra"; ?>
+<?php $meta_discription = "How Appverra built an event planning and ticketing platform — ticket sales, attendee management, Stripe integration. Stack choices and 2026 lessons learned."; ?>
 <?php $page_class = "case_study-page"; ?>
 <?php $og_image = "https://appverra.co/assets/images/logo.webp"; ?>
+
+<?php $schema_extra = '{
+  "@context": "https://schema.org",
+  "@type": ["Article", "CreativeWork"],
+  "headline": "Event Planning and Ticketing App — Case Study",
+  "description": "Case study of an event planning and ticketing platform built by Appverra.",
+  "author": {"@type": "Organization", "name": "Appverra", "url": "https://appverra.co/"},
+  "publisher": {"@type": "Organization", "name": "Appverra", "url": "https://appverra.co/", "logo": {"@type": "ImageObject", "url": "https://appverra.co/assets/images/logo.webp"}},
+  "url": "https://appverra.co/event-planning-and-ticketing-app",
+  "image": "https://appverra.co/assets/images/logo.webp",
+  "about": {"@type": "SoftwareApplication", "applicationCategory": "BusinessApplication"},
+  "inLanguage": "en-US"
+}'; ?>
+
 <?php include("header.php"); ?>
 <section class="terms_privacy_banner mainBanner">
     <div class="container">
