@@ -1,0 +1,115 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - button "Go back" [ref=e139] [cursor=pointer]:
+            - img [ref=e140]
+          - heading "Rich Results Test" [level=1] [ref=e142]
+        - button [ref=e12] [cursor=pointer]:
+          - generic [ref=e15]: 
+        - generic [ref=e17]:
+          - button "Google apps" [ref=e143] [cursor=pointer]:
+            - img [ref=e22]
+          - link "Sign in" [ref=e144] [cursor=pointer]:
+            - /url: https://accounts.google.com/ServiceLogin?service=sitemaps&passive=1209600&continue=https%3A%2F%2Fsearch.google.com%2Ftest%2Frich-results%2Fresult%3Fid%3DstwoDIYpjABSKqoDjK-0ig&followup=https%3A%2F%2Fsearch.google.com%2Ftest%2Frich-results%2Fresult%3Fid%3DstwoDIYpjABSKqoDjK-0ig&ec=GAZA1AI
+    - generic [ref=e147]:
+      - generic [ref=e151]:
+        - generic [ref=e152]: 
+        - textbox "Enter a URL to test" [ref=e156]: https://appverra.co/accessibility-in-react-native-bridging-gaps-for-inclusive-apps
+        - button "Retest this URL" [ref=e157] [cursor=pointer]:
+          - generic [ref=e160]: 
+        - button "User agent options" [ref=e162] [cursor=pointer]:
+          - generic [ref=e165]: 
+      - generic [ref=e170]:
+        - generic [ref=e171]:
+          - navigation "Breadcrumbs" [ref=e173]:
+            - heading "Test results" [level=1] [ref=e176]
+          - button "Share" [ref=e180] [cursor=pointer]:
+            - generic [ref=e184]:
+              - generic [ref=e185]: 
+              - generic [ref=e186]: Share
+        - generic [ref=e195]:
+          - generic [ref=e197]:
+            - generic [ref=e199]:
+              - generic [ref=e200]:
+                - generic [ref=e201]: check_circle
+                - generic [ref=e202]:
+                  - generic [ref=e203]: 5 valid items detected
+                  - generic [ref=e204]:
+                    - text: Valid items are eligible for Google Search's rich results.
+                    - link "Learn more" [ref=e206] [cursor=pointer]:
+                      - /url: https://support.google.com/webmasters/answer/9012289#enhancements
+              - generic [ref=e208]:
+                - button "View tested page" [ref=e212] [cursor=pointer]:
+                  - generic [ref=e217]: View tested page
+                - button "See preview of your URL on Google Search" [ref=e221] [cursor=pointer]:
+                  - generic [ref=e226]: Preview results
+            - generic [ref=e227]: Details
+            - generic [ref=e230]:
+              - generic [ref=e231]: Crawl
+              - button "Crawled successfully on May 25, 2026, 4:21:58 AM" [ref=e235] [cursor=pointer]:
+                - generic [ref=e236]:
+                  - generic [ref=e237]:
+                    - generic [ref=e238]: check_circle
+                    - generic [ref=e239]: Crawled successfully on May 25, 2026, 4:21:58 AM
+                  - generic [ref=e242]: 
+            - generic [ref=e243]: Detected structured data
+            - generic [ref=e245]:
+              - link "Articles 1 valid item detected" [ref=e247] [cursor=pointer]:
+                - /url: ./test/rich-results/result/r%2Farticles?id=stwoDIYpjABSKqoDjK-0ig
+                - generic [ref=e251]:
+                  - generic [ref=e253]: check_circle
+                  - generic [ref=e254]:
+                    - generic [ref=e255]: Articles
+                    - generic [ref=e256]: 1 valid item detected
+                  - generic [ref=e258]: 
+              - link "Breadcrumbs 1 valid item detected" [ref=e260] [cursor=pointer]:
+                - /url: ./test/rich-results/result/r%2Fbreadcrumbs?id=stwoDIYpjABSKqoDjK-0ig
+                - generic [ref=e264]:
+                  - generic [ref=e266]: check_circle
+                  - generic [ref=e267]:
+                    - generic [ref=e268]: Breadcrumbs
+                    - generic [ref=e269]: 1 valid item detected
+                  - generic [ref=e271]: 
+              - link "FAQ 1 valid item detected" [ref=e273] [cursor=pointer]:
+                - /url: ./test/rich-results/result/r%2Ffaq?id=stwoDIYpjABSKqoDjK-0ig
+                - generic [ref=e277]:
+                  - generic [ref=e279]: check_circle
+                  - generic [ref=e280]:
+                    - generic [ref=e281]: FAQ
+                    - generic [ref=e282]: 1 valid item detected
+                  - generic [ref=e284]: 
+              - link "Local businesses 1 valid item detected" [ref=e286] [cursor=pointer]:
+                - /url: ./test/rich-results/result/r%2Flocal-business?id=stwoDIYpjABSKqoDjK-0ig
+                - generic [ref=e290]:
+                  - generic [ref=e292]: check_circle
+                  - generic [ref=e293]:
+                    - generic [ref=e294]: Local businesses
+                    - generic [ref=e295]: 1 valid item detected
+                  - generic [ref=e297]: 
+              - link "Organization 1 valid item detected" [ref=e299] [cursor=pointer]:
+                - /url: ./test/rich-results/result/r%2Forganization-info?id=stwoDIYpjABSKqoDjK-0ig
+                - generic [ref=e303]:
+                  - generic [ref=e305]: check_circle
+                  - generic [ref=e306]:
+                    - generic [ref=e307]: Organization
+                    - generic [ref=e308]: 1 valid item detected
+                  - generic [ref=e310]: 
+            - generic [ref=e311]: Additional resources
+            - link "Monitor Rich Results for your entire site Go to search console" [ref=e315] [cursor=pointer]:
+              - /url: ./search-console/welcome
+              - generic [ref=e319]:
+                - generic [ref=e321]: 
+                - generic [ref=e323]:
+                  - text: Monitor Rich Results for your entire site
+                  - generic [ref=e324]: Go to search console
+          - generic [ref=e327]:
+            - link "Privacy" [ref=e328] [cursor=pointer]:
+              - /url: https://myaccount.google.com/privacypolicy?hl=en-US
+            - link "Terms" [ref=e329] [cursor=pointer]:
+              - /url: https://myaccount.google.com/termsofservice?hl=en-US
+  - iframe [ref=e110]:
+    - generic [ref=f1e6]:
+      - text: protected by
+      - strong [ref=f1e7]: reCAPTCHA
