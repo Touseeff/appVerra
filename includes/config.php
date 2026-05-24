@@ -15,6 +15,11 @@ if (!defined('APPVERRA_DB_LOADED')) {
     //   4. CHANGE_ME placeholders below — fatal at first DB query (intentional).
     foreach ([
         __DIR__ . '/config.local.php',
+        // Above public_html — survives Hostinger Git deploys (which only manage
+        // public_html). This is the recommended production location. Upload via
+        // hPanel File Manager → domains/appverra.co/ → upload config.local.php.
+        '/home/u751124526/domains/appverra.co/config.local.php',
+        // Last-ditch fallback: user home dir (works only if open_basedir allows).
         '/home/u751124526/config.local.php',
     ] as $candidate) {
         if (is_file($candidate) && is_readable($candidate)) {
