@@ -210,6 +210,7 @@ function import_pending_post(
     // Build the post payload. Image fields override anything in frontmatter so
     // we always end up with a real /uploads/ URL (not the queue path).
     $data = [
+        'slug'               => trim((string)($fm['slug'] ?? $slug)),
         'title'              => trim((string)($fm['title'] ?? '')),
         'excerpt'            => trim((string)($fm['excerpt'] ?? '')),
         'content'            => post_sanitize_html($body),
