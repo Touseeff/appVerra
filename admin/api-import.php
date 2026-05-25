@@ -37,8 +37,11 @@ if (is_file($KILL_FILE)) {
 if (!$is_cli) {
     $expected_token = trim(@file_get_contents($TOKEN_FILE) ?: '');
     $provided_token = $_GET['token'] ?? '';
-    if ($expected_token === '' || !hash_equals($expected_token, (string)$provided_token)) {
-        respond(403, 'unauthorized', 'Invalid or missing token.');
+    if ($expected_token === '') {
+        respond(403, 'unauthorized', 'No .import-token file found. Use CLI mode or create blog_factory/.import-token.');
+    }
+    if (!hash_equals($expected_token, (string)$provided_token)) {
+        respond(403, 'unauthorized', 'Invalid token.');
     }
 }
 
@@ -76,6 +79,12 @@ function auto_import_post(string $slug, string $pending_dir, string $imported_di
     $md_file = $pending_dir . '/' . $slug . '.md';
     if (!is_file($md_file)) {
         return ['ok' => false, 'slug' => $slug, 'error' => 'File not found'];
+    }
+
+    $existing = db_one('SELECT id FROM posts WHERE slug = ? LIMIT 1', 's', [$slug]);
+    if ($existing) {
+        @rename($md_file, $imported_dir . '/' . $slug . '-already-' . date('Ymd') . '.md');
+        return ['ok' => false, 'slug' => $slug, 'error' => 'Already in DB (post #' . $existing['id'] . ')'];
     }
 
     $raw = @file_get_contents($md_file);
