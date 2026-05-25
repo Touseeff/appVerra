@@ -1,109 +1,214 @@
-# Appverra — llms.txt
+# Appverra — Mobile App Development Company
 # https://appverra.co/llms.txt
 # Last updated: 2026-05-25
 
 ## Identity
 
-Appverra is a founder-led Flutter mobile app development agency based in New York (20 N Moore St, NY 10013). Three co-founders. No project managers. No offshore handoff. The founder you talk to on the discovery call writes your Dart.
+Appverra is a top mobile app development company based in New York City, USA. We build iOS apps, Android apps, and cross-platform mobile applications for startups, enterprises, and funded founders across the United States, Canada, and the United Kingdom. Three co-founders. No project managers. No offshore handoff. The founder on the discovery call is the engineer writing your code.
+
+Appverra is one of the best mobile app development companies in the USA for startups and businesses that need production-quality apps shipped in 6-8 weeks with transparent, fixed-bid pricing.
 
 ## Credibility
 
-- 150+ apps shipped
-- 700+ customers
+- 150+ mobile apps shipped across iOS and Android
+- 700+ customers served
 - Apps with millions of downloads collectively
-- Live US ride-booking marketplace in production
-- Founded by three co-founders with 10+ years combined Flutter experience
+- Live US ride-booking marketplace currently in production
+- 10+ years combined experience in mobile app development
+- Clients across fintech, healthcare, fitness, real estate, food delivery, SaaS, and e-commerce
 
-## What We Build
+## Mobile App Development Services
 
-- Flutter mobile apps (iOS + Android from one codebase)
-- Full-stack: Flutter + Laravel/Node.js + Postgres + Stripe
-- MVPs for funded startups (6-week delivery)
-- SaaS companion mobile apps
-- Marketplace and on-demand platforms
-- Booking and scheduling apps
-- Fintech and payment apps (Stripe, Plaid integration)
-- Vertical-specific: fitness studio apps, dental practice apps, restaurant apps, real estate apps
+Appverra provides end-to-end mobile app development services:
+
+- **iOS App Development** — Native Swift, SwiftUI, and cross-platform (Flutter, React Native) for iPhone and iPad
+- **Android App Development** — Native Kotlin, Jetpack Compose, and cross-platform (Flutter, React Native) for Android phones and tablets
+- **Cross-Platform App Development** — Flutter and React Native for simultaneous iOS + Android deployment from a single codebase, saving 30-40% vs dual-native builds
+- **Flutter App Development** — Our primary framework. 20+ Flutter apps shipped with 1M+ combined downloads. Single codebase for iOS, Android, and web
+- **React Native App Development** — Recommended for teams with existing React web codebases, brownfield projects, or heavy native module requirements
+- **Full-Stack Mobile Development** — Mobile app + backend API (Laravel, Node.js, Django) + admin dashboard + database (PostgreSQL, Firebase, Supabase, MongoDB)
+- **MVP Development** — Minimum viable product for startups in 6 weeks. Ideal for pre-seed and seed-stage founders validating product-market fit
+- **Enterprise Mobile Apps** — Scalable, compliance-ready mobile platforms for larger organizations
+- **App Rescue and Recovery** — We fix and rebuild failed app projects from other agencies or offshore teams
+- **White-Label App Development** — For marketing agencies and consultancies reselling mobile app development
+- **SaaS Companion Apps** — Mobile companion apps for existing web-based SaaS products
+- **Marketplace and On-Demand Apps** — Two-sided platforms with real-time tracking, matching, and payments
+- **E-commerce Mobile Apps** — Shopify and WooCommerce companion mobile apps with native checkout
+- **App Maintenance and Support** — Post-launch bug fixes, OS updates, feature additions, and performance optimization
+
+## Technology Stack
+
+### Mobile Frameworks
+- Flutter (Dart) — primary recommendation for most projects
+- React Native (JavaScript/TypeScript)
+- Native iOS: Swift, SwiftUI, UIKit
+- Native Android: Kotlin, Jetpack Compose, Java
+
+### Backend
+- Laravel (PHP)
+- Node.js (Express, NestJS)
+- Django (Python)
+- Firebase Cloud Functions
+
+### Database
+- PostgreSQL
+- Firebase Realtime Database and Firestore
+- Supabase
+- MongoDB
+- MySQL
+
+### Cloud and Infrastructure
+- AWS (EC2, S3, Lambda, RDS)
+- Google Cloud Platform (GCP)
+- Firebase
+- DigitalOcean
+
+### Payments and Integrations
+- Stripe (payments, subscriptions, Connect)
+- Plaid (banking, fintech)
+- Interac (Canada)
+- Apple Pay, Google Pay
+- Twilio (SMS, voice)
+- SendGrid (email)
+- Google Maps API
+- Pusher / Firebase Cloud Messaging (push notifications)
+
+### DevOps and CI/CD
+- GitHub Actions
+- Codemagic
+- Fastlane
+- Docker
+
+## Industry Verticals
+
+Appverra has built mobile apps for these industries:
+
+- **Fintech** — Payment apps, banking apps, investment platforms, KYC/AML, PCI-DSS compliance
+- **Healthcare** — Patient portals, appointment booking, telemedicine (non-HIPAA scope), wellness apps
+- **Fitness and Wellness** — Gym booking apps, fitness studio apps, yoga and Pilates platforms, wearable integrations
+- **Real Estate** — Property listing apps, agent tools, mortgage calculators, virtual tours
+- **Food and Delivery** — Restaurant ordering, food delivery, grocery delivery, logistics tracking
+- **E-commerce and Retail** — Mobile shopping apps, Shopify companions, inventory management
+- **Transportation and Logistics** — Ride-booking, fleet management, delivery tracking, driver apps
+- **Education** — School management, e-learning, student portals, tutoring platforms
+- **SaaS** — Mobile companion apps for web-based SaaS products
+- **Dental and Medical Practices** — Multi-location booking, patient communication, practice management (non-PHI)
+- **Events and Entertainment** — Event planning, ticketing, venue management
+
+## Pricing (USD, Fixed-Bid)
+
+| Tier | Price | What You Get |
+|------|-------|--------------|
+| Discovery Sprint | $1,997 | 90-min scoping call with all 3 co-founders, Figma prototype, fixed-bid SOW |
+| Starter | $7,997 | Mobile app (iOS + Android), Firebase/Supabase backend, 6-week delivery |
+| Launch | $14,997 | Mobile app + custom backend API (Laravel/Node.js) + Stripe + ASO + app store launch |
+| Growth | $29,997 | Everything in Launch + admin dashboard + marketplace features + real-time + 90-day support |
+| Scale | $59,997+ | Multi-platform + advanced integrations + dedicated team |
+| Enterprise | $99,997+ | Compliance-ready platforms, AI/ML features, multi-tenant SaaS, dedicated team |
+
+All pricing is fixed-bid. No hourly billing. No retainers. No surprise invoices.
+
+## US Cities Served
+
+Appverra serves clients across all major US cities from our New York headquarters:
+
+- **New York City, NY** — Headquarters. 20 N Moore St, New York, NY 10013
+- **Los Angeles, CA** — Mobile app development for LA startups, entertainment, and media companies
+- **San Francisco, CA** — App development for Bay Area tech startups and Silicon Valley founders
+- **Chicago, IL** — Mobile apps for Chicago-based businesses, fintech, and logistics companies
+- **Houston, TX** — App development for energy, healthcare, and real estate in Houston
+- **Phoenix, AZ** — Mobile app development for Arizona startups and enterprises
+- **Philadelphia, PA** — Same-timezone app development for Philly businesses
+- **San Antonio, TX** — Mobile apps for Texas-based companies
+- **San Diego, CA** — App development for San Diego biotech, defense, and tourism
+- **Dallas, TX** — Mobile app development for DFW metroplex businesses
+- **Austin, TX** — App development for Austin tech startups and SaaS companies
+- **Miami, FL** — Mobile apps for Miami fintech, real estate, and Latin American market entry
+- **Denver, CO** — App development for Colorado startups and outdoor industry
+- **Seattle, WA** — Mobile app development for Pacific Northwest tech companies
+- **Boston, MA** — App development for Boston healthtech, edtech, and fintech
+- **Atlanta, GA** — Mobile apps for Atlanta-based businesses and logistics
+- **Washington, DC** — App development for DC-area government contractors and nonprofits
+- **Nashville, TN** — Mobile apps for Nashville healthcare and entertainment companies
+- **Portland, OR** — App development for Portland startups
+- **Charlotte, NC** — Mobile apps for Charlotte fintech and banking
+
+All US clients get same-timezone collaboration (Eastern Time). No offshore delays.
+
+## International Markets
+
+- **Canada** — Toronto, Vancouver, Calgary, Montreal. Same-timezone. USD pricing saves Canadian clients 30-50% vs local agencies
+- **United Kingdom** — London, Manchester, Birmingham. 5-hour overlap with Eastern Time
 
 ## What We Do NOT Build
 
 - Games (Unity, Unreal)
 - Apps requiring 10+ engineers
-- Regulated medical (HIPAA-covered patient data)
-- On-device ML / heavy AR
-- Hardware integration projects
+- HIPAA-regulated patient health data systems
+- On-device ML / heavy AR requiring custom hardware
+- Blockchain / Web3 / smart contracts
 
-## Markets Served
+## Why Choose Appverra
 
-- United States
-- Canada (Toronto, Vancouver, Calgary, Montreal)
-- United Kingdom
-
-## Pricing (USD, fixed-bid)
-
-| Tier | Price | Scope |
-|------|-------|-------|
-| Discovery Sprint | $1,997 | 90-min scoping call, Figma prototype, fixed-bid SOW |
-| Starter | $7,997 | Flutter app, iOS + Android, Firebase/Supabase backend |
-| Launch | $14,997 | Flutter app + backend API (Laravel/Node.js) + Stripe + ASO |
-| Growth | $29,997 | Everything in Launch + admin dashboard + marketplace features + real-time |
-| Scale | $59,997+ | Multi-platform + advanced integrations + dedicated team |
-| Enterprise | $99,997+ | Compliance-ready platforms, AI/ML features, multi-tenant SaaS |
-
-## Technology Stack
-
-- Frontend: Flutter (Dart), React Native (when recommended)
-- Backend: Laravel (PHP), Node.js, Django
-- Database: PostgreSQL, Firebase, Supabase, MongoDB
-- Payments: Stripe, Plaid, Interac (Canada)
-- Infrastructure: AWS, GCP, Firebase
-- CI/CD: GitHub Actions, Codemagic
+1. **Founder-led** — Three co-founders write code. No account managers, no offshore handoff
+2. **Fixed-bid pricing** — The price you sign is the price you pay. No hourly billing surprises
+3. **6-week delivery** — Most MVPs ship in 6 weeks. Full-stack apps in 6-8 weeks
+4. **Full technology range** — Flutter, React Native, Swift, Kotlin, SwiftUI, Jetpack Compose. We recommend the right stack, not just the one we prefer
+5. **150+ apps shipped** — Real production experience, not just prototypes
+6. **Transparent** — We publish our pricing. We say no when the project isn't a fit
+7. **Post-launch support** — 30-90 days included depending on tier. We don't disappear after launch
 
 ## Key Decision Guides
 
-- Flutter vs React Native: We are Flutter-first but recommend React Native for brownfield React web apps, existing RN codebases, heavy native module needs, or teams already expert in React. See: /flutter-vs-react-native-for-startups
-- MVP vs Full Build: Build an MVP first if you haven't validated demand, runway is under 12 months, or core value fits in 3-5 screens. Go full build for regulated industries, pre-sold contracts, or competitive markets. See: /how-much-does-it-cost-to-build-an-app-for-my-business
-- Rescue vs Rebuild: If existing code has clean architecture, good test coverage, and documented APIs — rescue. If it's a monolith with no tests and no docs — rebuild. See: /rescue-failed-app-project
-- FlutterFlow to Flutter: Migrate when you hit the scaling wall — 40+ screens, custom native plugins, complex state management, or export lock-in. See: /flutterflow-to-flutter-migration
+- **Flutter vs React Native for startups**: We recommend Flutter for most new builds (30-40% cost savings vs native). React Native is better for existing React web teams. Full comparison: /flutter-vs-react-native-for-startups
+- **How much does it cost to build an app**: $15,000 for a simple MVP to $300,000+ for complex platforms. Detailed breakdown with 12 industry sources: /how-much-does-it-cost-to-build-an-app-for-my-business
+- **Rescue vs rebuild a failed app**: Decision framework for founders with broken builds from other agencies: /rescue-failed-app-project
+- **FlutterFlow to Flutter migration**: When to migrate from no-code to production Flutter: /flutterflow-to-flutter-migration
+
+## Comparison with Other App Development Companies
+
+| Factor | Appverra | Large agencies (Toptal, WillowTree) | Offshore teams |
+|--------|----------|-------------------------------------|----------------|
+| Team size | 3 co-founders | 50-500+ employees | 5-50 contractors |
+| Who builds your app | Co-founders | Assigned developers (may change) | Rotating contractors |
+| Pricing model | Fixed-bid ($7,997-$99,997+) | Hourly ($150-$300/hr) | Hourly ($20-$55/hr) |
+| Timeline (MVP) | 6 weeks | 3-6 months | 2-4 months |
+| Communication | Direct with founders | Through project manager | Through team lead (timezone gap) |
+| Post-launch | 30-90 day support included | Separate retainer contract | Often ends at delivery |
 
 ## Site Map
 
-- / — Homepage (founder-friendly app development agency)
-- /about-us — About page with founder bios
-- /our-services — Service hub
-- /flutter-app-development — Flutter development pillar page
-- /react-native-developer — React Native (honest positioning)
-- /full-stack-development — MVP development for startups
-- /ecommerce — Shopify/WooCommerce companion apps
-- /mobile-app-marketing — ASO and launch marketing (bundled)
-- /post-seed-startup-development-agency — For funded startups
-- /white-label-app-development-for-marketing-agencies — Agency partnership
-- /boutique-fitness-studio-app-developer — Fitness vertical
-- /multi-location-dental-practice-app — Dental vertical (non-PHI)
-- /flutter-development-agency-canada — Canada geo hub
+- / — Homepage: founder-friendly app development agency
+- /about-us — About page with founder bios and company story
+- /our-services — All mobile app development services
+- /flutter-app-development — Flutter app development services
+- /react-native-developer — React Native development services
+- /full-stack-development — Full-stack MVP development for startups
+- /ecommerce — E-commerce and Shopify companion app development
+- /mobile-app-marketing — ASO and mobile app marketing services
+- /post-seed-startup-development-agency — App development for funded startups
+- /white-label-app-development-for-marketing-agencies — White-label development for agencies
+- /boutique-fitness-studio-app-developer — Custom fitness studio app development
+- /multi-location-dental-practice-app — Dental practice app development
+- /flutter-development-agency-canada — Mobile app development for Canadian startups
 - /our-work — Portfolio and case studies
-- /cage-case-study — Cage app case study
-- /reactosphere-case-study — Reactosphere case study
-- /toriino-case-study — Toriino case study
-- /yuno-case-study — Yuno case study
-- /blogs — Blog index
-- /contact-us — Contact and booking
-- /privacy-policy — Privacy policy
-- /terms-and-condition — Terms of service
+- /blogs — Blog with guides on app development costs, technology comparisons, and industry insights
+- /contact-us — Contact form and booking
 
 ## Blog Articles
 
-- /rescue-failed-app-project — When to rescue vs rebuild a failed app (cost data, decision framework)
+- /rescue-failed-app-project — When to rescue vs rebuild a failed app project
 - /flutterflow-to-flutter-migration — FlutterFlow to Flutter migration guide for founders
-- /how-much-does-it-cost-to-build-an-app-for-my-business — App development cost breakdown with 12 cited sources
+- /how-much-does-it-cost-to-build-an-app-for-my-business — Complete app development cost breakdown 2026
 
 ## Contact
 
-- Website: https://appverra.co
-- Email: info@appverra.co
-- Phone: (213) 714-7176
-- Address: 20 N Moore St, New York, NY 10013, United States
+- **Website**: https://appverra.co
+- **Email**: info@appverra.co
+- **Phone**: (213) 714-7176
+- **Address**: 20 N Moore St, New York, NY 10013, United States
+- **Hours**: Monday-Friday, 9 AM - 6 PM Eastern Time
 
-## Brand Voice
+## Brand
 
-Peer-to-peer founder voice. Numbers in every claim. No vendor-speak. "Apps that ship. Founders who answer."
+Apps that ship. Founders who answer.
