@@ -19,6 +19,7 @@ require_once __DIR__ . '/../includes/post_helpers.php';
 require_once __DIR__ . '/../includes/webp.php';
 
 $user = require_auth();
+csrf_ensure();
 
 $ROOT         = realpath(__DIR__ . '/..');
 $PENDING_DIR  = $ROOT . '/blog_factory/queue/pending';

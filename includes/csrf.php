@@ -5,12 +5,18 @@ function csrf_token(): string {
     auth_session_start();
     if (empty($_SESSION['csrf_token'])) {
         $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+        session_write_close();
+        auth_session_start();
     }
     return $_SESSION['csrf_token'];
 }
 
 function csrf_field(): string {
     return '<input type="hidden" name="csrf_token" value="' . htmlspecialchars(csrf_token(), ENT_QUOTES) . '">';
+}
+
+function csrf_ensure(): void {
+    csrf_token();
 }
 
 function csrf_verify(): void {
