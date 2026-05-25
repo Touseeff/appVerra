@@ -195,6 +195,8 @@ All US clients get same-timezone collaboration (Eastern Time). No offshore delay
 - /app-code-audit — Mobile app code audit service ($2,997 fixed, 5-day delivery)
 - /take-over-app-project — App project takeover and rescue for founders whose developer quit, missed deadlines, or delivered unusable code
 - /rebuild-app-from-scratch — Complete mobile app rebuild service when fixing costs more than rebuilding; preserves users, data, and App Store listing
+- /new-york-app-development — Mobile app development company in New York City (HQ: 20 N Moore St, Tribeca)
+- /los-angeles-app-development — Mobile app development for LA startups, entertainment, media, and e-commerce
 - /our-work — Portfolio and case studies
 - /blogs — Blog with guides on app development costs, technology comparisons, and industry insights
 - /contact-us — Contact form and booking
