@@ -204,11 +204,15 @@ function import_pending_post(
     $fm   = $parsed['frontmatter'];
     $body = $parsed['body'];
 
-    // Move and convert image into /uploads/YYYY/MM/.
-    $img_url = move_pending_image($slug, $images_src, $repo_root);
+    // Resolve image: if already in /assets/images/blog/ (git-tracked), use as-is.
+    // Otherwise fall back to moving from queue/pending/images/ to /uploads/.
+    $fm_img = trim((string)($fm['featured_image'] ?? ''));
+    if ($fm_img !== '' && str_starts_with($fm_img, '/assets/images/blog/') && is_file($repo_root . $fm_img)) {
+        $img_url = $fm_img;
+    } else {
+        $img_url = move_pending_image($slug, $images_src, $repo_root);
+    }
 
-    // Build the post payload. Image fields override anything in frontmatter so
-    // we always end up with a real /uploads/ URL (not the queue path).
     $data = [
         'slug'               => trim((string)($fm['slug'] ?? $slug)),
         'title'              => trim((string)($fm['title'] ?? '')),

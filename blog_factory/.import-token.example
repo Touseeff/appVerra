@@ -1,0 +1,4 @@
+Replace this with a random token (32+ chars, alphanumeric + URL-safe).
+Generate one with: python3 -c "import secrets; print(secrets.token_urlsafe(32))"
+Copy this file to .import-token (without .example) and paste the token.
+The token is used by the Hostinger cron job to authenticate api-import requests.

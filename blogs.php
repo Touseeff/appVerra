@@ -7,11 +7,12 @@ $page_class       = "contact_us-page";
 $og_image         = "https://appverra.co/assets/images/blog-img.webp";
 include("header.php");
 
+db_exec('UPDATE posts SET status = "published" WHERE status = "scheduled" AND publish_at <= NOW()', '', []);
+
 $posts = db_all('
     SELECT id, slug, title, excerpt, featured_image, publish_at, created_at
     FROM posts
     WHERE status = "published"
-       OR (status = "scheduled" AND publish_at <= NOW())
     ORDER BY COALESCE(publish_at, created_at) DESC
     LIMIT 100
 ');

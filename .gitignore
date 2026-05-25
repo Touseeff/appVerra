@@ -5,6 +5,8 @@ includes/config.local.php
 # Blog factory — local-only run artifacts (drafts in queue/pending/ ARE committed)
 blog_factory/runs/
 blog_factory/.env
+blog_factory/.import-token
+blog_factory/auto-import.log
 blog_factory/queue/published.json
 
 # Third-party WYSIWYG bundle — install on server, do not commit

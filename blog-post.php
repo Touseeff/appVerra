@@ -30,6 +30,11 @@ if (!$post) {
     exit;
 }
 
+if ($post['status'] === 'scheduled') {
+    db_exec('UPDATE posts SET status = "published" WHERE id = ?', 'i', [$post['id']]);
+    $post['status'] = 'published';
+}
+
 // --- Derived metadata shared by template + JSON-LD ---
 $author       = post_author_display($post);
 $published_dt = $post['publish_at'] ?: $post['created_at'];
