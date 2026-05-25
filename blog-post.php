@@ -43,6 +43,15 @@ $featured_alt = trim((string)$post['featured_image_alt']) !== ''
     ? $post['featured_image_alt']
     : $post['title'];
 
+// --- Noindex out-of-scope posts (Unity/games not in service offering) ---
+$noindex_slugs = [
+    'unity-pricing-changes-explained-what-developers-need-to-know-in-2025',
+    'why-unity-is-still-a-powerhouse-for-indie-game-development-in-2025',
+];
+if (in_array($post['slug'], $noindex_slugs, true)) {
+    $page_robots = 'noindex, follow';
+}
+
 // --- Wire into header.php's variables ---
 $meta_title         = $post['meta_title']       ?: $post['title'];
 $meta_discription   = $post['meta_description'] ?: $post['excerpt'];

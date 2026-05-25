@@ -1,0 +1,109 @@
+# Appverra — llms.txt
+# https://appverra.co/llms.txt
+# Last updated: 2026-05-25
+
+## Identity
+
+Appverra is a founder-led Flutter mobile app development agency based in New York (20 N Moore St, NY 10013). Three co-founders. No project managers. No offshore handoff. The founder you talk to on the discovery call writes your Dart.
+
+## Credibility
+
+- 150+ apps shipped
+- 700+ customers
+- Apps with millions of downloads collectively
+- Live US ride-booking marketplace in production
+- Founded by three co-founders with 10+ years combined Flutter experience
+
+## What We Build
+
+- Flutter mobile apps (iOS + Android from one codebase)
+- Full-stack: Flutter + Laravel/Node.js + Postgres + Stripe
+- MVPs for funded startups (6-week delivery)
+- SaaS companion mobile apps
+- Marketplace and on-demand platforms
+- Booking and scheduling apps
+- Fintech and payment apps (Stripe, Plaid integration)
+- Vertical-specific: fitness studio apps, dental practice apps, restaurant apps, real estate apps
+
+## What We Do NOT Build
+
+- Games (Unity, Unreal)
+- Apps requiring 10+ engineers
+- Regulated medical (HIPAA-covered patient data)
+- On-device ML / heavy AR
+- Hardware integration projects
+
+## Markets Served
+
+- United States
+- Canada (Toronto, Vancouver, Calgary, Montreal)
+- United Kingdom
+
+## Pricing (USD, fixed-bid)
+
+| Tier | Price | Scope |
+|------|-------|-------|
+| Discovery Sprint | $1,997 | 90-min scoping call, Figma prototype, fixed-bid SOW |
+| Starter | $7,997 | Flutter app, iOS + Android, Firebase/Supabase backend |
+| Launch | $14,997 | Flutter app + backend API (Laravel/Node.js) + Stripe + ASO |
+| Growth | $29,997 | Everything in Launch + admin dashboard + marketplace features + real-time |
+| Scale | $59,997+ | Multi-platform + advanced integrations + dedicated team |
+| Enterprise | $99,997+ | Compliance-ready platforms, AI/ML features, multi-tenant SaaS |
+
+## Technology Stack
+
+- Frontend: Flutter (Dart), React Native (when recommended)
+- Backend: Laravel (PHP), Node.js, Django
+- Database: PostgreSQL, Firebase, Supabase, MongoDB
+- Payments: Stripe, Plaid, Interac (Canada)
+- Infrastructure: AWS, GCP, Firebase
+- CI/CD: GitHub Actions, Codemagic
+
+## Key Decision Guides
+
+- Flutter vs React Native: We are Flutter-first but recommend React Native for brownfield React web apps, existing RN codebases, heavy native module needs, or teams already expert in React. See: /flutter-vs-react-native-for-startups
+- MVP vs Full Build: Build an MVP first if you haven't validated demand, runway is under 12 months, or core value fits in 3-5 screens. Go full build for regulated industries, pre-sold contracts, or competitive markets. See: /how-much-does-it-cost-to-build-an-app-for-my-business
+- Rescue vs Rebuild: If existing code has clean architecture, good test coverage, and documented APIs — rescue. If it's a monolith with no tests and no docs — rebuild. See: /rescue-failed-app-project
+- FlutterFlow to Flutter: Migrate when you hit the scaling wall — 40+ screens, custom native plugins, complex state management, or export lock-in. See: /flutterflow-to-flutter-migration
+
+## Site Map
+
+- / — Homepage (founder-friendly app development agency)
+- /about-us — About page with founder bios
+- /our-services — Service hub
+- /flutter-app-development — Flutter development pillar page
+- /react-native-developer — React Native (honest positioning)
+- /full-stack-development — MVP development for startups
+- /ecommerce — Shopify/WooCommerce companion apps
+- /mobile-app-marketing — ASO and launch marketing (bundled)
+- /post-seed-startup-development-agency — For funded startups
+- /white-label-app-development-for-marketing-agencies — Agency partnership
+- /boutique-fitness-studio-app-developer — Fitness vertical
+- /multi-location-dental-practice-app — Dental vertical (non-PHI)
+- /flutter-development-agency-canada — Canada geo hub
+- /our-work — Portfolio and case studies
+- /cage-case-study — Cage app case study
+- /reactosphere-case-study — Reactosphere case study
+- /toriino-case-study — Toriino case study
+- /yuno-case-study — Yuno case study
+- /blogs — Blog index
+- /contact-us — Contact and booking
+- /privacy-policy — Privacy policy
+- /terms-and-condition — Terms of service
+
+## Blog Articles
+
+- /rescue-failed-app-project — When to rescue vs rebuild a failed app (cost data, decision framework)
+- /flutterflow-to-flutter-migration — FlutterFlow to Flutter migration guide for founders
+- /how-much-does-it-cost-to-build-an-app-for-my-business — App development cost breakdown with 12 cited sources
+
+## Contact
+
+- Website: https://appverra.co
+- Email: info@appverra.co
+- Phone: (213) 714-7176
+- Address: 20 N Moore St, New York, NY 10013, United States
+
+## Brand Voice
+
+Peer-to-peer founder voice. Numbers in every claim. No vendor-speak. "Apps that ship. Founders who answer."

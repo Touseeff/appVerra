@@ -4,5 +4,9 @@ Allow: /
 Disallow: /testing.php
 Disallow: /mail.php
 Disallow: /thankyou.php
+Disallow: /admin/
 
 Sitemap: https://appverra.co/sitemap.xml
+
+# AI search visibility
+# See https://appverra.co/llms.txt for structured brand identity
