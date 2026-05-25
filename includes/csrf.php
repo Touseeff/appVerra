@@ -1,6 +1,10 @@
 <?php
 require_once __DIR__ . '/auth.php';
 
+if (function_exists('opcache_invalidate')) {
+    opcache_invalidate(__FILE__, true);
+}
+
 function csrf_token(): string {
     auth_session_start();
     if (empty($_SESSION['csrf_token'])) {
