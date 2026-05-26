@@ -28,6 +28,9 @@ RewriteRule ^blog_factory/ - [F,L]
 # 301 redirect: fix "hands-fee" typo in voice commerce blog slug
 RewriteRule ^voice-commerce-in-2025-how-to-enable-hands-fee-shopping-in-your-app/?$ /voice-commerce-in-2025-how-to-enable-hands-free-shopping-in-your-app [R=301,L]
 
+# Serve llms.txt through PHP to bypass Hostinger WAF bot-blocking
+RewriteRule ^llms\.txt$ llms-txt.php [L]
+
 # Remove .php extension from URLs
 # Redirect /page.php to /page (301 permanent)
 RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
