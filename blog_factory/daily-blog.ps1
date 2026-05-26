@@ -53,7 +53,7 @@ This is an automated daily run. Do not ask for confirmation — proceed through 
 
 try {
     Push-Location $repoRoot
-    claude -p $prompt 2>&1 | Out-File $logFile -Append -Encoding utf8
+    claude -p $prompt --dangerously-skip-permissions --max-turns 100 2>&1 | Out-File $logFile -Append -Encoding utf8
     "$(Get-Date -Format 'o') [DONE] Pipeline finished" | Out-File $logFile -Append -Encoding utf8
 } catch {
     "$(Get-Date -Format 'o') [ERROR] $($_.Exception.Message)" | Out-File $logFile -Append -Encoding utf8
