@@ -52,9 +52,12 @@ This is an automated daily run. Do not ask for confirmation — proceed through 
 "$(Get-Date -Format 'o') [START] Daily blog generation" | Out-File $logFile -Encoding utf8
 
 try {
-    claude -p $prompt --cwd $repoRoot 2>&1 | Out-File $logFile -Append -Encoding utf8
+    Push-Location $repoRoot
+    claude -p $prompt 2>&1 | Out-File $logFile -Append -Encoding utf8
     "$(Get-Date -Format 'o') [DONE] Pipeline finished" | Out-File $logFile -Append -Encoding utf8
 } catch {
     "$(Get-Date -Format 'o') [ERROR] $($_.Exception.Message)" | Out-File $logFile -Append -Encoding utf8
     exit 1
+} finally {
+    Pop-Location
 }
