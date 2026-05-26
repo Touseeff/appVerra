@@ -1,6 +1,8 @@
 # Appverra — Mobile App Development Company
 # https://appverra.co/llms.txt
-# Last updated: 2026-05-25
+# Last updated: 2026-05-26
+
+> For the complete detailed reference with FAQs, decision frameworks, objection responses, comparisons, and service deep-dives, see: https://appverra.co/llms-full.txt
 
 ## Identity
 

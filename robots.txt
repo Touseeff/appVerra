@@ -8,5 +8,35 @@ Disallow: /admin/
 
 Sitemap: https://appverra.co/sitemap.xml
 
-# AI search visibility
+# AI search visibility — we explicitly welcome AI crawlers
 # See https://appverra.co/llms.txt for structured brand identity
+# See https://appverra.co/llms-full.txt for complete detailed reference
+
+User-agent: GPTBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
