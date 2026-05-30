@@ -25,13 +25,13 @@ $posts = db_all('
                 <span class="revealUp d-inline-block mb-md-4 mb-sm-3 mb-2">
                 <span class="heading26px light">Our Blogs</span>
                 </span>
-                <h2 class="heading70px m-0 light">
+                <h1 class="heading70px m-0 light">
                     <span class="revealUp">
                     <span>
                     Insights, Updates & Ideas <span class="secondColor">from Appverra </span>
                     </span>
                     </span>
-                </h2>
+                </h1>
                 <svg class="animated_svg2 mb-3" width="672" height="36" viewBox="0 0 672 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4 32C199.013 20.5125 606.673 -9.88059 663.31 11.341C719.946 32.5627 249.686 20.1834 7.47644 11.341" stroke="#B3FF00" stroke-width="7" stroke-linecap="round"/>
                 </svg>
@@ -92,6 +92,8 @@ $posts = db_all('
                         <img src="<?= htmlspecialchars($img) ?>" loading="lazy" class="ow_img img-fluid" width="616" height="377" alt="<?= htmlspecialchars($p['title']) ?>">
                         <div class="p-3 p-lg-4">
                             <h3 class="heading22px dark"><?= htmlspecialchars($p['title']) ?></h3>
+                            <?php $pd = $p['publish_at'] ?: $p['created_at']; ?>
+                            <?php if ($pd): ?><p class="blog-card-date" style="color:#8a8f98;font-size:.85rem;margin:.25rem 0 .5rem;"><time datetime="<?= htmlspecialchars(date('c', strtotime($pd))) ?>"><?= htmlspecialchars(date('M j, Y', strtotime($pd))) ?></time></p><?php endif; ?>
                             <span class="btn_wrap">
                                 <a href="<?= htmlspecialchars($p['slug']) ?>" class="theme_btn black_btn">
                                     <span class="btnTextWrap"><span>Learn More</span><span>Learn More</span></span>

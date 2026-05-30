@@ -535,9 +535,9 @@
 
 						<img src="assets/images/tech-iccon1.svg" loading="lazy" class="tech_icon mb-4" width="60" height="60" alt="<?= $sitename ?>" loading="lazy"/>
 
-						<h3 class="heading32px dark">Unity Game Development</h3>
+						<h3 class="heading32px dark">App Code Audit</h3>
 
-						<p>We craft immersive, high-performance games using Unity — blending stunning visuals with smooth gameplay for cross-platform success and player engagement.</p> 
+						<p>Independent code review for your iOS or Android app — architecture grading, a severity-ranked issue list, and a fix-or-rebuild verdict in 5 days.</p>
 
 					</div>
 
@@ -665,7 +665,7 @@
 
 							<img src="assets/images/tech-iccon1.svg" loading="lazy" class="technology_icon mb-4" width="60" height="60" alt="<?= $sitename ?>" loading="lazy"/>
 
-							<h3 class="heading32px dark m-0">Unreal Engine <br>Game</h3>
+							<h3 class="heading32px dark m-0">Native iOS <br>Development</h3>
 
 						</div>
 
@@ -701,7 +701,7 @@
 
 							<img src="assets/images/tech-iccon5.svg" loading="lazy" class="technology_icon mb-4" width="60" height="60" alt="<?= $sitename ?>" loading="lazy"/>
 
-							<h3 class="heading32px dark m-0">NFT Game <br>Development</h3>
+							<h3 class="heading32px dark m-0">Native Android <br>Development</h3>
 
 						</div>
 
@@ -945,11 +945,11 @@
 					    <source src="assets/videos/ser1.mp4" type="video/mp4">
 					</video>
 
-					<h3 class="heading100px m-0 primeColor">100+</h3>
+					<h3 class="heading100px m-0 primeColor">150+</h3>
 
-					<h4 class="heading24px fw_400 light">Projects Delivered</h4>
+					<h4 class="heading24px fw_400 light">Apps Shipped</h4>
 
-					<p class="light">Delivered over 100 successful projects, showcasing a proven track record of quality, reliability, and client satisfaction.</p>
+					<p class="light">Shipped 150+ production apps across iOS and Android — a proven track record of quality, reliability, and results.</p>
 
 				</div>
 
@@ -960,11 +960,11 @@
 					    <source src="assets/videos/ser2.mp4" type="video/mp4">
 					</video>
 
-					<h3 class="heading100px m-0 primeColor">80+</h3>
+					<h3 class="heading100px m-0 primeColor">700+</h3>
 
-					<h4 class="heading24px fw_400 light">Teams Strength</h4>
+					<h4 class="heading24px fw_400 light">Customers Served</h4>
 
-					<p class="light">Backed by a strong team of 80+ skilled professionals driving innovation and excellence.</p>
+					<p class="light">Trusted by 700+ founders and businesses, with apps that have earned millions of downloads.</p>
 
 				</div>
 
@@ -1118,6 +1118,94 @@
 </section>
 
 
+
+<section class="latest_blog our_wrok">
+
+	<div class="container">
+
+		<span class="border rounded-pill px-4 py-2 d-table uppercase mx-auto mb-4 dark bg-white">From The Blog</span>
+
+		<h2 class="heading70px dark text-center">
+
+			<span class="revealUp"><span>Founder Guides on <span class="secondColor">Cost, Speed</span></span></span><br>
+
+			<span class="revealUp"><span><span class="secondColor">&</span> Rescue</span></span>
+
+		</h2>
+
+		<svg class="animated_svg2 mb-3 mb-lg-5 w-50 mx-auto d-table" width="672" height="36" viewBox="0 0 672 36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 32C199.013 20.5125 606.673 -9.88059 663.31 11.341C719.946 32.5627 249.686 20.1834 7.47644 11.341" stroke="#B3FF00" stroke-width="7" stroke-linecap="round"/></svg>
+
+		<div class="row g-0">
+
+			<div class="col-lg-4 p-2" data-aos="fade-up" data-aos-delay="200">
+				<div class="ow_row">
+					<div class="p-3 p-lg-4">
+						<h3 class="heading22px dark">How Much Does It Cost to Build a Mobile App in 2026?</h3>
+						<p>A sourced breakdown of real app development costs — from a simple MVP to a complex platform.</p>
+						<span class="btn_wrap">
+							<a href="how-much-does-it-cost-to-build-an-app-for-my-business" class="theme_btn black_btn">
+								<span class="btnTextWrap"><span>Read More</span><span>Read More</span></span>
+								<span class="iconCircle"><span class="iconWrap">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+								</span></span>
+							</a>
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 p-2" data-aos="fade-up" data-aos-delay="300">
+				<div class="ow_row">
+					<div class="p-3 p-lg-4">
+						<h3 class="heading22px dark">How to Rescue a Failed App Project</h3>
+						<p>Your developer ghosted or delivered broken code? A founder's decision framework for rescue vs rebuild.</p>
+						<span class="btn_wrap">
+							<a href="rescue-failed-app-project" class="theme_btn black_btn">
+								<span class="btnTextWrap"><span>Read More</span><span>Read More</span></span>
+								<span class="iconCircle"><span class="iconWrap">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+								</span></span>
+							</a>
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 p-2" data-aos="fade-up" data-aos-delay="400">
+				<div class="ow_row">
+					<div class="p-3 p-lg-4">
+						<h3 class="heading22px dark">FlutterFlow to Flutter Migration</h3>
+						<p>When to move from no-code to production Flutter — a 2026 decision framework for founders.</p>
+						<span class="btn_wrap">
+							<a href="flutterflow-to-flutter-migration" class="theme_btn black_btn">
+								<span class="btnTextWrap"><span>Read More</span><span>Read More</span></span>
+								<span class="iconCircle"><span class="iconWrap">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+								</span></span>
+							</a>
+						</span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<span class="btn_wrap mx-auto d-table mt-4" data-aos="fade-up" data-aos-delay="500">
+			<a href="blogs" class="theme_btn black_btn">
+				<span class="btnTextWrap"><span>View All Blogs</span><span>View All Blogs</span></span>
+				<span class="iconCircle"><span class="iconWrap">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+				</span></span>
+			</a>
+		</span>
+
+	</div>
+
+</section>
 
 <?php include("testimonials-section.php"); ?>
 

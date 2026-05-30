@@ -40,7 +40,7 @@
 
 				</span>
 
-				<h2 class="heading70px m-0 light">
+				<h1 class="heading70px m-0 light">
 
 					<span class="revealUp"><span>Boutique Fitness</span></span> <br>
 
@@ -48,7 +48,7 @@
 
 					<span class="revealUp fw_300"><span> Developer</span></span>
 
-				</h2>
+				</h1>
 
 				<svg class="animated_svg2 mb-3" width="672" height="36" viewBox="0 0 672 36" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M4 32C199.013 20.5125 606.673 -9.88059 663.31 11.341C719.946 32.5627 249.686 20.1834 7.47644 11.341" stroke="#B3FF00" stroke-width="7" stroke-linecap="round"/></svg>
 

@@ -25,13 +25,20 @@
     $ip = $_SERVER['REMOTE_ADDR'];
 
     if(session_status() === PHP_SESSION_NONE) session_start();
+
+    // Skip the geo lookup for crawlers/bots. They don't need geo-personalization,
+    // the blocking call adds up to 1s of latency to every crawl, and serving bots
+    // geo-varied content risks inconsistent indexing. Humans still get it.
+    $ua = $_SERVER['HTTP_USER_AGENT'] ?? '';
+    $is_bot = (bool) preg_match('/bot|crawl|spider|slurp|gptbot|oai-searchbot|chatgpt|claudebot|anthropic|perplexity|applebot|google-extended|ccbot|bytespider|facebookexternalhit|embedly|slackbot|telegrambot|whatsapp|bingpreview/i', $ua);
+
     $cache_key = 'loc_' . md5($ip);
-    if(!isset($_SESSION[$cache_key])) {
+    if(!$is_bot && !isset($_SESSION[$cache_key])) {
         $ctx = stream_context_create(['http' => ['timeout' => 1, 'ignore_errors' => true]]);
         $raw = @file_get_contents("http://ip-api.com/json/{$ip}", false, $ctx);
         $_SESSION[$cache_key] = $raw ?: '{}';
     }
-    $location = json_decode($_SESSION[$cache_key], true) ?? [];
+    $location = $is_bot ? [] : (json_decode($_SESSION[$cache_key] ?? '{}', true) ?? []);
 
     $isp = $location['isp'] ?? '';
 
