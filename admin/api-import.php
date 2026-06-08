@@ -8,8 +8,9 @@
  *
  * Kill switch: create blog_factory/.auto-import-disabled to halt all imports.
  *
- * Hostinger cron example (every 2 hours):
- *   0 */2 * * * wget -q -O /dev/null "https://appverra.co/admin/api-import.php?token=YOUR_TOKEN"
+ * Hostinger cron example - run every 2 hours, at minute 0:
+ *   cron schedule:  0 0,2,4,6,8,10,12,14,16,18,20,22 * * *
+ *   command:        wget -q -O /dev/null "https://appverra.co/admin/api-import.php?token=YOUR_TOKEN"
  */
 
 require_once __DIR__ . '/../includes/db.php';
