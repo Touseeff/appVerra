@@ -32,6 +32,8 @@
 
 				<a href="tel:<?= $tel ?>" class="phone"><h3 class="heading20px dark d-flex gap-2 align-items-center txt_bg"><i data-feather="phone" class="phone_icon"></i> <?= $sitenumber ?></h3></a>
 
+				<h3 class="heading20px dark d-flex gap-2 align-items-start txt_bg"><i data-feather="map-pin"></i> <span>Diversified Commerce LLC<br><?= $siteaddress ?></span></h3>
+
 				<h3 class="heading30px dark mt-4 mt-lg-5 ">Follow Us</h3>
 
 				<div class="d-flex gap-2">
@@ -102,6 +104,7 @@
 
 					<div class="checkbox_wrapper mt-4">
 
+                        <?php if (false): /* Unity Game Development discontinued */ ?>
                         <label class="custm_checkBox">
 
                             <input type="checkbox" name="service[]" value="Unity Game Development" checked="">
@@ -115,10 +118,11 @@
                             </span>
 
                         </label>
+                        <?php endif; /* end Unity hidden block */ ?>
 
                         <label class="custm_checkBox">
 
-                            <input type="checkbox" name="service[]" value="React Native Development">
+                            <input type="checkbox" name="service[]" value="React Native Development" checked="">
 
                             <span class="checkmark d-flex align-items-center gap-2">
 

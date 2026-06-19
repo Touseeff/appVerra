@@ -88,7 +88,7 @@
 
             <div class="col-md-9">
 
-                <p>Last updated: January 12, 2023</p>
+                <p>Last updated: June 19, 2026</p>
 
                 <p>Please read these terms and conditions carefully before using Our Service.</p>
 
@@ -98,7 +98,7 @@
 
                         <h2 class="heading55px dark fw_400">Interpretation and Definitions</h2>
 
-                        <p>The words capitalized in this document have specific meanings defined under the following conditions. The definitions shall apply regardless of whether they appear in singular or plural. "Company," "We," "Us," or "Our" refers to Appverra. "Service" refers to the website and mobile application solutions we provide. "You" means the user or entity accessing our services.</p>
+                        <p>The words capitalized in this document have specific meanings defined under the following conditions. The definitions shall apply regardless of whether they appear in singular or plural. "Company," "We," "Us," or "Our" refers to Diversified Commerce LLC, doing business as Appverra. "Service" refers to the website and mobile application solutions we provide. "You" means the user or entity accessing our services.</p>
 
                     </div>
 
@@ -146,7 +146,7 @@
 
                         <h2 class="heading55px dark fw_400">Governing Law</h2>
 
-                        <p>These Terms shall be governed and construed in accordance with the laws of the jurisdiction in which Appverra operates, without regard to its conflict of law provisions. </p>
+                        <p>These Terms shall be governed and construed in accordance with the laws of the State of New York, United States, where Diversified Commerce LLC operates, without regard to its conflict of law provisions.</p>
 
                     </div>
 
@@ -190,11 +190,21 @@
 
                     </div>
 
-                    <div class="tab-pane fade" id="tab14" role="tabpanel">
+                    <div class="tab-pane fade" id="tab13" role="tabpanel">
 
                         <h2 class="heading55px dark fw_400">Contact Us</h2>
 
-                        <p>If you have any questions about these Terms and Conditions, please contact us at: </p>
+                        <p>If you have any questions about these Terms and Conditions, you can contact us:</p>
+
+                        <ul class="ul_list">
+
+                            <li>By email: <a href="mailto:<?= $siteemail ?>"><?= $siteemail ?></a></li>
+
+                            <li>By phone: <a href="tel:<?= $tel ?>"><?= $sitenumber ?></a></li>
+
+                            <li>By mail: Diversified Commerce LLC, <?= $siteaddress ?></li>
+
+                        </ul>
 
                     </div>
 

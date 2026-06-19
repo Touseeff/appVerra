@@ -82,9 +82,9 @@
 
             <div class="col-md-9">
 
-                <p>Last updated: January 12, 2023</p>
+                <p>Last updated: June 19, 2026</p>
 
-                <p>Please read these terms and conditions carefully before using Our Service.</p>
+                <p>Please read this Privacy Policy carefully before using Our Service.</p>
 
                 <div class="tab-content" id="v-pills-tabContent">
 
@@ -101,6 +101,8 @@
                         <h2 class="heading55px dark fw_400">Definitions</h2>
 
                         <ul class="ul_list">
+
+                            <li><strong>Company (referred to as "We," "Us," or "Our"):</strong> Diversified Commerce LLC, doing business as Appverra.</li>
 
                             <li><strong>Personal Data:</strong> Information that relates to an identified or identifiable individual.</li>
 
@@ -164,7 +166,17 @@
 
                         <h2 class="heading55px dark fw_400">Contact Us</h2>
 
-                        <p>If you have any questions or concerns about this Privacy Policy or how we handle your data, please reach out to us:</p>
+                        <p>If you have any questions or concerns about this Privacy Policy or how we handle your data, you can reach out to us:</p>
+
+                        <ul class="ul_list">
+
+                            <li>By email: <a href="mailto:<?= $siteemail ?>"><?= $siteemail ?></a></li>
+
+                            <li>By phone: <a href="tel:<?= $tel ?>"><?= $sitenumber ?></a></li>
+
+                            <li>By mail: Diversified Commerce LLC, <?= $siteaddress ?></li>
+
+                        </ul>
 
                     </div>
 

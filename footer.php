@@ -24,6 +24,8 @@
 
 							<li><a href="our-work">WORK</a></li>
 
+							<li><a href="blogs">BLOGS</a></li>
+
 							<li><a href="contact-us">CONTACT US</a></li>
 
 						</ul>
@@ -39,8 +41,6 @@
 						<h3 class="heading40px">Services</h3>
 
 						<ul >
-
-			                <li><a href="unity-game-development">UNITY GAME DEVELOPMENT</a></li>
 
 			                <li><a href="react-native-developer">REACT NATIVE DEVELOPMENT</a></li>
 
@@ -156,7 +156,7 @@
 
 				<div class="col-md-7 mb-2 mb-md-0">
 
-					<p>© 2026 <span class="green"><?php echo $sitename ; ?></span> — Powered by <span class="green">Artistic Web Services</span></p>
+					<p>© 2026 <span class="green"><?php echo $sitename ; ?></span>, operated by Diversified Commerce LLC — Powered by <span class="green">Artistic Web Services</span></p>
 
 				</div>
 
@@ -184,7 +184,7 @@
 
 </div>
 
-<?php include("poppup.php"); ?>
+<?php include(__DIR__ . "/poppup.php"); ?>
 
 <!-- JavaScript — defer keeps execution order, releases main thread faster -->
 <script src="/assets/js/jquery.js" defer></script>
