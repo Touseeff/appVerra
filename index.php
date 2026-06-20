@@ -13,13 +13,13 @@
 
 <!-- <section class="hero_banner mainBanner">
 
-	<img src="assets/images/banner-ele2-sm.webp" loading="eager" fetchpriority="high" class="pipe_img img-fluid position-absolute scrollY spin" spin="-200" speed="1" y="-200" speedY="1"  width="100" height="100" alt="<?= $sitename ?>"/>
+	<img src="assets/images/banner-ele2-sm.webp" loading="eager" fetchpriority="high" class="pipe_img img-fluid position-absolute scrollY spin" spin="-200" speed="1" y="-200" speedY="1"  width="100" height="100" alt=""/>
 
 	<div class="container position-relative">
 
-		<img src="assets/images/banner-ele1.webp" loading="lazy" class="cube_img img-fluid position-absolute scrollY spin" spin="360" speed="2" y="-300" speedY="1" width="204" height="207" alt="<?= $sitename ?>" loading="eager"/>
+		<img src="assets/images/banner-ele1.webp" loading="lazy" class="cube_img img-fluid position-absolute scrollY spin" spin="360" speed="2" y="-300" speedY="1" width="204" height="207" alt="" loading="eager"/>
 
-		<img src="assets/images/banner-ele3.webp" loading="lazy" class="pizza_img img-fluid position-absolute scrollY " y="-300" speedY="2"  width="181" height="167" alt="<?= $sitename ?>" loading="eager"/>
+		<img src="assets/images/banner-ele3.webp" loading="lazy" class="pizza_img img-fluid position-absolute scrollY " y="-300" speedY="2"  width="181" height="167" alt="" loading="eager"/>
 
 		<div class="row align-items-center">
 
@@ -133,9 +133,9 @@
 
 			<div class="col-5 d-none d-lg-block position-relative" data-aos="fade-up" data-aos-delay="100">
 
-				<img src="assets/images/banner-img1.webp" loading="lazy" class="ring_img img-fluid scrollY" y="-300" speedY="1" width="526" height="527" alt="<?= $sitename ?>" loading="eager"/>
+				<img src="assets/images/banner-img1.webp" loading="lazy" class="ring_img img-fluid scrollY" y="-300" speedY="1" width="526" height="527" alt="" loading="eager"/>
 
-				<img src="assets/images/banner-img2.webp" loading="lazy" class="phone_in_hand img-fluid position-absolute"  width="550" height="662" alt="<?= $sitename ?>" loading="eager"/>
+				<img src="assets/images/banner-img2.webp" loading="lazy" class="phone_in_hand img-fluid position-absolute"  width="550" height="662" alt="" loading="eager"/>
 
 			</div>
 
@@ -147,7 +147,7 @@
 
 <section class="hero_banner mainBanner">
 
-	<img src="assets/images/banner-ele2-sm.webp" loading="eager" fetchpriority="high" class="pipe_img img-fluid position-absolute scrollY spin" spin="-200" speed="1" y="-200" speedY="1"  width="100" height="100" alt="<?= $sitename ?>"/>
+	<img src="assets/images/banner-ele2-sm.webp" loading="eager" fetchpriority="high" class="pipe_img img-fluid position-absolute scrollY spin" spin="-200" speed="1" y="-200" speedY="1"  width="100" height="100" alt=""/>
 
 
 		<div class="row align-items-center">
@@ -156,53 +156,53 @@
 				<div class="app_screen_wrap d-flex gap-4">
 					<div class="appslider1">
 						<marquee direction="down" height="100%">
-							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt="<?= $sitename ?>"/>
+							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt=""/>
+							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt=""/>
+							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt=""/>
+							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt=""/>
+							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt=""/>
+							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt=""/>
+							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt=""/>
+							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt=""/>
+							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt=""/>
+							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt=""/>
+							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt=""/>
+							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt=""/>
+							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt=""/>
 						</marquee>
 					</div>
 					<div class="appslider2">
 						<marquee direction="up" height="100%">
-							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt="<?= $sitename ?>"/>
+							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt=""/>
+							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt=""/>
+							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt=""/>
+							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt=""/>
+							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt=""/>
+							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt=""/>
+							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt=""/>
+							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt=""/>
+							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt=""/>
+							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt=""/>
+							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt=""/>
+							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt=""/>
+							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt=""/>
 						</marquee>
 					</div>
 					<div class="appslider2">
 						<marquee direction="down" height="100%">
-							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt="<?= $sitename ?>"/>
-							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt="<?= $sitename ?>"/>
+							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt=""/>
+							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt=""/>
+							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt=""/>
+							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt=""/>
+							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt=""/>
+							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt=""/>
+							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt=""/>
+							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt=""/>
+							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt=""/>
+							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt=""/>
+							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt=""/>
+							<img src="assets/images/left-img2-sm.webp" loading="lazy" class="screen_img img-fluid" width="246" height="520" alt=""/>
+							<img src="assets/images/left-img1-sm.webp" loading="lazy" class="screen_img img-fluid" width="245" height="520" alt=""/>
 						</marquee>
 					</div>
 				</div>
@@ -533,7 +533,7 @@
 
 					<div class="item tech_clm" data-aos="fade-up" data-aos-delay="200">
 
-						<img src="assets/images/tech-iccon1.svg" loading="lazy" class="tech_icon mb-4" width="60" height="60" alt="<?= $sitename ?>" loading="lazy"/>
+						<img src="assets/images/tech-iccon1.svg" loading="lazy" class="tech_icon mb-4" width="60" height="60" alt="" loading="lazy"/>
 
 						<h3 class="heading32px dark">App Code Audit</h3>
 
@@ -543,7 +543,7 @@
 
 					<div class="item tech_clm" data-aos="fade-up" data-aos-delay="300">
 
-						<img src="assets/images/tech-iccon2.svg" loading="lazy" class="tech_icon mb-4" width="60" height="60" alt="<?= $sitename ?>" loading="lazy"/>
+						<img src="assets/images/tech-iccon2.svg" loading="lazy" class="tech_icon mb-4" width="60" height="60" alt="" loading="lazy"/>
 
 						<h3 class="heading32px dark">React Native Development</h3>
 
@@ -553,7 +553,7 @@
 
 					<div class="item tech_clm" data-aos="fade-up" data-aos-delay="400">
 
-						<img src="assets/images/tech-iccon3.svg" loading="lazy" class="tech_icon mb-4" width="60" height="60" alt="<?= $sitename ?>" loading="lazy"/>
+						<img src="assets/images/tech-iccon3.svg" loading="lazy" class="tech_icon mb-4" width="60" height="60" alt="" loading="lazy"/>
 
 						<h3 class="heading32px dark">Flutter<br> Development</h3>
 
@@ -563,7 +563,7 @@
 
 					<div class="item tech_clm" data-aos="fade-up" data-aos-delay="500">
 
-						<img src="assets/images/tech-iccon4.svg" loading="lazy" class="tech_icon mb-4" width="60" height="60" alt="<?= $sitename ?>" loading="lazy"/>
+						<img src="assets/images/tech-iccon4.svg" loading="lazy" class="tech_icon mb-4" width="60" height="60" alt="" loading="lazy"/>
 
 						<h3 class="heading32px dark">Full Stack Development</h3>
 
@@ -573,7 +573,7 @@
 
 					<div class="item tech_clm" data-aos="fade-up" data-aos-delay="600">
 
-						<img src="assets/images/mobile-app-marketing.svg" loading="lazy" class="tech_icon mb-4" width="60" height="60" alt="<?= $sitename ?>"/>
+						<img src="assets/images/mobile-app-marketing.svg" loading="lazy" class="tech_icon mb-4" width="60" height="60" alt=""/>
 
 						<h3 class="heading32px dark">Mobile App Marketing</h3>
 
@@ -583,7 +583,7 @@
 
 					<div class="item tech_clm" data-aos="fade-up" data-aos-delay="600">
 
-						<img src="assets/images/any-ecommerce.svg" loading="lazy" class="tech_icon mb-4" width="60" height="60" alt="<?= $sitename ?>"/>
+						<img src="assets/images/any-ecommerce.svg" loading="lazy" class="tech_icon mb-4" width="60" height="60" alt=""/>
 
 						<h3 class="heading32px dark">Any<br> Ecommerce</h3>
 
@@ -663,7 +663,7 @@
 
 						<div class="technology_clm tech_clm1">
 
-							<img src="assets/images/tech-iccon1.svg" loading="lazy" class="technology_icon mb-4" width="60" height="60" alt="<?= $sitename ?>" loading="lazy"/>
+							<img src="assets/images/tech-iccon1.svg" loading="lazy" class="technology_icon mb-4" width="60" height="60" alt="" loading="lazy"/>
 
 							<h3 class="heading32px dark m-0">Native iOS <br>Development</h3>
 
@@ -675,7 +675,7 @@
 
 						<div class="technology_clm tech_clm2">
 
-							<img src="assets/images/tech-iccon2.svg" loading="lazy" class="technology_icon mb-4" width="60" height="60" alt="<?= $sitename ?>" loading="lazy"/>
+							<img src="assets/images/tech-iccon2.svg" loading="lazy" class="technology_icon mb-4" width="60" height="60" alt="" loading="lazy"/>
 
 							<h3 class="heading32px dark m-0">React Native<br> Devlopment</h3>
 
@@ -687,7 +687,7 @@
 
 						<div class="technology_clm tech_clm3">
 
-							<img src="assets/images/tech-iccon3.svg" loading="lazy" class="technology_icon mb-4" width="60" height="60" alt="<?= $sitename ?>" loading="lazy"/>
+							<img src="assets/images/tech-iccon3.svg" loading="lazy" class="technology_icon mb-4" width="60" height="60" alt="" loading="lazy"/>
 
 							<h3 class="heading32px dark m-0">Flutter App<br> Development</h3>
 
@@ -699,7 +699,7 @@
 
 						<div class="technology_clm tech_clm4">
 
-							<img src="assets/images/tech-iccon5.svg" loading="lazy" class="technology_icon mb-4" width="60" height="60" alt="<?= $sitename ?>" loading="lazy"/>
+							<img src="assets/images/tech-iccon5.svg" loading="lazy" class="technology_icon mb-4" width="60" height="60" alt="" loading="lazy"/>
 
 							<h3 class="heading32px dark m-0">Native Android <br>Development</h3>
 
@@ -713,7 +713,7 @@
 
 			<div class="col-lg-5" data-aos="fade-up" data-aos-delay="1000">
 
-				<img src="assets/images/technology-img.webp" loading="lazy" class="technology_img w-100" width="526" height="674" alt="<?= $sitename ?>" loading="lazy"/>
+				<img src="assets/images/technology-img.webp" loading="lazy" class="technology_img w-100" width="526" height="674" alt="" loading="lazy"/>
 				<!-- <video autoplay muted loop playsinline preload="none" class="technology_vdo w-100">
 				    <source src="assets/videos/technology_vdo.mp4" type="video/mp4">
 				</video> -->
@@ -791,7 +791,7 @@
 
 				<div class="col-lg-6 mb-4 mb-lg-0 order-1 order-lg-2">
 
-					<!-- <img src="assets/images/ow_img1.webp" loading="lazy" class="ow_img img-fluid" width="626" height="454" alt="<?= $sitename ?>" loading="lazy"/> -->
+					<!-- <img src="assets/images/ow_img1.webp" loading="lazy" class="ow_img img-fluid" width="626" height="454" alt="" loading="lazy"/> -->
 					<video autoplay muted loop playsinline preload="none" class="ow_vdo">
 					    <source src="assets/videos/ow_img1.mp4" type="video/mp4">
 					</video>
@@ -808,7 +808,7 @@
 
 				<div class="ow_row">
 
-					<!-- <img src="assets/images/ow_img2.webp" loading="lazy" class="ow_img img-fluid" width="616" height="377" alt="<?= $sitename ?>" loading="lazy"/> -->
+					<!-- <img src="assets/images/ow_img2.webp" loading="lazy" class="ow_img img-fluid" width="616" height="377" alt="" loading="lazy"/> -->
 					<video autoplay muted loop playsinline preload="none" class="ow_vdo">
 					    <source src="assets/videos/ow_img2.mp4" type="video/mp4">
 					</video>
@@ -854,7 +854,7 @@
 
 				<div class="ow_row">
 
-					<!-- <img src="assets/images/ow_img3.webp" loading="lazy" class="ow_img img-fluid" width="616" height="377" alt="<?= $sitename ?>" loading="lazy"/> -->
+					<!-- <img src="assets/images/ow_img3.webp" loading="lazy" class="ow_img img-fluid" width="616" height="377" alt="" loading="lazy"/> -->
 					<video autoplay muted loop playsinline preload="none" class="ow_vdo">
 					    <source src="assets/videos/ow_img3.mp4" type="video/mp4">
 					</video>
@@ -940,7 +940,7 @@
 
 				<div class="service_clm">
 
-					<!-- <img src="assets/images/ser1.webp" loading="lazy" class="img-fluid" width="370" height="396" alt="<?= $sitename ?>" loading="lazy"/> -->
+					<!-- <img src="assets/images/ser1.webp" loading="lazy" class="img-fluid" width="370" height="396" alt="" loading="lazy"/> -->
 					<video autoplay muted loop playsinline preload="none" class="ser_vdo">
 					    <source src="assets/videos/ser1.mp4" type="video/mp4">
 					</video>
@@ -955,7 +955,7 @@
 
 				<div class="service_clm mx-auto d-table">
 
-					<!-- <img src="assets/images/ser2.webp" loading="lazy" class="img-fluid" width="370" height="396" alt="<?= $sitename ?>" loading="lazy"/> -->
+					<!-- <img src="assets/images/ser2.webp" loading="lazy" class="img-fluid" width="370" height="396" alt="" loading="lazy"/> -->
 					<video autoplay muted loop playsinline preload="none" class="ser_vdo">
 					    <source src="assets/videos/ser2.mp4" type="video/mp4">
 					</video>
@@ -970,7 +970,7 @@
 
 				<div class="service_clm ms-auto d-table">
 
-					<!-- <img src="assets/images/ser3.webp" loading="lazy" class="img-fluid" width="370" height="396" alt="<?= $sitename ?>" loading="lazy"/> -->
+					<!-- <img src="assets/images/ser3.webp" loading="lazy" class="img-fluid" width="370" height="396" alt="" loading="lazy"/> -->
 					<video autoplay muted loop playsinline preload="none" class="ser_vdo">
 					    <source src="assets/videos/ser3.mp4" type="video/mp4">
 					</video>
@@ -995,9 +995,9 @@
 
 <section class="book_an_appointment">
 
-	<img src="assets/images/banner-img1.webp" loading="lazy" class="baa_img1 scrollY d-none d-lg-block" y="-300" width="400" height="400" alt="<?= $sitename ?>"/>
+	<img src="assets/images/banner-img1.webp" loading="lazy" class="baa_img1 scrollY d-none d-lg-block" y="-300" width="400" height="400" alt=""/>
 
-	<img src="assets/images/baa-img.webp" loading="lazy" class="baa_img2 scrollY d-none d-lg-block" y="-300" width="400" height="300" alt="<?= $sitename ?>"/>
+	<img src="assets/images/baa-img.webp" loading="lazy" class="baa_img2 scrollY d-none d-lg-block" y="-300" width="400" height="300" alt=""/>
 
 	<div class="container">
 

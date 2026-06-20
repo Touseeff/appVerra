@@ -120,7 +120,7 @@
 
 						<div class="expert_clm">
 
-							<img src="assets/images/exp1.webp" loading="lazy" class="expert_img w-100" width="" height="" alt="" laoding="lazy"/>
+							<img src="/assets/images/exp1.webp" loading="lazy" class="expert_img w-100" width="" height="" alt="" laoding="lazy"/>
 
 						</div>
 
@@ -130,7 +130,7 @@
 
 						<div class="expert_clm">
 
-							<img src="assets/images/exp2.webp" loading="lazy" class="expert_img w-100" width="" height="" alt="" laoding="lazy"/>
+							<img src="/assets/images/exp2.webp" loading="lazy" class="expert_img w-100" width="" height="" alt="" laoding="lazy"/>
 
 						</div>
 
@@ -140,7 +140,7 @@
 
 						<div class="expert_clm">
 
-							<img src="assets/images/exp3.webp" loading="lazy" class="expert_img w-100" width="" height="" alt="" laoding="lazy"/>
+							<img src="/assets/images/exp3.webp" loading="lazy" class="expert_img w-100" width="" height="" alt="" laoding="lazy"/>
 
 						</div>
 
@@ -150,7 +150,7 @@
 
 						<div class="expert_clm">
 
-							<img src="assets/images/exp4.webp" loading="lazy" class="expert_img w-100" width="" height="" alt="" laoding="lazy"/>
+							<img src="/assets/images/exp4.webp" loading="lazy" class="expert_img w-100" width="" height="" alt="" laoding="lazy"/>
 
 						</div>
 
@@ -160,7 +160,7 @@
 
 						<div class="expert_clm">
 
-							<img src="assets/images/exp5.webp" loading="lazy" class="expert_img w-100" width="" height="" alt="" laoding="lazy"/>
+							<img src="/assets/images/exp5.webp" loading="lazy" class="expert_img w-100" width="" height="" alt="" laoding="lazy"/>
 
 						</div>
 
@@ -170,7 +170,7 @@
 
 						<div class="expert_clm">
 
-							<img src="assets/images/exp6.webp" loading="lazy" class="expert_img w-100" width="" height="" alt="" laoding="lazy"/>
+							<img src="/assets/images/exp6.webp" loading="lazy" class="expert_img w-100" width="" height="" alt="" laoding="lazy"/>
 
 						</div>
 
@@ -180,7 +180,7 @@
 
 						<div class="expert_clm">
 
-							<img src="assets/images/exp7.webp" loading="lazy" class="expert_img w-100" width="" height="" alt="" laoding="lazy"/>
+							<img src="/assets/images/exp7.webp" loading="lazy" class="expert_img w-100" width="" height="" alt="" laoding="lazy"/>
 
 						</div>
 
@@ -190,7 +190,7 @@
 
 						<div class="expert_clm">
 
-							<img src="assets/images/exp8.webp" loading="lazy" class="expert_img w-100" width="" height="" alt="" laoding="lazy"/>
+							<img src="/assets/images/exp8.webp" loading="lazy" class="expert_img w-100" width="" height="" alt="" laoding="lazy"/>
 
 						</div>
 
@@ -200,7 +200,7 @@
 
 						<div class="expert_clm">
 
-							<img src="assets/images/exp9.webp" loading="lazy" class="expert_img w-100" width="" height="" alt="" laoding="lazy"/>
+							<img src="/assets/images/exp9.webp" loading="lazy" class="expert_img w-100" width="" height="" alt="" laoding="lazy"/>
 
 						</div>
 

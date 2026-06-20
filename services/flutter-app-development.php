@@ -1,3 +1,4 @@
+<?php $root = dirname(__DIR__); ?>
 ﻿<?php $meta_title = "Flutter Development Agency for Startups — 6-Week MVPs | Appverra"; ?>
 
 <?php $meta_discription = "Founder-led Flutter agency. 150+ apps shipped, 700+ customers, millions of downloads. We ship Flutter MVPs in 6 weeks. Starter $7,997. Book a Discovery Sprint."; ?>
@@ -6,13 +7,22 @@
 
 <?php $og_image = "https://appverra.co/assets/images/fad_banner_img.png"; ?>
 
-<?php $schema_extra = '{
+<?php require_once $root . '/includes/schema_helpers.php';
+$canonical_override = "https://appverra.co/services/flutter-app-development"; ?>
+
+<?php $breadcrumbs = [
+    ['name' => 'Home',                    'url' => 'https://appverra.co/'],
+    ['name' => 'Services',                'url' => 'https://appverra.co/our-services'],
+    ['name' => 'Flutter App Development', 'url' => 'https://appverra.co/services/flutter-app-development'],
+]; ?>
+
+<?php $schema_extra = ['{
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Flutter App Development for Startups",
   "serviceType": "Mobile App Development",
   "provider": {"@type": "Organization", "name": "Appverra", "url": "https://appverra.co/"},
-  "url": "https://appverra.co/flutter-app-development",
+  "url": "https://appverra.co/services/flutter-app-development",
   "description": "Founder-led Flutter development agency. 150+ apps shipped for 700+ customers. We ship Flutter MVPs in 6 weeks for startups across the US, Canada, and UK. Pricing from $7,997 Starter to $99,997+ Enterprise.",
   "image": "https://appverra.co/assets/images/fad_banner_img.png",
   "areaServed": ["US", "CA", "GB"],
@@ -22,13 +32,13 @@
     "price": "1997",
     "priceCurrency": "USD"
   }
-}'; ?>
+}', build_breadcrumb_schema($breadcrumbs)]; ?>
 
-<?php include("header.php"); ?>
+<?php include $root . '/header.php'; ?>
 
 <section class="hero_banner mainBanner innerBanner fad_banner serviceBanner">
 
-	<img src="assets/images/fad_banner_img.webp" loading="eager" class="fad_banner_img d-none d-lg-block position-absolute bottom-0" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
+	<img src="/assets/images/fad_banner_img.webp" loading="eager" class="fad_banner_img d-none d-lg-block position-absolute bottom-0" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
 
 	<div class="container">		
 
@@ -36,7 +46,9 @@
 
 			<div class="col-lg-6">
 
-				<h1 class="heading70px m-0 light">
+				<?php include $root . '/breadcrumbs.php'; ?>
+
+					<h1 class="heading70px m-0 light">
 
 					<span class="revealUp">
 
@@ -166,10 +178,10 @@
 
 			<div class="col-lg-6 pe-lg-5 pe-md-4"  data-aos="fade-up" data-aos-delay="100">
 
-				<!-- <img src="assets/images/tqo-img.webp" loading="lazy" class="tqo_img img-fluid d-none d-lg-block" width="" height="" alt="" data-aos="fade-up" data-aos-delay="300"/> -->
+				<!-- <img src="/assets/images/tqo-img.webp" loading="lazy" class="tqo_img img-fluid d-none d-lg-block" width="" height="" alt="" data-aos="fade-up" data-aos-delay="300"/> -->
 				<span class="tqo_vod_wrap">
 					<video autoplay muted loop playsinline preload="none" class="tqo_img">
-					    <source src="assets/videos/tqo-vdo.mp4" type="video/mp4">
+					    <source src="/assets/videos/tqo-vdo.mp4" type="video/mp4">
 					</video>
 				</span>
 
@@ -225,7 +237,7 @@
 
 							<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3">
 
-								<img src="assets/images/foa-icon1.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
+								<img src="/assets/images/foa-icon1.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
 
 								<h4 class="heading18px m-0 dark fw_500">Cross Platform</h4>
 
@@ -237,7 +249,7 @@
 
 							<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3">
 
-								<img src="assets/images/foa-icon2.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
+								<img src="/assets/images/foa-icon2.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
 
 								<h4 class="heading18px m-0 dark fw_500">Single Codebase</h4>
 
@@ -249,7 +261,7 @@
 
 							<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3">
 
-								<img src="assets/images/foa-icon3.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
+								<img src="/assets/images/foa-icon3.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
 
 								<h4 class="heading18px m-0 dark fw_500">Agile Methodology</h4>
 
@@ -261,7 +273,7 @@
 
 							<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3">
 
-								<img src="assets/images/foa-icon4.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
+								<img src="/assets/images/foa-icon4.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
 
 								<h4 class="heading18px m-0 dark fw_500">Timely Coding</h4>
 
@@ -273,7 +285,7 @@
 
 							<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3">
 
-								<img src="assets/images/foa-icon5.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
+								<img src="/assets/images/foa-icon5.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
 
 								<h4 class="heading18px m-0 dark fw_500">Prompt Testing</h4>
 
@@ -285,7 +297,7 @@
 
 							<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3">
 
-								<img src="assets/images/foa-icon6.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
+								<img src="/assets/images/foa-icon6.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
 
 								<h4 class="heading18px m-0 dark fw_500">Dart Benefits</h4>
 
@@ -297,7 +309,7 @@
 
 							<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3">
 
-								<img src="assets/images/foa-icon7.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
+								<img src="/assets/images/foa-icon7.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
 
 								<h4 class="heading18px m-0 dark fw_500">Convenient Debuging</h4>
 
@@ -309,7 +321,7 @@
 
 							<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3">
 
-								<img src="assets/images/foa-icon8.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
+								<img src="/assets/images/foa-icon8.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
 
 								<h4 class="heading18px m-0 dark fw_500">Perfect For MVP’s</h4>
 
@@ -321,7 +333,7 @@
 
 							<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3">
 
-								<img src="assets/images/foa-icon1.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
+								<img src="/assets/images/foa-icon1.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
 
 								<h4 class="heading18px m-0 dark fw_500">Cross Platform</h4>
 
@@ -333,7 +345,7 @@
 
 							<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3">
 
-								<img src="assets/images/foa-icon2.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
+								<img src="/assets/images/foa-icon2.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
 
 								<h4 class="heading18px m-0 dark fw_500">Single Codebase</h4>
 
@@ -345,7 +357,7 @@
 
 							<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3">
 
-								<img src="assets/images/foa-icon3.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
+								<img src="/assets/images/foa-icon3.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
 
 								<h4 class="heading18px m-0 dark fw_500">Agile Methodology</h4>
 
@@ -357,7 +369,7 @@
 
 							<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3">
 
-								<img src="assets/images/foa-icon4.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
+								<img src="/assets/images/foa-icon4.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
 
 								<h4 class="heading18px m-0 dark fw_500">Timely Coding</h4>
 
@@ -369,7 +381,7 @@
 
 							<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3">
 
-								<img src="assets/images/foa-icon5.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
+								<img src="/assets/images/foa-icon5.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
 
 								<h4 class="heading18px m-0 dark fw_500">Prompt Testing</h4>
 
@@ -381,7 +393,7 @@
 
 							<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3">
 
-								<img src="assets/images/foa-icon6.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
+								<img src="/assets/images/foa-icon6.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
 
 								<h4 class="heading18px m-0 dark fw_500">Dart Benefits</h4>
 
@@ -393,7 +405,7 @@
 
 							<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3">
 
-								<img src="assets/images/foa-icon7.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
+								<img src="/assets/images/foa-icon7.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
 
 								<h4 class="heading18px m-0 dark fw_500">Convenient Debuging</h4>
 
@@ -405,7 +417,7 @@
 
 							<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3">
 
-								<img src="assets/images/foa-icon8.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
+								<img src="/assets/images/foa-icon8.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt=""/>
 
 								<h4 class="heading18px m-0 dark fw_500">Perfect For MVP’s</h4>
 
@@ -435,7 +447,7 @@
 
 				<div class="addmirable_clm">
 
-					<img src="assets/images/addmirable-img1.webp" loading="lazy" class="addmirable_img img-fluid" width="" height="" alt=""/>
+					<img src="/assets/images/addmirable-img1.webp" loading="lazy" class="addmirable_img img-fluid" width="" height="" alt=""/>
 
 				</div>
 
@@ -445,7 +457,7 @@
 
 				<div class="addmirable_clm">
 
-					<img src="assets/images/addmirable-img2.webp" loading="lazy" class="addmirable_img img-fluid" width="" height="" alt=""/>
+					<img src="/assets/images/addmirable-img2.webp" loading="lazy" class="addmirable_img img-fluid" width="" height="" alt=""/>
 
 				</div>
 
@@ -455,7 +467,7 @@
 
 				<div class="addmirable_clm">
 
-					<img src="assets/images/addmirable-img3.webp" loading="lazy" class="addmirable_img img-fluid" width="" height="" alt=""/>
+					<img src="/assets/images/addmirable-img3.webp" loading="lazy" class="addmirable_img img-fluid" width="" height="" alt=""/>
 
 				</div>
 
@@ -509,7 +521,7 @@
 
 				<div class="addmirable_clm">
 
-					<img src="assets/images/addmirable-img4.webp" loading="lazy" class="addmirable_img img-fluid" width="" height="" alt=""/>
+					<img src="/assets/images/addmirable-img4.webp" loading="lazy" class="addmirable_img img-fluid" width="" height="" alt=""/>
 
 				</div>
 
@@ -519,7 +531,7 @@
 
 				<div class="addmirable_clm">
 
-					<img src="assets/images/addmirable-img5.webp" loading="lazy" class="addmirable_img img-fluid" width="" height="" alt=""/>
+					<img src="/assets/images/addmirable-img5.webp" loading="lazy" class="addmirable_img img-fluid" width="" height="" alt=""/>
 
 				</div>
 
@@ -529,7 +541,7 @@
 
 				<div class="addmirable_clm">
 
-					<img src="assets/images/addmirable-img6.webp" loading="lazy" class="addmirable_img img-fluid" width="" height="" alt=""/>
+					<img src="/assets/images/addmirable-img6.webp" loading="lazy" class="addmirable_img img-fluid" width="" height="" alt=""/>
 
 				</div>
 
@@ -541,7 +553,7 @@
 
 </section>
 
-<?php include('technology-expert-section.php') ?>
+<?php include $root . '/technology-expert-section.php' ?>
 
 <section class="reach_the_market">
 
@@ -587,7 +599,7 @@
 
 		<div class="row g-0 position-relative mt-4 mt-lg-5">
 
-			<img src="assets/images/ssf-phone-img3.webp" loading="lazy" class="rtm_phone img-fluid d-none d-lg-block" width="" height="" alt=""/>
+			<img src="/assets/images/ssf-phone-img3.webp" loading="lazy" class="rtm_phone img-fluid d-none d-lg-block" width="" height="" alt=""/>
 
 			<div class="col-lg-6">
 
@@ -597,7 +609,7 @@
 
 					<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3 mb-3">
 
-						<img src="assets/images/benefit-icon1.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
+						<img src="/assets/images/benefit-icon1.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
 
 						<h4 class="heading18px m-0 dark fw_500">Quick Deployment time</h4>
 
@@ -605,7 +617,7 @@
 
 					<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3 mb-3">
 
-						<img src="assets/images/benefit-icon2.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
+						<img src="/assets/images/benefit-icon2.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
 
 						<h4 class="heading18px m-0 dark fw_500">Lesser Resources</h4>
 
@@ -613,7 +625,7 @@
 
 					<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3 mb-3">
 
-						<img src="assets/images/benefit-icon3.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
+						<img src="/assets/images/benefit-icon3.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
 
 						<h4 class="heading18px m-0 dark fw_500">Faster MVP Development</h4>
 
@@ -621,7 +633,7 @@
 
 					<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3 mb-3">
 
-						<img src="assets/images/benefit-icon4.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
+						<img src="/assets/images/benefit-icon4.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
 
 						<h4 class="heading18px m-0 dark fw_500">User Experience Similar to native apps</h4>
 
@@ -629,7 +641,7 @@
 
 					<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3 mb-3">
 
-						<img src="assets/images/benefit-icon5.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
+						<img src="/assets/images/benefit-icon5.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
 
 						<h4 class="heading18px m-0 dark fw_500">Eye catching User Interface</h4>
 
@@ -647,7 +659,7 @@
 
 					<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3 mb-3">
 
-						<img src="assets/images/t-banafit-icon1.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
+						<img src="/assets/images/t-banafit-icon1.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
 
 						<h4 class="heading18px m-0 dark fw_500">Top Grade Performance</h4>
 
@@ -655,7 +667,7 @@
 
 					<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3 mb-3">
 
-						<img src="assets/images/t-banafit-icon2.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
+						<img src="/assets/images/t-banafit-icon2.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
 
 						<h4 class="heading18px m-0 dark fw_500">50% Less time Spent On Testing </h4>
 
@@ -663,7 +675,7 @@
 
 					<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3 mb-3">
 
-						<img src="assets/images/t-banafit-icon3.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
+						<img src="/assets/images/t-banafit-icon3.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
 
 						<h4 class="heading18px m-0 dark fw_500">Singular Codebase For IOS & android Apps</h4>
 
@@ -671,7 +683,7 @@
 
 					<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3 mb-3">
 
-						<img src="assets/images/t-banafit-icon4.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
+						<img src="/assets/images/t-banafit-icon4.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
 
 						<h4 class="heading18px m-0 dark fw_500">Apple & Google Design Guidelines Support</h4>
 
@@ -679,7 +691,7 @@
 
 					<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3 mb-3">
 
-						<img src="assets/images/t-banafit-icon5.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
+						<img src="/assets/images/t-banafit-icon5.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
 
 						<h4 class="heading18px m-0 dark fw_500">Quicker Production</h4>
 
@@ -783,7 +795,7 @@
 
 <section class="all_inclusive">
 
-	<img src="assets/images/all_inclusive_img.webp" loading="lazy" class="all_inclusive_img img-fluid d-none d-lg-block" width="" height="" alt="">
+	<img src="/assets/images/all_inclusive_img.webp" loading="lazy" class="all_inclusive_img img-fluid d-none d-lg-block" width="" height="" alt="">
 
 	<div class="container">
 
@@ -931,13 +943,13 @@
 
 		<div class="row align-items-center mt-lg-5 mt-4">
 
-			<img src="assets/images/banner-img1.webp" loading="lazy" class="liquid_orbit spinRight  d-none d-lg-block" width="" height="" alt=""/>
+			<img src="/assets/images/banner-img1.webp" loading="lazy" class="liquid_orbit spinRight  d-none d-lg-block" width="" height="" alt=""/>
 
 			<div class="col-lg-4 col-md-6" data-aos="fade-left" data-aos-delay="500"/>
 
 				<div class="benefits_clm" >
 
-					<img src="assets/images/flutter-icon1.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
+					<img src="/assets/images/flutter-icon1.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
 
 					<h3 class="heading24px dark">Experienced Flutter <br>App Developers</h3>
 
@@ -947,7 +959,7 @@
 
 				<div class="benefits_clm moveLeft">
 
-					<img src="assets/images/flutter-icon2.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
+					<img src="/assets/images/flutter-icon2.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
 
 					<h3 class="heading24px dark">Smooth <br>Procedure</h3> 
 
@@ -957,7 +969,7 @@
 
 				<div class="benefits_clm">
 
-					<img src="assets/images/flutter-icon3.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
+					<img src="/assets/images/flutter-icon3.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
 
 					<h3 class="heading24px dark">Business <br>Specialist</h3>
 
@@ -969,7 +981,7 @@
 
 			<div class="col-lg-4 col-md-6 d-none d-lg-block">
 
-				<img src="assets/images/flutter_frame.webp" loading="lazy" class="wmu_phone_img" width="" height="" alt=""/>
+				<img src="/assets/images/flutter_frame.webp" loading="lazy" class="wmu_phone_img" width="" height="" alt=""/>
 
 			</div>
 
@@ -977,7 +989,7 @@
 
 				<div class="benefits_clm">
 
-					<img src="assets/images/flutter-icon4.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
+					<img src="/assets/images/flutter-icon4.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
 
 					<h3 class="heading24px dark">Innovative Flutter <br>App Solutions</h3>
 
@@ -987,7 +999,7 @@
 
 				<div class="benefits_clm moveRight">
 
-					<img src="assets/images/flutter-icon5.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
+					<img src="/assets/images/flutter-icon5.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
 
 					<h3 class="heading24px dark">Customer <br>Support</h3>
 
@@ -997,7 +1009,7 @@
 
 				<div class="benefits_clm">
 
-					<img src="assets/images/flutter-icon6.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
+					<img src="/assets/images/flutter-icon6.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
 
 					<h3 class="heading24px dark">Consistent<br> Deliveries</h3>
 
@@ -1139,7 +1151,7 @@
 
 			<div class="col-lg-7 text-end">
 
-				<img src="assets/images/our_img.webp" loading="lazy" class="wmu_phone_img img-fluid d-none d-lg-block" width="" height="" alt=""/>
+				<img src="/assets/images/our_img.webp" loading="lazy" class="wmu_phone_img img-fluid d-none d-lg-block" width="" height="" alt=""/>
 
 			</div>
 
@@ -1187,7 +1199,7 @@
 
 				<p>We build apps using Flutter’s single codebase, allowing seamless deployment across Android and iOS. This reduces development time, maintenance efforts, and costs, while maintaining consistent performance and UI on all platforms.</p>
 
-				<img src="assets/images/proficient_slide1.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
+				<img src="/assets/images/proficient_slide1.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
 
 			</div>
 
@@ -1197,7 +1209,7 @@
 
 				<p>Our team integrates intelligent, user-focused functionalities that elevate your app’s performance and engagement. From gesture controls to AI-based features, we ensure your Flutter app delivers unique and modern user experiences.</p>
 
-				<img src="assets/images/proficient_slide2.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
+				<img src="/assets/images/proficient_slide2.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
 
 			</div>
 
@@ -1207,7 +1219,7 @@
 
 				<p>We leverage Flutter’s robust testing tools to catch bugs early and ensure app stability. Our automated and manual testing processes accelerate delivery without compromising quality or performance.</p>
 
-				<img src="assets/images/proficient_slide3.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
+				<img src="/assets/images/proficient_slide3.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
 
 			</div>
 
@@ -1217,7 +1229,7 @@
 
 				<p>Our developers expertly integrate and expand APIs to enhance your Flutter app’s capabilities. From payment gateways to third-party services, we ensure smooth connectivity and enriched user experiences.</p>
 
-				<img src="assets/images/proficient_slide3.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
+				<img src="/assets/images/proficient_slide3.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
 
 			</div>
 
@@ -1227,7 +1239,7 @@
 
 				<p>We tailor every element of your Flutter app to match your brand and business goals — from design and layout to functionality and feature sets — ensuring a personalized, high-impact product.</p>
 
-				<img src="assets/images/proficient_slide3.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
+				<img src="/assets/images/proficient_slide3.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
 
 			</div>
 
@@ -1237,7 +1249,7 @@
 
 				<p>We offer proactive detection and continuous support services to monitor performance, identify issues, and provide real-time updates — ensuring your app remains optimized, secure, and up-to-date post-launch.</p>
 
-				<img src="assets/images/proficient_slide3.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
+				<img src="/assets/images/proficient_slide3.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
 
 			</div>
 
@@ -1245,15 +1257,15 @@
 
 	</div>
 
-	<img src="assets/images/eyb-img.webp" loading="lazy" class="eyb_img d-none d-lg-block" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
+	<img src="/assets/images/eyb-img.webp" loading="lazy" class="eyb_img d-none d-lg-block" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
 
 </section>
 
-<?php include("testimonials-section.php"); ?>
+<?php include $root . '/testimonials-section.php'; ?>
 
-<?php include("industries-section.php") ?>
+<?php include $root . '/industries-section.php' ?>
 
-<?php include("awards-section.php") ?>
+<?php include $root . '/awards-section.php' ?>
 
 <section class="faq">
 
@@ -1281,7 +1293,7 @@
 
 			<div class="col-lg-6 d-none d-lg-block" data-aos="fade-right" data-aos-delay="100"/>
 
-				<img src="assets/images/fa_faq_img.webp" loading="lazy" class="faq_img img-fluid" width="" height="" alt=""/>
+				<img src="/assets/images/fa_faq_img.webp" loading="lazy" class="faq_img img-fluid" width="" height="" alt=""/>
 
 			</div>
 
@@ -1505,11 +1517,11 @@
 
 </section>
 
-<?php include("cta-section.php") ?>
+<?php include $root . '/cta-section.php' ?>
 
-<?php include("contact-us-section.php"); ?>
+<?php include $root . '/contact-us-section.php'; ?>
 
-<?php include("footer.php"); ?>
+<?php include $root . '/footer.php'; ?>
 
 
 

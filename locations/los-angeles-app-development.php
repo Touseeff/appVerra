@@ -1,3 +1,13 @@
+<?php $root = dirname(__DIR__); ?>
+<?php
+require_once $root . '/includes/schema_helpers.php';
+$canonical_override = "https://appverra.co/locations/los-angeles-app-development";
+$breadcrumbs = [
+    ['name' => 'Home',      'url' => 'https://appverra.co/'],
+    ['name' => 'Locations', 'url' => 'https://appverra.co/locations'],
+    ['name' => 'Los Angeles App Development', 'url' => 'https://appverra.co/locations/los-angeles-app-development'],
+];
+?>
 <?php $meta_title = "Mobile App Development Company in Los Angeles | Appverra"; ?>
 
 <?php $meta_discription = "Los Angeles mobile app development company. We build iOS and Android apps for LA startups and entertainment, media, and e-commerce businesses. Flutter, React Native, Swift, Kotlin. 150+ apps shipped. Fixed-bid pricing from $7,997."; ?>
@@ -13,7 +23,7 @@
     "name": "Mobile App Development in Los Angeles",
     "serviceType": "Mobile Application Development",
     "provider": {"@type": "Organization", "name": "Appverra", "url": "https://appverra.co/"},
-    "url": "https://appverra.co/los-angeles-app-development",
+    "url": "https://appverra.co/locations/los-angeles-app-development",
     "description": "Appverra builds iOS and Android apps for Los Angeles startups, entertainment companies, and e-commerce businesses. Flutter, React Native, Swift, Kotlin. 150+ apps shipped for 700+ customers. Fixed-bid pricing from $7,997. Same-day timezone collaboration from our New York headquarters.",
     "image": "https://appverra.co/assets/images/logo.webp",
     "areaServed": {"@type": "City", "name": "Los Angeles", "containedInPlace": {"@type": "State", "name": "California"}},
@@ -26,7 +36,8 @@
   }
 ]'; ?>
 
-<?php include("header.php"); ?>
+<?php $schema_extra = is_array($schema_extra) ? $schema_extra : [$schema_extra]; $schema_extra[] = build_breadcrumb_schema($breadcrumbs); ?>
+<?php include $root . '/header.php'; ?>
 
 <section class="hero_banner mainBanner innerBanner serviceBanner">
 
@@ -41,6 +52,8 @@
 					<span class="heading26px light">Los Angeles</span>
 
 				</span>
+
+				<?php include $root . '/breadcrumbs.php'; ?>
 
 				<h1 class="heading70px m-0 light">
 
@@ -190,7 +203,7 @@
 
 					<h3 class="heading26px dark mb-3">E-Commerce and DTC Brands</h3>
 
-					<p class="dark m-0">LA has the highest concentration of DTC brands in the US. We build <a href="/ecommerce" style="color: var(--secondColor);">mobile shopping apps</a> that complement Shopify and WooCommerce stores — branded mobile experiences with native checkout, push notifications, and loyalty programs.</p>
+					<p class="dark m-0">LA has the highest concentration of DTC brands in the US. We build <a href="/services/ecommerce-app-development" style="color: var(--secondColor);">mobile shopping apps</a> that complement Shopify and WooCommerce stores — branded mobile experiences with native checkout, push notifications, and loyalty programs.</p>
 
 				</div>
 
@@ -448,8 +461,8 @@
 }
 </script>
 
-<?php include('cta-section.php'); ?>
+<?php include $root . '/cta-section.php'; ?>
 
-<?php include('contact-us-section.php'); ?>
+<?php include $root . '/contact-us-section.php'; ?>
 
-<?php include('footer.php'); ?>
+<?php include $root . '/footer.php'; ?>

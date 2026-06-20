@@ -1,3 +1,4 @@
+<?php $root = dirname(__DIR__); ?>
 ﻿<?php $meta_title = "Shopify Mobile Companion App Developer | Appverra"; ?>
 
 <?php $meta_discription = "Branded mobile apps that wrap your Shopify or WooCommerce store. Push notifications, loyalty, faster checkout, mobile-only deals. Shipped in 6 weeks."; ?>
@@ -6,23 +7,32 @@
 
 <?php $og_image = "https://appverra.co/assets/images/ecommer-banner-img.png"; ?>
 
-<?php $schema_extra = '{
+<?php require_once $root . '/includes/schema_helpers.php';
+$canonical_override = "https://appverra.co/services/ecommerce-app-development"; ?>
+
+<?php $breadcrumbs = [
+    ['name' => 'Home',                     'url' => 'https://appverra.co/'],
+    ['name' => 'Services',                 'url' => 'https://appverra.co/our-services'],
+    ['name' => 'E-Commerce App Development', 'url' => 'https://appverra.co/services/ecommerce-app-development'],
+]; ?>
+
+<?php $schema_extra = ['{
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Shopify Mobile Companion App Development",
   "serviceType": "Mobile App Development",
   "provider": {"@type": "Organization", "name": "Appverra", "url": "https://appverra.co/"},
-  "url": "https://appverra.co/ecommerce",
+  "url": "https://appverra.co/services/ecommerce-app-development",
   "description": "Branded mobile apps that wrap your existing Shopify or WooCommerce store — push notifications for restocks and deals, loyalty programs, mobile-only pricing, faster checkout flow. Shipped in 6 weeks.",
   "image": "https://appverra.co/assets/images/ecommer-banner-img.png",
   "areaServed": ["US", "CA", "GB"]
-}'; ?>
+}', build_breadcrumb_schema($breadcrumbs)]; ?>
 
-<?php include("header.php"); ?>
+<?php include $root . '/header.php'; ?>
 
 <section class="hero_banner mainBanner innerBanner ecommerce_banner serviceBanner">
 
-	<img src="assets/images/ecommer-banner-img.webp" loading="eager" class="ecommerce_img d-none d-lg-block position-absolute" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
+	<img src="/assets/images/ecommer-banner-img.webp" loading="eager" class="ecommerce_img d-none d-lg-block position-absolute" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
 
 	<div class="container">		
 
@@ -30,7 +40,9 @@
 
 			<div class="col-lg-8">
 
-				<h1 class="heading70px m-0 light">
+				<?php include $root . '/breadcrumbs.php'; ?>
+
+					<h1 class="heading70px m-0 light">
 
 					<span class="revealUp">
 
@@ -422,7 +434,7 @@
 
 				<div class="developing_clm developing_clm2 h-100 d-flex align-items-center">
 
-					<img src="assets/images/developing-img.webp" loading="lazy" class="img-fluid" width="" height=""/>
+					<img src="/assets/images/developing-img.webp" loading="lazy" class="img-fluid" width="" height=""/>
 
 				</div>
 
@@ -472,7 +484,7 @@
 
 				    		<div class="col-lg-6 position-relative">
 
-				    			<img src="assets/images/pkg_inc_img.webp" loading="lazy" class="img-fluid tabs_img" width="" height="" alt=""/>
+				    			<img src="/assets/images/pkg_inc_img.webp" loading="lazy" class="img-fluid tabs_img" width="" height="" alt=""/>
 
 				    		</div>
 
@@ -508,7 +520,7 @@
 
 				    		<div class="col-lg-6 position-relative">
 
-				    			<img src="assets/images/pkg_inc_img.webp" loading="lazy" class="img-fluid tabs_img" width="" height="" alt=""/>
+				    			<img src="/assets/images/pkg_inc_img.webp" loading="lazy" class="img-fluid tabs_img" width="" height="" alt=""/>
 
 				    		</div>
 
@@ -544,7 +556,7 @@
 
 				    		<div class="col-lg-6 position-relative">
 
-				    			<img src="assets/images/pkg_inc_img.webp" loading="lazy" class="img-fluid tabs_img" width="" height="" alt=""/>
+				    			<img src="/assets/images/pkg_inc_img.webp" loading="lazy" class="img-fluid tabs_img" width="" height="" alt=""/>
 
 				    		</div>
 
@@ -580,7 +592,7 @@
 
 				    		<div class="col-lg-6 position-relative">
 
-				    			<img src="assets/images/pkg_inc_img.webp" loading="lazy" class="img-fluid tabs_img" width="" height="" alt=""/>
+				    			<img src="/assets/images/pkg_inc_img.webp" loading="lazy" class="img-fluid tabs_img" width="" height="" alt=""/>
 
 				    		</div>
 
@@ -616,7 +628,7 @@
 
 				    		<div class="col-lg-6 position-relative">
 
-				    			<img src="assets/images/pkg_inc_img.webp" loading="lazy" class="img-fluid tabs_img" width="" height="" alt=""/>
+				    			<img src="/assets/images/pkg_inc_img.webp" loading="lazy" class="img-fluid tabs_img" width="" height="" alt=""/>
 
 				    		</div>
 
@@ -652,7 +664,7 @@
 
 				    		<div class="col-lg-6 position-relative">
 
-				    			<img src="assets/images/pkg_inc_img.webp" loading="lazy" class="img-fluid tabs_img" width="" height="" alt=""/>
+				    			<img src="/assets/images/pkg_inc_img.webp" loading="lazy" class="img-fluid tabs_img" width="" height="" alt=""/>
 
 				    		</div>
 
@@ -688,7 +700,7 @@
 
 				    		<div class="col-lg-6 position-relative">
 
-				    			<img src="assets/images/pkg_inc_img.webp" loading="lazy" class="img-fluid tabs_img" width="" height="" alt=""/>
+				    			<img src="/assets/images/pkg_inc_img.webp" loading="lazy" class="img-fluid tabs_img" width="" height="" alt=""/>
 
 				    		</div>
 
@@ -724,7 +736,7 @@
 
 				    		<div class="col-lg-6 position-relative">
 
-				    			<img src="assets/images/pkg_inc_img.webp" loading="lazy" class="img-fluid tabs_img" width="" height="" alt=""/>
+				    			<img src="/assets/images/pkg_inc_img.webp" loading="lazy" class="img-fluid tabs_img" width="" height="" alt=""/>
 
 				    		</div>
 
@@ -796,7 +808,7 @@
 
             <div class="col-lg-6 mb-4 mb-lg-0">
 
-                <img src="assets/images/integration-img.webp" loading="lazy" class="integration_img img-fluid" width="" height="" alt="Integration Image">
+                <img src="/assets/images/integration-img.webp" loading="lazy" class="integration_img img-fluid" width="" height="" alt="Integration Image">
 
             </div>
 
@@ -886,19 +898,19 @@
 
 			<div class="screen_slider owl-theme owl-carousel">
 
-				<img src="assets/images/app_screen1.webp" loading="lazy" class="app_screen" width="" height="" alt=""/>
+				<img src="/assets/images/app_screen1.webp" loading="lazy" class="app_screen" width="" height="" alt=""/>
 
-				<img src="assets/images/app_screen2.webp" loading="lazy" class="app_screen" width="" height="" alt=""/>
+				<img src="/assets/images/app_screen2.webp" loading="lazy" class="app_screen" width="" height="" alt=""/>
 
-				<img src="assets/images/app_screen3.webp" loading="lazy" class="app_screen" width="" height="" alt=""/>
+				<img src="/assets/images/app_screen3.webp" loading="lazy" class="app_screen" width="" height="" alt=""/>
 
-				<img src="assets/images/app_screen4.webp" loading="lazy" class="app_screen" width="" height="" alt=""/>
+				<img src="/assets/images/app_screen4.webp" loading="lazy" class="app_screen" width="" height="" alt=""/>
 
-				<img src="assets/images/app_screen5.webp" loading="lazy" class="app_screen" width="" height="" alt=""/>
+				<img src="/assets/images/app_screen5.webp" loading="lazy" class="app_screen" width="" height="" alt=""/>
 
 			</div>
 
-			<img src="assets/images/mobile_frame.webp" loading="lazy" class="mobile_frame" width="" height="" alt=""/>
+			<img src="/assets/images/mobile_frame.webp" loading="lazy" class="mobile_frame" width="" height="" alt=""/>
 
 		</div>
 
@@ -940,7 +952,7 @@
 
 						<p>Empower your online business with tailored e-commerce web solutions that deliver seamless functionality, superior user experience, and complete integration to drive sales, scalability, and customer satisfaction.</p>
 
-						<img src="assets/images/ecom-img1.gif" loading="lazy" class="ecom_img img-fluid mt-4" width="" height="" alt=""/>
+						<img src="/assets/images/ecom-img1.gif" loading="lazy" class="ecom_img img-fluid mt-4" width="" height="" alt=""/>
 
 					</div>
 
@@ -962,7 +974,7 @@
 
 						<p>We offer seamless integration with leading e-commerce platforms, ensuring smooth synchronization of products, payments, inventory, and logistics. Our solutions streamline operations, improve user experience, and enhance overall store performance effortlessly.</p>
 						
-						<img src="assets/images/ecom-img2.gif" loading="lazy" class="ecom_img img-fluid mt-4" width="" height="" alt=""/>
+						<img src="/assets/images/ecom-img2.gif" loading="lazy" class="ecom_img img-fluid mt-4" width="" height="" alt=""/>
 
 					</div>
 
@@ -976,8 +988,8 @@
 
 </section>
 
-<?php include("testimonials-section.php"); ?>
+<?php include $root . '/testimonials-section.php'; ?>
 
-<?php include("contact-us-section.php"); ?>
+<?php include $root . '/contact-us-section.php'; ?>
 
-<?php include("footer.php"); ?>
+<?php include $root . '/footer.php'; ?>

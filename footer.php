@@ -18,15 +18,19 @@
 
 							<li><a href="<?php echo $siteurl; ?>">HOME</a></li>
 
-							<li><a href="about-us">ABOUT US</a></li>
+							<li><a href="/about-us">ABOUT US</a></li>
 
-							<li><a href="our-services">OUR SERVICES</a></li>
+							<li><a href="/our-services">OUR SERVICES</a></li>
 
-							<li><a href="our-work">WORK</a></li>
+							<li><a href="/industries">INDUSTRIES</a></li>
 
-							<li><a href="blogs">BLOGS</a></li>
+							<li><a href="/locations">LOCATIONS</a></li>
 
-							<li><a href="contact-us">CONTACT US</a></li>
+							<li><a href="/our-work">WORK</a></li>
+
+							<li><a href="/blogs">BLOGS</a></li>
+
+							<li><a href="/contact-us">CONTACT US</a></li>
 
 						</ul>
 
@@ -42,15 +46,23 @@
 
 						<ul >
 
-			                <li><a href="react-native-developer">REACT NATIVE DEVELOPMENT</a></li>
+			                <li><a href="/services/react-native-app-development">REACT NATIVE DEVELOPMENT</a></li>
 
-			                <li><a href="flutter-app-development">FLUTTER APP DEVELOPMENT</a></li>
+			                <li><a href="/services/flutter-app-development">FLUTTER APP DEVELOPMENT</a></li>
 
-			                <li><a href="full-stack-development">FULL STACK DEVELOPMENT</a></li>
+			                <li><a href="/services/full-stack-development">FULL STACK DEVELOPMENT</a></li>
 
-			                <li><a href="mobile-app-marketing">MOBILE APP MARKETING</a></li>
+			                <li><a href="/services/mobile-app-marketing">MOBILE APP MARKETING</a></li>
 
-			                <li><a href="ecommerce">ANY ECOMMERCE </a></li>
+			                <li><a href="/services/ios-app-development">IOS APP DEVELOPMENT</a></li>
+
+				                <li><a href="/services/android-app-development">ANDROID APP DEVELOPMENT</a></li>
+
+				                <li><a href="/services/cross-platform-app-development">CROSS-PLATFORM DEVELOPMENT</a></li>
+
+				                <li><a href="/services/web-app-development">WEB APP DEVELOPMENT</a></li>
+
+				                <li><a href="/services/ecommerce-app-development">ANY ECOMMERCE</a></li>
 
 						</ul>
 
@@ -84,7 +96,7 @@
 
 						<div class="d-flex gap-2 align-items-star">
 
-							<img src="assets/images/mark2.svg" loading="lazy" class="mark_img" width="30" height="69" alt=""/>
+							<img src="/assets/images/mark2.svg" loading="lazy" class="mark_img" width="30" height="69" alt=""/>
 
 							<div class="txt_box">
 

@@ -28,9 +28,48 @@ RewriteRule ^blog_factory/ - [F,L]
 # 301 redirect: fix "hands-fee" typo in voice commerce blog slug
 RewriteRule ^voice-commerce-in-2025-how-to-enable-hands-fee-shopping-in-your-app/?$ /voice-commerce-in-2025-how-to-enable-hands-free-shopping-in-your-app [R=301,L]
 
+# 301 redirect: Unity game development discontinued — send to services overview
+RewriteRule ^unity-game-development(\.php)?/?$ /our-services [R=301,L]
+
+# Services hub: bare /services (a real directory of child pages) -> our-services overview.
+# Child pages like /services/ios-app-development resolve normally via the clean-URL rule below.
+RewriteRule ^services/?$ /our-services [R=301,L]
+
+# 301: flat service URLs migrated into the /services/ silo (one canonical home each).
+# Placed before the clean-URL serve rule so the old flat paths redirect rather than 404.
+RewriteRule ^flutter-app-development/?$ /services/flutter-app-development [R=301,L]
+RewriteRule ^react-native-developer/?$ /services/react-native-app-development [R=301,L]
+RewriteRule ^full-stack-development/?$ /services/full-stack-development [R=301,L]
+RewriteRule ^mobile-app-marketing/?$ /services/mobile-app-marketing [R=301,L]
+RewriteRule ^ecommerce/?$ /services/ecommerce-app-development [R=301,L]
+
+# Industries hub: serve /industries from the root industries.php. The /industries/ directory holds
+# child pages; this explicit rewrite fires before mod_dir, so there is no DirectorySlash redirect loop.
+# Child pages like /industries/fintech-app-development resolve normally via the clean-URL rule below.
+RewriteRule ^industries/?$ industries.php [L]
+
+# Locations hub: serve /locations from the root locations.php (same pattern as /industries).
+RewriteRule ^locations/?$ locations.php [L]
+
+# 301: flat city URLs migrated into the /locations/ silo (slug preserved).
+RewriteRule ^new-york-app-development/?$ /locations/new-york-app-development [R=301,L]
+RewriteRule ^los-angeles-app-development/?$ /locations/los-angeles-app-development [R=301,L]
+RewriteRule ^san-francisco-app-development/?$ /locations/san-francisco-app-development [R=301,L]
+RewriteRule ^chicago-app-development/?$ /locations/chicago-app-development [R=301,L]
+RewriteRule ^austin-app-development/?$ /locations/austin-app-development [R=301,L]
+RewriteRule ^miami-app-development/?$ /locations/miami-app-development [R=301,L]
+RewriteRule ^dallas-app-development/?$ /locations/dallas-app-development [R=301,L]
+RewriteRule ^seattle-app-development/?$ /locations/seattle-app-development [R=301,L]
+
 # Serve llms.txt and llms-full.txt through PHP to bypass Hostinger WAF bot-blocking
 RewriteRule ^llms\.txt$ llms-txt.php [L]
 RewriteRule ^llms-full\.txt$ llms-full-txt.php [L]
+
+# Normalize trailing slashes on non-directory URLs (e.g. /services/ios-app-development/ -> /services/ios-app-development)
+# Real directories are excluded (!-d) so /blog_factory/ etc. are untouched.
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)/$ /$1 [R=301,L]
 
 # Remove .php extension from URLs
 # Redirect /page.php to /page (301 permanent)
@@ -123,6 +162,11 @@ RewriteRule ^([a-z0-9-]+)/?$ blog-post.php?slug=$1 [L,QSA]
   Header always set X-Frame-Options "SAMEORIGIN"
   Header always set X-XSS-Protection "1; mode=block"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # HSTS — pin HTTPS for 1 year (HTTPS is already forced above)
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+  # Conservative CSP — upgrade any http subresource + restrict framing (complements X-Frame-Options)
+  Header always set Content-Security-Policy "upgrade-insecure-requests; frame-ancestors 'self'"
 
   # Keep-Alive
   Header set Connection keep-alive

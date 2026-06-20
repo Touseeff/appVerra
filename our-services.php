@@ -210,6 +210,7 @@
 
 		</h2>
 
+		<?php if (false): /* Unity Game Development discontinued — card hidden */ ?>
 		<div class="sff_row_wrapper">
 
 			<div class="ssf_row" style="background-color: #55EFC4;">
@@ -276,6 +277,7 @@
 
 		</div>
 
+		<?php endif; /* end Unity hidden block */ ?>
 		<div class="sff_row_wrapper">
 
 			<div class="ssf_row" style="background-color: #FDCB6E;">
@@ -298,7 +300,7 @@
 
 						<span class="btn_wrap">
 
-							<a href="react-native-developer.php" class="theme_btn black_btn">
+							<a href="/services/react-native-app-development" class="theme_btn black_btn">
 
 				                <span class="btnTextWrap">
 
@@ -364,7 +366,7 @@
 
 						<span class="btn_wrap">
 
-							<a href="flutter-app-development.php" class="theme_btn black_btn">
+							<a href="/services/flutter-app-development" class="theme_btn black_btn">
 
 				                <span class="btnTextWrap">
 
@@ -430,7 +432,7 @@
 
 						<span class="btn_wrap">
 
-							<a href="full-stack-development.php" class="theme_btn black_btn">
+							<a href="/services/full-stack-development" class="theme_btn black_btn">
 
 				                <span class="btnTextWrap">
 
@@ -496,7 +498,7 @@
 
 						<span class="btn_wrap">
 
-							<a href="mobile-app-marketing.php" class="theme_btn black_btn">
+							<a href="/services/mobile-app-marketing" class="theme_btn black_btn">
 
 				                <span class="btnTextWrap">
 
@@ -562,7 +564,7 @@
 
 						<span class="btn_wrap">
 
-							<a href="ecommerce" class="theme_btn black_btn">
+							<a href="/services/ecommerce-app-development" class="theme_btn black_btn">
 
 				                <span class="btnTextWrap">
 
@@ -611,6 +613,29 @@
 </section>
 
 
+
+<!-- ============ EXPLORE EVERY SERVICE (full /services/ silo) ============ -->
+<section class="py-lg-5 py-4">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8">
+				<h2 class="heading55px dark" data-aos="fade-up">Explore every <span class="secondColor">service</span></h2>
+				<p data-aos="fade-up" data-aos-delay="100">Our full mobile and web app development lineup. Pick a platform or build type to see exactly how we ship it.</p>
+			</div>
+		</div>
+		<div class="row g-3 mt-2">
+			<div class="col-md-6 col-lg-4" data-aos="fade-up"><a href="/services/ios-app-development" class="d-block bg-light p-4 rounded h-100" style="text-decoration:none;color:inherit;"><h3 class="heading20px dark m-0">iOS App Development</h3><p class="m-0">Native Swift &amp; SwiftUI for iPhone and iPad.</p></a></div>
+			<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="60"><a href="/services/android-app-development" class="d-block bg-light p-4 rounded h-100" style="text-decoration:none;color:inherit;"><h3 class="heading20px dark m-0">Android App Development</h3><p class="m-0">Native Kotlin &amp; Jetpack Compose for Android.</p></a></div>
+			<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="120"><a href="/services/cross-platform-app-development" class="d-block bg-light p-4 rounded h-100" style="text-decoration:none;color:inherit;"><h3 class="heading20px dark m-0">Cross-Platform Development</h3><p class="m-0">One codebase for iOS and Android.</p></a></div>
+			<div class="col-md-6 col-lg-4" data-aos="fade-up"><a href="/services/flutter-app-development" class="d-block bg-light p-4 rounded h-100" style="text-decoration:none;color:inherit;"><h3 class="heading20px dark m-0">Flutter App Development</h3><p class="m-0">Flutter MVPs shipped in about six weeks.</p></a></div>
+			<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="60"><a href="/services/react-native-app-development" class="d-block bg-light p-4 rounded h-100" style="text-decoration:none;color:inherit;"><h3 class="heading20px dark m-0">React Native Development</h3><p class="m-0">One JavaScript codebase, both app stores.</p></a></div>
+			<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="120"><a href="/services/web-app-development" class="d-block bg-light p-4 rounded h-100" style="text-decoration:none;color:inherit;"><h3 class="heading20px dark m-0">Web App Development</h3><p class="m-0">React.js and Next.js web applications.</p></a></div>
+			<div class="col-md-6 col-lg-4" data-aos="fade-up"><a href="/services/full-stack-development" class="d-block bg-light p-4 rounded h-100" style="text-decoration:none;color:inherit;"><h3 class="heading20px dark m-0">Full-Stack Development</h3><p class="m-0">App, backend, and admin built by one team.</p></a></div>
+			<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="60"><a href="/services/mobile-app-marketing" class="d-block bg-light p-4 rounded h-100" style="text-decoration:none;color:inherit;"><h3 class="heading20px dark m-0">Mobile App Marketing</h3><p class="m-0">ASO and user acquisition that drives installs.</p></a></div>
+			<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="120"><a href="/services/ecommerce-app-development" class="d-block bg-light p-4 rounded h-100" style="text-decoration:none;color:inherit;"><h3 class="heading20px dark m-0">Ecommerce App Development</h3><p class="m-0">Shopify and WooCommerce companion apps.</p></a></div>
+		</div>
+	</div>
+</section>
 
 <?php include("contact-us-section.php"); ?>
 

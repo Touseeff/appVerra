@@ -6,7 +6,15 @@
 
 <?php $og_image = "https://appverra.co/assets/images/logo.webp"; ?>
 
-<?php $schema_extra = '{
+<?php require_once __DIR__ . '/includes/schema_helpers.php'; ?>
+
+<?php $breadcrumbs = [
+    ['name' => 'Home',                          'url' => 'https://appverra.co/'],
+    ['name' => 'Services',                      'url' => 'https://appverra.co/our-services'],
+    ['name' => 'Post-Seed Startup Development', 'url' => 'https://appverra.co/post-seed-startup-development-agency'],
+]; ?>
+
+<?php $schema_extra = ['{
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Post-Seed Startup Development",
@@ -21,7 +29,7 @@
     {"@type": "Offer", "name": "Launch (app + backend)", "price": "14997", "priceCurrency": "USD"},
     {"@type": "Offer", "name": "Growth (app + backend + admin)", "price": "29997", "priceCurrency": "USD"}
   ]
-}'; ?>
+}', build_breadcrumb_schema($breadcrumbs)]; ?>
 
 <?php include("header.php"); ?>
 
@@ -39,7 +47,9 @@
 
 				</span>
 
-				<h1 class="heading70px m-0 light">
+				<?php include __DIR__ . '/breadcrumbs.php'; ?>
+
+					<h1 class="heading70px m-0 light">
 
 					<span class="revealUp"><span>The Development Agency</span></span> <br>
 
@@ -407,7 +417,7 @@
 
 					<h3 class="heading26px dark mb-2">Why Flutter and not React Native or native?</h3>
 
-					<p class="dark">Flutter ships one codebase to iOS, Android, and web in 60-70% of the cost of building both natively. Nine out of ten apps we ship are Flutter. We will recommend React Native or native if your specific build needs it — read our <a href="/react-native-developer" style="color: var(--secondColor);">honest React Native page</a> for when that call gets made.</p>
+					<p class="dark">Flutter ships one codebase to iOS, Android, and web in 60-70% of the cost of building both natively. Nine out of ten apps we ship are Flutter. We will recommend React Native or native if your specific build needs it — read our <a href="/services/react-native-app-development" style="color: var(--secondColor);">honest React Native page</a> for when that call gets made.</p>
 
 				</div>
 

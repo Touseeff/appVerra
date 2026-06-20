@@ -118,7 +118,7 @@
 
 					<div class="item" data-aos="fade-up" data-aos-delay="100">
 
-						<img src="assets/images/industry-slide1.gif" loading="lazy" class="industries_img" width="" height="" alt=""/>
+						<img src="/assets/images/industry-slide1.gif" loading="lazy" class="industries_img" width="" height="" alt=""/>
 
 						<h3 class="heading24px dark fw_500">Healthcare</h3>
 
@@ -126,7 +126,7 @@
 
 					<div class="item" data-aos="fade-up" data-aos-delay="200">
 
-						<img src="assets/images/industry-slide2.gif" loading="lazy" class="industries_img" width="" height="" alt=""/>
+						<img src="/assets/images/industry-slide2.gif" loading="lazy" class="industries_img" width="" height="" alt=""/>
 
 						<h3 class="heading24px dark fw_500">Technology</h3>
 
@@ -134,7 +134,7 @@
 
 					<div class="item" data-aos="fade-up" data-aos-delay="300">
 
-						<img src="assets/images/industry-slide3.gif" loading="lazy" class="industries_img" width="" height="" alt=""/>
+						<img src="/assets/images/industry-slide3.gif" loading="lazy" class="industries_img" width="" height="" alt=""/>
 
 						<h3 class="heading24px dark fw_500">Construction</h3>
 
@@ -142,7 +142,7 @@
 
 					<div class="item" data-aos="fade-up" data-aos-delay="400">
 
-						<img src="assets/images/industry-slide4.gif" loading="lazy" class="industries_img" width="" height="" alt=""/>
+						<img src="/assets/images/industry-slide4.gif" loading="lazy" class="industries_img" width="" height="" alt=""/>
 
 						<h3 class="heading24px dark fw_500">Automobiles</h3>
 
@@ -150,7 +150,7 @@
 
 					<div class="item" data-aos="fade-up" data-aos-delay="100">
 
-						<img src="assets/images/industry-slide1.gif" loading="lazy" class="industries_img" width="" height="" alt=""/>
+						<img src="/assets/images/industry-slide1.gif" loading="lazy" class="industries_img" width="" height="" alt=""/>
 
 						<h3 class="heading24px dark fw_500">Healthcare</h3>
 
@@ -158,7 +158,7 @@
 
 					<div class="item" data-aos="fade-up" data-aos-delay="200">
 
-						<img src="assets/images/industry-slide2.gif" loading="lazy" class="industries_img" width="" height="" alt=""/>
+						<img src="/assets/images/industry-slide2.gif" loading="lazy" class="industries_img" width="" height="" alt=""/>
 
 						<h3 class="heading24px dark fw_500">Technology</h3>
 
@@ -166,7 +166,7 @@
 
 					<div class="item" data-aos="fade-up" data-aos-delay="300">
 
-						<img src="assets/images/industry-slide3.gif" loading="lazy" class="industries_img" width="" height="" alt=""/>
+						<img src="/assets/images/industry-slide3.gif" loading="lazy" class="industries_img" width="" height="" alt=""/>
 
 						<h3 class="heading24px dark fw_500">Construction</h3>
 
@@ -174,7 +174,7 @@
 
 					<div class="item" data-aos="fade-up" data-aos-delay="400">
 
-						<img src="assets/images/industry-slide4.gif" loading="lazy" class="industries_img" width="" height="" alt=""/>
+						<img src="/assets/images/industry-slide4.gif" loading="lazy" class="industries_img" width="" height="" alt=""/>
 
 						<h3 class="heading24px dark fw_500">Automobiles</h3>
 

@@ -1,3 +1,4 @@
+<?php $root = dirname(__DIR__); ?>
 ﻿<?php $meta_title = "MVP Development Company for Startups — Flutter + Laravel | Appverra"; ?>
 
 <?php $meta_discription = "Full-stack MVP development for post-seed startups. App + admin dashboard delivered in 6-8 weeks. 150+ apps shipped, 700+ customers. Pricing $12,997-$25,000."; ?>
@@ -6,23 +7,32 @@
 
 <?php $og_image = "https://appverra.co/assets/images/fsd_banner_img.png"; ?>
 
-<?php $schema_extra = '{
+<?php require_once $root . '/includes/schema_helpers.php';
+$canonical_override = "https://appverra.co/services/full-stack-development"; ?>
+
+<?php $breadcrumbs = [
+    ['name' => 'Home',                  'url' => 'https://appverra.co/'],
+    ['name' => 'Services',              'url' => 'https://appverra.co/our-services'],
+    ['name' => 'Full-Stack Development', 'url' => 'https://appverra.co/services/full-stack-development'],
+]; ?>
+
+<?php $schema_extra = ['{
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "MVP Development for Startups",
   "serviceType": "Full-Stack Web and Mobile Development",
   "provider": {"@type": "Organization", "name": "Appverra", "url": "https://appverra.co/"},
-  "url": "https://appverra.co/full-stack-development",
+  "url": "https://appverra.co/services/full-stack-development",
   "description": "Full-stack MVP development for post-seed startups. Flutter mobile app plus Laravel or Node.js backend plus admin dashboard, delivered in 6-8 weeks. Built for founders who need to ship and iterate fast.",
   "image": "https://appverra.co/assets/images/fsd_banner_img.png",
   "areaServed": ["US", "CA", "GB"]
-}'; ?>
+}', build_breadcrumb_schema($breadcrumbs)]; ?>
 
-<?php include("header.php"); ?>
+<?php include $root . '/header.php'; ?>
 
 <section class="hero_banner mainBanner innerBanner fsd_banner serviceBanner">
 
-	<img src="assets/images/fsd_banner_img.webp" loading="eager" class="fsd_banner_img d-none d-lg-block position-absolute bottom-0" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
+	<img src="/assets/images/fsd_banner_img.webp" loading="eager" class="fsd_banner_img d-none d-lg-block position-absolute bottom-0" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
 
 	<div class="container">		
 
@@ -30,7 +40,9 @@
 
 			<div class="col-lg-6">
 
-				<h1 class="heading70px m-0 light">
+				<?php include $root . '/breadcrumbs.php'; ?>
+
+					<h1 class="heading70px m-0 light">
 
 					<span class="revealUp">
 
@@ -316,7 +328,7 @@
 
 			<div class="col-lg-6 d-none d-lg-block">
 
-				<img src="assets/images/leverage-img.webp" loading="lazy" class="leverage_img img-fluid" width="" height="" alt=""/>
+				<img src="/assets/images/leverage-img.webp" loading="lazy" class="leverage_img img-fluid" width="" height="" alt=""/>
 
 			</div>
 
@@ -326,7 +338,7 @@
 
 	<a href="#" class="movingImage anchor_active">
 
-		<img src="assets/images/leverage-btn.webp" loading="lazy" class="w-100 spinRight" width="" height="" alt=""/>
+		<img src="/assets/images/leverage-btn.webp" loading="lazy" class="w-100 spinRight" width="" height="" alt=""/>
 
 		<i data-feather="arrow-up-right"></i>
 
@@ -342,7 +354,7 @@
 
 			<div class="col-lg-5 mb-4 mb-lg-0">
 
-				<img src="assets/images/30+-img.webp" loading="lazy" class="thirty_plus_img w-100" width="" height="" alt=""/>
+				<img src="/assets/images/30+-img.webp" loading="lazy" class="thirty_plus_img w-100" width="" height="" alt=""/>
 
 			</div>
 
@@ -468,9 +480,9 @@
 
 </section>
 
-<?php include("testimonials-section.php"); ?>
+<?php include $root . '/testimonials-section.php'; ?>
 
-<?php include("industries-section.php") ?>
+<?php include $root . '/industries-section.php' ?>
 
 <section class="our_flutter_app">
 
@@ -592,7 +604,7 @@
 
 			<div class="col-lg-5 text-end">
 
-				<img src="assets/images/fsd_img.webp" loading="lazy" class="fsd_img img-fluid d-none d-lg-block" width="" height="" alt=""/>
+				<img src="/assets/images/fsd_img.webp" loading="lazy" class="fsd_img img-fluid d-none d-lg-block" width="" height="" alt=""/>
 
 			</div>
 
@@ -626,13 +638,13 @@
 
 		<div class="row align-items-center mt-lg-5 mt-4">
 
-			<!-- <img src="assets/images/banner-img1.webp" loading="lazy" class="liquid_orbit spinRight  d-none d-lg-block" width="" height="" alt=""/> -->
+			<!-- <img src="/assets/images/banner-img1.webp" loading="lazy" class="liquid_orbit spinRight  d-none d-lg-block" width="" height="" alt=""/> -->
 
 			<div class="col-lg-4 col-md-6" data-aos="fade-left" data-aos-delay="500"/>
 
 				<div class="benefits_clm" >
 
-					<img src="assets/images/fsds-icon1.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
+					<img src="/assets/images/fsds-icon1.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
 
 					<h3 class="heading24px dark">Appropriate Project<br> Schedules</h3>
 
@@ -642,7 +654,7 @@
 
 				<div class="benefits_clm moveLeft">
 
-					<img src="assets/images/fsds-icon2.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
+					<img src="/assets/images/fsds-icon2.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
 
 					<h3 class="heading24px dark">Dedicated Full Stack <br>Development Team</h3> 
 
@@ -652,7 +664,7 @@
 
 				<div class="benefits_clm">
 
-					<img src="assets/images/fsds-icon3.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
+					<img src="/assets/images/fsds-icon3.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
 
 					<h3 class="heading24px dark">Exclusive Full Stack <br>Solutions</h3>
 
@@ -664,7 +676,7 @@
 
 			<div class="col-lg-4 col-md-6 d-none d-lg-block">
 
-				<img src="assets/images/fsds_img.gif" loading="lazy" class="fsds_img img-fluid" width="" height="" alt=""/>
+				<img src="/assets/images/fsds_img.gif" loading="lazy" class="fsds_img img-fluid" width="" height="" alt=""/>
 
 			</div>
 
@@ -672,7 +684,7 @@
 
 				<div class="benefits_clm">
 
-					<img src="assets/images/fsds-icon4.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
+					<img src="/assets/images/fsds-icon4.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
 
 					<h3 class="heading24px dark">Hands On <br>Expert</h3>
 
@@ -682,7 +694,7 @@
 
 				<div class="benefits_clm moveRight">
 
-					<img src="assets/images/fsds-icon5.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
+					<img src="/assets/images/fsds-icon5.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
 
 					<h3 class="heading24px dark">Standard Quality <br>Work</h3>
 
@@ -692,7 +704,7 @@
 
 				<div class="benefits_clm moveRight">
 
-					<img src="assets/images/fsds-icon5.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
+					<img src="/assets/images/fsds-icon5.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
 
 					<h3 class="heading24px dark">Strictly Time <br>Deliveries</h3>
 
@@ -740,7 +752,7 @@
 
 					<p>Our Full Stack development ensures optimized performance through efficient architecture, modern frameworks, and clean code. The result is fast, responsive, and secure applications that deliver exceptional user experiences across platforms.</p>
 
-					<img src="assets/images/pfsd-img1.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
+					<img src="/assets/images/pfsd-img1.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
 
 				</div>
 
@@ -750,7 +762,7 @@
 
 					<p>Appverra reduces overhead by using one expert team for both front-end and back-end, streamlining development costs without sacrificing quality. Get robust solutions tailored to your budget and business goals.</p>
 
-					<img src="assets/images/pfsd-img2.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
+					<img src="/assets/images/pfsd-img2.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
 
 				</div>
 
@@ -760,7 +772,7 @@
 
 					<p>We build future-proof Full Stack applications that scale effortlessly with your growing user base and evolving features. Whether you're a startup or enterprise, our solutions support your long-term digital expansion.</p>
 
-					<img src="assets/images/pfsd-img3.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
+					<img src="/assets/images/pfsd-img3.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
 
 				</div>
 
@@ -768,13 +780,13 @@
 
 		</div>
 
-		<img src="assets/images/eyb-img.webp" loading="lazy" class="eyb_img d-none d-lg-block" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
+		<img src="/assets/images/eyb-img.webp" loading="lazy" class="eyb_img d-none d-lg-block" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
 
 	</div>
 
 </section>
 
-<?php include("awards-section.php") ?>
+<?php include $root . '/awards-section.php' ?>
 
 <section class="faq">
 
@@ -802,7 +814,7 @@
 
 			<div class="col-lg-6 d-none d-lg-block" data-aos="fade-right" data-aos-delay="100"/>
 
-				<img src="assets/images/fsd-faq-img.webp" loading="lazy" class="faq_img img-fluid" width="" height="" alt=""/>
+				<img src="/assets/images/fsd-faq-img.webp" loading="lazy" class="faq_img img-fluid" width="" height="" alt=""/>
 
 			</div>
 
@@ -1086,7 +1098,7 @@
 
 			<div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
 
-				<img src="assets/images/phone.webp" loading="lazy" class=" img-fluid" width="" height="" alt=""/>
+				<img src="/assets/images/phone.webp" loading="lazy" class=" img-fluid" width="" height="" alt=""/>
 
 			</div>
 
@@ -1096,9 +1108,9 @@
 
 </section>
 
-<?php include("contact-us-section.php"); ?>
+<?php include $root . '/contact-us-section.php'; ?>
 
-<?php include("footer.php"); ?>
+<?php include $root . '/footer.php'; ?>
 
 
 

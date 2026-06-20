@@ -1,3 +1,4 @@
+<?php $root = dirname(__DIR__); ?>
 ﻿<?php $meta_title = "Mobile App Marketing & ASO — Bundled with Every Launch | Appverra"; ?>
 
 <?php $meta_discription = "Built-in app marketing, ASO, and launch playbook for every Appverra app we ship. Apps with millions of downloads. Not sold as a standalone service."; ?>
@@ -6,23 +7,32 @@
 
 <?php $og_image = "https://appverra.co/assets/images/mam_banner_img.png"; ?>
 
-<?php $schema_extra = '{
+<?php require_once $root . '/includes/schema_helpers.php';
+$canonical_override = "https://appverra.co/services/mobile-app-marketing"; ?>
+
+<?php $breadcrumbs = [
+    ['name' => 'Home',                 'url' => 'https://appverra.co/'],
+    ['name' => 'Services',             'url' => 'https://appverra.co/our-services'],
+    ['name' => 'Mobile App Marketing', 'url' => 'https://appverra.co/services/mobile-app-marketing'],
+]; ?>
+
+<?php $schema_extra = ['{
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "App Store Optimization and Launch Marketing",
   "serviceType": "App Marketing",
   "provider": {"@type": "Organization", "name": "Appverra", "url": "https://appverra.co/"},
-  "url": "https://appverra.co/mobile-app-marketing",
+  "url": "https://appverra.co/services/mobile-app-marketing",
   "description": "ASO, launch playbook, and growth setup bundled with Appverra app builds at Launch tier and above. We ship apps that have collectively earned millions of downloads.",
   "image": "https://appverra.co/assets/images/mam_banner_img.png",
   "areaServed": ["US", "CA", "GB"]
-}'; ?>
+}', build_breadcrumb_schema($breadcrumbs)]; ?>
 
-<?php include("header.php"); ?>
+<?php include $root . '/header.php'; ?>
 
 <section class="hero_banner mainBanner innerBanner mam_banner serviceBanner">
 
-	<img src="assets/images/mam_banner_img.webp" loading="eager" class="mam_banner_img d-none d-lg-block position-absolute bottom-0 end-0" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
+	<img src="/assets/images/mam_banner_img.webp" loading="eager" class="mam_banner_img d-none d-lg-block position-absolute bottom-0 end-0" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
 
 	<div class="container">		
 
@@ -30,7 +40,9 @@
 
 			<div class="col-lg-6">
 
-				<h1 class="heading70px m-0 light">
+				<?php include $root . '/breadcrumbs.php'; ?>
+
+					<h1 class="heading70px m-0 light">
 
 					<span class="revealUp">
 
@@ -184,7 +196,7 @@
 
 					<div class="image_wrapper">
 
-						<img src="assets/images/component_img.webp"/ loading="lazy" class="img-fluid" width="" height=""/>
+						<img src="/assets/images/component_img.webp"/ loading="lazy" class="img-fluid" width="" height=""/>
 
 					</div>
 
@@ -192,7 +204,7 @@
 
 				<div class="col-lg-6 d-none d-lg-block" data-aos="fade-up">
 
-					<img src="assets/images/component-img2.webp" loading="lazy" class="component_img2 w-100" width="" height="" alt=""/> 
+					<img src="/assets/images/component-img2.webp" loading="lazy" class="component_img2 w-100" width="" height="" alt=""/> 
 
 
 				</div>
@@ -225,7 +237,7 @@
 
 							<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3">
 
-								<img src="assets/images/component-icon1.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
+								<img src="/assets/images/component-icon1.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
 
 								<h4 class="heading18px m-0 dark fw_500">App Downloads</h4>
 
@@ -237,7 +249,7 @@
 
 							<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3">
 
-								<img src="assets/images/component-icon2.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
+								<img src="/assets/images/component-icon2.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
 
 								<h4 class="heading18px m-0 dark fw_500">Engagements</h4>
 
@@ -249,7 +261,7 @@
 
 							<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3">
 
-								<img src="assets/images/component-icon1.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
+								<img src="/assets/images/component-icon1.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
 
 								<h4 class="heading18px m-0 dark fw_500">Notifications</h4>
 
@@ -261,7 +273,7 @@
 
 							<div class="features_clm d-flex align-items-center gap-3 bg-white py-2 px-3">
 
-								<img src="assets/images/component-icon2.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
+								<img src="/assets/images/component-icon2.webp" loading="lazy" class="foa_icon img-fluid" width="" height="" alt="">
 
 								<h4 class="heading18px m-0 dark fw_500">Monetization</h4>
 
@@ -563,9 +575,9 @@
 
 			<div class="col-lg-6">
 
-				<!-- <img src="assets/images/complete-img.webp" loading="lazy" class="complete_img img-fluid" width="" height="" alt=""/> -->
+				<!-- <img src="/assets/images/complete-img.webp" loading="lazy" class="complete_img img-fluid" width="" height="" alt=""/> -->
 				<video autoplay muted loop playsinline preload="none" class="complete_vdo w-100">
-				    <source src="assets/videos/complete-vdo.mp4" type="video/mp4">
+				    <source src="/assets/videos/complete-vdo.mp4" type="video/mp4">
 				</video>
 
 			</div>
@@ -628,7 +640,7 @@
 
 				<div class="mam_clm">
 
-					<img src="assets/images/mam-img1.webp" loading="lazy" class="mam_img w-100" width="" height="" alt="/">
+					<img src="/assets/images/mam-img1.webp" loading="lazy" class="mam_img w-100" width="" height="" alt="/">
 
 					<div class="clm_caption">
 
@@ -644,7 +656,7 @@
 
 				<div class="mam_clm">
 
-					<img src="assets/images/mam-img2.webp" loading="lazy" class="mam_img w-100" width="" height="" alt="/">
+					<img src="/assets/images/mam-img2.webp" loading="lazy" class="mam_img w-100" width="" height="" alt="/">
 
 					<div class="clm_caption">
 
@@ -660,7 +672,7 @@
 
 				<div class="mam_clm">
 
-					<img src="assets/images/mam-img3.webp" loading="lazy" class="mam_img w-100" width="" height="" alt="/">
+					<img src="/assets/images/mam-img3.webp" loading="lazy" class="mam_img w-100" width="" height="" alt="/">
 
 					<div class="clm_caption">
 
@@ -676,7 +688,7 @@
 
 				<div class="mam_clm">
 
-					<img src="assets/images/mam-img4.webp" loading="lazy" class="mam_img w-100" width="" height="" alt="/">
+					<img src="/assets/images/mam-img4.webp" loading="lazy" class="mam_img w-100" width="" height="" alt="/">
 
 					<div class="clm_caption">
 
@@ -692,7 +704,7 @@
 
 				<div class="mam_clm">
 
-					<img src="assets/images/mam-img5.webp" loading="lazy" class="mam_img w-100" width="" height="" alt="/">
+					<img src="/assets/images/mam-img5.webp" loading="lazy" class="mam_img w-100" width="" height="" alt="/">
 
 					<div class="clm_caption">
 
@@ -708,7 +720,7 @@
 
 				<div class="mam_clm">
 
-					<img src="assets/images/mam-img6.webp" loading="lazy" class="mam_img w-100" width="" height="" alt="/">
+					<img src="/assets/images/mam-img6.webp" loading="lazy" class="mam_img w-100" width="" height="" alt="/">
 
 					<div class="clm_caption">
 
@@ -724,7 +736,7 @@
 
 				<div class="mam_clm">
 
-					<img src="assets/images/mam-img7.webp" loading="lazy" class="mam_img w-100" width="" height="" alt="/">
+					<img src="/assets/images/mam-img7.webp" loading="lazy" class="mam_img w-100" width="" height="" alt="/">
 
 					<div class="clm_caption">
 
@@ -748,7 +760,7 @@
 
 <section class="all_inclusive">
 
-	<img src="assets/images/stm-img.webp" loading="lazy" class="all_inclusive_img img-fluid d-none d-lg-block" width="" height="" alt="">
+	<img src="/assets/images/stm-img.webp" loading="lazy" class="all_inclusive_img img-fluid d-none d-lg-block" width="" height="" alt="">
 
 	<div class="container">
 
@@ -866,7 +878,7 @@
 
 </section>
 
-<?php include("testimonials-section.php"); ?>
+<?php include $root . '/testimonials-section.php'; ?>
 
 <section class="our_flutter_app wma_section">
 
@@ -994,7 +1006,7 @@
 
 			<div class="col-lg-7 text-end">
 
-				<img src="assets/images/wma-img.webp" loading="lazy" class="wma_img w-100 d-none d-lg-block" width="" height="" alt=""/>
+				<img src="/assets/images/wma-img.webp" loading="lazy" class="wma_img w-100 d-none d-lg-block" width="" height="" alt=""/>
 
 			</div>
 
@@ -1032,7 +1044,7 @@
 
 				<div class="benefits_clm" >
 
-					<img src="assets/images/marketing-icon1.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
+					<img src="/assets/images/marketing-icon1.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
 
 					<h3 class="heading24px dark">Top-notch UX/UX <br>Designers</h3>
 
@@ -1042,7 +1054,7 @@
 
 				<div class="benefits_clm moveLeft">
 
-					<img src="assets/images/marketing-icon2.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
+					<img src="/assets/images/marketing-icon2.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
 
 					<h3 class="heading24px dark">Custom App Marketing <br>Solutions</h3> 
 
@@ -1052,7 +1064,7 @@
 
 				<div class="benefits_clm">
 
-					<img src="assets/images/marketing-icon3.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
+					<img src="/assets/images/marketing-icon3.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
 
 					<h3 class="heading24px dark">Budget <br>Friendly</h3>
 
@@ -1064,7 +1076,7 @@
 
 			<div class="col-lg-4 col-md-6 d-none d-lg-block">
 
-				<img src="assets/images/mamarketing-img.webp" loading="lazy" class="maketing" width="" height="" alt=""/>
+				<img src="/assets/images/mamarketing-img.webp" loading="lazy" class="maketing" width="" height="" alt=""/>
 
 			</div>
 
@@ -1072,7 +1084,7 @@
 
 				<div class="benefits_clm">
 
-					<img src="assets/images/marketing-icon4.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
+					<img src="/assets/images/marketing-icon4.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
 
 					<h3 class="heading24px dark">Professional Marketing <br>Techniques</h3>
 
@@ -1082,7 +1094,7 @@
 
 				<div class="benefits_clm moveRight">
 
-					<img src="assets/images/marketing-icon5.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
+					<img src="/assets/images/marketing-icon5.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
 
 					<h3 class="heading24px dark">Innovative Marketing <br>Strategies</h3>
 
@@ -1092,7 +1104,7 @@
 
 				<div class="benefits_clm">
 
-					<img src="assets/images/marketing-icon6.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
+					<img src="/assets/images/marketing-icon6.webp" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
 
 					<h3 class="heading24px dark">Meet Your <br>KPI's</h3>
 
@@ -1140,7 +1152,7 @@
 
 					<p>We begin by understanding your app, goals, and target audience. This collaborative consultation ensures our marketing strategy aligns with your vision, business objectives, and brand voice from day one.</p>
 
-					<img src="assets/images/hwd-img1.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
+					<img src="/assets/images/hwd-img1.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
 
 				</div>
 
@@ -1150,7 +1162,7 @@
 
 					<p>Our team conducts in-depth user analysis to identify behavior, demographics, and motivations. This insight helps tailor campaigns that resonate, boost user retention, and drive higher app engagement rates.</p>
 
-					<img src="assets/images/hwd-img2.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
+					<img src="/assets/images/hwd-img2.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
 
 				</div>
 
@@ -1160,7 +1172,7 @@
 
 					<p>We create and distribute compelling, platform-optimized content that tells your app’s story. From social media posts to blogs and videos, our content drives awareness, traffic, and installs effectively.</p>
 
-					<img src="assets/images/hwd-img3.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
+					<img src="/assets/images/hwd-img3.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
 
 				</div>
 
@@ -1168,7 +1180,7 @@
 
 		</div>
 
-		<img src="assets/images/eyb-img.webp" loading="lazy" class="eyb_img d-none d-lg-block" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
+		<img src="/assets/images/eyb-img.webp" loading="lazy" class="eyb_img d-none d-lg-block" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
 
 	</div>
 
@@ -1234,7 +1246,7 @@
 
 
 
-<?php include("awards-section.php") ?>
+<?php include $root . '/awards-section.php' ?>
 
 <section class="faq">
 
@@ -1262,7 +1274,7 @@
 
 			<div class="col-lg-6 d-none d-lg-block" data-aos="fade-right" data-aos-delay="100"/>
 
-				<img src="assets/images/ma-marketing.webp" loading="lazy" class="faq_img img-fluid" width="" height="" alt=""/>
+				<img src="/assets/images/ma-marketing.webp" loading="lazy" class="faq_img img-fluid" width="" height="" alt=""/>
 
 			</div>
 
@@ -1486,9 +1498,9 @@
 
 </section>
 
-<?php include("contact-us-section.php"); ?>
+<?php include $root . '/contact-us-section.php'; ?>
 
-<?php include("footer.php"); ?>
+<?php include $root . '/footer.php'; ?>
 
 
 

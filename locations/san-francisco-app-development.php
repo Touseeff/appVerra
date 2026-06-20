@@ -1,3 +1,13 @@
+<?php $root = dirname(__DIR__); ?>
+<?php
+require_once $root . '/includes/schema_helpers.php';
+$canonical_override = "https://appverra.co/locations/san-francisco-app-development";
+$breadcrumbs = [
+    ['name' => 'Home',      'url' => 'https://appverra.co/'],
+    ['name' => 'Locations', 'url' => 'https://appverra.co/locations'],
+    ['name' => 'San Francisco App Development', 'url' => 'https://appverra.co/locations/san-francisco-app-development'],
+];
+?>
 <?php $meta_title = "Mobile App Development Company in San Francisco | Appverra"; ?>
 
 <?php $meta_discription = "San Francisco mobile app development company. We build iOS and Android apps for Bay Area startups, SaaS companies, and funded founders. Flutter, React Native, Swift, Kotlin. 150+ apps shipped. Fixed-bid pricing from $7,997."; ?>
@@ -13,7 +23,7 @@
     "name": "Mobile App Development in San Francisco",
     "serviceType": "Mobile Application Development",
     "provider": {"@type": "Organization", "name": "Appverra", "url": "https://appverra.co/"},
-    "url": "https://appverra.co/san-francisco-app-development",
+    "url": "https://appverra.co/locations/san-francisco-app-development",
     "description": "Appverra builds iOS and Android apps for San Francisco and Bay Area startups, SaaS companies, and funded founders. Flutter, React Native, Swift, Kotlin. 150+ apps shipped for 700+ customers. Fixed-bid pricing from $7,997.",
     "image": "https://appverra.co/assets/images/logo.webp",
     "areaServed": {"@type": "City", "name": "San Francisco", "containedInPlace": {"@type": "State", "name": "California"}},
@@ -26,7 +36,8 @@
   }
 ]'; ?>
 
-<?php include("header.php"); ?>
+<?php $schema_extra = is_array($schema_extra) ? $schema_extra : [$schema_extra]; $schema_extra[] = build_breadcrumb_schema($breadcrumbs); ?>
+<?php include $root . '/header.php'; ?>
 
 <section class="hero_banner mainBanner innerBanner serviceBanner">
 
@@ -41,6 +52,8 @@
 					<span class="heading26px light">San Francisco &amp; Bay Area</span>
 
 				</span>
+
+				<?php include $root . '/breadcrumbs.php'; ?>
 
 				<h1 class="heading70px m-0 light">
 
@@ -550,8 +563,8 @@
 }
 </script>
 
-<?php include('cta-section.php'); ?>
+<?php include $root . '/cta-section.php'; ?>
 
-<?php include('contact-us-section.php'); ?>
+<?php include $root . '/contact-us-section.php'; ?>
 
-<?php include('footer.php'); ?>
+<?php include $root . '/footer.php'; ?>

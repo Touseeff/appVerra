@@ -1,3 +1,4 @@
+<?php $root = dirname(__DIR__); ?>
 ﻿<?php $meta_title = "React Native Development — When It's the Right Call | Appverra"; ?>
 
 <?php $meta_discription = "We're Flutter-first, but here's when we recommend React Native instead. Founder-led agency. 150+ apps shipped. Honest stack recommendations, no upsells."; ?>
@@ -6,23 +7,32 @@
 
 <?php $og_image = "https://appverra.co/assets/images/rnd-img.png"; ?>
 
-<?php $schema_extra = '{
+<?php require_once $root . '/includes/schema_helpers.php';
+$canonical_override = "https://appverra.co/services/react-native-app-development"; ?>
+
+<?php $breadcrumbs = [
+    ['name' => 'Home',                         'url' => 'https://appverra.co/'],
+    ['name' => 'Services',                     'url' => 'https://appverra.co/our-services'],
+    ['name' => 'React Native App Development', 'url' => 'https://appverra.co/services/react-native-app-development'],
+]; ?>
+
+<?php $schema_extra = ['{
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "React Native App Development",
   "serviceType": "Mobile App Development",
   "provider": {"@type": "Organization", "name": "Appverra", "url": "https://appverra.co/"},
-  "url": "https://appverra.co/react-native-developer",
+  "url": "https://appverra.co/services/react-native-app-development",
   "description": "Honest React Native development from a Flutter-first agency. We recommend React Native when it is the right call — for teams already on RN, for specific native module needs, or for clients who need extensive npm ecosystem integration.",
   "image": "https://appverra.co/assets/images/rnd-img.png",
   "areaServed": ["US", "CA", "GB"]
-}'; ?>
+}', build_breadcrumb_schema($breadcrumbs)]; ?>
 
-<?php include("header.php"); ?>
+<?php include $root . '/header.php'; ?>
 
 <section class="hero_banner mainBanner innerBanner rnd_banner serviceBanner">
 
-	<img src="assets/images/rnd-img.webp" loading="eager" class="rnd_img d-none d-lg-block position-absolute bottom-0 end-0" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
+	<img src="/assets/images/rnd-img.webp" loading="eager" class="rnd_img d-none d-lg-block position-absolute bottom-0 end-0" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
 
 	<div class="container">		
 
@@ -30,7 +40,9 @@
 
 			<div class="col-lg-6">
 
-				<h1 class="heading70px m-0 light">
+				<?php include $root . '/breadcrumbs.php'; ?>
+
+					<h1 class="heading70px m-0 light">
 
 					<span class="revealUp">
 
@@ -252,9 +264,9 @@
 
 			<div class="col-lg-6 mb-4 mb-lg-0"  data-aos="fade-up" data-aos-delay="100">
 
-				<!-- <img src="assets/images/accelerate-img.webp" loading="lazy" class="accelerate_img radius_scroll img-fluid" width="" height=""/> -->
+				<!-- <img src="/assets/images/accelerate-img.webp" loading="lazy" class="accelerate_img radius_scroll img-fluid" width="" height=""/> -->
 				<video autoplay muted loop playsinline preload="none" class="accelerate_img radius_scroll w-100">
-				    <source src="assets/videos/accelerate-vdo.mp4" type="video/mp4">
+				    <source src="/assets/videos/accelerate-vdo.mp4" type="video/mp4">
 				</video>
 
 			</div>
@@ -359,7 +371,7 @@
 
 <section class="bornd_section">
 
-	<img src="assets/images/born-img.webp" loading="lazy" class="born_img d-none d-lg-block" width="" height="" alt="" data-aos="fade-up" data-aos-delay="300"
+	<img src="/assets/images/born-img.webp" loading="lazy" class="born_img d-none d-lg-block" width="" height="" alt="" data-aos="fade-up" data-aos-delay="300"
 
 	/>
 
@@ -515,7 +527,7 @@
 
 			<div class="col-lg-6 mb-4 mb-lg-0 d-none d-lg-block">
 
-				<img src="assets/images/top-notch-img.webp" loading="lazy" class="top_notch_img img-fluid" width="" height="" alt="/" data-aos="fade-up" data-aos-delay="100">
+				<img src="/assets/images/top-notch-img.webp" loading="lazy" class="top_notch_img img-fluid" width="" height="" alt="/" data-aos="fade-up" data-aos-delay="100">
 
 			</div>
 
@@ -770,7 +782,7 @@
 
 			<div class="col-lg-5 d-none d-lg-block">
 
-				<img src="assets/images/rnds-img.webp" loading="lazy" class="rnds_img img-fluid" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
+				<img src="/assets/images/rnds-img.webp" loading="lazy" class="rnds_img img-fluid" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
 
 			</div>
 
@@ -788,7 +800,7 @@
 
 			<div class="col-lg-6 mb-4 mb-lg-0 d-none d-lg-block">
 
-				<img src="assets/images/hqrn-img.webp" loading="lazy" class="hqrn_img img-fluid" width="" height="" alt="/" data-aos="fade-up" data-aos-delay="100">
+				<img src="/assets/images/hqrn-img.webp" loading="lazy" class="hqrn_img img-fluid" width="" height="" alt="/" data-aos="fade-up" data-aos-delay="100">
 
 			</div>
 
@@ -916,7 +928,7 @@
 
 </section>
 
-<?php include('technology-expert-section.php') ?>
+<?php include $root . '/technology-expert-section.php' ?>
 
 <section class="why_hire">
 
@@ -1054,7 +1066,7 @@
 
 			<div class="col-lg-6">
 
-				<img src="assets/images/why-hire-img.webp" loading="lazy" class="why_hire_img img-fluid" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
+				<img src="/assets/images/why-hire-img.webp" loading="lazy" class="why_hire_img img-fluid" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
 
 			</div>
 
@@ -1088,13 +1100,13 @@
 
 		<div class="row align-items-center mt-lg-5 justify-content-between mt-4">
 
-			<img src="assets/images/wmur-img.webp" loading="lazy" class="wmur_img d-none d-lg-table" width="" height="" alt=""/>
+			<img src="/assets/images/wmur-img.webp" loading="lazy" class="wmur_img d-none d-lg-table" width="" height="" alt=""/>
 
 			<div class="col-lg-4 col-md-6" data-aos="fade-left" data-aos-delay="500"/>
 
 				<div class="benefits_clm" >
 
-					<img src="assets/images/wms-icon1.svg" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
+					<img src="/assets/images/wms-icon1.svg" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
 
 					<h3 class="heading24px dark">Quality React <br>Native App</h3>
 
@@ -1104,7 +1116,7 @@
 
 				<div class="benefits_clm moveLeft">
 
-					<img src="assets/images/wms-icon2.svg" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
+					<img src="/assets/images/wms-icon2.svg" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
 
 					<h3 class="heading24px dark">Recognized Native <br>Mobile Company</h3> 
 
@@ -1114,7 +1126,7 @@
 
 				<div class="benefits_clm">
 
-					<img src="assets/images/wms-icon3.svg" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
+					<img src="/assets/images/wms-icon3.svg" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
 
 					<h3 class="heading24px dark">Maestro Native<br> Developer</h3>
 
@@ -1128,7 +1140,7 @@
 
 				<div class="benefits_clm">
 
-					<img src="assets/images/wms-icon6.svg" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
+					<img src="/assets/images/wms-icon6.svg" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
 
 					<h3 class="heading24px dark">Dedicated Native <br>App Team</h3>
 
@@ -1138,7 +1150,7 @@
 
 				<div class="benefits_clm moveRight">
 
-					<img src="assets/images/wms-icon4.svg" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
+					<img src="/assets/images/wms-icon4.svg" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
 
 					<h3 class="heading24px dark">Creative Native <br>App Techhouse</h3>
 
@@ -1148,7 +1160,7 @@
 
 				<div class="benefits_clm">
 
-					<img src="assets/images/wms-icon5.svg" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
+					<img src="/assets/images/wms-icon5.svg" loading="lazy" class="wms_icon mb-lg-4 mb-3" width="" height="" alt=""/>
 
 					<h3 class="heading24px dark">Teamwork <br>Value</h3>
 
@@ -1198,7 +1210,7 @@
 
 					<p>Use the newest technologies to seamlessly move or update current programs to increase user satisfaction, security, and performance.</p>
 
-					<img src="assets/images/elivate-img1.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
+					<img src="/assets/images/elivate-img1.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
 
 				</div>
 
@@ -1208,7 +1220,7 @@
 
 					<p>Complete native app development that is customized to your needs, including coding, testing, deployment, and ongoing support.</p>
 
-					<img src="assets/images/elivate-img2.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
+					<img src="/assets/images/elivate-img2.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
 
 				</div>
 
@@ -1218,7 +1230,7 @@
 
 					<p>Creating user-friendly, aesthetically appealing interfaces for iOS and Android platforms that improve user experience and encourage interaction.</p>
 
-					<img src="assets/images/elivate-img3.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
+					<img src="/assets/images/elivate-img3.webp" loading="lazy" class="elivate_img" width="" height="" alt=""/>
 
 				</div>
 
@@ -1226,19 +1238,19 @@
 
 		</div>
 
-		<img src="assets/images/eyb-img.webp" loading="lazy" class="eyb_img d-none d-lg-block" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
+		<img src="/assets/images/eyb-img.webp" loading="lazy" class="eyb_img d-none d-lg-block" width="" height="" alt="" data-aos="fade-up" data-aos-delay="100"/>
 
 	</div>
 
 </section>
 
-<?php include("testimonials-section.php"); ?>
+<?php include $root . '/testimonials-section.php'; ?>
 
 
 
-<?php include("industries-section.php") ?>
+<?php include $root . '/industries-section.php' ?>
 
-<?php include("awards-section.php") ?>
+<?php include $root . '/awards-section.php' ?>
 
 <section class="faq">
 
@@ -1266,7 +1278,7 @@
 
 			<div class="col-lg-6 d-none d-lg-block" data-aos="fade-right" data-aos-delay="100"/>
 
-				<img src="assets/images/rnds-img.webp" loading="lazy" class="faq_img img-fluid" width="" height="" alt=""/>
+				<img src="/assets/images/rnds-img.webp" loading="lazy" class="faq_img img-fluid" width="" height="" alt=""/>
 
 			</div>
 
@@ -1489,11 +1501,11 @@
 
 </section>
 
-<?php include("cta-section.php") ?>
+<?php include $root . '/cta-section.php' ?>
 
-<?php include("contact-us-section.php"); ?>
+<?php include $root . '/contact-us-section.php'; ?>
 
-<?php include("footer.php"); ?>
+<?php include $root . '/footer.php'; ?>
 
 
 

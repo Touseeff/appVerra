@@ -28,31 +28,31 @@
 
 		<div class="awards_clm">
 
-			<img src="assets/images/awards_img1-sm.webp" loading="lazy" class="awards_img" width="178" height="160" alt=""/>
+			<img src="/assets/images/awards_img1-sm.webp" loading="lazy" class="awards_img" width="178" height="160" alt=""/>
 
 		</div>
 
 		<div class="awards_clm">
 
-			<img src="assets/images/awards_img2-sm.webp" loading="lazy" class="awards_img" width="178" height="155" alt=""/>
+			<img src="/assets/images/awards_img2-sm.webp" loading="lazy" class="awards_img" width="178" height="155" alt=""/>
 
 		</div>
 
 		<div class="awards_clm">
 
-			<img src="assets/images/awards_img3-sm.webp" loading="lazy" class="awards_img" width="134" height="175" alt=""/>
+			<img src="/assets/images/awards_img3-sm.webp" loading="lazy" class="awards_img" width="134" height="175" alt=""/>
 
 		</div>
 
 		<div class="awards_clm">
 
-			<img src="assets/images/awards_img4-sm.webp" loading="lazy" class="awards_img" width="178" height="161" alt=""/>
+			<img src="/assets/images/awards_img4-sm.webp" loading="lazy" class="awards_img" width="178" height="161" alt=""/>
 
 		</div>
 
 		<div class="awards_clm">
 
-			<img src="assets/images/awards_img5-sm.webp" loading="lazy" class="awards_img" width="178" height="163" alt=""/>
+			<img src="/assets/images/awards_img5-sm.webp" loading="lazy" class="awards_img" width="178" height="163" alt=""/>
 
 		</div>
 

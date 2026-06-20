@@ -84,13 +84,13 @@
 
 				<div class="d-flex gap-4">
 
-					<img src="assets/images/achievements1.webp" loading="lazy" class="achievements_img img-fluid" width="" alt="<?= $sitename ?>" />
+					<img src="/assets/images/achievements1.webp" loading="lazy" class="achievements_img img-fluid" width="" alt="<?= $sitename ?>" />
 
-					<img src="assets/images/achievements2.webp" loading="lazy" class="achievements_img img-fluid" width="" alt="<?= $sitename ?>" />
+					<img src="/assets/images/achievements2.webp" loading="lazy" class="achievements_img img-fluid" width="" alt="<?= $sitename ?>" />
 
-					<img src="assets/images/achievements3.webp" loading="lazy" class="achievements_img img-fluid" width="" alt="<?= $sitename ?>" />
+					<img src="/assets/images/achievements3.webp" loading="lazy" class="achievements_img img-fluid" width="" alt="<?= $sitename ?>" />
 
-					<img src="assets/images/achievements4.webp" loading="lazy" class="achievements_img img-fluid" width="" alt="<?= $sitename ?>" />
+					<img src="/assets/images/achievements4.webp" loading="lazy" class="achievements_img img-fluid" width="" alt="<?= $sitename ?>" />
 
 				</div>
 
@@ -111,7 +111,7 @@
 
                             <span class="checkmark d-flex align-items-center gap-2">
 
-                            	<img src="assets/images/tech-iccon1.svg" loading="lazy" class="technology_icon" width="" height="" alt="<?= $sitename ?>">
+                            	<img src="/assets/images/tech-iccon1.svg" loading="lazy" class="technology_icon" width="" height="" alt="<?= $sitename ?>">
 
                             	Unity Game Development
 
@@ -126,7 +126,7 @@
 
                             <span class="checkmark d-flex align-items-center gap-2">
 
-                            	<img src="assets/images/tech-iccon2.svg" loading="lazy" class="technology_icon" width="" height="" alt="<?= $sitename ?>">
+                            	<img src="/assets/images/tech-iccon2.svg" loading="lazy" class="technology_icon" width="" height="" alt="<?= $sitename ?>">
 
                             	React Native Development
 
@@ -140,7 +140,7 @@
 
                             <span class="checkmark d-flex align-items-center gap-2">
 
-                            	<img src="assets/images/tech-iccon3.svg" loading="lazy" class="technology_icon" width="" height="" alt="<?= $sitename ?>">
+                            	<img src="/assets/images/tech-iccon3.svg" loading="lazy" class="technology_icon" width="" height="" alt="<?= $sitename ?>">
 
                             	Flutter Development
 
@@ -154,7 +154,7 @@
 
                             <span class="checkmark d-flex align-items-center gap-2">
 
-                            	<img src="assets/images/tech-iccon4.svg" loading="lazy" class="technology_icon" width="" height="" alt="<?= $sitename ?>">
+                            	<img src="/assets/images/tech-iccon4.svg" loading="lazy" class="technology_icon" width="" height="" alt="<?= $sitename ?>">
 
                             	Full Stack Development
 
@@ -168,7 +168,7 @@
 
                             <span class="checkmark d-flex align-items-center gap-2">
 
-                            	<img src="assets/images/tech-iccon6.svg" loading="lazy" class="technology_icon" width="" height="" alt="<?= $sitename ?>">
+                            	<img src="/assets/images/tech-iccon6.svg" loading="lazy" class="technology_icon" width="" height="" alt="<?= $sitename ?>">
 
                             	Mobile App Marketing
 
@@ -182,7 +182,7 @@
 
                             <span class="checkmark d-flex align-items-center gap-2">
 
-                            	<img src="assets/images/tech-iccon7.svg" loading="lazy" class="technology_icon" width="" height="" alt="<?= $sitename ?>">
+                            	<img src="/assets/images/tech-iccon7.svg" loading="lazy" class="technology_icon" width="" height="" alt="<?= $sitename ?>">
 
                             	Any Ecommerce
 

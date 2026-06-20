@@ -143,8 +143,26 @@ function post_regenerate_sitemap(): void {
 
     $static_pages = [
         '/', '/about-us', '/contact-us', '/our-services', '/our-work', '/blogs',
-        '/flutter-app-development', '/react-native-developer', '/unity-game-development',
-        '/full-stack-development', '/mobile-app-marketing', '/ecommerce',
+        // Service pages — /services/ silo (Unity Game Development removed — no longer offered)
+        '/services/ios-app-development', '/services/android-app-development',
+        '/services/cross-platform-app-development', '/services/flutter-app-development',
+        '/services/react-native-app-development', '/services/web-app-development',
+        '/services/full-stack-development', '/services/mobile-app-marketing',
+        '/services/ecommerce-app-development',
+        // Industry pages
+        '/industries', '/industries/fintech-app-development',
+        '/industries/healthcare-app-development', '/industries/edtech-app-development',
+        // Keyword-gap landing pages
+        '/app-code-audit', '/take-over-app-project', '/rebuild-app-from-scratch',
+        '/post-seed-startup-development-agency', '/white-label-app-development-for-marketing-agencies',
+        '/boutique-fitness-studio-app-developer', '/multi-location-dental-practice-app',
+        '/flutter-development-agency-canada',
+        // Locations
+        '/locations',
+        '/locations/new-york-app-development', '/locations/los-angeles-app-development', '/locations/san-francisco-app-development',
+        '/locations/chicago-app-development', '/locations/austin-app-development', '/locations/miami-app-development',
+        '/locations/dallas-app-development', '/locations/seattle-app-development',
+        // Case studies + portfolio
         '/cage-case-study', '/reactosphere-case-study', '/toriino-case-study', '/yuno-case-study',
         '/personal-finance-and-budgeting-tool', '/meditation-and-mental-wellness-app',
         '/event-planning-and-ticketing-app',

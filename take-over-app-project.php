@@ -6,7 +6,15 @@
 
 <?php $og_image = "https://appverra.co/assets/images/logo.webp"; ?>
 
-<?php $schema_extra = '{
+<?php require_once __DIR__ . '/includes/schema_helpers.php'; ?>
+
+<?php $breadcrumbs = [
+    ['name' => 'Home',                 'url' => 'https://appverra.co/'],
+    ['name' => 'Services',             'url' => 'https://appverra.co/our-services'],
+    ['name' => 'Take Over App Project', 'url' => 'https://appverra.co/take-over-app-project'],
+]; ?>
+
+<?php $schema_extra = ['{
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "App Project Takeover and Rescue",
@@ -21,7 +29,7 @@
     {"@type": "Offer", "name": "Takeover + Continue", "price": "14997", "priceCurrency": "USD"},
     {"@type": "Offer", "name": "Full Rebuild", "price": "29997", "priceCurrency": "USD"}
   ]
-}'; ?>
+}', build_breadcrumb_schema($breadcrumbs)]; ?>
 
 <?php include("header.php"); ?>
 
@@ -39,7 +47,9 @@
 
 				</span>
 
-				<h1 class="heading70px m-0 light">
+				<?php include __DIR__ . '/breadcrumbs.php'; ?>
+
+					<h1 class="heading70px m-0 light">
 
 					<span class="revealUp"><span>Your Developer Left.</span></span> <br>
 

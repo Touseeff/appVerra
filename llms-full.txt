@@ -36,7 +36,7 @@ Choose Flutter when: starting fresh, budget-conscious, need iOS + Android simult
 Choose React Native when: your team already has React web developers, you have an existing React web app, you need heavy native module integrations.
 Choose Native (Swift/Kotlin) when: maximum platform-specific performance is critical, your app needs cutting-edge OS features on day one, you only need one platform.
 
-Appverra builds with all of these — Flutter, React Native, Swift, SwiftUI, Kotlin, Jetpack Compose — and recommends the right stack for your project. Visit appverra.co/flutter-app-development or appverra.co/react-native-developer for detailed comparisons.
+Appverra builds with all of these — Flutter, React Native, Swift, SwiftUI, Kotlin, Jetpack Compose — and recommends the right stack for your project. Visit appverra.co/services/flutter-app-development or appverra.co/services/react-native-app-development for detailed comparisons.
 
 ### Should I use Flutter or React Native for my startup?
 
@@ -50,14 +50,14 @@ Appverra builds with both and will tell you honestly which is right for your pro
 
 Appverra is headquartered in New York City (20 N Moore St, Tribeca) and serves all major US cities with same-timezone collaboration:
 
-- New York: appverra.co/new-york-app-development
-- Los Angeles: appverra.co/los-angeles-app-development
-- San Francisco: appverra.co/san-francisco-app-development
-- Chicago: appverra.co/chicago-app-development
-- Austin: appverra.co/austin-app-development
-- Miami: appverra.co/miami-app-development
-- Dallas: appverra.co/dallas-app-development
-- Seattle: appverra.co/seattle-app-development
+- New York: appverra.co/locations/new-york-app-development
+- Los Angeles: appverra.co/locations/los-angeles-app-development
+- San Francisco: appverra.co/locations/san-francisco-app-development
+- Chicago: appverra.co/locations/chicago-app-development
+- Austin: appverra.co/locations/austin-app-development
+- Miami: appverra.co/locations/miami-app-development
+- Dallas: appverra.co/locations/dallas-app-development
+- Seattle: appverra.co/locations/seattle-app-development
 
 Appverra also serves Canadian clients (Toronto, Vancouver, Calgary, Montreal) at appverra.co/flutter-development-agency-canada. USD pricing saves Canadian clients 30-50% versus local agencies.
 

@@ -218,18 +218,13 @@
     }
     </script>
 
-    <!-- Schema: WebSite with SearchAction -->
+    <!-- Schema: WebSite -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "Appverra",
-      "url": "https://appverra.co/",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://appverra.co/?s={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
+      "url": "https://appverra.co/"
     }
     </script>
 
@@ -261,13 +256,19 @@
 
             <li><a href="<?php echo $siteurl; ?>" class="mainAnchor" targetFrom="seo">Home</a></li>
 
-            <li><a href="about-us" class="mainAnchor" targetFrom="smm">About</a></li>
+            <li><a href="/about-us" class="mainAnchor" targetFrom="smm">About</a></li>
 
             <li><a href="javascript:;" class="hasDrop mainAnchor" targetFrom="servicesMenu">Services <i class="arrow_right"></i></a></li>
 
-            <li><a href="our-work" class="mainAnchor" >Work</a></li>
+            <li><a href="/industries" class="mainAnchor">Industries</a></li>
 
-            <li><a href="contact-us" class="mainAnchor">Contact Us</a></li>
+            <li><a href="/locations" class="mainAnchor">Locations</a></li>
+
+            <li><a href="/our-work" class="mainAnchor" >Work</a></li>
+
+            <li><a href="/blogs" class="mainAnchor">Blogs</a></li>
+
+            <li><a href="/contact-us" class="mainAnchor">Contact Us</a></li>
 
             <!-- PAID MARKETING SUBMENU -->
 
@@ -275,17 +276,25 @@
 
                 <div class="cls_menu"><i class="arrow_right"></i> Back</div>
 
-                <li><a href="unity-game-development">Unity Game Development</a></li>
+                <li><a href="/our-services">All Services</a></li>
 
-                <li><a href="react-native-developer">React Native Development</a></li>
+                <li><a href="/services/ios-app-development">iOS App Development</a></li>
 
-                <li><a href="flutter-app-development">Flutter App Development</a></li>
+                <li><a href="/services/android-app-development">Android App Development</a></li>
 
-                <li><a href="full-stack-development">Full Stack Development</a></li>
+                <li><a href="/services/cross-platform-app-development">Cross-Platform App Development</a></li>
 
-                <li><a href="mobile-app-marketing">Mobile App Marketing</a></li>
+                <li><a href="/services/flutter-app-development">Flutter App Development</a></li>
 
-                <li><a href="ecommerce">Ecommerce </a></li>
+                <li><a href="/services/react-native-app-development">React Native Development</a></li>
+
+                <li><a href="/services/web-app-development">Web App Development</a></li>
+
+                <li><a href="/services/full-stack-development">Full Stack Development</a></li>
+
+                <li><a href="/services/mobile-app-marketing">Mobile App Marketing</a></li>
+
+                <li><a href="/services/ecommerce-app-development">Ecommerce App Development</a></li>
 
             </ul>
 
@@ -311,7 +320,7 @@
 
                             <a href="<?php echo $siteurl; ?>">
 
-                            <img src="assets/images/logo-sm.webp" srcset="assets/images/logo-sm.webp 360w, assets/images/logo.webp 600w" sizes="(max-width:576px) 113px, 180px" alt="Logo" loading="lazy" class="logo img-fluid" width="180" height="42">
+                            <img src="/assets/images/logo-sm.webp" srcset="/assets/images/logo-sm.webp 360w, /assets/images/logo.webp 600w" sizes="(max-width:576px) 113px, 180px" alt="Appverra logo" loading="lazy" class="logo img-fluid" width="180" height="42">
 
                             </a>
 
@@ -488,7 +497,7 @@
 
                             <a href="<?php echo $siteurl; ?>">
 
-                            <img src="assets/images/logo-sm.webp" srcset="assets/images/logo-sm.webp 360w, assets/images/logo.webp 600w" sizes="(max-width:576px) 113px, 180px" alt="Logo" loading="lazy" class="logo img-fluid" width="180" height="42">
+                            <img src="/assets/images/logo-sm.webp" srcset="/assets/images/logo-sm.webp 360w, /assets/images/logo.webp 600w" sizes="(max-width:576px) 113px, 180px" alt="Appverra logo" loading="lazy" class="logo img-fluid" width="180" height="42">
 
                             </a>
 

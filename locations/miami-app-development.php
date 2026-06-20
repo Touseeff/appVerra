@@ -1,3 +1,13 @@
+<?php $root = dirname(__DIR__); ?>
+<?php
+require_once $root . '/includes/schema_helpers.php';
+$canonical_override = "https://appverra.co/locations/miami-app-development";
+$breadcrumbs = [
+    ['name' => 'Home',      'url' => 'https://appverra.co/'],
+    ['name' => 'Locations', 'url' => 'https://appverra.co/locations'],
+    ['name' => 'Miami App Development', 'url' => 'https://appverra.co/locations/miami-app-development'],
+];
+?>
 <?php $meta_title = "Mobile App Development Company in Miami | Appverra"; ?>
 
 <?php $meta_discription = "Miami mobile app development company. We build iOS and Android apps for Miami startups, fintech companies, real estate firms, and Latin American market entries. Flutter, React Native, Swift, Kotlin. 150+ apps shipped. Fixed-bid from $7,997."; ?>
@@ -13,7 +23,7 @@
     "name": "Mobile App Development in Miami",
     "serviceType": "Mobile Application Development",
     "provider": {"@type": "Organization", "name": "Appverra", "url": "https://appverra.co/"},
-    "url": "https://appverra.co/miami-app-development",
+    "url": "https://appverra.co/locations/miami-app-development",
     "description": "Appverra builds iOS and Android apps for Miami startups, fintech companies, real estate firms, and businesses entering the Latin American market. Flutter, React Native, Swift, Kotlin. 150+ apps shipped for 700+ customers. Fixed-bid pricing from $7,997.",
     "image": "https://appverra.co/assets/images/logo.webp",
     "areaServed": {"@type": "City", "name": "Miami", "containedInPlace": {"@type": "State", "name": "Florida"}},
@@ -25,7 +35,8 @@
   }
 ]'; ?>
 
-<?php include("header.php"); ?>
+<?php $schema_extra = is_array($schema_extra) ? $schema_extra : [$schema_extra]; $schema_extra[] = build_breadcrumb_schema($breadcrumbs); ?>
+<?php include $root . '/header.php'; ?>
 
 <section class="hero_banner mainBanner innerBanner serviceBanner">
 
@@ -40,6 +51,8 @@
 					<span class="heading26px light">Miami, Florida</span>
 
 				</span>
+
+				<?php include $root . '/breadcrumbs.php'; ?>
 
 				<h1 class="heading70px m-0 light">
 
@@ -301,8 +314,8 @@
 }
 </script>
 
-<?php include('cta-section.php'); ?>
+<?php include $root . '/cta-section.php'; ?>
 
-<?php include('contact-us-section.php'); ?>
+<?php include $root . '/contact-us-section.php'; ?>
 
-<?php include('footer.php'); ?>
+<?php include $root . '/footer.php'; ?>

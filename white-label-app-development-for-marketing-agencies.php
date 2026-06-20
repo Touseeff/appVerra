@@ -6,7 +6,15 @@
 
 <?php $og_image = "https://appverra.co/assets/images/logo.webp"; ?>
 
-<?php $schema_extra = '{
+<?php require_once __DIR__ . '/includes/schema_helpers.php'; ?>
+
+<?php $breadcrumbs = [
+    ['name' => 'Home',                        'url' => 'https://appverra.co/'],
+    ['name' => 'Services',                    'url' => 'https://appverra.co/our-services'],
+    ['name' => 'White-Label App Development', 'url' => 'https://appverra.co/white-label-app-development-for-marketing-agencies'],
+]; ?>
+
+<?php $schema_extra = ['{
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "White-Label App Development for Marketing Agencies",
@@ -23,7 +31,7 @@
     {"@type": "Offer", "name": "White-Label Launch", "price": "14997", "priceCurrency": "USD"},
     {"@type": "Offer", "name": "White-Label Growth", "price": "29997", "priceCurrency": "USD"}
   ]
-}'; ?>
+}', build_breadcrumb_schema($breadcrumbs)]; ?>
 
 <?php include("header.php"); ?>
 
@@ -41,7 +49,9 @@
 
 				</span>
 
-				<h1 class="heading70px m-0 light">
+				<?php include __DIR__ . '/breadcrumbs.php'; ?>
+
+					<h1 class="heading70px m-0 light">
 
 					<span class="revealUp"><span>White-Label</span></span> <br>
 

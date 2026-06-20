@@ -6,7 +6,15 @@
 
 <?php $og_image = "https://appverra.co/assets/images/logo.webp"; ?>
 
-<?php $schema_extra = '{
+<?php require_once __DIR__ . '/includes/schema_helpers.php'; ?>
+
+<?php $breadcrumbs = [
+    ['name' => 'Home',                    'url' => 'https://appverra.co/'],
+    ['name' => 'Services',                'url' => 'https://appverra.co/our-services'],
+    ['name' => 'Rebuild App From Scratch', 'url' => 'https://appverra.co/rebuild-app-from-scratch'],
+]; ?>
+
+<?php $schema_extra = ['{
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Mobile App Rebuild Service",
@@ -22,7 +30,7 @@
     {"@type": "Offer", "name": "Rebuild (Growth tier)", "price": "29997", "priceCurrency": "USD"},
     {"@type": "Offer", "name": "Rebuild (Scale tier)", "price": "59997", "priceCurrency": "USD"}
   ]
-}'; ?>
+}', build_breadcrumb_schema($breadcrumbs)]; ?>
 
 <?php include("header.php"); ?>
 
@@ -40,7 +48,9 @@
 
 				</span>
 
-				<h1 class="heading70px m-0 light">
+				<?php include __DIR__ . '/breadcrumbs.php'; ?>
+
+					<h1 class="heading70px m-0 light">
 
 					<span class="revealUp"><span>Stop Patching.</span></span> <br>
 

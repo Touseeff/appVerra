@@ -26,11 +26,11 @@
 <div class="overlay-bg-new-popup"></div>
 <div class="popupform-main-new-popup">
     <div class="pop-form-new-popp ta-center-new-pop position-relative col-lg-5 col-md-7">
-        <!-- <img src="assets/images/pop-form-bg.webp" loading="lazy" class="popup_bg" alt="" loading="lazy" /> -->
+        <!-- <img src="/assets/images/pop-form-bg.webp" loading="lazy" class="popup_bg" alt="" loading="lazy" /> -->
         <a href="javascript:;" class="close-btn ta-center"><span>+</span></a>
         <form action="/mail" method="POST" class="position-relative">
             <div class="titleWrap text-center">
-                <img src="assets/images/popup-img3.webp" loading="lazy" class="popup_logo" alt="" loading="lazy" width="60" height="34" />
+                <img src="/assets/images/popup-img3.webp" loading="lazy" class="popup_logo" alt="" loading="lazy" width="60" height="34" />
             </div>
             <div class="row">
                 <div class="col-6 position-relative">
@@ -58,44 +58,37 @@
                     <h6 class="heading20px my-1 fw_600 dark">Select Services</h6>
                     <div class="checkbox_wrapper mt-3">
                         <label class="custm_checkBox">
-                            <input type="checkbox" name="service[]" value="Unity Game Development" checked="">
+                            <input type="checkbox" name="service[]" value="React Native Development" checked="">
                             <span class="checkmark d-flex align-items-center gap-2">
-                                <img src="assets/images/tech-iccon1.svg" loading="lazy" class="technology_icon" width="" height="" alt="">
-                                Unity Game Development
-                            </span>
-                        </label>
-                        <label class="custm_checkBox">
-                            <input type="checkbox" name="service[]" value="React Native Development">
-                            <span class="checkmark d-flex align-items-center gap-2">
-                                <img src="assets/images/tech-iccon2.svg" loading="lazy" class="technology_icon" width="" height="" alt="">
+                                <img src="/assets/images/tech-iccon2.svg" loading="lazy" class="technology_icon" width="" height="" alt="">
                                 React Native Development
                             </span>
                         </label>
                         <label class="custm_checkBox">
                             <input type="checkbox" name="service[]" value="Flutter Development">
                             <span class="checkmark d-flex align-items-center gap-2">
-                                <img src="assets/images/tech-iccon3.svg" loading="lazy" class="technology_icon" width="" height="" alt="">
+                                <img src="/assets/images/tech-iccon3.svg" loading="lazy" class="technology_icon" width="" height="" alt="">
                                 Flutter Development
                             </span>
                         </label>
                         <label class="custm_checkBox">
                             <input type="checkbox" name="service[]" value="Full Stack Development">
                             <span class="checkmark d-flex align-items-center gap-2">
-                                <img src="assets/images/tech-iccon4.svg" loading="lazy" class="technology_icon" width="" height="" alt="">
+                                <img src="/assets/images/tech-iccon4.svg" loading="lazy" class="technology_icon" width="" height="" alt="">
                                 Full Stack Development
                             </span>
                         </label>
                         <label class="custm_checkBox">
                             <input type="checkbox" name="service[]" value="Mobile App Marketing">
                             <span class="checkmark d-flex align-items-center gap-2">
-                                <img src="assets/images/tech-iccon6.svg" loading="lazy" class="technology_icon" width="" height="" alt="">
+                                <img src="/assets/images/tech-iccon6.svg" loading="lazy" class="technology_icon" width="" height="" alt="">
                                 Mobile App Marketing
                             </span>
                         </label>
                         <label class="custm_checkBox">
                             <input type="checkbox" name="service[]" value="Any Ecommerce">
                             <span class="checkmark d-flex align-items-center gap-2">
-                                <img src="assets/images/tech-iccon7.svg" loading="lazy" class="technology_icon" width="" height="" alt="">
+                                <img src="/assets/images/tech-iccon7.svg" loading="lazy" class="technology_icon" width="" height="" alt="">
                                 Any Ecommerce
                             </span>
                         </label>

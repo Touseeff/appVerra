@@ -6,7 +6,16 @@
 
 <?php $og_image = "https://appverra.co/assets/images/logo.webp"; ?>
 
-<?php $schema_extra = '{
+<?php require_once __DIR__ . '/includes/schema_helpers.php'; ?>
+
+<?php $breadcrumbs = [
+    ['name' => 'Home', 'url' => 'https://appverra.co/'],
+    ['name' => 'Work', 'url' => 'https://appverra.co/our-work'],
+    ['name' => 'Cage', 'url' => 'https://appverra.co/cage-case-study'],
+];
+$breadcrumb_align = 'center'; ?>
+
+<?php $schema_extra = ['{
   "@context": "https://schema.org",
   "@type": ["Article", "CreativeWork"],
   "headline": "Cage — Mobile App Case Study",
@@ -17,7 +26,7 @@
   "image": "https://appverra.co/assets/images/logo.webp",
   "about": {"@type": "SoftwareApplication", "name": "Cage", "applicationCategory": "MobileApplication"},
   "inLanguage": "en-US"
-}'; ?>
+}', build_breadcrumb_schema($breadcrumbs)]; ?>
 
 <?php include("header.php"); ?>
 
@@ -28,6 +37,8 @@
     <div class="container">
 
 
+
+        <?php include __DIR__ . '/breadcrumbs.php'; ?>
 
         <h1 class="heading55px light text-center">
 

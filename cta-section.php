@@ -48,7 +48,7 @@
 
 			<div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
 
-				<img src="assets/images/phone.webp" loading="lazy" class=" img-fluid" width="" height="" alt=""/>
+				<img src="/assets/images/phone.webp" loading="lazy" class=" img-fluid" width="" height="" alt=""/>
 
 			</div>
 

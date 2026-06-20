@@ -6,7 +6,15 @@
 
 <?php $og_image = "https://appverra.co/assets/images/logo.webp"; ?>
 
-<?php $schema_extra = '{
+<?php require_once __DIR__ . '/includes/schema_helpers.php'; ?>
+
+<?php $breadcrumbs = [
+    ['name' => 'Home',           'url' => 'https://appverra.co/'],
+    ['name' => 'Services',       'url' => 'https://appverra.co/our-services'],
+    ['name' => 'App Code Audit', 'url' => 'https://appverra.co/app-code-audit'],
+]; ?>
+
+<?php $schema_extra = ['{
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Mobile App Code Audit",
@@ -21,7 +29,7 @@
     {"@type": "Offer", "name": "Audit + Fix Roadmap", "price": "4997", "priceCurrency": "USD"},
     {"@type": "Offer", "name": "Full Rescue (audit + rebuild)", "price": "14997", "priceCurrency": "USD"}
   ]
-}'; ?>
+}', build_breadcrumb_schema($breadcrumbs)]; ?>
 
 <?php include("header.php"); ?>
 
@@ -39,7 +47,9 @@
 
 				</span>
 
-				<h1 class="heading70px m-0 light">
+				<?php include __DIR__ . '/breadcrumbs.php'; ?>
+
+					<h1 class="heading70px m-0 light">
 
 					<span class="revealUp"><span>Your App Has Problems.</span></span> <br>
 

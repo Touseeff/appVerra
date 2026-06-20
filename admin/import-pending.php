@@ -100,12 +100,18 @@ echo flash_render();
               <?php endif ?>
             </td>
             <td>
-              <form method="post" style="display:inline;">
-                <?= csrf_field() ?>
-                <input type="hidden" name="action" value="import">
-                <input type="hidden" name="slug" value="<?= htmlspecialchars($p['slug']) ?>">
-                <button type="submit" class="btn-primary">Import</button>
-              </form>
+              <?php if ($p['already_in_db']): ?>
+                <span style="color:#dc2626;font-weight:600;" title="A post with this slug already exists. Importing would create a duplicate.">
+                  ⚠ Already imported (#<?= (int)$p['existing_id'] ?><?= $p['existing_status'] ? ', ' . htmlspecialchars($p['existing_status']) : '' ?>)
+                </span>
+              <?php else: ?>
+                <form method="post" style="display:inline;">
+                  <?= csrf_field() ?>
+                  <input type="hidden" name="action" value="import">
+                  <input type="hidden" name="slug" value="<?= htmlspecialchars($p['slug']) ?>">
+                  <button type="submit" class="btn-primary">Import</button>
+                </form>
+              <?php endif ?>
               <form method="post" style="display:inline;"
                     onsubmit="return confirm('Delete this pending draft permanently? The markdown file and image will be removed.');">
                 <?= csrf_field() ?>
@@ -141,14 +147,20 @@ function list_pending_drafts(string $dir): array {
         $img_path = $dir . '/images/' . $slug . '.jpg';
         $img_path_alt = $dir . '/images/' . $slug . '.webp';
         $img_size = is_file($img_path) ? filesize($img_path) : (is_file($img_path_alt) ? filesize($img_path_alt) : 0);
+        // Flag drafts whose slug already exists in posts so the admin can see the
+        // duplicate before clicking Import (the import itself also hard-refuses).
+        $existing = db_one('SELECT id, status FROM posts WHERE slug = ? LIMIT 1', 's', [slugify($slug)]);
         $rows[] = [
-            'slug'           => $slug,
-            'title'          => $parsed['frontmatter']['title'] ?? $slug,
-            'service_tag'    => $parsed['frontmatter']['service_tag'] ?? '',
-            'word_count'     => $parsed['frontmatter']['word_count'] ?? null,
-            'generated_at'   => $parsed['frontmatter']['generated_at'] ?? '',
-            'has_image'      => $img_size > 0,
-            'image_size_kb'  => (int)round($img_size / 1024),
+            'slug'            => $slug,
+            'title'           => $parsed['frontmatter']['title'] ?? $slug,
+            'service_tag'     => $parsed['frontmatter']['service_tag'] ?? '',
+            'word_count'      => $parsed['frontmatter']['word_count'] ?? null,
+            'generated_at'    => $parsed['frontmatter']['generated_at'] ?? '',
+            'has_image'       => $img_size > 0,
+            'image_size_kb'   => (int)round($img_size / 1024),
+            'already_in_db'   => (bool)$existing,
+            'existing_id'     => $existing['id'] ?? null,
+            'existing_status' => $existing['status'] ?? '',
         ];
     }
     return $rows;
@@ -235,9 +247,24 @@ function import_pending_post(
         return ['ok' => false, 'message' => 'Validation: ' . implode(' · ', $errors)];
     }
 
-    // Slug uniqueness — if there's a collision (existing post with same slug),
-    // slug_unique() appends -2, -3, etc.
-    $final_slug = slug_unique(slugify((string)($fm['slug'] ?? $slug)));
+    // Duplicate guard: a slug that already exists almost always means this draft
+    // was imported before. Refuse rather than silently creating a "-2" duplicate
+    // post. (Mirrors the same check api-import.php makes for the cron path.)
+    $desired_slug = slugify((string)($fm['slug'] ?? $slug));
+    $existing = db_one('SELECT id, status FROM posts WHERE slug = ? LIMIT 1', 's', [$desired_slug]);
+    if ($existing) {
+        return [
+            'ok'      => false,
+            'message' => "Already imported — a post with slug \"{$desired_slug}\" exists "
+                . "(post #{$existing['id']}, status: {$existing['status']}). "
+                . "Edit it under Posts, or Delete this pending draft. To import as a "
+                . "separate post anyway, change the slug in the draft's frontmatter.",
+        ];
+    }
+
+    // Defensive backstop only — the guard above already rejects real duplicates;
+    // this just resolves a same-instant race without crashing on the UNIQUE key.
+    $final_slug = slug_unique($desired_slug);
 
     $post_id = db_exec(
         'INSERT INTO posts
