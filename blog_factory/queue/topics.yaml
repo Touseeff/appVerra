@@ -35,12 +35,15 @@ react-native:
   - "7 Mistakes First-Time Founders Make Hiring Their Mobile App Developer"
   - "How to Brief a Mobile App Agency: A Founder's One-Page Cheatsheet"
 
-unity:
-  # Tier 1 — cost & vertical
-  - "Custom Mobile Game Development Cost in 2026: Indie & Studio Pricing Guide"
-  - "Branded Mobile Game for Marketing: Cost, Timeline, and ROI for Brands in 2026"
+# Re-angled 2026-06-24: Unity game-dev service was discontinued (site restructure a62624f).
+# These 3 topics now target gamification INSIDE mobile apps — a live AppVerra capability —
+# and link to real /services/ pages instead of the dead /unity-game-development page.
+gamification:
+  # Tier 1 — cost & ROI
+  - "How Much Does It Cost to Add Gamification to a Mobile App in 2026?"
+  - "Gamified Marketing Apps: Cost, Timeline, and ROI for Brands in 2026"
   # Tier 2 — decision
-  - "Custom Unity Game vs White-Label Game Engine: A Decision Framework for Brands"
+  - "Custom Gamified App vs White-Label Gamification Platform: A Decision Framework for Brands"
 
 full-stack:
   # Tier 1 — universal
