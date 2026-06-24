@@ -6,13 +6,13 @@ meta_title: "Mobile App Development Cost in 2026: US Market Breakdown"
 meta_description: "Mobile app development cost in the US ranges from $30K to $500K+ in 2026. This breakdown uses BLS, Clutch, and Stack Overflow data to explain every tier."
 og_image: /assets/images/blog/mobile-app-development-cost-2026.jpg
 featured_image: /assets/images/blog/mobile-app-development-cost-2026.jpg
-featured_image_alt: "Developer holding a mouse and smartphone while working at a desk on a MacBook Pro"
+featured_image_alt: "Group of colleagues working together on laptops around a shared office table"
 author_name: "AppVerra Editorial"
 author_url: "https://appverra.co/about-us"
 canonical_url: https://appverra.co/mobile-app-development-cost-2026
 service_tag: full-stack
-unsplash_attribution: "Photo by Zan Lazarevic on Unsplash"
-unsplash_photographer_url: "https://unsplash.com/@zanlazarevic"
+unsplash_attribution: "Photo by Annie Spratt on Unsplash"
+unsplash_photographer_url: "https://unsplash.com/@anniespratt"
 image_source: unsplash
 word_count: 2350
 generated_at: 2026-06-23T23:36:49Z
