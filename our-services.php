@@ -1,6 +1,6 @@
-﻿<?php $meta_title = "Mobile App Development Services for Startups | Appverra"; ?>
+﻿<?php $meta_title = "Mobile App Development Services for Startups & SMBs | Appverra"; ?>
 
-<?php $meta_discription = "Flutter, React Native, and full-stack app development. 150+ apps shipped for 700+ customers. 6-week MVPs. Pricing $1,997 Discovery Sprint to $99,997+ Enterprise."; ?>
+<?php $meta_discription = "Flutter, React Native & full-stack app development. 150+ apps shipped, 6-week MVPs, fixed-bid pricing from $1,997 to $99,997+. Book a Discovery Sprint."; ?>
 
 <?php $page_class = "services-page"; ?>
 

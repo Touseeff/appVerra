@@ -3,7 +3,7 @@
 
 <?php
 $meta_title       = "iOS App Development — Native Swift Apps That Ship | Appverra";
-$meta_discription = "Native iOS app development in Swift & SwiftUI from a founder-led agency. 150+ apps shipped, millions of downloads. We build for iPhone & iPad — and tell you honestly when cross-platform ships faster. From $7,997.";
+$meta_discription = "Native iOS apps in Swift & SwiftUI from a founder-led agency. 150+ apps shipped, millions of downloads. We build for iPhone & iPad. From $7,997.";
 $page_class       = "iosAppDevelopment-page testimonial_light";
 $og_image         = "https://appverra.co/assets/images/logo.webp";
 $canonical_override = "https://appverra.co/services/ios-app-development";

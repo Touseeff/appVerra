@@ -3,7 +3,7 @@
 
 <?php
 $meta_title       = "Fintech App Development — Payments, Wallets & Lending Apps | Appverra";
-$meta_discription = "Fintech app development from a founder-led agency. We build payment, wallet, lending, and personal-finance apps on top of licensed providers like Stripe and Plaid — secure, compliant-by-integration, shipped in weeks. 150+ apps shipped. From $7,997.";
+$meta_discription = "Fintech app development from a founder-led agency. We build payment, wallet, lending & personal-finance apps on Stripe, Plaid & licensed rails. From $7,997.";
 $page_class       = "fintechAppDevelopment-page testimonial_light";
 $og_image         = "https://appverra.co/assets/images/logo.webp";
 $canonical_override = "https://appverra.co/industries/fintech-app-development";

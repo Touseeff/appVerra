@@ -1,6 +1,6 @@
 ﻿<?php $meta_title = "About Appverra — Founder-Led Flutter App Development Agency"; ?>
 
-<?php $meta_discription = "Three co-founders. 150+ apps shipped for 700+ customers. Apps with millions of downloads. Live US ride-booking marketplace in production. Apps that ship. Founders who answer."; ?>
+<?php $meta_discription = "Three co-founders who write the code, no account managers, no outsourcing. 150+ apps shipped, millions of downloads, incl. a live US ride-booking marketplace."; ?>
 
 <?php $page_class = "about_us-page"; ?>
 
@@ -12,7 +12,7 @@
 
 	<marquee behavior="scroll" direction="left" scrollamount="10" class="pageTitle"> ABOUT US ABOUT US ABOUT US ABOUT US ABOUT US ABOUT US ABOUT US ABOUT US ABOUT US ABOUT US ABOUT US ABOUT US ABOUT US ABOUT US ABOUT US ABOUT US </marquee>
 
-	<img src="assets/images/about-banner-img.webp" loading="lazy" class="innerBanner_img d-none d-lg-block" width="" alt="<?= $sitename ?>" data-aos="fade-up" data-aos-delay="100"/>
+	<img src="assets/images/about-banner-img.webp" loading="lazy" class="innerBanner_img d-none d-lg-block" width="981" height="918" alt="<?= $sitename ?>" data-aos="fade-up" data-aos-delay="100"/>
 
 	<div class="container position-relative">		
 

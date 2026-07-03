@@ -2,7 +2,7 @@
 require_once __DIR__ . '/includes/db.php';
 
 $meta_title       = "Appverra Blogs — Insights on App Development & Marketing";
-$meta_discription = "Stay updated with Appverra: expert blog posts on React Native, Flutter, game dev, mobile marketing & full-stack tips to inspire your digital journey";
+$meta_discription = "Practical guides on React Native, Flutter, mobile app marketing & full-stack development from AppVerra's founder-led team.";
 $page_class       = "contact_us-page";
 $og_image         = "https://appverra.co/assets/images/blog-img.webp";
 include("header.php");

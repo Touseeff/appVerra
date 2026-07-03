@@ -10,7 +10,7 @@ $breadcrumbs = [
 ?>
 <?php $meta_title = "Mobile App Development Company in New York City | Appverra"; ?>
 
-<?php $meta_discription = "New York City mobile app development company. We build iOS and Android apps for NYC startups and businesses. Flutter, React Native, Swift, Kotlin. 150+ apps shipped. Fixed-bid pricing from $7,997. HQ: 20 N Moore St, Tribeca."; ?>
+<?php $meta_discription = "New York City mobile app development company. iOS & Android for NYC startups: Flutter, React Native, Swift, Kotlin. 150+ apps shipped. From $7,997."; ?>
 
 <?php $page_class = "nycAppDev-page testimonial_light"; ?>
 
