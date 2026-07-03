@@ -238,6 +238,44 @@ $breadcrumbs = [
 
 </section>
 
+<section class="who_we_are component_sec py-5" style="background:#f6f7f9;">
+
+	<div class="container">
+
+		<div class="row align-items-center">
+
+			<div class="col-lg-10 mx-auto text-center mb-5">
+
+				<h2 class="heading55px dark"><span class="revealUp"><span>What We Build for <span class="secondColor">Miami Businesses</span></span></span></h2>
+
+				<p data-aos="fade-up" data-aos-delay="100">Miami's economy runs on fintech, real estate, hospitality, and trade with Latin America &mdash; and the best Miami apps are built bilingual and cross-border from day one. Here is what we build most for Miami founders:</p>
+
+			</div>
+
+		</div>
+
+		<div class="row g-4">
+
+			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100"><div class="features_clm bg-white p-4 h-100" style="border-radius: 12px;"><h3 class="heading26px dark mb-3">Fintech &amp; Crypto Apps</h3><p class="dark m-0">Payments, wallets, neobank, and crypto on-ramp apps built on licensed providers &mdash; Miami's single biggest app category. See our <a href="/industries/fintech-app-development" style="color: var(--secondColor);">fintech app development</a>.</p></div></div>
+
+			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200"><div class="features_clm bg-white p-4 h-100" style="border-radius: 12px;"><h3 class="heading26px dark mb-3">Cross-Border &amp; Bilingual</h3><p class="dark m-0">English and Spanish apps with US&ndash;Latin America payment rails and remittance flows, built for the gateway city between two markets.</p></div></div>
+
+			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300"><div class="features_clm bg-white p-4 h-100" style="border-radius: 12px;"><h3 class="heading26px dark mb-3">Real Estate &amp; PropTech</h3><p class="dark m-0">Listings, virtual tours, agent CRMs, and closing workflows for one of the hottest property markets in the country.</p></div></div>
+
+			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400"><div class="features_clm bg-white p-4 h-100" style="border-radius: 12px;"><h3 class="heading26px dark mb-3">Hospitality &amp; Tourism</h3><p class="dark m-0">Hotel, restaurant, nightlife, and experience-booking apps for a tourism-driven economy that lives on mobile.</p></div></div>
+
+			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500"><div class="features_clm bg-white p-4 h-100" style="border-radius: 12px;"><h3 class="heading26px dark mb-3">Health &amp; Wellness</h3><p class="dark m-0">Concierge medicine, med-spa, and wellness-booking apps &mdash; non-PHI by design. See our <a href="/industries/healthcare-app-development" style="color: var(--secondColor);">healthcare app development</a>.</p></div></div>
+
+			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600"><div class="features_clm bg-white p-4 h-100" style="border-radius: 12px;"><h3 class="heading26px dark mb-3">Trade &amp; Logistics</h3><p class="dark m-0">Shipping, customs, and cross-border logistics apps built around PortMiami and the Americas trade corridor.</p></div></div>
+
+		</div>
+
+		<div class="row mt-4"><div class="col-lg-10 mx-auto text-center"><p data-aos="fade-up">Most Miami apps ship to iPhone and Android from one codebase &mdash; see our <a href="/services/cross-platform-app-development" style="color: var(--secondColor);">cross-platform</a> and <a href="/services/flutter-app-development" style="color: var(--secondColor);">Flutter app development</a>. Need the backend and an admin dashboard too? Our <a href="/services/full-stack-development" style="color: var(--secondColor);">full-stack team</a> builds the whole system.</p></div></div>
+
+	</div>
+
+</section>
+
 <section class="who_we_are faq_section py-5">
 
 	<div class="container">

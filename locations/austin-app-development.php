@@ -238,6 +238,44 @@ $breadcrumbs = [
 
 </section>
 
+<section class="who_we_are component_sec py-5" style="background:#f6f7f9;">
+
+	<div class="container">
+
+		<div class="row align-items-center">
+
+			<div class="col-lg-10 mx-auto text-center mb-5">
+
+				<h2 class="heading55px dark"><span class="revealUp"><span>What We Build for <span class="secondColor">Austin Companies</span></span></span></h2>
+
+				<p data-aos="fade-up" data-aos-delay="100">Austin's mix is SaaS, consumer and creator products, live events, and a fast-growing fintech and climate-tech scene. Beyond the startup playbook above, here is what we build most for Austin companies:</p>
+
+			</div>
+
+		</div>
+
+		<div class="row g-4">
+
+			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100"><div class="features_clm bg-white p-4 h-100" style="border-radius: 12px;"><h3 class="heading26px dark mb-3">B2B SaaS Companion Apps</h3><p class="dark m-0">The mobile layer for Austin's SaaS-heavy ecosystem &mdash; synced with your existing API, no backend rewrite required.</p></div></div>
+
+			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200"><div class="features_clm bg-white p-4 h-100" style="border-radius: 12px;"><h3 class="heading26px dark mb-3">Live Events &amp; Music</h3><p class="dark m-0">Ticketing, venue, and fan-engagement apps for the live music capital and its festival economy.</p></div></div>
+
+			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300"><div class="features_clm bg-white p-4 h-100" style="border-radius: 12px;"><h3 class="heading26px dark mb-3">Consumer &amp; Creator</h3><p class="dark m-0">Social, creator-economy, and direct-to-consumer apps built to scale from launch day.</p></div></div>
+
+			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400"><div class="features_clm bg-white p-4 h-100" style="border-radius: 12px;"><h3 class="heading26px dark mb-3">Fintech &amp; Payments</h3><p class="dark m-0">Payments, wallets, and finance apps for Austin's growing fintech scene. See our <a href="/industries/fintech-app-development" style="color: var(--secondColor);">fintech app development</a>.</p></div></div>
+
+			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500"><div class="features_clm bg-white p-4 h-100" style="border-radius: 12px;"><h3 class="heading26px dark mb-3">Climate &amp; Energy Tech</h3><p class="dark m-0">Apps for Austin's clean-energy, grid, and climate-tech startups &mdash; data-heavy, reliable, and built to scale.</p></div></div>
+
+			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600"><div class="features_clm bg-white p-4 h-100" style="border-radius: 12px;"><h3 class="heading26px dark mb-3">EdTech</h3><p class="dark m-0">Learning and training apps, fueled by UT Austin and a strong local edtech scene. See our <a href="/industries/edtech-app-development" style="color: var(--secondColor);">edtech app development</a>.</p></div></div>
+
+		</div>
+
+		<div class="row mt-4"><div class="col-lg-10 mx-auto text-center"><p data-aos="fade-up">We build Austin apps on one codebase for iPhone and Android &mdash; see our <a href="/services/cross-platform-app-development" style="color: var(--secondColor);">cross-platform</a> and <a href="/services/flutter-app-development" style="color: var(--secondColor);">Flutter app development</a> &mdash; with the API and admin built by our <a href="/services/full-stack-development" style="color: var(--secondColor);">full-stack team</a>.</p></div></div>
+
+	</div>
+
+</section>
+
 <section class="who_we_are faq_section py-5">
 
 	<div class="container">

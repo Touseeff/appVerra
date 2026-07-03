@@ -238,6 +238,44 @@ $breadcrumbs = [
 
 </section>
 
+<section class="who_we_are component_sec py-5" style="background:#f6f7f9;">
+
+	<div class="container">
+
+		<div class="row align-items-center">
+
+			<div class="col-lg-10 mx-auto text-center mb-5">
+
+				<h2 class="heading55px dark"><span class="revealUp"><span>What We Build for <span class="secondColor">DFW Businesses</span></span></span></h2>
+
+				<p data-aos="fade-up" data-aos-delay="100">Dallas-Fort Worth is enterprise country &mdash; 24 Fortune 500 headquarters, a major air-cargo and logistics hub, and fast-growing healthcare and real estate sectors. Here is what we build most for DFW businesses:</p>
+
+			</div>
+
+		</div>
+
+		<div class="row g-4">
+
+			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100"><div class="features_clm bg-white p-4 h-100" style="border-radius: 12px;"><h3 class="heading26px dark mb-3">Enterprise &amp; Field Tools</h3><p class="dark m-0">Field-service, workforce, inspection, and B2B apps for DFW's enterprise base &mdash; built to integrate with the systems you already run.</p></div></div>
+
+			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200"><div class="features_clm bg-white p-4 h-100" style="border-radius: 12px;"><h3 class="heading26px dark mb-3">Healthcare &amp; Patient Engagement</h3><p class="dark m-0">Scheduling, patient, and wellness apps for the metroplex's large healthcare sector &mdash; non-PHI by design. See our <a href="/industries/healthcare-app-development" style="color: var(--secondColor);">healthcare app development</a>.</p></div></div>
+
+			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300"><div class="features_clm bg-white p-4 h-100" style="border-radius: 12px;"><h3 class="heading26px dark mb-3">Logistics &amp; Transportation</h3><p class="dark m-0">Fleet, driver, delivery, and supply-chain apps for one of the nation's biggest logistics and air-cargo hubs at DFW.</p></div></div>
+
+			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400"><div class="features_clm bg-white p-4 h-100" style="border-radius: 12px;"><h3 class="heading26px dark mb-3">Real Estate &amp; PropTech</h3><p class="dark m-0">Leasing, property-management, and listing apps for the metroplex's booming residential and commercial market.</p></div></div>
+
+			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500"><div class="features_clm bg-white p-4 h-100" style="border-radius: 12px;"><h3 class="heading26px dark mb-3">Financial Services</h3><p class="dark m-0">Banking, lending, and insurance front-ends on licensed rails. See our <a href="/industries/fintech-app-development" style="color: var(--secondColor);">fintech app development</a>.</p></div></div>
+
+			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600"><div class="features_clm bg-white p-4 h-100" style="border-radius: 12px;"><h3 class="heading26px dark mb-3">Retail &amp; Consumer</h3><p class="dark m-0">Loyalty, ordering, and commerce apps for DFW's large retail and consumer market. See our <a href="/services/ecommerce-app-development" style="color: var(--secondColor);">ecommerce app development</a>.</p></div></div>
+
+		</div>
+
+		<div class="row mt-4"><div class="col-lg-10 mx-auto text-center"><p data-aos="fade-up">We build DFW apps on one codebase for iPhone and Android &mdash; see our <a href="/services/cross-platform-app-development" style="color: var(--secondColor);">cross-platform</a> and <a href="/services/flutter-app-development" style="color: var(--secondColor);">Flutter app development</a> &mdash; with the backend and admin delivered by our <a href="/services/full-stack-development" style="color: var(--secondColor);">full-stack team</a>.</p></div></div>
+
+	</div>
+
+</section>
+
 <section class="who_we_are faq_section py-5">
 
 	<div class="container">

@@ -238,6 +238,44 @@ $breadcrumbs = [
 
 </section>
 
+<section class="who_we_are component_sec py-5" style="background:#f6f7f9;">
+
+	<div class="container">
+
+		<div class="row align-items-center">
+
+			<div class="col-lg-10 mx-auto text-center mb-5">
+
+				<h2 class="heading55px dark"><span class="revealUp"><span>What We Build for <span class="secondColor">Seattle &amp; PNW Companies</span></span></span></h2>
+
+				<p data-aos="fade-up" data-aos-delay="100">Seattle sets a high engineering bar &mdash; cloud, e-commerce, and logistics are in its DNA, and the outdoors are part of the culture. Here is what we build most for Seattle and Pacific Northwest companies:</p>
+
+			</div>
+
+		</div>
+
+		<div class="row g-4">
+
+			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100"><div class="features_clm bg-white p-4 h-100" style="border-radius: 12px;"><h3 class="heading26px dark mb-3">SaaS &amp; Cloud Companion Apps</h3><p class="dark m-0">Mobile front-ends for cloud and B2B products &mdash; the region's core industry &mdash; with synced state, offline mode, and biometric auth.</p></div></div>
+
+			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200"><div class="features_clm bg-white p-4 h-100" style="border-radius: 12px;"><h3 class="heading26px dark mb-3">E-commerce &amp; Marketplace</h3><p class="dark m-0">Commerce, marketplace, and fulfillment apps built to a high bar in Amazon's backyard. See our <a href="/services/ecommerce-app-development" style="color: var(--secondColor);">ecommerce app development</a>.</p></div></div>
+
+			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300"><div class="features_clm bg-white p-4 h-100" style="border-radius: 12px;"><h3 class="heading26px dark mb-3">Logistics &amp; Supply Chain</h3><p class="dark m-0">Shipping, warehouse, and last-mile apps for the region's logistics, freight, and maritime trade.</p></div></div>
+
+			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400"><div class="features_clm bg-white p-4 h-100" style="border-radius: 12px;"><h3 class="heading26px dark mb-3">Climate &amp; Outdoor</h3><p class="dark m-0">Clean-tech, energy, and outdoor-recreation apps that fit the Pacific Northwest's sustainability and outdoor culture.</p></div></div>
+
+			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500"><div class="features_clm bg-white p-4 h-100" style="border-radius: 12px;"><h3 class="heading26px dark mb-3">Health &amp; Biotech</h3><p class="dark m-0">Wellness, patient-engagement, and digital-health apps &mdash; non-PHI by design. See our <a href="/industries/healthcare-app-development" style="color: var(--secondColor);">healthcare app development</a>.</p></div></div>
+
+			<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600"><div class="features_clm bg-white p-4 h-100" style="border-radius: 12px;"><h3 class="heading26px dark mb-3">EdTech &amp; Productivity</h3><p class="dark m-0">Learning and workplace-productivity apps for a region that builds software for a living. See our <a href="/industries/edtech-app-development" style="color: var(--secondColor);">edtech app development</a>.</p></div></div>
+
+		</div>
+
+		<div class="row mt-4"><div class="col-lg-10 mx-auto text-center"><p data-aos="fade-up">We ship Seattle apps on one codebase for iPhone and Android &mdash; see our <a href="/services/cross-platform-app-development" style="color: var(--secondColor);">cross-platform</a> and <a href="/services/flutter-app-development" style="color: var(--secondColor);">Flutter app development</a> &mdash; backed by a <a href="/services/full-stack-development" style="color: var(--secondColor);">full-stack team</a> for the API and admin.</p></div></div>
+
+	</div>
+
+</section>
+
 <section class="who_we_are faq_section py-5">
 
 	<div class="container">
