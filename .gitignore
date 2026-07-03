@@ -21,3 +21,10 @@ uploads/*
 .DS_Store
 Thumbs.db
 *.bak
+
+# Browser-automation artifacts (local-only)
+.playwright-mcp/
+
+# Marketing/SEO ops — local-only, must NOT sit in the public web root
+social_factory/
+seo-ai-audit-report.md
