@@ -52,7 +52,7 @@
 
 				<svg class="animated_svg2 mb-3" width="672" height="36" viewBox="0 0 672 36" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M4 32C199.013 20.5125 606.673 -9.88059 663.31 11.341C719.946 32.5627 249.686 20.1834 7.47644 11.341" stroke="#B3FF00" stroke-width="7" stroke-linecap="round"/></svg>
 
-				<p style="color: #C3C9CE; font-size: 18px; line-height: 1.6;" data-aos="fade-up" data-aos-delay="400">Your members open Mindbody and see Mindbody — not your studio. Your booking flow is identical to every other studio in town. You pay $200-$500 a month forever and never own the asset. We build branded mobile apps your members open and see <em>you</em>: your colors, your class names, your community. Booking, payments, retention, push notifications. Six-week delivery. From $14,997 — and you own it.</p>
+				<p style="color: #C3C9CE; font-size: 18px; line-height: 1.6;" data-aos="fade-up" data-aos-delay="400">AppVerra is a boutique fitness studio app development agency — a Mindbody alternative you own outright. Your members open Mindbody and see Mindbody, not your studio. Your booking flow is identical to every other studio in town, and you pay $200-$500 a month forever without ever owning the asset. We build branded mobile apps your members open and see <em>you</em>: your colors, your class names, your community. Booking, payments, retention, push notifications. Six-week delivery. From $14,997 — and you own it.</p>
 
 				<div class="btn_set">
 
@@ -654,6 +654,14 @@
 
 				</div>
 
+				<div class="faq_item mb-4 bg-white p-4" data-aos="fade-up" data-aos-delay="700" style="border-radius: 12px;">
+
+					<h3 class="heading26px dark mb-2">How much does a boutique fitness studio app cost?</h3>
+
+					<p class="dark">A branded studio app starts at $14,997 (Studio App Launch) for a single-location studio — booking, payments, member profiles, and push notifications. Multi-location studios start at $29,997. There is no monthly SaaS rent; you own the app. Most studios recover the cost in retention lift within 9 months.</p>
+
+				</div>
+
 			</div>
 
 		</div>
@@ -684,7 +692,9 @@
 
     {"@type": "Question", "name": "What is the honest case for keeping Mindbody?", "acceptedAnswer": {"@type": "Answer", "text": "If you have under 800 members at one location, are not building toward multiple locations, and your members never complain about the app — Mindbody is cheaper and probably the right call. The break-even math flips around 1,500 members or location number two."}},
 
-    {"@type": "Question", "name": "Can I integrate access control — door unlock, gym entry?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We have integrated with Brivo, OpenPath, and Kisi on past builds. Add about 1 week to delivery for the integration."}}
+    {"@type": "Question", "name": "Can I integrate access control — door unlock, gym entry?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We have integrated with Brivo, OpenPath, and Kisi on past builds. Add about 1 week to delivery for the integration."}},
+
+    {"@type": "Question", "name": "How much does a boutique fitness studio app cost?", "acceptedAnswer": {"@type": "Answer", "text": "A branded studio app starts at $14,997 for a single-location studio with booking, payments, member profiles, and push notifications. Multi-location studios start at $29,997. There is no monthly SaaS rent; you own the app."}}
 
   ]
 
