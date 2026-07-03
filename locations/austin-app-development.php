@@ -10,7 +10,7 @@ $breadcrumbs = [
 ?>
 <?php $meta_title = "Mobile App Development Company in Austin, TX | Appverra"; ?>
 
-<?php $meta_discription = "Austin mobile app development company. We build iOS and Android apps for Austin startups, SaaS companies, and tech businesses. Flutter, React Native, Swift, Kotlin. 150+ apps shipped. Fixed-bid pricing from $7,997."; ?>
+<?php $meta_discription = "Austin mobile app development company. iOS & Android for Austin startups: Flutter, React Native, Swift, Kotlin. 150+ apps shipped. From $7,997."; ?>
 
 <?php $page_class = "austinAppDev-page testimonial_light"; ?>
 

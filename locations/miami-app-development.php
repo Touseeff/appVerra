@@ -10,7 +10,7 @@ $breadcrumbs = [
 ?>
 <?php $meta_title = "Mobile App Development Company in Miami | Appverra"; ?>
 
-<?php $meta_discription = "Miami mobile app development company. We build iOS and Android apps for Miami startups, fintech companies, real estate firms, and Latin American market entries. Flutter, React Native, Swift, Kotlin. 150+ apps shipped. Fixed-bid from $7,997."; ?>
+<?php $meta_discription = "Miami mobile app development company. iOS & Android for Miami startups & fintech: Flutter, React Native, Swift, Kotlin. 150+ apps shipped. From $7,997."; ?>
 
 <?php $page_class = "miamiAppDev-page testimonial_light"; ?>
 

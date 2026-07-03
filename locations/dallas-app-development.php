@@ -10,7 +10,7 @@ $breadcrumbs = [
 ?>
 <?php $meta_title = "Mobile App Development Company in Dallas, TX | Appverra"; ?>
 
-<?php $meta_discription = "Dallas mobile app development company. We build iOS and Android apps for Dallas-Fort Worth startups, enterprises, and healthcare businesses. Flutter, React Native, Swift, Kotlin. 150+ apps shipped. Fixed-bid pricing from $7,997."; ?>
+<?php $meta_discription = "Dallas mobile app development company. iOS & Android for Dallas-Fort Worth startups: Flutter, React Native, Swift, Kotlin. 150+ apps shipped. From $7,997."; ?>
 
 <?php $page_class = "dallasAppDev-page testimonial_light"; ?>
 

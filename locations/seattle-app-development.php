@@ -10,7 +10,7 @@ $breadcrumbs = [
 ?>
 <?php $meta_title = "Mobile App Development Company in Seattle | Appverra"; ?>
 
-<?php $meta_discription = "Seattle mobile app development company. We build iOS and Android apps for Seattle startups, tech companies, and Pacific Northwest businesses. Flutter, React Native, Swift, Kotlin. 150+ apps shipped. Fixed-bid pricing from $7,997."; ?>
+<?php $meta_discription = "Seattle mobile app development company. iOS & Android for Seattle tech startups: Flutter, React Native, Swift, Kotlin. 150+ apps shipped. From $7,997."; ?>
 
 <?php $page_class = "seattleAppDev-page testimonial_light"; ?>
 
