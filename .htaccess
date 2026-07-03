@@ -25,6 +25,11 @@ RewriteRule ^favicon\.ico$ - [L]
 # Placed early so it fires BEFORE any rewrite rules can match.
 RewriteRule ^blog_factory/ - [F,L]
 
+# Deny public web access to guide_src/ — the print-HTML source used to render the
+# downloadable PDF guide(s). The rendered PDF in /assets/downloads/ stays public; only
+# the raw HTML source is hidden (avoids duplicate-content and keeps the web root clean).
+RewriteRule ^guide_src/ - [F,L]
+
 # 301 redirect: fix "hands-fee" typo in voice commerce blog slug
 RewriteRule ^voice-commerce-in-2025-how-to-enable-hands-fee-shopping-in-your-app/?$ /voice-commerce-in-2025-how-to-enable-hands-free-shopping-in-your-app [R=301,L]
 

@@ -1,6 +1,6 @@
 ﻿<?php $meta_title = "Founder-Friendly App Development Agency — Apps That Ship | Appverra"; ?>
 
-<?php $meta_discription = "We've shipped 150+ apps for 700+ customers — apps with millions of downloads, including a live US ride-booking marketplace. Flutter apps in 6 weeks. Book a Discovery Sprint."; ?>
+<?php $meta_discription = "Founder-led app development agency. 150+ apps shipped, millions of downloads, incl. a live US ride-booking marketplace. Flutter MVPs in 6 weeks."; ?>
 
 <?php $page_class = "home-page"; ?>
 
@@ -1208,6 +1208,38 @@
 </section>
 
 <?php include("testimonials-section.php"); ?>
+
+<!-- Free App Launch Checklist — lead-magnet band -->
+<section class="free_guide_band" style="padding:40px 0 80px;">
+    <div class="container">
+        <div style="background:linear-gradient(150deg,#1a1830 0%,#2a1d63 55%,#6243FA 130%);border-radius:24px;padding:52px 48px;color:#fff;overflow:hidden;" data-aos="fade-up">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <span class="border rounded-pill py-2 px-4 d-inline-block uppercase heading18px mb-4 light" style="border-color:rgba(178,255,0,.5)!important;color:#B2FF00;">Free Guide</span>
+                    <h2 class="heading55px light mb-3">Launching an app? <span class="secondColor">Grab the free checklist.</span></h2>
+                    <p style="color:#d7d3f2;max-width:600px;">A print-and-tick PDF that walks the full path to the Apple App Store and Google Play — developer accounts, store assets, submission, and post-launch. Current for 2026. No email, no sign-up.</p>
+                    <span class="btn_wrap mt-4 d-inline-block">
+                        <a href="/app-launch-checklist" class="theme_btn">
+                            <span class="btnTextWrap">
+                                <span>Get the guide</span>
+                                <span>Get the guide</span>
+                            </span>
+                            <span class="iconCircle">
+                                <span class="iconWrap">
+                                    <i data-feather="download"></i>
+                                    <i data-feather="download"></i>
+                                </span>
+                            </span>
+                        </a>
+                    </span>
+                </div>
+                <div class="col-lg-4 text-center d-none d-lg-block" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="/assets/images/app-launch-checklist-cover.webp" loading="lazy" width="820" height="1060" alt="Free App Launch Checklist PDF for the Apple App Store and Google Play" class="img-fluid" style="max-width:250px;border-radius:12px;box-shadow:0 26px 60px rgba(0,0,0,.3);" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <?php include("contact-us-section.php"); ?>
 

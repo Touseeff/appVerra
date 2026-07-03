@@ -30,6 +30,8 @@
 
 							<li><a href="/blogs">BLOGS</a></li>
 
+							<li><a href="/app-launch-checklist">FREE LAUNCH CHECKLIST</a></li>
+
 							<li><a href="/contact-us">CONTACT US</a></li>
 
 						</ul>

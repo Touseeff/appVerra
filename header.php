@@ -268,6 +268,8 @@
 
             <li><a href="/blogs" class="mainAnchor">Blogs</a></li>
 
+            <li><a href="/app-launch-checklist" class="mainAnchor">Free Guide</a></li>
+
             <li><a href="/contact-us" class="mainAnchor">Contact Us</a></li>
 
             <!-- PAID MARKETING SUBMENU -->

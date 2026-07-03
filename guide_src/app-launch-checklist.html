@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The App Launch Checklist — App Store &amp; Google Play | AppVerra</title>
+<style>
+  /* ---------- Print setup ---------- */
+  @page {
+    size: A4;
+    margin: 16mm 14mm 18mm 14mm;
+  }
+  * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  html, body {
+    margin: 0; padding: 0;
+    font-family: "Manrope", "Segoe UI", Arial, sans-serif;
+    color: #1a1830;
+    font-size: 10.5pt;
+    line-height: 1.5;
+  }
+
+  :root {
+    --lime: #B2FF00;
+    --purple: #6243FA;
+    --ink: #1a1830;
+    --muted: #5b5872;
+    --hair: #e5e2f2;
+  }
+
+  h1, h2, h3, h4 { font-family: "Bricolage Grotesque", "Manrope", Arial, sans-serif; color: var(--ink); margin: 0; line-height: 1.15; }
+
+  a { color: var(--purple); text-decoration: none; }
+
+  .page-break { page-break-before: always; }
+  .no-break { page-break-inside: avoid; }
+
+  /* ---------- Cover ---------- */
+  .cover {
+    page-break-after: always;
+    background: linear-gradient(150deg, #1a1830 0%, #2a1d63 55%, #6243FA 130%);
+    color: #fff;
+    margin: -16mm -14mm 0 -14mm;         /* bleed to page edge */
+    padding: 42mm 18mm 30mm 18mm;
+    min-height: 265mm;
+    position: relative;
+  }
+  .cover .wordmark { font-size: 20pt; font-weight: 800; letter-spacing: -0.5px; }
+  .cover .wordmark .dot { color: var(--lime); }
+  .cover .kicker {
+    display: inline-block; margin-top: 34mm;
+    color: var(--lime); font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; font-size: 9pt;
+  }
+  .cover h1 { color: #fff; font-size: 40pt; margin-top: 8px; letter-spacing: -1px; }
+  .cover h1 .hl { color: var(--lime); }
+  .cover .sub { color: #d7d3f2; font-size: 12.5pt; max-width: 150mm; margin-top: 14px; }
+  .cover .tagline {
+    position: absolute; bottom: 34mm; left: 18mm;
+    font-size: 11pt; font-weight: 700; color: #fff;
+  }
+  .cover .tagline .accent { color: var(--lime); }
+  .cover .meta {
+    position: absolute; bottom: 22mm; left: 18mm; right: 18mm;
+    display: flex; justify-content: space-between;
+    border-top: 1px solid rgba(255,255,255,0.25);
+    padding-top: 10px; font-size: 9pt; color: #cfc9ee;
+  }
+
+  /* ---------- Intro ---------- */
+  .lead { font-size: 11pt; color: var(--muted); max-width: 165mm; }
+  .lead strong { color: var(--ink); }
+
+  .howto {
+    background: #f6f4ff; border: 1px solid var(--hair);
+    border-radius: 10px; padding: 12px 16px; margin: 14px 0 4px;
+    font-size: 9.5pt; color: var(--muted);
+  }
+  .howto b { color: var(--purple); }
+
+  /* ---------- Section headings ---------- */
+  .sec { margin-top: 20px; }
+  .sec-head {
+    display: flex; align-items: center; gap: 10px;
+    border-left: 5px solid var(--lime); padding-left: 12px; margin-bottom: 6px;
+  }
+  .sec-head .num {
+    font-size: 9pt; font-weight: 800; color: var(--purple);
+    background: #efe9ff; border-radius: 6px; padding: 3px 8px; white-space: nowrap;
+  }
+  .sec-head h2 { font-size: 15pt; }
+  .sec-note { color: var(--muted); font-size: 9.5pt; margin: 0 0 10px 17px; }
+
+  /* ---------- Checklist ---------- */
+  ul.checklist { list-style: none; margin: 0 0 4px; padding: 0; }
+  ul.checklist li {
+    position: relative; padding: 7px 0 7px 26px;
+    border-bottom: 1px solid var(--hair);
+    page-break-inside: avoid;
+  }
+  ul.checklist li::before {
+    content: ""; position: absolute; left: 0; top: 8px;
+    width: 13px; height: 13px; border: 1.6px solid var(--purple);
+    border-radius: 3px; background: #fff;
+  }
+  ul.checklist li .t { font-weight: 700; color: var(--ink); }
+  ul.checklist li .d { color: var(--muted); }
+  ul.checklist li .spec { color: var(--purple); font-weight: 700; white-space: nowrap; }
+
+  /* ---------- Callout ---------- */
+  .callout {
+    background: #1a1830; color: #efeafe;
+    border-radius: 10px; padding: 16px 18px; margin: 16px 0;
+    page-break-inside: avoid;
+  }
+  .callout h3 { color: var(--lime); font-size: 12pt; margin-bottom: 8px; }
+  .callout ul { margin: 0; padding-left: 18px; }
+  .callout li { margin-bottom: 5px; font-size: 9.7pt; }
+
+  /* ---------- CTA page ---------- */
+  .cta {
+    margin-top: 8px; background: linear-gradient(150deg, #6243FA, #2a1d63);
+    color: #fff; border-radius: 14px; padding: 26px 28px; page-break-inside: avoid;
+  }
+  .cta h2 { color: #fff; font-size: 22pt; margin-bottom: 8px; }
+  .cta h2 .hl { color: var(--lime); }
+  .cta p { color: #ddd8f6; font-size: 10.5pt; max-width: 150mm; }
+  .cta .btn {
+    display: inline-block; margin-top: 14px; background: var(--lime); color: #1a1830;
+    font-weight: 800; padding: 11px 22px; border-radius: 40px; font-size: 10.5pt;
+  }
+  .cta .fine { margin-top: 16px; font-size: 9pt; color: #b9b2e6; }
+
+  .footer-note { margin-top: 22px; font-size: 8.5pt; color: #9d99b8; text-align: center; }
+</style>
+</head>
+<body>
+
+<!-- ===================== COVER ===================== -->
+<section class="cover">
+  <div class="wordmark">AppVerra<span class="dot">.</span></div>
+  <span class="kicker">Free Guide · 2026 Edition</span>
+  <h1>The App Launch<br>Checklist</h1>
+  <p class="sub">Everything you need to ship on the <strong style="color:#fff">Apple App Store</strong> and <strong style="color:#fff">Google Play</strong> — from developer accounts to post-launch monitoring. Print it, work through it, ship with nothing forgotten.</p>
+  <div class="tagline">Apps That Ship. <span class="accent">Founders Who Answer.</span></div>
+  <div class="meta">
+    <span>appverra.co</span>
+    <span>info@appverra.co · (213) 714-7176</span>
+  </div>
+</section>
+
+<!-- ===================== INTRO ===================== -->
+<h2 style="font-size:17pt;">Before you begin</h2>
+<p class="lead" style="margin-top:8px;">
+  A rejected submission can cost you a week — sometimes two. Most rejections come from the
+  same handful of misses: a broken privacy-policy link, no demo login for the reviewer,
+  metadata that doesn't match what the app actually does. This checklist walks the full
+  path for <strong>both stores</strong> so those misses don't happen to you.
+</p>
+<div class="howto">
+  <b>How to use this:</b> tick each box as you complete it. Items marked
+  <span style="color:#6243FA;font-weight:700;">Apple</span> or
+  <span style="color:#6243FA;font-weight:700;">Google</span> apply to that store only;
+  everything under “Shared groundwork” applies to both. Specs current as of 2026 —
+  always confirm against the official developer docs before you submit.
+</div>
+
+<!-- ===================== 1. SHARED ===================== -->
+<div class="sec no-break">
+  <div class="sec-head"><span class="num">STEP 1</span><h2>Shared groundwork (both stores)</h2></div>
+  <p class="sec-note">Get these in place once — they feed both submissions.</p>
+  <ul class="checklist">
+    <li><span class="t">Enrol in the developer programs.</span> <span class="d">Apple Developer Program <span class="spec">$99/yr</span>; Google Play Console <span class="spec">$25 one-time</span>. Enrolment/verification can take a few days — start early.</span></li>
+    <li><span class="t">Publish a privacy policy URL.</span> <span class="d">Required by <em>both</em> stores and the single most common cause of a blocked listing. Host it on a stable URL before you start.</span></li>
+    <li><span class="t">Lock your identifiers.</span> <span class="d">Final app name, iOS Bundle ID, and Android package name. The package/bundle ID is <em>permanent</em> — you cannot change it after publishing.</span></li>
+    <li><span class="t">Prepare a demo/test account.</span> <span class="d">If your app has a login, reviewers need working credentials. Missing this is a top rejection reason on both stores.</span></li>
+    <li><span class="t">Set up app signing &amp; back up your keys.</span> <span class="d">iOS: distribution certificate + provisioning profile (or Xcode automatic signing). Android: enrol in Play App Signing and safeguard your upload key — losing it is painful to recover.</span></li>
+    <li><span class="t">Run a real beta.</span> <span class="d">TestFlight (iOS) and Play testing tracks — internal → closed → open (Android). Catch crashes before reviewers do.</span></li>
+    <li><span class="t">Finalise store creative.</span> <span class="d">App icon, screenshots, and copy (details per store below). Keep a single source of truth so both listings stay consistent.</span></li>
+    <li><span class="t">Confirm compliance basics.</span> <span class="d">Age rating info, encryption/export declaration (iOS), and an in-app account-deletion path if you offer account creation (Apple requires it).</span></li>
+  </ul>
+</div>
+
+<!-- ===================== 2. APPLE ===================== -->
+<div class="sec page-break">
+  <div class="sec-head"><span class="num">STEP 2</span><h2>Apple App Store listing</h2></div>
+  <p class="sec-note">Set up in App Store Connect. Character limits are hard caps.</p>
+  <ul class="checklist">
+    <li><span class="t">Metadata within limits.</span> <span class="d">App name <span class="spec">≤30</span>, subtitle <span class="spec">≤30</span>, keywords field <span class="spec">≤100</span>, promotional text <span class="spec">≤170</span>, description <span class="spec">≤4000</span> characters. Support URL required.</span></li>
+    <li><span class="t">App icon.</span> <span class="d"><span class="spec">1024×1024 px</span>, no transparency, no rounded corners (Apple masks it).</span></li>
+    <li><span class="t">Screenshots.</span> <span class="d">Supply the largest size per family — 6.9″ iPhone <span class="spec">1320×2868</span> (required) and, if your app runs on iPad, 13″ iPad <span class="spec">2064×2752</span>. 1–10 each. PNG/JPEG, RGB, flattened (no alpha). Apple scales them to smaller devices.</span></li>
+    <li><span class="t">App Privacy “nutrition labels”.</span> <span class="d">Declare exactly what data you collect and whether it's used to track. Must match real behaviour. Add App Tracking Transparency prompt if you track across apps.</span></li>
+    <li><span class="t">Age rating questionnaire.</span> <span class="d">Answer honestly — mismatches trigger rejection.</span></li>
+    <li><span class="t">Pricing &amp; availability.</span> <span class="d">Price tier (or free), in-app purchases, and territories. Remember Apple's IAP requirement for digital goods.</span></li>
+    <li><span class="t">Review notes + demo login.</span> <span class="d">Add reviewer notes and demo credentials in App Review Information. Sign in with Apple is required if you offer third-party social login.</span></li>
+  </ul>
+  <div class="callout">
+    <h3>Apple's most common rejection reasons</h3>
+    <ul>
+      <li>Crashes, bugs, or broken links found during review.</li>
+      <li>Placeholder content, incomplete info, or metadata that oversells the app.</li>
+      <li>Login required but no working demo account provided.</li>
+      <li>Privacy: missing policy, or App Privacy labels that don't match behaviour.</li>
+      <li>Using private/non-public APIs, or not using IAP for digital goods.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===================== 3. GOOGLE ===================== -->
+<div class="sec page-break">
+  <div class="sec-head"><span class="num">STEP 3</span><h2>Google Play listing</h2></div>
+  <p class="sec-note">Set up in Google Play Console. The Data safety form and target API level catch the most people.</p>
+  <ul class="checklist">
+    <li><span class="t">Store listing copy.</span> <span class="d">Title <span class="spec">≤30</span>, short description <span class="spec">≤80</span>, full description <span class="spec">≤4000</span> characters. Choose an accurate category.</span></li>
+    <li><span class="t">Graphic assets.</span> <span class="d">App icon <span class="spec">512×512</span> (32-bit PNG, alpha), feature graphic <span class="spec">1024×500</span>, and <span class="spec">2–8</span> phone screenshots (tablet shots recommended for reach).</span></li>
+    <li><span class="t">Content rating (IARC).</span> <span class="d">Complete the questionnaire to receive official ratings.</span></li>
+    <li><span class="t">Data safety form.</span> <span class="d">Declare data collection, sharing, and security practices — must match what the app actually does. Inaccurate declarations get apps removed.</span></li>
+    <li><span class="t">Target audience &amp; content.</span> <span class="d">Set target age; if you target children, the Families policy adds requirements. Complete Ads, News, and any feature declarations.</span></li>
+    <li><span class="t">Target API level.</span> <span class="d">New apps &amp; updates must target <span class="spec">Android 16 (API 36)+</span> from 31 Aug 2026 (Wear OS/TV: API 35+). Google requires targeting within one year of the latest Android release.</span></li>
+    <li><span class="t">Upload a signed App Bundle.</span> <span class="d">Publish an <span class="spec">.aab</span> (not an APK) and enrol in Play App Signing. Add app-access instructions/demo login for review.</span></li>
+    <li><span class="t">New personal account? Plan the closed test.</span> <span class="d">Newer personal developer accounts must run a closed test with <span class="spec">20+ testers for 14 days</span> before applying for production access — budget that time.</span></li>
+  </ul>
+</div>
+
+<!-- ===================== 4. SUBMIT ===================== -->
+<div class="sec page-break">
+  <div class="sec-head"><span class="num">STEP 4</span><h2>Submit &amp; release</h2></div>
+  <p class="sec-note">Ship deliberately — a staged rollout limits the blast radius of a bad build.</p>
+  <ul class="checklist">
+    <li><span class="t">iOS — upload the build.</span> <span class="d">Push via Xcode or Transporter, select it in App Store Connect, then submit for review.</span></li>
+    <li><span class="t">iOS — choose release type.</span> <span class="d">Manual, automatic, or <em>phased release</em> (gradual over 7 days). Phased is the safer default.</span></li>
+    <li><span class="t">Android — create a production release.</span> <span class="d">Promote a tested build to the production track and review the release summary.</span></li>
+    <li><span class="t">Android — staged rollout.</span> <span class="d">Start at a small percentage, monitor vitals, then increase. You can halt or resume anytime.</span></li>
+    <li><span class="t">Set pricing, countries &amp; date.</span> <span class="d">Confirm availability, in-app products, and any coordinated launch date/marketing.</span></li>
+  </ul>
+</div>
+
+<!-- ===================== 5. POST-LAUNCH ===================== -->
+<div class="sec">
+  <div class="sec-head"><span class="num">STEP 5</span><h2>After you're live</h2></div>
+  <p class="sec-note">Launch day is the start line, not the finish.</p>
+  <ul class="checklist">
+    <li><span class="t">Watch stability.</span> <span class="d">Xcode Organizer (iOS) and Play Console vitals (Android crash &amp; ANR rates). Exceeding Play's bad-behaviour thresholds can suppress your listing.</span></li>
+    <li><span class="t">Respond to reviews.</span> <span class="d">Reply quickly, fix what recurs, and watch your rating trend.</span></li>
+    <li><span class="t">Track the numbers.</span> <span class="d">Installs, retention, and conversion rate on each store page.</span></li>
+    <li><span class="t">Iterate with ASO.</span> <span class="d">Test screenshots and copy — Play store-listing experiments and Apple Product Page Optimization let you A/B test.</span></li>
+    <li><span class="t">Keep it current.</span> <span class="d">Plan an update cadence and bump your target API level each year to stay compliant.</span></li>
+  </ul>
+
+  <div class="callout">
+    <h3>Five gotchas that stall launches</h3>
+    <ul>
+      <li>No live privacy-policy URL — set it up <em>first</em>, both stores demand it.</li>
+      <li>No demo login for reviewers — the #1 avoidable rejection.</li>
+      <li>Android: forgetting the 20-testers / 14-day rule on new personal accounts.</li>
+      <li>Data safety / App Privacy labels that don't match the app's real behaviour.</li>
+      <li>Lost signing keys — back up your Android upload key and iOS certificates.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===================== CTA ===================== -->
+<div class="cta page-break">
+  <h2>Rather have <span class="hl">someone ship it</span> for you?</h2>
+  <p>
+    AppVerra is a founder-led studio — three co-founders write the code, no account managers,
+    no outsourcing. We've shipped 150+ apps for 700+ customers, with Flutter MVPs live in about
+    six weeks. If you'd rather hand the launch (and this whole checklist) to a team that has
+    done it hundreds of times, let's talk.
+  </p>
+  <span class="btn">Book a call → appverra.co/contact-us</span>
+  <div class="fine">appverra.co · info@appverra.co · (213) 714-7176 · 20 N Moore St, New York, NY 10013</div>
+</div>
+
+<p class="footer-note">© 2026 AppVerra, operated by Diversified Commerce LLC. This checklist is provided for general guidance; store requirements change — always confirm against Apple and Google's official developer documentation before submitting.</p>
+
+</body>
+</html>
