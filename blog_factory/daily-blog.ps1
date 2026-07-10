@@ -1,63 +1,88 @@
-# daily-blog.ps1 — Automated daily blog generation for AppVerra
-#
-# Scheduled via Windows Task Scheduler to run daily.
-# Uses Claude Code CLI to pick the next topic and run the full pipeline.
-#
-# Setup:
-#   1. Open Task Scheduler
-#   2. Create Basic Task → "AppVerra Daily Blog"
-#   3. Trigger: Daily at 10:00 AM
-#   4. Action: Start a program
-#      Program: powershell.exe
-#      Arguments: -ExecutionPolicy Bypass -File "C:\appverra\appVerra\blog_factory\daily-blog.ps1"
-#   5. Settings: check "Run task as soon as possible after a scheduled start is missed"
-#
-# Or create via PowerShell (run as admin):
-#   $action = New-ScheduledTaskAction -Execute "powershell.exe" `
-#     -Argument '-ExecutionPolicy Bypass -File "C:\appverra\appVerra\blog_factory\daily-blog.ps1"'
-#   $trigger = New-ScheduledTaskTrigger -Daily -At "10:00AM"
-#   $settings = New-ScheduledTaskSettingsSet -StartWhenAvailable -DontStopIfGoingOnBatteries -AllowStartIfOnBatteryPower
-#   Register-ScheduledTask -TaskName "AppVerra Daily Blog" -Action $action -Trigger $trigger -Settings $settings
+# daily-blog.ps1 — Hardened daily blog generation for AppVerra
+# Entry point for the Windows Scheduled Task "AppVerra Daily Blog".
+# Thin wrapper: timeout-guarded auth preflight -> timeout-guarded claude -p ->
+# outcome markers -> watchdog. EVERY claude call runs under a wall-clock timeout
+# with a real process-tree kill, so a hang can never produce a [START]-only log.
 
 $ErrorActionPreference = "Stop"
-$repoRoot = "C:\appverra\appVerra"
-$date = Get-Date -Format "yyyyMMdd-HHmmss"
-$logDir = Join-Path $repoRoot "blog_factory\runs"
-$logFile = Join-Path $logDir "daily-$date.log"
+$repoRoot   = "C:\appverra\appVerra"
+$engineRoot = "C:\appverra\growth-engine"
+$py         = Join-Path $engineRoot ".venv\Scripts\python.exe"
+$date       = Get-Date -Format "yyyyMMdd-HHmmss"
+$logDir     = Join-Path $repoRoot "blog_factory\runs"
+$logFile    = Join-Path $logDir "daily-$date.log"
 
 if (-not (Test-Path $logDir)) { New-Item -ItemType Directory -Path $logDir -Force | Out-Null }
+function Log($line) { "$(Get-Date -Format 'o') $line" | Out-File $logFile -Append -Encoding utf8 }
 
-# Check for kill switch
-$killFile = Join-Path $repoRoot "blog_factory\.auto-publish-disabled"
-if (Test-Path $killFile) {
+# Run `claude` with a hard wall-clock timeout and a REAL tree kill (claude spawns
+# node/MCP children that Stop-Job would orphan). Returns @{ TimedOut; Output }.
+function Invoke-ClaudeWithTimeout {
+    param([string[]]$ClaudeArgs, [int]$TimeoutSec)
+    $out = New-TemporaryFile
+    $err = New-TemporaryFile
+    try {
+        $p = Start-Process -FilePath "claude" -ArgumentList $ClaudeArgs -PassThru -NoNewWindow `
+            -RedirectStandardOutput $out.FullName -RedirectStandardError $err.FullName
+        $timedOut = -not $p.WaitForExit($TimeoutSec * 1000)
+        if ($timedOut) {
+            & taskkill /PID $p.Id /T /F 2>&1 | Out-Null   # kill claude + node/MCP tree
+            try { $p.WaitForExit(5000) | Out-Null } catch {}
+        }
+        $text = (Get-Content $out.FullName -Raw -ErrorAction SilentlyContinue)
+        $text += (Get-Content $err.FullName -Raw -ErrorAction SilentlyContinue)
+        return @{ TimedOut = $timedOut; Output = [string]$text }
+    } finally {
+        Remove-Item $out.FullName, $err.FullName -Force -ErrorAction SilentlyContinue
+    }
+}
+
+# --- kill switch ---
+if (Test-Path (Join-Path $repoRoot "blog_factory\.auto-publish-disabled")) {
     "$(Get-Date -Format 'o') [SKIPPED] Auto-publish disabled via kill switch" | Out-File $logFile -Encoding utf8
     exit 0
 }
 
-$prompt = @'
-You are in the appVerra repo at C:\appverra\appVerra.
-
-Your task: generate the next blog post from the topic backlog.
-
-1. Read blog_factory/queue/topics.yaml
-2. Read blog_factory/queue/published.json (create [] if missing)
-3. Pick the first topic NOT already in published.json
-4. If no topics left, print "No topics remaining in backlog" and stop
-5. Run /publish-blog with that topic — this invokes the full 5-agent pipeline (researcher, keyword strategist, drafter, SEO packager, editor)
-6. The pipeline will commit and push automatically if QC passes
-
-This is an automated daily run. Do not ask for confirmation — proceed through the full pipeline.
-'@
-
 "$(Get-Date -Format 'o') [START] Daily blog generation" | Out-File $logFile -Encoding utf8
 
+Push-Location $repoRoot
 try {
-    Push-Location $repoRoot
-    claude -p $prompt --dangerously-skip-permissions --max-turns 100 2>&1 | Out-File $logFile -Append -Encoding utf8
-    "$(Get-Date -Format 'o') [DONE] Pipeline finished" | Out-File $logFile -Append -Encoding utf8
-} catch {
-    "$(Get-Date -Format 'o') [ERROR] $($_.Exception.Message)" | Out-File $logFile -Append -Encoding utf8
+    # --- 1. preflight auth check — GUARDED by a 90s timeout (must never silent-hang) ---
+    $pre = Invoke-ClaudeWithTimeout -ClaudeArgs @("-p", "Reply with the single word READY and nothing else.", "--max-turns", "1") -TimeoutSec 90
+    if ($pre.TimedOut) { Log "[TIMEOUT] auth preflight exceeded 90s, killed"; exit 3 }
+    if ($pre.Output -notmatch "READY" -or $pre.Output -match "Not logged in") {
+        Log "[AUTH-FAIL] Preflight auth check failed. Output: $($pre.Output.Trim())"
+        exit 2
+    }
+
+    # --- 2. record HEAD, run the pipeline under a 25-min wall-clock timeout ---
+    $headBefore = (& git rev-parse HEAD).Trim()
+
+    $prompt = @'
+You are in the appVerra repo at C:\appverra\appVerra.
+Task: generate the next blog post from the topic backlog.
+1. Read blog_factory/queue/topics.yaml and blog_factory/queue/published.json (create [] if missing).
+2. Pick the first topic NOT already in published.json.
+3. If no topics left, print "No topics remaining in backlog" and stop.
+4. Run /publish-blog with that topic (full 5-agent pipeline). It commits and pushes if QC passes.
+This is an automated run. Do not ask for confirmation.
+'@
+
+    $run = Invoke-ClaudeWithTimeout -ClaudeArgs @("-p", $prompt, "--dangerously-skip-permissions", "--max-turns", "40") -TimeoutSec 1500
+    $run.Output | Out-File $logFile -Append -Encoding utf8
+    if ($run.TimedOut) { Log "[TIMEOUT] claude -p exceeded 1500s, killed"; exit 3 }
+
+    # --- 3. did a commit land? ---
+    $headAfter = (& git rev-parse HEAD).Trim()
+    if ($headAfter -ne $headBefore) { Log "[COMMITTED $headAfter]" } else { Log "[NO-COMMIT]" }
+    Log "[DONE] Pipeline finished"
+}
+catch {
+    Log "[ERROR] $($_.Exception.Message)"
     exit 1
-} finally {
+}
+finally {
     Pop-Location
+    # --- 4. always let the watchdog assess + alert on this run (runs even on exit N) ---
+    if (Test-Path $py) { & $py (Join-Path $engineRoot "watchdog.py") 2>&1 | Out-File $logFile -Append -Encoding utf8 }
 }
