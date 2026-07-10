@@ -1,0 +1,3 @@
+# Drafts awaiting Noor's approval (Phase 3 burn-in gate).
+# The api-import cron does NOT watch this folder — nothing here can auto-publish.
+# approve.py moves an approved draft from here to ../pending/ to publish it.

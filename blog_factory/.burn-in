@@ -1,0 +1,3 @@
+Phase 3 burn-in mode is ON. The writer stages drafts to queue/staged/ for Noor's
+approval instead of publishing them. Delete this file to switch to full autopilot
+(Phase 5) — then written drafts go straight to queue/pending/ for the cron.

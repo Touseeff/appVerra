@@ -23,6 +23,11 @@ flutter:
   - "Native iOS/Android vs Flutter: What SMB Founders Actually Need to Know"
   # Tier 3 — authority
   - "Mobile App MVP in 6 Weeks with Flutter: AppVerra's Realistic Delivery Model"
+  # Round 2 (2026-07-10) — flutter cluster depth gap-fill (anchor /services/flutter-app-development)
+  - "How to Choose a Flutter App Development Agency: A 2026 Founder's Checklist"
+  - "Flutter vs FlutterFlow: When to Graduate from No-Code to Custom Flutter"
+  - "What a Production-Grade Flutter App Looks Like: AppVerra's Build Standards"
+  - "Flutter for SaaS Startups: The Fastest Path to a Cross-Platform MVP"
 
 react-native:
   # Tier 1 — cost
@@ -34,6 +39,11 @@ react-native:
   # Tier 3 — authority
   - "7 Mistakes First-Time Founders Make Hiring Their Mobile App Developer"
   - "How to Brief a Mobile App Agency: A Founder's One-Page Cheatsheet"
+  # Round 2 (2026-07-10) — react-native cluster depth gap-fill (anchor /services/react-native-app-development)
+  - "When to Choose React Native Over Flutter in 2026: An Honest Decision Guide"
+  - "React Native Performance in 2026: Is It Fast Enough for Your App?"
+  - "Hiring a React Native Developer in 2026: Rates, Red Flags, and What to Ask"
+  - "Is React Native Still Worth It in 2026? A Flutter-First Agency's Honest Take"
 
 # Re-angled 2026-06-24: Unity game-dev service was discontinued (site restructure a62624f).
 # These 3 topics now target gamification INSIDE mobile apps — a live AppVerra capability —

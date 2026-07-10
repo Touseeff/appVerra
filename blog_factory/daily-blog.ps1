@@ -88,6 +88,24 @@ This is an automated run. Do not ask for confirmation.
     # --- 3. did a commit land? ---
     $headAfter = (& git rev-parse HEAD).Trim()
     if ($headAfter -ne $headBefore) { Log "[COMMITTED $headAfter]" } else { Log "[NO-COMMIT]" }
+
+    # --- 3b. Phase 3 burn-in gate: stage the just-written draft(s) instead of leaving them in pending/ ---
+    #    (.burn-in flag present => stage for approval; absent => full-auto, draft stays in pending/ for the cron)
+    if ((Test-Path (Join-Path $repoRoot "blog_factory\.burn-in")) -and ($headAfter -ne $headBefore)) {
+        $added = (& git diff --name-only --diff-filter=A "$headBefore" "$headAfter" -- "blog_factory/queue/pending") -split "`n" |
+                 Where-Object { $_ -match 'blog_factory/queue/pending/[^/]+\.md$' }
+        if ($added) {
+            foreach ($rel in $added) {
+                $slug = [System.IO.Path]::GetFileNameWithoutExtension($rel)
+                & git mv "$rel" "blog_factory/queue/staged/$slug.md" 2>&1 | Out-Null
+            }
+            & git commit -m "stage $($added.Count) draft(s) for approval" 2>&1 | Out-Null
+            & git push origin main 2>&1 | Out-File $logFile -Append -Encoding utf8
+            Log "[STAGED $($added.Count)] awaiting approval"
+            if (Test-Path $py) { & $py (Join-Path $engineRoot "notify_staged.py") 2>&1 | Out-File $logFile -Append -Encoding utf8 }
+        }
+    }
+
     Log "[DONE] Pipeline finished"
 }
 catch {
