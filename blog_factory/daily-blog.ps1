@@ -12,17 +12,28 @@ $date       = Get-Date -Format "yyyyMMdd-HHmmss"
 $logDir     = Join-Path $repoRoot "blog_factory\runs"
 $logFile    = Join-Path $logDir "daily-$date.log"
 
+# `claude` on this machine is an npm PowerShell shim (claude.ps1) which
+# Start-Process CANNOT launch ("%1 is not a valid Win32 application"). The .cmd
+# shim IS launchable. Resolve it once; fall back to PATH.
+$claudeCmd = (Get-Command claude.cmd -ErrorAction SilentlyContinue).Source
+if (-not $claudeCmd) { $claudeCmd = "claude.cmd" }
+
 if (-not (Test-Path $logDir)) { New-Item -ItemType Directory -Path $logDir -Force | Out-Null }
 function Log($line) { "$(Get-Date -Format 'o') $line" | Out-File $logFile -Append -Encoding utf8 }
 
-# Run `claude` with a hard wall-clock timeout and a REAL tree kill (claude spawns
-# node/MCP children that Stop-Job would orphan). Returns @{ TimedOut; Output }.
+# Run claude under a hard wall-clock timeout with a REAL tree kill (claude spawns
+# node/MCP children that Stop-Job would orphan). The prompt is fed via STDIN (a
+# temp file) — NOT as an argument — so multi-line prompts can't be mangled by
+# Windows command-line / cmd-shim arg parsing. Returns @{ TimedOut; Output }.
 function Invoke-ClaudeWithTimeout {
-    param([string[]]$ClaudeArgs, [int]$TimeoutSec)
+    param([string]$PromptText, [string[]]$Flags, [int]$TimeoutSec)
+    $promptFile = New-TemporaryFile
     $out = New-TemporaryFile
     $err = New-TemporaryFile
     try {
-        $p = Start-Process -FilePath "claude" -ArgumentList $ClaudeArgs -PassThru -NoNewWindow `
+        Set-Content -Path $promptFile.FullName -Value $PromptText -Encoding utf8
+        $p = Start-Process -FilePath $claudeCmd -ArgumentList $Flags -PassThru -NoNewWindow `
+            -RedirectStandardInput $promptFile.FullName `
             -RedirectStandardOutput $out.FullName -RedirectStandardError $err.FullName
         $timedOut = -not $p.WaitForExit($TimeoutSec * 1000)
         if ($timedOut) {
@@ -33,7 +44,9 @@ function Invoke-ClaudeWithTimeout {
         $text += (Get-Content $err.FullName -Raw -ErrorAction SilentlyContinue)
         return @{ TimedOut = $timedOut; Output = [string]$text }
     } finally {
-        Remove-Item $out.FullName, $err.FullName -Force -ErrorAction SilentlyContinue
+        Remove-Item $promptFile.FullName -Force -ErrorAction SilentlyContinue
+        Remove-Item $out.FullName -Force -ErrorAction SilentlyContinue
+        Remove-Item $err.FullName -Force -ErrorAction SilentlyContinue
     }
 }
 
@@ -48,7 +61,7 @@ if (Test-Path (Join-Path $repoRoot "blog_factory\.auto-publish-disabled")) {
 Push-Location $repoRoot
 try {
     # --- 1. preflight auth check — GUARDED by a 90s timeout (must never silent-hang) ---
-    $pre = Invoke-ClaudeWithTimeout -ClaudeArgs @("-p", "Reply with the single word READY and nothing else.", "--max-turns", "1") -TimeoutSec 90
+    $pre = Invoke-ClaudeWithTimeout -PromptText "Reply with the single word READY and nothing else." -Flags @("-p", "--max-turns", "1") -TimeoutSec 90
     if ($pre.TimedOut) { Log "[TIMEOUT] auth preflight exceeded 90s, killed"; exit 3 }
     if ($pre.Output -notmatch "READY" -or $pre.Output -match "Not logged in") {
         Log "[AUTH-FAIL] Preflight auth check failed. Output: $($pre.Output.Trim())"
@@ -68,7 +81,7 @@ Task: generate the next blog post from the topic backlog.
 This is an automated run. Do not ask for confirmation.
 '@
 
-    $run = Invoke-ClaudeWithTimeout -ClaudeArgs @("-p", $prompt, "--dangerously-skip-permissions", "--max-turns", "40") -TimeoutSec 1500
+    $run = Invoke-ClaudeWithTimeout -PromptText $prompt -Flags @("-p", "--dangerously-skip-permissions", "--max-turns", "40") -TimeoutSec 1500
     $run.Output | Out-File $logFile -Append -Encoding utf8
     if ($run.TimedOut) { Log "[TIMEOUT] claude -p exceeded 1500s, killed"; exit 3 }
 
